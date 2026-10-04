@@ -138,7 +138,10 @@ def main(argv):
     commit = "ensaio" if dry else check_committed(path)
     per = [run_series(mod.gerar(seed), S.get("aquecimento", 0.2)) for seed in S["sementes"]]
     resumo = summarise(per)
-    resultado = mod.avaliar(resumo, per)
+    try:
+        resultado = mod.avaliar(resumo, per)
+    except Exception as ex:                          # noqa: BLE001  (a execução não se perde)
+        resultado = "inconclusivo"; resumo["erro_no_criterio"] = repr(ex)
     print(json.dumps(resumo, indent=1, ensure_ascii=False, default=_json)); print("resultado:", resultado)
     if dry:
         print("(ensaio: nada foi registrado)"); return
