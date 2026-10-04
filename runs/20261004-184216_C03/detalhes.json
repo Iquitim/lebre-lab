@@ -1,0 +1,529 @@
+{
+ "spec": {
+  "id": "C03",
+  "frente": "C",
+  "pergunta": "Prevendo o nível do câmbio e do petróleo (não o retorno), a LEBRE bate o passeio aleatório? Ela cai na armadilha da regressão espúria entre séries que andam sem rumo?",
+  "expectativa": "Níveis de câmbio se comportam quase como passeio aleatório: a melhor previsão é o valor de ontem, e a memória da LEBRE deve chegar perto disso. Séries não estacionárias parecem correlacionadas por acaso (regressão espúria); o teste estatístico dela pode ser enganado por isso, e este cenário mede se é.",
+  "criterio": "Teste negativo: MSE relativo ao ingênuo (passeio aleatório; média geométrica) <= 1,02, e no máximo 1 das 4 séries com alguma entrada externa aceita.",
+  "sementes": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "aquecimento": 0.2,
+  "notas": "2010-2025, dias úteis. Alvos: nível de dólar/real, euro/dólar, iene/dólar e petróleo WTI. Entradas, com 1 dia de atraso: níveis dos outros 3 ativos e dos juros americanos de 2 e 10 anos."
+ },
+ "resumo": {
+  "n_series": 4,
+  "mse_rel_ingenuo_geo": 1.0684903210748535,
+  "mse_rel_linear_online_geo": 0.5586972836262699,
+  "cobertura_media": 0.8989209699173916,
+  "custo_medio": 595.9757426928605,
+  "custo_max_series": 674.9881648298993,
+  "recall_medio": NaN,
+  "falsas_aceitas_total": 4,
+  "series_com_falsa": 4,
+  "entradas_aceitas": {
+   "nivel_dolar_real": [
+    "iene_dolar"
+   ],
+   "nivel_euro_dolar": [
+    "dolar_real"
+   ],
+   "nivel_iene_dolar": [
+    "petroleo_wti"
+   ],
+   "nivel_petroleo_wti": [
+    "dolar_real"
+   ]
+  },
+  "mse_rel_por_serie": {
+   "nivel_dolar_real": {
+    "ingenuo": 1.045,
+    "linear_online": 0.902
+   },
+   "nivel_euro_dolar": {
+    "ingenuo": 1.03,
+    "linear_online": 0.212
+   },
+   "nivel_iene_dolar": {
+    "ingenuo": 1.05,
+    "linear_online": 0.558
+   },
+   "nivel_petroleo_wti": {
+    "ingenuo": 1.153,
+    "linear_online": 0.913
+   }
+  },
+  "partes_do_criterio": {
+   "nao_piora_referencia": false,
+   "sem_espurias": false
+  }
+ },
+ "series": [
+  {
+   "nome": "nivel_dolar_real",
+   "grupo": "nivel_dolar_real",
+   "T": 4174,
+   "d": 5,
+   "entradas": [
+    "euro_dolar",
+    "iene_dolar",
+    "petroleo_wti",
+    "juro_2a",
+    "juro_10a"
+   ],
+   "lebre": {
+    "mse": 0.0016595251251781307,
+    "mae": 0.0284962609412614,
+    "n": 3217
+   },
+   "cobertura": 0.8946223189306808,
+   "custo_medio": 532.0307139434595,
+   "us_por_passo": 98.03972208914196,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 0.001588814557040722,
+     "mae": 0.027838016785825308,
+     "n": 3217
+    },
+    "linear_online": {
+     "mse": 0.0018401764372660092,
+     "mae": 0.03112009682249846,
+     "n": 3217
+    }
+   },
+   "estrutura_final": [
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 570,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 106
+    },
+    {
+     "t": 1180,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 191
+    },
+    {
+     "t": 1800,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.65,
+     "amostras": 1040
+    },
+    {
+     "t": 1910,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.32,
+     "amostras": 106
+    },
+    {
+     "t": 1980,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 522
+    },
+    {
+     "t": 3420,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 108
+    },
+    {
+     "t": 3780,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 113
+    },
+    {
+     "t": 3910,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -3.14,
+     "amostras": 107
+    }
+   ],
+   "mse_rel_ingenuo": 1.0445052368283383,
+   "mse_rel_linear_online": 0.9018293526482296,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 0,
+    "recall": NaN,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 1800,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  },
+  {
+   "nome": "nivel_euro_dolar",
+   "grupo": "nivel_euro_dolar",
+   "T": 4174,
+   "d": 5,
+   "entradas": [
+    "dolar_real",
+    "iene_dolar",
+    "petroleo_wti",
+    "juro_2a",
+    "juro_10a"
+   ],
+   "lebre": {
+    "mse": 3.119801345578184e-05,
+    "mae": 0.004153220717976085,
+    "n": 3200
+   },
+   "cobertura": 0.9021875,
+   "custo_medio": 573.6823430761859,
+   "us_por_passo": 99.01351221867587,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 3.0289403124999996e-05,
+     "mae": 0.00408190625,
+     "n": 3200
+    },
+    "linear_online": {
+     "mse": 0.00014723751120940048,
+     "mae": 0.00823840707323625,
+     "n": 3200
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 570,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 103
+    },
+    {
+     "t": 1800,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 480
+    },
+    {
+     "t": 2470,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 1639
+    },
+    {
+     "t": 2870,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.55,
+     "amostras": 426
+    },
+    {
+     "t": 2980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.3,
+     "amostras": 106
+    },
+    {
+     "t": 3580,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 135
+    }
+   ],
+   "mse_rel_ingenuo": 1.0299976307566094,
+   "mse_rel_linear_online": 0.2118890301766387,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 0,
+    "recall": NaN,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 2870,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": [
+     "x0"
+    ]
+   }
+  },
+  {
+   "nome": "nivel_iene_dolar",
+   "grupo": "nivel_iene_dolar",
+   "T": 4174,
+   "d": 5,
+   "entradas": [
+    "dolar_real",
+    "euro_dolar",
+    "petroleo_wti",
+    "juro_2a",
+    "juro_10a"
+   ],
+   "lebre": {
+    "mse": 0.5683065228938112,
+    "mae": 0.5222722239941417,
+    "n": 3200
+   },
+   "cobertura": 0.899375,
+   "custo_medio": 674.9881648298993,
+   "us_por_passo": 109.21375179682941,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 0.5410549999999996,
+     "mae": 0.5082812499999997,
+     "n": 3200
+    },
+    "linear_online": {
+     "mse": 1.0180517150292754,
+     "mae": 0.7333939580719679,
+     "n": 3200
+    }
+   },
+   "estrutura_final": [
+    "x2"
+   ],
+   "eventos": [
+    {
+     "t": 840,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 104
+    },
+    {
+     "t": 1210,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 108
+    },
+    {
+     "t": 1660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 181
+    },
+    {
+     "t": 2750,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": 6.35,
+     "amostras": 2195
+    },
+    {
+     "t": 2860,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -1.24,
+     "amostras": 105
+    }
+   ],
+   "mse_rel_ingenuo": 1.0503673801994466,
+   "mse_rel_linear_online": 0.5582295226303595,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 0,
+    "recall": NaN,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 2750,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x2"
+    ],
+    "finais_falsas": [
+     "x2"
+    ]
+   }
+  },
+  {
+   "nome": "nivel_petroleo_wti",
+   "grupo": "nivel_petroleo_wti",
+   "T": 4174,
+   "d": 5,
+   "entradas": [
+    "dolar_real",
+    "euro_dolar",
+    "iene_dolar",
+    "juro_2a",
+    "juro_10a"
+   ],
+   "lebre": {
+    "mse": 4.621372749240149,
+    "mae": 1.158737313399696,
+    "n": 3194
+   },
+   "cobertura": 0.8994990607388854,
+   "custo_medio": 603.2017489218974,
+   "us_por_passo": 101.70943938663375,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 4.006606606136506,
+     "mae": 1.1234658735128364,
+     "n": 3194
+    },
+    "linear_online": {
+     "mse": 5.059532622704825,
+     "mae": 1.324567702181758,
+     "n": 3194
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 640,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 145
+    },
+    {
+     "t": 1200,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 181
+    },
+    {
+     "t": 1630,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 152
+    },
+    {
+     "t": 2020,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 1211
+    },
+    {
+     "t": 2860,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 107
+    },
+    {
+     "t": 3510,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.43,
+     "amostras": 1008
+    },
+    {
+     "t": 3550,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 106
+    },
+    {
+     "t": 3620,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.16,
+     "amostras": 105
+    }
+   ],
+   "mse_rel_ingenuo": 1.1534381094869832,
+   "mse_rel_linear_online": 0.9133991405651939,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 0,
+    "recall": NaN,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 3510,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": [
+     "x0"
+    ]
+   }
+  }
+ ]
+}

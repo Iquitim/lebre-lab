@@ -67,3 +67,26 @@ A cobertura do intervalo de 90% ficou entre 0,901 e 0,903 em todos os domínios.
   nenhuma. A lista de aceitas mostra só o que ela passou a usar **com atraso** (de 1 a 31 passos). Na eólica, por
   exemplo, a velocidade do vento quase nunca aparece como aceita, provavelmente porque o efeito dela é no mesmo
   instante e já está no modelo base.
+
+## Depois da fase 3 (mercado financeiro e macro, 2026-10-04)
+
+Fonte: execuções de C01 a C05 em `runs/REGISTRO.csv`. Todas as entradas financeiras entram com 1 dia (ou 1 mês) de
+atraso. Dados de 2010 a 2025 (cerca de 4.170 dias úteis por série); C05 tem 360 meses.
+
+| Cenário | Resultado | O que se viu |
+|---|---|---|
+| C01 Retornos diários (teste negativo) | **não atende** | Nenhuma entrada espúria aceita (bom), mas o erro ficou 7% **acima** de simplesmente prever retorno zero (16% no petróleo); empate com o linear online |
+| C02 Volatilidade diária | atende | Erro 40% menor que a persistência; empate com o linear online; nenhuma entrada de outro mercado aceita com atraso |
+| C03 Níveis de preço (teste negativo) | **não atende** | **Entradas espúrias aceitas nas 4 séries** (ex.: iene para prever o dólar/real) e erro 7% acima do passeio aleatório (15% no petróleo); ainda assim, 44% menor que o linear online, que sofre mais com isso |
+| C04 Variação diária de juros (teste negativo) | **não atende** | Nenhuma espúria, mas erro 5% acima de prever zero (11% no juro de 2 anos) |
+| C05 Inflação mensal, série curta | atende | Erro 10% menor que o ingênuo e que o linear online, com só 360 pontos; nada aceito, como esperado |
+
+### Leitura
+
+- **Retornos e variações de juros:** a LEBRE não inventa entradas (o controle de mudanças falsas funcionou), mas paga
+  um **custo de adaptação**: ao tentar aprender onde não há o que aprender, ela erra de 5% a 7% a mais que a previsão
+  trivial (zero). Não use a LEBRE para prever retornos.
+- **Níveis de preço:** séries que andam sem rumo (não estacionárias) enganam o teste dela. Ela aceitou relações
+  espúrias em todas as séries. Para dados assim, modele variações (retornos), não níveis.
+- **Volatilidade e inflação mensal:** onde há estrutura persistente conhecida, ela funciona bem, inclusive com série
+  curta.

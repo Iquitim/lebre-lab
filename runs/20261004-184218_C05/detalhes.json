@@ -1,0 +1,131 @@
+{
+ "spec": {
+  "id": "C05",
+  "frente": "C",
+  "pergunta": "Com uma série curta (cerca de 360 meses), a LEBRE ainda prevê a inflação do próximo mês melhor que os comparadores?",
+  "expectativa": "As decisões da LEBRE exigem pelo menos 100 amostras de evidência e são testadas a cada 10 passos; com 360 pontos, ela deve aceitar pouca coisa ou nada, e a previsão vem quase só da memória e do modelo base. A inflação mensal é bem persistente, então o ingênuo é difícil de bater. Este cenário mostra o comportamento perto do limite de dados.",
+  "criterio": "Critério padrão da Frente B, com o ingênuo como referência: MSE relativo ao ingênuo (média geométrica) < 1; MSE relativo ao linear online <= 1,05; cobertura média do intervalo de 90% entre 0,85 e 0,95.",
+  "sementes": [
+   0,
+   1
+  ],
+  "aquecimento": 0.2,
+  "notas": "Jan/1996 a dez/2025, mensal. Alvos: IPCA (433) e INPC (188), do IBGE (reuso com citação da fonte), via SGS do BCB; variação mensal em %. Entradas, com 1 mês de atraso: o outro índice, variação % do dólar médio do mês (média da PTAX diária, série 1 do BCB, ODbL) e Selic acumulada no mês (4390, BCB, ODbL). season = 12. O IGP-M (FGV) foi trocado pelo INPC antes de rodar: a licença da FGV não foi conferida."
+ },
+ "resumo": {
+  "n_series": 2,
+  "mse_rel_ingenuo_geo": 0.8950384914257258,
+  "mse_rel_linear_online_geo": 0.8968449559775694,
+  "mse_rel_sazonal_ingenuo_geo": 0.4029765231345672,
+  "cobertura_media": 0.9340277777777778,
+  "custo_medio": 194.2,
+  "custo_max_series": 194.2,
+  "entradas_aceitas": {
+   "ipca": [],
+   "inpc": []
+  },
+  "mse_rel_por_serie": {
+   "ipca": {
+    "ingenuo": 0.876,
+    "linear_online": 0.852,
+    "sazonal_ingenuo": 0.391
+   },
+   "inpc": {
+    "ingenuo": 0.915,
+    "linear_online": 0.944,
+    "sazonal_ingenuo": 0.416
+   }
+  },
+  "partes_do_criterio": {
+   "vence_referencia": true,
+   "empata_ou_vence_linear": true,
+   "cobertura_ok": true
+  }
+ },
+ "series": [
+  {
+   "nome": "ipca",
+   "grupo": "ipca",
+   "T": 360,
+   "d": 3,
+   "entradas": [
+    "outro_indice",
+    "dolar_var",
+    "selic_mes"
+   ],
+   "lebre": {
+    "mse": 0.09975597539470435,
+    "mae": 0.22329181935081893,
+    "n": 288
+   },
+   "cobertura": 0.9305555555555556,
+   "custo_medio": 194.2,
+   "us_por_passo": 58.2652777767281,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 0.11390208333333335,
+     "mae": 0.2465277777777778,
+     "n": 288
+    },
+    "linear_online": {
+     "mse": 0.11709508772672043,
+     "mae": 0.2431185281855593,
+     "n": 288
+    },
+    "sazonal_ingenuo": {
+     "mse": 0.2552420138888889,
+     "mae": 0.3464930555555556,
+     "n": 288
+    }
+   },
+   "estrutura_final": [],
+   "eventos": [],
+   "mse_rel_ingenuo": 0.8758046602428636,
+   "mse_rel_linear_online": 0.851922803350363,
+   "mse_rel_sazonal_ingenuo": 0.39082897785836224
+  },
+  {
+   "nome": "inpc",
+   "grupo": "inpc",
+   "T": 360,
+   "d": 3,
+   "entradas": [
+    "outro_indice",
+    "dolar_var",
+    "selic_mes"
+   ],
+   "lebre": {
+    "mse": 0.13041672896706713,
+    "mae": 0.26159700209199477,
+    "n": 288
+   },
+   "cobertura": 0.9375,
+   "custo_medio": 194.2,
+   "us_por_passo": 57.267222223345016,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 0.1425795138888889,
+     "mae": 0.27114583333333336,
+     "n": 288
+    },
+    "linear_online": {
+     "mse": 0.1381334333793759,
+     "mae": 0.2684452410842048,
+     "n": 288
+    },
+    "sazonal_ingenuo": {
+     "mse": 0.31387777777777776,
+     "mae": 0.3920138888888889,
+     "n": 288
+    }
+   },
+   "estrutura_final": [],
+   "eventos": [],
+   "mse_rel_ingenuo": 0.9146947230350349,
+   "mse_rel_linear_online": 0.9441358675917708,
+   "mse_rel_sazonal_ingenuo": 0.41550163216524627
+  }
+ ]
+}

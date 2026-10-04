@@ -1,0 +1,302 @@
+{
+ "spec": {
+  "id": "C04",
+  "frente": "C",
+  "pergunta": "Na variação diária dos juros de 3 meses, 2 e 10 anos, a LEBRE encontra algo além do próprio passado, sem aceitar entradas espúrias?",
+  "expectativa": "As variações diárias de juros longos são quase imprevisíveis. Os juros curtos (3 meses) têm alguma inércia em torno das decisões do Fed, que a memória da própria série pode captar. Não esperamos entradas externas aceitas.",
+  "criterio": "Teste negativo: MSE relativo a 'prever zero' (média geométrica) <= 1,02, e no máximo 1 das 3 séries com alguma entrada externa aceita.",
+  "sementes": [
+   0,
+   1,
+   2
+  ],
+  "aquecimento": 0.2,
+  "notas": "2010-2025, dias úteis. Alvos: variação diária (pontos percentuais) dos juros de 3 meses, 2 e 10 anos (Fed H.15, domínio público). Entradas, com 1 dia de atraso: variações dos outros dois prazos e retornos do dólar/real, do euro/dólar e do petróleo."
+ },
+ "resumo": {
+  "n_series": 3,
+  "mse_rel_ingenuo_geo": 0.5173246651446053,
+  "mse_rel_linear_online_geo": 1.0051562289027982,
+  "mse_rel_zero_geo": 1.0517340046858086,
+  "cobertura_media": 0.8969072164948454,
+  "custo_medio": 368.6269206197093,
+  "custo_max_series": 388.54865836128414,
+  "recall_medio": NaN,
+  "falsas_aceitas_total": 0,
+  "series_com_falsa": 0,
+  "entradas_aceitas": {
+   "d_juro_3m": [],
+   "d_juro_2a": [],
+   "d_juro_10a": []
+  },
+  "mse_rel_por_serie": {
+   "d_juro_3m": {
+    "ingenuo": 0.499,
+    "linear_online": 0.957,
+    "zero": 0.998
+   },
+   "d_juro_2a": {
+    "ingenuo": 0.534,
+    "linear_online": 1.072,
+    "zero": 1.112
+   },
+   "d_juro_10a": {
+    "ingenuo": 0.519,
+    "linear_online": 0.99,
+    "zero": 1.048
+   }
+  },
+  "partes_do_criterio": {
+   "nao_piora_referencia": false,
+   "sem_espurias": true
+  }
+ },
+ "series": [
+  {
+   "nome": "d_juro_3m",
+   "grupo": "d_juro_3m",
+   "T": 4174,
+   "d": 5,
+   "entradas": [
+    "d_juro_2a",
+    "d_juro_10a",
+    "dolar_real",
+    "euro_dolar",
+    "petroleo_wti"
+   ],
+   "lebre": {
+    "mse": 0.0007933707478306201,
+    "mae": 0.016256791874053243,
+    "n": 3201
+   },
+   "cobertura": 0.8981568259918775,
+   "custo_medio": 388.54865836128414,
+   "us_por_passo": 78.32970771454612,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 0.0015895970009372066,
+     "mae": 0.023289597000937214,
+     "n": 3201
+    },
+    "linear_online": {
+     "mse": 0.0008291567966802096,
+     "mae": 0.016612517997717555,
+     "n": 3201
+    },
+    "zero": {
+     "mse": 0.000794689159637613,
+     "mae": 0.015082786629178382,
+     "n": 3201
+    }
+   },
+   "estrutura_final": [],
+   "eventos": [
+    {
+     "t": 2950,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 107
+    },
+    {
+     "t": 3480,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 105
+    },
+    {
+     "t": 4070,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 928
+    }
+   ],
+   "mse_rel_ingenuo": 0.4991018147133258,
+   "mse_rel_linear_online": 0.9568404323610803,
+   "mse_rel_zero": 0.9983409716981743,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 0,
+    "recall": NaN,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {},
+    "estrutura_final": [],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "d_juro_2a",
+   "grupo": "d_juro_2a",
+   "T": 4174,
+   "d": 5,
+   "entradas": [
+    "d_juro_3m",
+    "d_juro_10a",
+    "dolar_real",
+    "euro_dolar",
+    "petroleo_wti"
+   ],
+   "lebre": {
+    "mse": 0.00266474062429075,
+    "mae": 0.03257532665841235,
+    "n": 3201
+   },
+   "cobertura": 0.8931583880037488,
+   "custo_medio": 381.6063248682319,
+   "us_por_passo": 78.45850503124856,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 0.004990253045923149,
+     "mae": 0.04740393626991565,
+     "n": 3201
+    },
+    "linear_online": {
+     "mse": 0.0024858297378343897,
+     "mae": 0.03221844235184809,
+     "n": 3201
+    },
+    "zero": {
+     "mse": 0.002395751327710091,
+     "mae": 0.031333958138081854,
+     "n": 3201
+    }
+   },
+   "estrutura_final": [],
+   "eventos": [
+    {
+     "t": 2940,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 107
+    },
+    {
+     "t": 3200,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 105
+    },
+    {
+     "t": 3480,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 105
+    },
+    {
+     "t": 3750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 105
+    }
+   ],
+   "mse_rel_ingenuo": 0.5339890782628235,
+   "mse_rel_linear_online": 1.07197230113283,
+   "mse_rel_zero": 1.1122776364430795,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 0,
+    "recall": NaN,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {},
+    "estrutura_final": [],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "d_juro_10a",
+   "grupo": "d_juro_10a",
+   "T": 4174,
+   "d": 5,
+   "entradas": [
+    "d_juro_3m",
+    "d_juro_2a",
+    "dolar_real",
+    "euro_dolar",
+    "petroleo_wti"
+   ],
+   "lebre": {
+    "mse": 0.0028699229166006986,
+    "mae": 0.04050718102070142,
+    "n": 3201
+   },
+   "cobertura": 0.8994064354889098,
+   "custo_medio": 335.72577862961185,
+   "us_por_passo": 74.1177767129515,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 0.005524617307091536,
+     "mae": 0.05614807872539834,
+     "n": 3201
+    },
+    "linear_online": {
+     "mse": 0.002898628844395168,
+     "mae": 0.04060111556461002,
+     "n": 3201
+    },
+    "zero": {
+     "mse": 0.0027393314589190887,
+     "mae": 0.03962511715089035,
+     "n": 3201
+    }
+   },
+   "estrutura_final": [],
+   "eventos": [
+    {
+     "t": 2960,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 127
+    },
+    {
+     "t": 3620,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.01,
+     "amostras": 105
+    }
+   ],
+   "mse_rel_ingenuo": 0.5194790438998904,
+   "mse_rel_linear_online": 0.9900967218172911,
+   "mse_rel_zero": 1.047672747763478,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 0,
+    "recall": NaN,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {},
+    "estrutura_final": [],
+    "finais_falsas": []
+   }
+  }
+ ]
+}
