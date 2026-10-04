@@ -90,3 +90,22 @@ atraso. Dados de 2010 a 2025 (cerca de 4.170 dias úteis por série); C05 tem 36
   espúrias em todas as séries. Para dados assim, modele variações (retornos), não níveis.
 - **Volatilidade e inflação mensal:** onde há estrutura persistente conhecida, ela funciona bem, inclusive com série
   curta.
+
+## Depois da fase 4 (ensembles em volta da LEBRE, 2026-10-04)
+
+Fonte: `20261004-185854_D01`, `20261004-190435_D02`, `20261004-191202_D03` (a primeira tentativa de D03 abortou; ver `runs/ANOTACOES.md`).
+Os ensembles são métodos novos construídos em volta da LEBRE: os resultados descrevem a combinação, não a v0.52.
+
+| Ensemble | Hipótese | Resultado | O que se viu | Custo |
+|---|---|---|---|---|
+| D01: 5 LEBREs, cada uma com metade das entradas | Erra menos que uma LEBRE com todas | **não** | 17% a 30% **pior** que a LEBRE sozinha (pesos online ajudam um pouco) | 2,4 a 2,8 vezes |
+| D02: 4 LEBREs com ciclos diferentes, pesos online | Chega perto (até 5%) de saber o ciclo certo | **sim** | 3,8% acima da LEBRE com o ciclo certo e 45% abaixo da LEBRE sem ciclo | 3,9 vezes |
+| D03: LEBRE + linear online + ingênuo, pesos online | Supera o melhor membro de cada série | **não** | 2,4% acima do melhor membro, mas 10,5% abaixo da LEBRE sozinha; na qualidade do ar, 49% abaixo da LEBRE | membros extras baratos |
+
+### Leitura
+
+- **Não divida as entradas entre vários modelos** quando uma LEBRE sozinha já consegue testar todas: piora e custa mais.
+- **Não sabe o ciclo dos dados?** Combinar LEBREs com ciclos diferentes, com pesos online, recupera quase todo o ganho de
+  saber o ciclo certo, a cerca de 4 vezes o custo. Declarar o ciclo errado (ou nenhum) custa muito mais caro em erro.
+- **Combinar a LEBRE com uma regressão recursiva barata** é uma proteção eficaz contra a falha F6 (relação quase exata
+  no mesmo instante): a combinação segue o membro que acerta. O preço é perder de 4% a 9% onde a LEBRE já era a melhor.
