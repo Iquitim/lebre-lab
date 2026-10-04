@@ -25,7 +25,7 @@ publicáveis sozinho (ver a regra 5).
 7. **Mercado financeiro: nenhuma promessa de ganho.** Medimos qualidade de previsão, não lucro de estratégia. Um
    backtest de operação com custos é outro projeto.
 
-## 2. As três frentes
+## 2. As quatro frentes
 
 ### Frente A: estresse com resposta conhecida (dados sintéticos)
 
@@ -76,6 +76,22 @@ Expectativa realista: o retorno do próximo passo é quase imprevisível para qu
 
 Fontes preferidas: Banco Central (SGS) e FRED, com a licença de cada série conferida antes do uso.
 
+### Frente D: ensembles com a LEBRE (curiosidade)
+
+Cópias idênticas da LEBRE dariam previsões idênticas, porque a versão congelada é determinística. Os membros precisam
+ser diferentes entre si. O ensemble é um **método novo construído em volta da LEBRE**: os resultados não dizem nada
+sobre a v0.52 em si, e a biblioteca continua intocada (regra 1).
+
+| ID | Ensemble | Pergunta |
+|---|---|---|
+| D01 | Várias LEBREs, cada uma com um subconjunto sorteado das entradas | Ajuda quando há muitas entradas (o cenário A01)? Quanto custa? |
+| D02 | Várias LEBREs com ciclos declarados diferentes (`season`, `season2`) | Combinar substitui saber qual é o ciclo dos dados? |
+| D03 | LEBRE + linear online + sazonal ingênuo, com pesos ajustados online | A combinação supera o melhor membro sozinho? |
+
+Expectativa: ganho pequeno ou nenhum na maioria dos casos. A LEBRE já combina internamente a memória do alvo com o
+modelo estrutural, e na literatura de combinação de previsões o ganho costuma ser modesto. O custo por passo cresce com
+o número de membros, e é reportado junto com o erro.
+
 ## 3. Comparadores e métricas
 
 **Comparadores** (todos online e causais, usando só o passado):
@@ -106,7 +122,8 @@ tempo até a detecção, tempo até a remoção depois de uma mudança de regime
 2. **Fase 1, Frente A:** sintéticos, rápidos e sem licença. Primeiro mapa de limites.
 3. **Fase 2, Frente B:** domínios reais, um de cada vez, com licença conferida.
 4. **Fase 3, Frente C:** mercado financeiro.
-5. **Ao fim de cada fase:** atualizar `MAPA.md` (quando usar e quando não usar) e `FALHAS.md` (o que a próxima versão
+5. **Fase 4, Frente D:** ensembles, depois de A (D01 usa o cenário A01) e com os domínios de B.
+6. **Ao fim de cada fase:** atualizar `MAPA.md` (quando usar e quando não usar) e `FALHAS.md` (o que a próxima versão
    precisa resolver).
 
 ## 6. Fora de escopo

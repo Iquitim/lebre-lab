@@ -1,7 +1,7 @@
 # LEBRE Lab
 
 Testes exploratórios da versão congelada da [LEBRE](https://github.com/Iquitim/lebre) (`lebre==0.1.0`, algoritmo
-v0.52-r1) em situações novas: estresse com dados sintéticos, novos domínios e mercado financeiro.
+v0.52-r1) em situações novas: estresse com dados sintéticos, novos domínios, mercado financeiro e ensembles construídos em volta dela.
 
 - O plano, as regras e o catálogo de testes estão em [`PLANO.md`](PLANO.md).
 - Cada execução fica registrada em [`runs/REGISTRO.csv`](runs/), inclusive as que falharam.
