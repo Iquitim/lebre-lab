@@ -1,0 +1,2398 @@
+{
+ "spec": {
+  "id": "B06",
+  "frente": "B",
+  "pergunta": "A LEBRE prevê a geração eólica da próxima hora melhor que os comparadores, usando o vento no local?",
+  "expectativa": "A geração eólica é muito persistente de uma hora para a outra, então o sazonal ingênuo é um comparador fraco e o ganho sobre ele deve ser grande; o teste relevante é o empate com o linear online. A relação com a velocidade do vento é não linear (curva de potência, próxima do cubo até a velocidade nominal), o que limita uma relação linear (ver A10).",
+  "criterio": "Critério padrão da Frente B: MSE relativo ao sazonal ingênuo (média geométrica) < 1; MSE relativo ao linear online <= 1,05; cobertura média do intervalo de 90% entre 0,85 e 0,95.",
+  "sementes": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "aquecimento": 0.2,
+  "notas": "ONS Fator de Capacidade 2024-2025 (CC-BY): geração verificada (MWmed). Usinas escolhidas só por metadados: as 6 maiores por capacidade, com coordenadas e >= 95% das horas com geração. Vento a 100 m (velocidade, u, v), vento a 10 m e temperatura: reanálise ERA5 via Open-Meteo (CC BY 4.0); é o tempo que ocorreu, não previsão."
+ },
+ "resumo": {
+  "n_series": 6,
+  "mse_rel_ingenuo_geo": 0.7291703244900096,
+  "mse_rel_linear_online_geo": 1.0169409461652148,
+  "mse_rel_sazonal_ingenuo_geo": 0.11650823122043631,
+  "cobertura_media": 0.9016059902198976,
+  "custo_medio": 622.9944558443532,
+  "custo_max_series": 738.3179491564067,
+  "usinas": [
+   {
+    "nome": "Conj. São Roque",
+    "cap": 795.0,
+    "lat": -8.8729089,
+    "lon": -41.5951583,
+    "completude": 1.0
+   },
+   {
+    "nome": "Conj. Lagoa dos Ventos",
+    "cap": 720.1,
+    "lat": -8.734466,
+    "lon": -41.510905,
+    "completude": 1.0
+   },
+   {
+    "nome": "Conj. Caju",
+    "cap": 685.8,
+    "lat": -5.6862977,
+    "lon": -36.2687218,
+    "completude": 1.0
+   },
+   {
+    "nome": "Conj. Monte Verde",
+    "cap": 618.8,
+    "lat": -5.44837,
+    "lon": -36.20106,
+    "completude": 1.0
+   },
+   {
+    "nome": "Conj. Serra do Mel A",
+    "cap": 587.1,
+    "lat": -5.131425,
+    "lon": -37.049532,
+    "completude": 0.9877
+   },
+   {
+    "nome": "Conj. Santa Vitória do Palmar",
+    "cap": 582.8,
+    "lat": -33.47352,
+    "lon": -53.302226,
+    "completude": 1.0
+   }
+  ],
+  "entradas_aceitas": {
+   "Conj. São Roque": [
+    "own_past"
+   ],
+   "Conj. Lagoa dos Ventos": [
+    "own_past",
+    "temperature_2m",
+    "vento100_u"
+   ],
+   "Conj. Caju": [
+    "own_past",
+    "residual_state",
+    "temperature_2m"
+   ],
+   "Conj. Monte Verde": [
+    "own_past",
+    "residual_state",
+    "temperature_2m"
+   ],
+   "Conj. Serra do Mel A": [
+    "own_past",
+    "temperature_2m"
+   ],
+   "Conj. Santa Vitória do Palmar": [
+    "residual_state"
+   ]
+  },
+  "mse_rel_por_serie": {
+   "Conj. São Roque": {
+    "ingenuo": 0.669,
+    "linear_online": 1.018,
+    "sazonal_ingenuo": 0.136
+   },
+   "Conj. Lagoa dos Ventos": {
+    "ingenuo": 0.654,
+    "linear_online": 1.034,
+    "sazonal_ingenuo": 0.12
+   },
+   "Conj. Caju": {
+    "ingenuo": 0.711,
+    "linear_online": 0.991,
+    "sazonal_ingenuo": 0.13
+   },
+   "Conj. Monte Verde": {
+    "ingenuo": 0.754,
+    "linear_online": 1.001,
+    "sazonal_ingenuo": 0.139
+   },
+   "Conj. Serra do Mel A": {
+    "ingenuo": 0.713,
+    "linear_online": 1.007,
+    "sazonal_ingenuo": 0.137
+   },
+   "Conj. Santa Vitória do Palmar": {
+    "ingenuo": 0.899,
+    "linear_online": 1.052,
+    "sazonal_ingenuo": 0.062
+   }
+  },
+  "partes_do_criterio": {
+   "vence_referencia": true,
+   "empata_ou_vence_linear": true,
+   "cobertura_ok": true
+  }
+ },
+ "series": [
+  {
+   "nome": "Conj. São Roque",
+   "grupo": "Conj. São Roque",
+   "T": 17544,
+   "d": 5,
+   "entradas": [
+    "wind_speed_100m",
+    "wind_speed_10m",
+    "temperature_2m",
+    "vento100_u",
+    "vento100_v"
+   ],
+   "lebre": {
+    "mse": 3436.0849902357268,
+    "mae": 40.17741870169052,
+    "n": 14036
+   },
+   "cobertura": 0.9018238814477059,
+   "custo_medio": 580.4923734610122,
+   "us_por_passo": 108.87979936161133,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 5136.2389683374895,
+     "mae": 47.676738030778004,
+     "n": 14036
+    },
+    "linear_online": {
+     "mse": 3373.914994119228,
+     "mae": 39.54043803244683,
+     "n": 14036
+    },
+    "sazonal_ingenuo": {
+     "mse": 25202.0358403221,
+     "mae": 113.39903013679111,
+     "n": 14036
+    }
+   },
+   "estrutura_final": [
+    "own_past"
+   ],
+   "eventos": [
+    {
+     "t": 1300,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 106
+    },
+    {
+     "t": 1550,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.49,
+     "amostras": 100
+    },
+    {
+     "t": 2750,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": 6.51,
+     "amostras": 310
+    },
+    {
+     "t": 2850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.51,
+     "amostras": 100
+    },
+    {
+     "t": 3200,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 6710,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 6.12,
+     "amostras": 5000
+    },
+    {
+     "t": 7850,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.51,
+     "amostras": 4400
+    },
+    {
+     "t": 7920,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.56,
+     "amostras": 960
+    },
+    {
+     "t": 7950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.54,
+     "amostras": 100
+    },
+    {
+     "t": 8530,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 5.95,
+     "amostras": 100
+    },
+    {
+     "t": 9050,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 9150,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 460
+    },
+    {
+     "t": 9550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.02,
+     "amostras": 150
+    },
+    {
+     "t": 9760,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.64,
+     "amostras": 100
+    },
+    {
+     "t": 9950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.0,
+     "amostras": 100
+    },
+    {
+     "t": 10310,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.53,
+     "amostras": 100
+    },
+    {
+     "t": 10940,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 470
+    },
+    {
+     "t": 11390,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.58,
+     "amostras": 250
+    },
+    {
+     "t": 11500,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 100
+    },
+    {
+     "t": 11760,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.68,
+     "amostras": 100
+    },
+    {
+     "t": 11950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.42,
+     "amostras": 100
+    },
+    {
+     "t": 12050,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 130
+    },
+    {
+     "t": 12680,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 190
+    },
+    {
+     "t": 12990,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.53,
+     "amostras": 100
+    },
+    {
+     "t": 13660,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 13950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.73,
+     "amostras": 100
+    },
+    {
+     "t": 13980,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 5.93,
+     "amostras": 120
+    },
+    {
+     "t": 14580,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 15250,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 15980,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.75,
+     "amostras": 100
+    },
+    {
+     "t": 16080,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.83,
+     "amostras": 100
+    },
+    {
+     "t": 16840,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 17410,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.6689885364402987,
+   "mse_rel_linear_online": 1.0184266634532468,
+   "mse_rel_sazonal_ingenuo": 0.13634156430879082
+  },
+  {
+   "nome": "Conj. Lagoa dos Ventos",
+   "grupo": "Conj. Lagoa dos Ventos",
+   "T": 17544,
+   "d": 5,
+   "entradas": [
+    "wind_speed_100m",
+    "wind_speed_10m",
+    "temperature_2m",
+    "vento100_u",
+    "vento100_v"
+   ],
+   "lebre": {
+    "mse": 3158.6684848526534,
+    "mae": 36.254591446049616,
+    "n": 14036
+   },
+   "cobertura": 0.9015388999715018,
+   "custo_medio": 548.4804434564523,
+   "us_por_passo": 116.62843137254877,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 4830.265584392705,
+     "mae": 43.28795525790824,
+     "n": 14036
+    },
+    "linear_online": {
+     "mse": 3055.7455241277826,
+     "mae": 35.49667704784571,
+     "n": 14036
+    },
+    "sazonal_ingenuo": {
+     "mse": 26387.559506616275,
+     "mae": 110.11040738102022,
+     "n": 14036
+    }
+   },
+   "estrutura_final": [
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "eventos": [
+    {
+     "t": 1300,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 102
+    },
+    {
+     "t": 1550,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 2560,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": 6.67,
+     "amostras": 230
+    },
+    {
+     "t": 2660,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.82,
+     "amostras": 100
+    },
+    {
+     "t": 2990,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.53,
+     "amostras": 1280
+    },
+    {
+     "t": 3050,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 140
+    },
+    {
+     "t": 3710,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 200
+    },
+    {
+     "t": 4020,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": 6.33,
+     "amostras": 872
+    },
+    {
+     "t": 4070,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 110
+    },
+    {
+     "t": 4120,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -0.57,
+     "amostras": 100
+    },
+    {
+     "t": 4430,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 110
+    },
+    {
+     "t": 4660,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.22,
+     "amostras": 100
+    },
+    {
+     "t": 4720,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.56,
+     "amostras": 100
+    },
+    {
+     "t": 5170,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 5430,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 6030,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[4-7]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 410
+    },
+    {
+     "t": 6060,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[2-3]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 6160,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -1.22,
+     "amostras": 100
+    },
+    {
+     "t": 6380,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 6660,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.28,
+     "amostras": 100
+    },
+    {
+     "t": 6900,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 7490,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 8160,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -1.92,
+     "amostras": 100
+    },
+    {
+     "t": 8520,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[2-3]",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 8660,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.35,
+     "amostras": 100
+    },
+    {
+     "t": 9520,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 140
+    },
+    {
+     "t": 9870,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.46,
+     "amostras": 100
+    },
+    {
+     "t": 10160,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -2.49,
+     "amostras": 100
+    },
+    {
+     "t": 10660,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.51,
+     "amostras": 100
+    },
+    {
+     "t": 11140,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[8-15]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 11790,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 12160,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 12260,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -2.95,
+     "amostras": 100
+    },
+    {
+     "t": 12610,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.53,
+     "amostras": 100
+    },
+    {
+     "t": 12710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -2.92,
+     "amostras": 100
+    },
+    {
+     "t": 13160,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 2.13,
+     "amostras": 5000
+    },
+    {
+     "t": 14070,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[8-15]",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 110
+    },
+    {
+     "t": 14260,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -3.41,
+     "amostras": 100
+    },
+    {
+     "t": 14320,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 14610,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.56,
+     "amostras": 100
+    },
+    {
+     "t": 14710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -3.16,
+     "amostras": 100
+    },
+    {
+     "t": 14910,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[2-3]",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 15170,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 1.92,
+     "amostras": 100
+    },
+    {
+     "t": 15460,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 16150,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 16260,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -3.97,
+     "amostras": 100
+    },
+    {
+     "t": 16570,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": 3.48,
+     "amostras": 110
+    },
+    {
+     "t": 16670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x3",
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 16840,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.63,
+     "amostras": 100
+    },
+    {
+     "t": 16940,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -3.27,
+     "amostras": 100
+    },
+    {
+     "t": 17370,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[2-3]",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 170
+    }
+   ],
+   "mse_rel_ingenuo": 0.6539326729898194,
+   "mse_rel_linear_online": 1.0336817840072754,
+   "mse_rel_sazonal_ingenuo": 0.11970294123110042
+  },
+  {
+   "nome": "Conj. Caju",
+   "grupo": "Conj. Caju",
+   "T": 17544,
+   "d": 5,
+   "entradas": [
+    "wind_speed_100m",
+    "wind_speed_10m",
+    "temperature_2m",
+    "vento100_u",
+    "vento100_v"
+   ],
+   "lebre": {
+    "mse": 1948.9624636847993,
+    "mae": 30.868689478219597,
+    "n": 14036
+   },
+   "cobertura": 0.9013251638643488,
+   "custo_medio": 650.74453374373,
+   "us_por_passo": 122.55660624714706,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 2741.799171062126,
+     "mae": 35.046552864063834,
+     "n": 14036
+    },
+    "linear_online": {
+     "mse": 1966.2237713384222,
+     "mae": 31.18675176472309,
+     "n": 14036
+    },
+    "sazonal_ingenuo": {
+     "mse": 14958.939089170563,
+     "mae": 92.47517768595041,
+     "n": 14036
+    }
+   },
+   "estrutura_final": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "eventos": [
+    {
+     "t": 1090,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 104
+    },
+    {
+     "t": 1340,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 100
+    },
+    {
+     "t": 4420,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 6.33,
+     "amostras": 2920
+    },
+    {
+     "t": 4530,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.08,
+     "amostras": 110
+    },
+    {
+     "t": 6490,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": 5.66,
+     "amostras": 1700
+    },
+    {
+     "t": 6590,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 6690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.26,
+     "amostras": 100
+    },
+    {
+     "t": 6700,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": 6.36,
+     "amostras": 4940
+    },
+    {
+     "t": 6800,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -1.31,
+     "amostras": 100
+    },
+    {
+     "t": 7520,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 320
+    },
+    {
+     "t": 7930,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[8-15]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 8480,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 1540
+    },
+    {
+     "t": 8530,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 160
+    },
+    {
+     "t": 8590,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.35,
+     "amostras": 100
+    },
+    {
+     "t": 8690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.49,
+     "amostras": 100
+    },
+    {
+     "t": 8800,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -2.3,
+     "amostras": 100
+    },
+    {
+     "t": 9300,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 9320,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 380
+    },
+    {
+     "t": 9650,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 10440,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 120
+    },
+    {
+     "t": 10590,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.49,
+     "amostras": 100
+    },
+    {
+     "t": 10680,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 10780,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.63,
+     "amostras": 100
+    },
+    {
+     "t": 10800,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -3.0,
+     "amostras": 100
+    },
+    {
+     "t": 11650,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 100
+    },
+    {
+     "t": 12000,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[2-3]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 130
+    },
+    {
+     "t": 12440,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 12590,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.54,
+     "amostras": 100
+    },
+    {
+     "t": 12780,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.77,
+     "amostras": 100
+    },
+    {
+     "t": 15030,
+     "resultado": "accepted",
+     "mudanca": "split",
+     "entra": "x2[8-15]",
+     "sai": null,
+     "log_evidencia": 5.06,
+     "amostras": 2410
+    },
+    {
+     "t": 15130,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.57,
+     "amostras": 100
+    },
+    {
+     "t": 15230,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.82,
+     "amostras": 100
+    },
+    {
+     "t": 15330,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -3.6,
+     "amostras": 100
+    },
+    {
+     "t": 15710,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 16060,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 16430,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[8-11]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 17170,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 120
+    },
+    {
+     "t": 17270,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.62,
+     "amostras": 100
+    },
+    {
+     "t": 17370,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.99,
+     "amostras": 100
+    },
+    {
+     "t": 17470,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -4.2,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.7108334134224006,
+   "mse_rel_linear_online": 0.9912210868847989,
+   "mse_rel_sazonal_ingenuo": 0.13028747908304136
+  },
+  {
+   "nome": "Conj. Monte Verde",
+   "grupo": "Conj. Monte Verde",
+   "T": 17544,
+   "d": 5,
+   "entradas": [
+    "wind_speed_100m",
+    "wind_speed_10m",
+    "temperature_2m",
+    "vento100_u",
+    "vento100_v"
+   ],
+   "lebre": {
+    "mse": 1463.125701511499,
+    "mae": 26.23974613177829,
+    "n": 14036
+   },
+   "cobertura": 0.9016813907096038,
+   "custo_medio": 593.6425501595987,
+   "us_por_passo": 115.02423620611674,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1941.3610191744085,
+     "mae": 28.597227842690224,
+     "n": 14036
+    },
+    "linear_online": {
+     "mse": 1462.2356962419542,
+     "mae": 26.549509944296044,
+     "n": 14036
+    },
+    "sazonal_ingenuo": {
+     "mse": 10529.171551584068,
+     "mae": 77.49117426617269,
+     "n": 14036
+    }
+   },
+   "estrutura_final": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "eventos": [
+    {
+     "t": 1040,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 102
+    },
+    {
+     "t": 1290,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.52,
+     "amostras": 100
+    },
+    {
+     "t": 2640,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": 6.46,
+     "amostras": 930
+    },
+    {
+     "t": 2740,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.35,
+     "amostras": 100
+    },
+    {
+     "t": 3180,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[4-7]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 3800,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 4730,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 6.37,
+     "amostras": 3280
+    },
+    {
+     "t": 4740,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.37,
+     "amostras": 100
+    },
+    {
+     "t": 4830,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 5170,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 170
+    },
+    {
+     "t": 5360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 6940,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": 5.47,
+     "amostras": 700
+    },
+    {
+     "t": 7040,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.42,
+     "amostras": 100
+    },
+    {
+     "t": 7140,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 7240,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -0.89,
+     "amostras": 100
+    },
+    {
+     "t": 7660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 7910,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.54,
+     "amostras": 2140
+    },
+    {
+     "t": 8080,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 8350,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 8760,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 9090,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[2-3]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 9170,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.44,
+     "amostras": 230
+    },
+    {
+     "t": 9190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.35,
+     "amostras": 100
+    },
+    {
+     "t": 9270,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -1.6,
+     "amostras": 100
+    },
+    {
+     "t": 9560,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 10010,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 130
+    },
+    {
+     "t": 10360,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 10740,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 11040,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.59,
+     "amostras": 100
+    },
+    {
+     "t": 11300,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.4,
+     "amostras": 210
+    },
+    {
+     "t": 11380,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.55,
+     "amostras": 120
+    },
+    {
+     "t": 11400,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -2.44,
+     "amostras": 100
+    },
+    {
+     "t": 11840,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.59,
+     "amostras": 100
+    },
+    {
+     "t": 12250,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[8-15]",
+     "sai": null,
+     "log_evidencia": -0.21,
+     "amostras": 100
+    },
+    {
+     "t": 12990,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 100
+    },
+    {
+     "t": 13090,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.65,
+     "amostras": 100
+    },
+    {
+     "t": 13190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 13400,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -2.73,
+     "amostras": 100
+    },
+    {
+     "t": 14150,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[16-31]",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 14460,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[16-31]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 120
+    },
+    {
+     "t": 15090,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.8,
+     "amostras": 100
+    },
+    {
+     "t": 15440,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.46,
+     "amostras": 350
+    },
+    {
+     "t": 15540,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -3.29,
+     "amostras": 100
+    },
+    {
+     "t": 15630,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.49,
+     "amostras": 780
+    },
+    {
+     "t": 16070,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "own_past[2-3]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 17030,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[8-15]",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 17090,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.92,
+     "amostras": 100
+    },
+    {
+     "t": 17410,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.75,
+     "amostras": 100
+    },
+    {
+     "t": 17470,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.48,
+     "amostras": 380
+    },
+    {
+     "t": 17540,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -3.71,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.7536597711917149,
+   "mse_rel_linear_online": 1.0006086606091154,
+   "mse_rel_sazonal_ingenuo": 0.13895924236236593
+  },
+  {
+   "nome": "Conj. Serra do Mel A",
+   "grupo": "Conj. Serra do Mel A",
+   "T": 17544,
+   "d": 5,
+   "entradas": [
+    "wind_speed_100m",
+    "wind_speed_10m",
+    "temperature_2m",
+    "vento100_u",
+    "vento100_v"
+   ],
+   "lebre": {
+    "mse": 819.0123747883849,
+    "mae": 19.77018310197026,
+    "n": 13820
+   },
+   "cobertura": 0.9011577424023155,
+   "custo_medio": 738.3179491564067,
+   "us_por_passo": 110.16936844505196,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1147.9407691842982,
+     "mae": 22.42270499276411,
+     "n": 13820
+    },
+    "linear_online": {
+     "mse": 813.2021234139978,
+     "mae": 19.90641549674691,
+     "n": 13820
+    },
+    "sazonal_ingenuo": {
+     "mse": 5972.467981506728,
+     "mae": 57.43688617945007,
+     "n": 13820
+    }
+   },
+   "estrutura_final": [
+    "x2",
+    "own_past"
+   ],
+   "eventos": [
+    {
+     "t": 1170,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.46,
+     "amostras": 100
+    },
+    {
+     "t": 5820,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 5004
+    },
+    {
+     "t": 6170,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 6570,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 2.3,
+     "amostras": 5000
+    },
+    {
+     "t": 11430,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": 1.24,
+     "amostras": 5000
+    },
+    {
+     "t": 11820,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": 0.99,
+     "amostras": 5000
+    },
+    {
+     "t": 12170,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": 1.04,
+     "amostras": 100
+    },
+    {
+     "t": 12700,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 14470,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": 6.35,
+     "amostras": 2664
+    },
+    {
+     "t": 14570,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.0,
+     "amostras": 100
+    },
+    {
+     "t": 16770,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": 6.35,
+     "amostras": 12054
+    },
+    {
+     "t": 16870,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "own_past",
+     "log_evidencia": -1.55,
+     "amostras": 100
+    },
+    {
+     "t": 16970,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x2",
+     "log_evidencia": -0.57,
+     "amostras": 100
+    },
+    {
+     "t": 17320,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x2[4-7]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.713462224510379,
+   "mse_rel_linear_online": 1.0071449043320182,
+   "mse_rel_sazonal_ingenuo": 0.13713131277126836
+  },
+  {
+   "nome": "Conj. Santa Vitória do Palmar",
+   "grupo": "Conj. Santa Vitória do Palmar",
+   "T": 17544,
+   "d": 5,
+   "entradas": [
+    "wind_speed_100m",
+    "wind_speed_10m",
+    "temperature_2m",
+    "vento100_u",
+    "vento100_v"
+   ],
+   "lebre": {
+    "mse": 2627.0141217833134,
+    "mae": 34.5446744177114,
+    "n": 14036
+   },
+   "cobertura": 0.9021088629239099,
+   "custo_medio": 626.2888850889193,
+   "us_por_passo": 102.27784427723475,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 2922.498914394913,
+     "mae": 34.7734074522656,
+     "n": 14036
+    },
+    "linear_online": {
+     "mse": 2497.6488297866435,
+     "mae": 34.21328057041581,
+     "n": 14036
+    },
+    "sazonal_ingenuo": {
+     "mse": 42558.13614658884,
+     "mae": 158.03578633513823,
+     "n": 14036
+    }
+   },
+   "estrutura_final": [
+    "residual_state"
+   ],
+   "eventos": [
+    {
+     "t": 1180,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 109
+    },
+    {
+     "t": 3220,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.51,
+     "amostras": 2368
+    },
+    {
+     "t": 3820,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 4340,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 5210,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": 6.46,
+     "amostras": 3747
+    },
+    {
+     "t": 5280,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 5310,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.21,
+     "amostras": 100
+    },
+    {
+     "t": 5670,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 5930,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 100
+    },
+    {
+     "t": 6670,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 7270,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.54,
+     "amostras": 100
+    },
+    {
+     "t": 7310,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 8380,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 110
+    },
+    {
+     "t": 8950,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 9310,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.64,
+     "amostras": 100
+    },
+    {
+     "t": 10130,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 11200,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.56,
+     "amostras": 100
+    },
+    {
+     "t": 11310,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.77,
+     "amostras": 100
+    },
+    {
+     "t": 11710,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 12190,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 12610,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 12830,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": 1.12,
+     "amostras": 5000
+    },
+    {
+     "t": 13310,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -0.84,
+     "amostras": 100
+    },
+    {
+     "t": 13880,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.51,
+     "amostras": 110
+    },
+    {
+     "t": 14250,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.59,
+     "amostras": 100
+    },
+    {
+     "t": 14750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 15310,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -1.08,
+     "amostras": 100
+    },
+    {
+     "t": 15980,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.52,
+     "amostras": 100
+    },
+    {
+     "t": 16830,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x3",
+     "sai": null,
+     "log_evidencia": -0.52,
+     "amostras": 100
+    },
+    {
+     "t": 17190,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x4",
+     "sai": null,
+     "log_evidencia": -0.56,
+     "amostras": 100
+    },
+    {
+     "t": 17310,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "residual_state",
+     "log_evidencia": -1.26,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.8988931044058992,
+   "mse_rel_linear_online": 1.0517948281815586,
+   "mse_rel_sazonal_ingenuo": 0.06172765914218441
+  }
+ ]
+}

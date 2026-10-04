@@ -40,4 +40,30 @@ Fonte: execuções de A01 a A12 em `runs/REGISTRO.csv`. Para A05, A06, A07 e A12
   atraso maior que 31 passos ou quando as entradas são quase cópias umas das outras.
 - Com muitas entradas, o custo deixa de ser "algumas centenas de operações por passo".
 
-Ainda falta confirmar tudo isso em dados reais (fase 2).
+## Depois da fase 2 (dados reais, 2026-10-04)
+
+Fonte: execuções de B01, B02, B03, B06 e B07 em `runs/REGISTRO.csv` (B04 e B05 adiados: dados/FONTES.md). A meteorologia
+é reanálise (o tempo que ocorreu), então os ganhos com entradas de tempo são otimistas em relação ao uso real.
+
+| Domínio | Resultado | Erro da LEBRE ÷ linear online | Erro ÷ referência ingênua | Cenário |
+|---|---|---|---|---|
+| Carga elétrica (4 subsistemas do ONS) | atende | 0,47 | 0,04 (sazonal) | B02 |
+| Geração solar (6 usinas) | atende | 0,72 | 0,23 (sazonal) | B01 |
+| Geração eólica (6 usinas) | atende | 1,02 (empate) | 0,12 (sazonal) | B06 |
+| Qualidade do ar (4 poluentes) | **não atende** | **2,08** (5,5 no benzeno) | 0,11 (sazonal) | B03 |
+| Maré meteorológica (6 estações) | **não atende** | **1,07** | 0,94 (persistência); pior que ela em 3 de 6 | B07 |
+
+A cobertura do intervalo de 90% ficou entre 0,901 e 0,903 em todos os domínios.
+
+### Leitura
+
+- **Onde ela brilha:** séries com ciclos fortes (carga, solar). A memória sazonal dela faz muito do trabalho que o
+  linear online não faz.
+- **Onde perde:** quando a relação com uma entrada **no mesmo instante** é quase exata (benzeno e o sensor de NMHC, com
+  correlação 0,98). O modelo base dela se ajusta devagar (NLMS) e fica atrás de uma regressão recursiva (RLS), que
+  aprende o mapeamento com precisão. Também perde para a persistência em parte das estações de maré, onde o sinal é
+  lento e as entradas ajudam pouco.
+- **Cuidado ao ler "entradas aceitas":** o valor atual de todas as entradas já entra no modelo base sem decisão
+  nenhuma. A lista de aceitas mostra só o que ela passou a usar **com atraso** (de 1 a 31 passos). Na eólica, por
+  exemplo, a velocidade do vento quase nunca aparece como aceita, provavelmente porque o efeito dela é no mesmo
+  instante e já está no modelo base.
