@@ -2,6 +2,7 @@
 
 Uso:  python -m lab.run scenarios/A/A02_exemplo.py
       python -m lab.run scenarios/A/A02_exemplo.py --ensaio   (roda sem registrar; para conferir o cenário)
+      python -m lab.run scenarios/A/A02_exemplo.py --nota "refaz 2026...: motivo"   (nota extra no registro)
 
 Um cenário é um arquivo .py com:
   SPEC = dict(id, frente, pergunta, expectativa, criterio, sementes, aquecimento)
@@ -134,6 +135,7 @@ def register(row, details, reg=REG):
 
 def main(argv):
     path, dry = argv[0], "--ensaio" in argv
+    extra = argv[argv.index("--nota") + 1] if "--nota" in argv else ""
     mod = load(path); S = mod.SPEC
     commit = "ensaio" if dry else check_committed(path)
     per = [run_series(mod.gerar(seed), S.get("aquecimento", 0.2)) for seed in S["sementes"]]
@@ -149,7 +151,7 @@ def main(argv):
     row = dict(id=f"{stamp}_{S['id']}", data=dt.date.today().isoformat(), cenario=S["id"], frente=S["frente"],
                commit=commit, versao_lebre=lebre.__version__, sementes=" ".join(map(str, S["sementes"])),
                n_series=len(per), criterio=S["criterio"], resultado=resultado,
-               resumo=json.dumps(resumo, ensure_ascii=False, default=_json), notas=S.get("notas", ""))
+               resumo=json.dumps(resumo, ensure_ascii=False, default=_json), notas=" | ".join(x for x in (S.get("notas", ""), extra) if x))
     register(row, dict(spec=S, resumo=resumo, series=per))
     print("registrado:", row["id"])
 

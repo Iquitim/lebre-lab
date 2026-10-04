@@ -1,0 +1,9592 @@
+{
+ "spec": {
+  "id": "A03",
+  "frente": "A",
+  "pergunta": "Quando uma entrada irrelevante é muito correlacionada com a verdadeira, a LEBRE aceita a substituta no lugar da verdadeira? Com que frequência?",
+  "expectativa": "Com correlação 0,5 ela deve escolher a verdadeira quase sempre. Com 0,95 as duas são quase indistinguíveis (limitação declarada na pesquisa): a substituta deve ser aceita com frequência, mas a previsão continua boa, porque alguma das duas entra.",
+  "criterio": "Em todos os grupos, x0 ou x1 aceita em pelo menos 9 de 10 séries; no grupo de correlação 0,5, a substituta x1 aceita em no máximo 1 de 10.",
+  "sementes": [
+   301,
+   302,
+   303,
+   304,
+   305,
+   306,
+   307,
+   308,
+   309,
+   310,
+   321,
+   322,
+   323,
+   324,
+   325,
+   326,
+   327,
+   328,
+   329,
+   330,
+   341,
+   342,
+   343,
+   344,
+   345,
+   346,
+   347,
+   348,
+   349,
+   350
+  ],
+  "aquecimento": 0.2,
+  "notas": "y = 0,8 x0(t-3) + ruído 0,6; x1 = rho x0 + sqrt(1-rho^2) e (mesmo instante); x2 irrelevante; T = 20000."
+ },
+ "resumo": {
+  "n_series": 30,
+  "mse_rel_ingenuo_geo": 0.2801606375179136,
+  "mse_rel_linear_online_geo": 1.0392355089137557,
+  "cobertura_media": 0.9005708333333333,
+  "custo_medio": 365.5817825,
+  "custo_max_series": 433.73520999999994,
+  "recall_medio": 0.8666666666666667,
+  "falsas_aceitas_total": 8,
+  "series_com_falsa": 8,
+  "por_grupo": {
+   "rho0.5": {
+    "n": 10,
+    "custo_medio": 352.895506,
+    "us_por_passo": 88.69603949999828,
+    "recall_medio": 1.0,
+    "series_com_falsa": 0,
+    "mse_rel_ingenuo_geo": 0.273648255199115,
+    "mse_rel_linear_online_geo": 1.016760512217306,
+    "aceita_x0": 10,
+    "aceita_x1": 0
+   },
+   "rho0.8": {
+    "n": 10,
+    "custo_medio": 386.083883,
+    "us_por_passo": 92.42751849999763,
+    "recall_medio": 1.0,
+    "series_com_falsa": 4,
+    "mse_rel_ingenuo_geo": 0.2751060092105492,
+    "mse_rel_linear_online_geo": 1.0195044790486412,
+    "aceita_x0": 10,
+    "aceita_x1": 4
+   },
+   "rho0.95": {
+    "n": 10,
+    "custo_medio": 357.7659585,
+    "us_por_passo": 88.02653550000173,
+    "recall_medio": 0.6,
+    "series_com_falsa": 4,
+    "mse_rel_ingenuo_geo": 0.29209800493378385,
+    "mse_rel_linear_online_geo": 1.0827647855716473,
+    "aceita_x0": 6,
+    "aceita_x1": 4
+   }
+  },
+  "alguma_das_duas": {
+   "rho0.5": 10,
+   "rho0.8": 10,
+   "rho0.95": 10
+  }
+ },
+ "series": [
+  {
+   "nome": "rho0.5_s301",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3682358548173062,
+    "mae": 0.48404092832379997,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 347.17611,
+   "us_por_passo": 91.87142999999196,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3363021595817604,
+     "mae": 0.925418839712082,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36265248628677044,
+     "mae": 0.4810012845861056,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 610,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.46,
+     "amostras": 290
+    },
+    {
+     "t": 710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.84,
+     "amostras": 100
+    },
+    {
+     "t": 780,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 1810,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 2160,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.01,
+     "amostras": 100
+    },
+    {
+     "t": 2710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.32,
+     "amostras": 100
+    },
+    {
+     "t": 4710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.65,
+     "amostras": 100
+    },
+    {
+     "t": 5090,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 5650,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 5910,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 6310,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 6640,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 6740,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.0,
+     "amostras": 100
+    },
+    {
+     "t": 8740,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.29,
+     "amostras": 100
+    },
+    {
+     "t": 8800,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 150
+    },
+    {
+     "t": 9200,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 9550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 10740,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.5,
+     "amostras": 100
+    },
+    {
+     "t": 11570,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 12740,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.73,
+     "amostras": 100
+    },
+    {
+     "t": 13720,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 14140,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 14710,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 14810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.03,
+     "amostras": 100
+    },
+    {
+     "t": 16290,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 16810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.23,
+     "amostras": 100
+    },
+    {
+     "t": 17180,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 18510,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 18810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.45,
+     "amostras": 100
+    },
+    {
+     "t": 19340,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.21,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27556331640783827,
+   "mse_rel_linear_online": 1.015395919624609,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 610
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s302",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.37591114402589754,
+    "mae": 0.4889578663020903,
+    "n": 16000
+   },
+   "cobertura": 0.9005,
+   "custo_medio": 359.15687,
+   "us_por_passo": 90.63399000000345,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3761287422477395,
+     "mae": 0.9342698151659845,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36928456110180197,
+     "mae": 0.4848614292758229,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 830,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.21,
+     "amostras": 310
+    },
+    {
+     "t": 930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.73,
+     "amostras": 100
+    },
+    {
+     "t": 1120,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 860
+    },
+    {
+     "t": 2990,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 1810
+    },
+    {
+     "t": 3090,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.38,
+     "amostras": 100
+    },
+    {
+     "t": 4190,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 4560,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 5090,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.54,
+     "amostras": 100
+    },
+    {
+     "t": 5740,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 100
+    },
+    {
+     "t": 6260,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 7090,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.9,
+     "amostras": 100
+    },
+    {
+     "t": 7600,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.48,
+     "amostras": 100
+    },
+    {
+     "t": 8360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 130
+    },
+    {
+     "t": 8750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 9090,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.2,
+     "amostras": 100
+    },
+    {
+     "t": 9650,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 11270,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 11370,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.38,
+     "amostras": 100
+    },
+    {
+     "t": 11530,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 13370,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.57,
+     "amostras": 100
+    },
+    {
+     "t": 13920,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 110
+    },
+    {
+     "t": 15370,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.81,
+     "amostras": 100
+    },
+    {
+     "t": 15780,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 16630,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 17370,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.03,
+     "amostras": 100
+    },
+    {
+     "t": 18740,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 19180,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 19370,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.22,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2731656802777713,
+   "mse_rel_linear_online": 1.0179443811686153,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 830
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s303",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3670011404474868,
+    "mae": 0.4818452603166625,
+    "n": 16000
+   },
+   "cobertura": 0.9008125,
+   "custo_medio": 347.32181,
+   "us_por_passo": 93.60408999999663,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3402905702622774,
+     "mae": 0.9236025570470277,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36035127365123093,
+     "mae": 0.4777119680109317,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 610,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.09,
+     "amostras": 350
+    },
+    {
+     "t": 620,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.85,
+     "amostras": 100
+    },
+    {
+     "t": 2330,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 1300
+    },
+    {
+     "t": 2710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.3,
+     "amostras": 100
+    },
+    {
+     "t": 3640,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 4660,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 4760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.74,
+     "amostras": 100
+    },
+    {
+     "t": 5200,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 5620,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 6760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.93,
+     "amostras": 100
+    },
+    {
+     "t": 7230,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 7600,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.01,
+     "amostras": 100
+    },
+    {
+     "t": 8760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.15,
+     "amostras": 100
+    },
+    {
+     "t": 9710,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.35,
+     "amostras": 100
+    },
+    {
+     "t": 10380,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 10850,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 120
+    },
+    {
+     "t": 10950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.4,
+     "amostras": 100
+    },
+    {
+     "t": 11180,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 12700,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 100
+    },
+    {
+     "t": 13080,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 13180,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.62,
+     "amostras": 100
+    },
+    {
+     "t": 13560,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 14080,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 15180,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.84,
+     "amostras": 100
+    },
+    {
+     "t": 16910,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 17180,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.0,
+     "amostras": 100
+    },
+    {
+     "t": 18920,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 19180,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.21,
+     "amostras": 100
+    },
+    {
+     "t": 19530,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27382207156442906,
+   "mse_rel_linear_online": 1.0184538456847303,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 610
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s304",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.37391348088178206,
+    "mae": 0.4892232218417609,
+    "n": 16000
+   },
+   "cobertura": 0.9003125,
+   "custo_medio": 368.577785,
+   "us_por_passo": 89.50681499999291,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3785323615340443,
+     "mae": 0.9373156477192063,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36882586768112097,
+     "mae": 0.4857437521552817,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 860,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 5.99,
+     "amostras": 340
+    },
+    {
+     "t": 880,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 100
+    },
+    {
+     "t": 960,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.87,
+     "amostras": 100
+    },
+    {
+     "t": 1450,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 1990,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 2530,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 3070,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.02,
+     "amostras": 100
+    },
+    {
+     "t": 3170,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.34,
+     "amostras": 100
+    },
+    {
+     "t": 4070,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 5170,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.62,
+     "amostras": 100
+    },
+    {
+     "t": 6750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 7010,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 7170,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.9,
+     "amostras": 100
+    },
+    {
+     "t": 8740,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.01,
+     "amostras": 100
+    },
+    {
+     "t": 9170,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.15,
+     "amostras": 100
+    },
+    {
+     "t": 9360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 10630,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 380
+    },
+    {
+     "t": 11170,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.41,
+     "amostras": 100
+    },
+    {
+     "t": 12540,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.51,
+     "amostras": 120
+    },
+    {
+     "t": 12870,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 13220,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 13320,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.66,
+     "amostras": 100
+    },
+    {
+     "t": 14740,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 15320,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.87,
+     "amostras": 100
+    },
+    {
+     "t": 16670,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.51,
+     "amostras": 100
+    },
+    {
+     "t": 17190,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 17320,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.05,
+     "amostras": 100
+    },
+    {
+     "t": 18330,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.52,
+     "amostras": 160
+    },
+    {
+     "t": 19320,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.21,
+     "amostras": 100
+    },
+    {
+     "t": 19870,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27124026342456514,
+   "mse_rel_linear_online": 1.0137940791209898,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 860
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s305",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.37604991643384095,
+    "mae": 0.4881449178215157,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 358.68281,
+   "us_por_passo": 88.08691000000408,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3879598728568074,
+     "mae": 0.9398225029692355,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.37015755649931203,
+     "mae": 0.48445021221022544,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 630,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.1,
+     "amostras": 270
+    },
+    {
+     "t": 730,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.9,
+     "amostras": 100
+    },
+    {
+     "t": 2190,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 100
+    },
+    {
+     "t": 2700,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 2730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.37,
+     "amostras": 100
+    },
+    {
+     "t": 3400,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 4730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.71,
+     "amostras": 100
+    },
+    {
+     "t": 5210,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 120
+    },
+    {
+     "t": 6010,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 6620,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 6730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.03,
+     "amostras": 100
+    },
+    {
+     "t": 7440,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 8730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.24,
+     "amostras": 100
+    },
+    {
+     "t": 9390,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 10030,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 10640,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 10730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.4,
+     "amostras": 100
+    },
+    {
+     "t": 11410,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 12020,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 12310,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 12730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.63,
+     "amostras": 100
+    },
+    {
+     "t": 14560,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 14730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.84,
+     "amostras": 100
+    },
+    {
+     "t": 16460,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 16720,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.49,
+     "amostras": 100
+    },
+    {
+     "t": 16730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.1,
+     "amostras": 100
+    },
+    {
+     "t": 17480,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 18550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 18730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.3,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27093716741235874,
+   "mse_rel_linear_online": 1.0159185185634318,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 630
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s306",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.37179019140054703,
+    "mae": 0.4866438817429753,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 347.99612,
+   "us_por_passo": 86.65137000000414,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3340974264352958,
+     "mae": 0.9242678607866219,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36507647877652866,
+     "mae": 0.48199477181002853,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 570,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.38,
+     "amostras": 260
+    },
+    {
+     "t": 670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.97,
+     "amostras": 100
+    },
+    {
+     "t": 690,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 1030,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 1860,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 580
+    },
+    {
+     "t": 2490,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 2670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.34,
+     "amostras": 100
+    },
+    {
+     "t": 3890,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 100
+    },
+    {
+     "t": 4670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.65,
+     "amostras": 100
+    },
+    {
+     "t": 6310,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 6670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.96,
+     "amostras": 100
+    },
+    {
+     "t": 7400,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 8670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.17,
+     "amostras": 100
+    },
+    {
+     "t": 9270,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 10670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.45,
+     "amostras": 100
+    },
+    {
+     "t": 11360,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 12670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.71,
+     "amostras": 100
+    },
+    {
+     "t": 13310,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 13820,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 14670,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.87,
+     "amostras": 100
+    },
+    {
+     "t": 15200,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 15880,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 16320,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 16610,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 16710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.01,
+     "amostras": 100
+    },
+    {
+     "t": 17940,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 18210,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 18710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.22,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27868293876705036,
+   "mse_rel_linear_online": 1.0183898799684874,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 570
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s307",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3712330080184764,
+    "mae": 0.48564951125752964,
+    "n": 16000
+   },
+   "cobertura": 0.9008125,
+   "custo_medio": 353.03057,
+   "us_por_passo": 86.21716999999762,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3566907668905155,
+     "mae": 0.9263460470763826,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3655133682223548,
+     "mae": 0.48168056592937863,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 580,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.07,
+     "amostras": 320
+    },
+    {
+     "t": 680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.83,
+     "amostras": 100
+    },
+    {
+     "t": 830,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 1400,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 410
+    },
+    {
+     "t": 2180,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 2550,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 210
+    },
+    {
+     "t": 2680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.41,
+     "amostras": 100
+    },
+    {
+     "t": 4380,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 4680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.74,
+     "amostras": 100
+    },
+    {
+     "t": 6680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.02,
+     "amostras": 100
+    },
+    {
+     "t": 7110,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 140
+    },
+    {
+     "t": 7760,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 8420,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 8680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.27,
+     "amostras": 100
+    },
+    {
+     "t": 9690,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 10360,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 10680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.47,
+     "amostras": 100
+    },
+    {
+     "t": 10950,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.02,
+     "amostras": 100
+    },
+    {
+     "t": 12680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.67,
+     "amostras": 100
+    },
+    {
+     "t": 13500,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.46,
+     "amostras": 100
+    },
+    {
+     "t": 14100,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 14420,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 14680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.83,
+     "amostras": 100
+    },
+    {
+     "t": 15180,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 100
+    },
+    {
+     "t": 16560,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 16680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.97,
+     "amostras": 100
+    },
+    {
+     "t": 18650,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.53,
+     "amostras": 100
+    },
+    {
+     "t": 18680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.13,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.273631262980678,
+   "mse_rel_linear_online": 1.0156482369548852,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 580
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s308",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3724215839441931,
+    "mae": 0.48710516210874233,
+    "n": 16000
+   },
+   "cobertura": 0.9006875,
+   "custo_medio": 339.92484,
+   "us_por_passo": 85.22519499999817,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3199776213857446,
+     "mae": 0.9155640203907773,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36669371908818926,
+     "mae": 0.48265288162638753,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 590,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.18,
+     "amostras": 320
+    },
+    {
+     "t": 660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 130
+    },
+    {
+     "t": 690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.73,
+     "amostras": 100
+    },
+    {
+     "t": 2140,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 1080
+    },
+    {
+     "t": 2690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.22,
+     "amostras": 100
+    },
+    {
+     "t": 4360,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 100
+    },
+    {
+     "t": 4690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.57,
+     "amostras": 100
+    },
+    {
+     "t": 4750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 5980,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 6370,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 6690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.92,
+     "amostras": 100
+    },
+    {
+     "t": 8210,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 8600,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 8690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.21,
+     "amostras": 100
+    },
+    {
+     "t": 9250,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 10690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.43,
+     "amostras": 100
+    },
+    {
+     "t": 12320,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.52,
+     "amostras": 100
+    },
+    {
+     "t": 12690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.66,
+     "amostras": 100
+    },
+    {
+     "t": 12760,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 100
+    },
+    {
+     "t": 14600,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.02,
+     "amostras": 100
+    },
+    {
+     "t": 14690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.87,
+     "amostras": 100
+    },
+    {
+     "t": 16080,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 16690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.14,
+     "amostras": 100
+    },
+    {
+     "t": 18690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.33,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2821423468931359,
+   "mse_rel_linear_online": 1.0156202971522026,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 590
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s309",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3719285669101878,
+    "mae": 0.4869851723186474,
+    "n": 16000
+   },
+   "cobertura": 0.900375,
+   "custo_medio": 349.170485,
+   "us_por_passo": 87.51537499999813,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3865059070062289,
+     "mae": 0.9379170698740279,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3648021535814689,
+     "mae": 0.48251617454817836,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 370,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 100
+    },
+    {
+     "t": 760,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.13,
+     "amostras": 230
+    },
+    {
+     "t": 860,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.06,
+     "amostras": 100
+    },
+    {
+     "t": 900,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 1860,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 280
+    },
+    {
+     "t": 3000,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 500
+    },
+    {
+     "t": 3100,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.46,
+     "amostras": 100
+    },
+    {
+     "t": 3760,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 4980,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 5100,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.77,
+     "amostras": 100
+    },
+    {
+     "t": 5710,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 6390,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 7100,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.0,
+     "amostras": 100
+    },
+    {
+     "t": 9100,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.31,
+     "amostras": 100
+    },
+    {
+     "t": 9780,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 10830,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 11100,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.59,
+     "amostras": 100
+    },
+    {
+     "t": 12160,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 12560,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 12900,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 13100,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.81,
+     "amostras": 100
+    },
+    {
+     "t": 13780,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 14340,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 14870,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.46,
+     "amostras": 100
+    },
+    {
+     "t": 15150,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 15250,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.99,
+     "amostras": 100
+    },
+    {
+     "t": 17430,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 17530,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.28,
+     "amostras": 100
+    },
+    {
+     "t": 19220,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 19630,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 19730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.45,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.268248815263444,
+   "mse_rel_linear_online": 1.0195350089322524,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 760
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.5_s310",
+   "grupo": "rho0.5",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3688601534258032,
+    "mae": 0.48345576083793484,
+    "n": 16000
+   },
+   "cobertura": 0.9006875,
+   "custo_medio": 357.91766,
+   "us_por_passo": 87.64804999999569,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3694804137993812,
+     "mae": 0.9326160383980671,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36272324000462053,
+     "mae": 0.47948296682292746,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 380,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 840,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.07,
+     "amostras": 300
+    },
+    {
+     "t": 940,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.89,
+     "amostras": 100
+    },
+    {
+     "t": 2320,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 1060
+    },
+    {
+     "t": 2940,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.32,
+     "amostras": 100
+    },
+    {
+     "t": 4070,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 4550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.35,
+     "amostras": 100
+    },
+    {
+     "t": 4940,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.6,
+     "amostras": 100
+    },
+    {
+     "t": 5020,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 250
+    },
+    {
+     "t": 7180,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 7280,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.97,
+     "amostras": 100
+    },
+    {
+     "t": 7810,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 8190,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 220
+    },
+    {
+     "t": 8340,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 9280,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.25,
+     "amostras": 100
+    },
+    {
+     "t": 9600,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 100
+    },
+    {
+     "t": 10530,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 11330,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.35,
+     "amostras": 100
+    },
+    {
+     "t": 11430,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.49,
+     "amostras": 100
+    },
+    {
+     "t": 11990,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 12620,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 13430,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.67,
+     "amostras": 100
+    },
+    {
+     "t": 15430,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.91,
+     "amostras": 100
+    },
+    {
+     "t": 15500,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 17470,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 17570,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.1,
+     "amostras": 100
+    },
+    {
+     "t": 18660,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 100
+    },
+    {
+     "t": 19410,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 19570,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.34,
+     "amostras": 100
+    },
+    {
+     "t": 19760,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2693431389810577,
+   "mse_rel_linear_online": 1.0169189970322952,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 840
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s321",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.38025565358083796,
+    "mae": 0.49147708173975785,
+    "n": 16000
+   },
+   "cobertura": 0.900875,
+   "custo_medio": 423.77143,
+   "us_por_passo": 98.91201499999625,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3615916736944447,
+     "mae": 0.9300520285045866,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3720447676927732,
+     "mae": 0.48615834952039416,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 720,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.35,
+     "amostras": 460
+    },
+    {
+     "t": 820,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 1540,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 110
+    },
+    {
+     "t": 2490,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 110
+    },
+    {
+     "t": 2820,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.05,
+     "amostras": 2300
+    },
+    {
+     "t": 2920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.65,
+     "amostras": 100
+    },
+    {
+     "t": 2960,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 3060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.7,
+     "amostras": 100
+    },
+    {
+     "t": 4100,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 100
+    },
+    {
+     "t": 4920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.08,
+     "amostras": 100
+    },
+    {
+     "t": 5440,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.71,
+     "amostras": 480
+    },
+    {
+     "t": 5440,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 6040,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 6410,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 6920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.3,
+     "amostras": 100
+    },
+    {
+     "t": 7030,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 8850,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 8950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.71,
+     "amostras": 100
+    },
+    {
+     "t": 9300,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 9800,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 10950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.96,
+     "amostras": 100
+    },
+    {
+     "t": 11480,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 12030,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": 0.38,
+     "amostras": 5000
+    },
+    {
+     "t": 12950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.27,
+     "amostras": 100
+    },
+    {
+     "t": 13920,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 14350,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 14950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.43,
+     "amostras": 100
+    },
+    {
+     "t": 16950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.64,
+     "amostras": 100
+    },
+    {
+     "t": 17030,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": 3.91,
+     "amostras": 5000
+    },
+    {
+     "t": 17440,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 18070,
+     "resultado": "accepted",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": 5.32,
+     "amostras": 11720
+    },
+    {
+     "t": 18080,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 130
+    },
+    {
+     "t": 18950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.87,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27927289871645566,
+   "mse_rel_linear_online": 1.0220696179628714,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 720,
+    "tempo_deteccao": {
+     "x0": 2820
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s322",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.37353219218515865,
+    "mae": 0.4886037985977411,
+    "n": 16000
+   },
+   "cobertura": 0.9004375,
+   "custo_medio": 363.71674,
+   "us_por_passo": 88.01249499999813,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3513544305261331,
+     "mae": 0.9294121495010009,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36552419579335516,
+     "mae": 0.48370375525671183,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 790,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.12,
+     "amostras": 270
+    },
+    {
+     "t": 880,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.55,
+     "amostras": 100
+    },
+    {
+     "t": 890,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.03,
+     "amostras": 100
+    },
+    {
+     "t": 3090,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 1950
+    },
+    {
+     "t": 3190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.47,
+     "amostras": 100
+    },
+    {
+     "t": 3970,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.03,
+     "amostras": 100
+    },
+    {
+     "t": 4320,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 100
+    },
+    {
+     "t": 5160,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 5190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.7,
+     "amostras": 100
+    },
+    {
+     "t": 5570,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 6280,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 7190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.02,
+     "amostras": 100
+    },
+    {
+     "t": 7960,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.6,
+     "amostras": 100
+    },
+    {
+     "t": 8970,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 220
+    },
+    {
+     "t": 9190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.34,
+     "amostras": 100
+    },
+    {
+     "t": 10760,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.61,
+     "amostras": 110
+    },
+    {
+     "t": 11060,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 11190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.51,
+     "amostras": 100
+    },
+    {
+     "t": 11550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 13190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.8,
+     "amostras": 100
+    },
+    {
+     "t": 14270,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 15190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.91,
+     "amostras": 100
+    },
+    {
+     "t": 17110,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 17190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.1,
+     "amostras": 100
+    },
+    {
+     "t": 17660,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 17920,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 18180,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 19190,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.32,
+     "amostras": 100
+    },
+    {
+     "t": 19660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.49,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2764131923848642,
+   "mse_rel_linear_online": 1.0219082525424137,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 790
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s323",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3736979539980115,
+    "mae": 0.48781669276434514,
+    "n": 16000
+   },
+   "cobertura": 0.9005,
+   "custo_medio": 429.55514000000005,
+   "us_por_passo": 99.25779999999804,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3337764159294827,
+     "mae": 0.9212359024650247,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36521584813532026,
+     "mae": 0.4830283715521829,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0",
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 790,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.2,
+     "amostras": 530
+    },
+    {
+     "t": 890,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.52,
+     "amostras": 100
+    },
+    {
+     "t": 2160,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 150
+    },
+    {
+     "t": 2890,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.11,
+     "amostras": 100
+    },
+    {
+     "t": 3290,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 3340,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.09,
+     "amostras": 2820
+    },
+    {
+     "t": 3440,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 4270,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 4840,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 4980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.12,
+     "amostras": 140
+    },
+    {
+     "t": 5590,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 520
+    },
+    {
+     "t": 5690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.23,
+     "amostras": 100
+    },
+    {
+     "t": 7910,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 8010,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.55,
+     "amostras": 100
+    },
+    {
+     "t": 10010,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.89,
+     "amostras": 100
+    },
+    {
+     "t": 11280,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 11840,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.84,
+     "amostras": 5000
+    },
+    {
+     "t": 12010,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.1,
+     "amostras": 100
+    },
+    {
+     "t": 14250,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 14350,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.29,
+     "amostras": 100
+    },
+    {
+     "t": 16350,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.5,
+     "amostras": 100
+    },
+    {
+     "t": 16840,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.02,
+     "amostras": 5000
+    },
+    {
+     "t": 16980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.03,
+     "amostras": 140
+    },
+    {
+     "t": 18350,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.67,
+     "amostras": 100
+    },
+    {
+     "t": 18710,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 19030,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 19150,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.04,
+     "amostras": 120
+    },
+    {
+     "t": 19570,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2801803582181266,
+   "mse_rel_linear_online": 1.0232249118048908,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 790,
+    "tempo_deteccao": {
+     "x0": 3340
+    },
+    "estrutura_final": [
+     "x0",
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  },
+  {
+   "nome": "rho0.8_s324",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3714014939374687,
+    "mae": 0.4860611832081437,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 429.60959,
+   "us_por_passo": 99.99939499999755,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3633191425195883,
+     "mae": 0.9322827642744922,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3641946288489671,
+     "mae": 0.48127522408467927,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0",
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 710,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.25,
+     "amostras": 450
+    },
+    {
+     "t": 810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.68,
+     "amostras": 100
+    },
+    {
+     "t": 1200,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 2700,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 2810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.13,
+     "amostras": 100
+    },
+    {
+     "t": 2900,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.05,
+     "amostras": 2380
+    },
+    {
+     "t": 3000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.51,
+     "amostras": 100
+    },
+    {
+     "t": 3660,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 5000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.15,
+     "amostras": 100
+    },
+    {
+     "t": 6490,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 7000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.59,
+     "amostras": 100
+    },
+    {
+     "t": 7610,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 8750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.55,
+     "amostras": 100
+    },
+    {
+     "t": 9000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.89,
+     "amostras": 100
+    },
+    {
+     "t": 9710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.95,
+     "amostras": 5000
+    },
+    {
+     "t": 9810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.97,
+     "amostras": 100
+    },
+    {
+     "t": 11000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.18,
+     "amostras": 100
+    },
+    {
+     "t": 11290,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 11820,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.97,
+     "amostras": 110
+    },
+    {
+     "t": 12160,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 13000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.45,
+     "amostras": 100
+    },
+    {
+     "t": 13900,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 110
+    },
+    {
+     "t": 14600,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 15000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.69,
+     "amostras": 100
+    },
+    {
+     "t": 17000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.88,
+     "amostras": 100
+    },
+    {
+     "t": 18510,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 18900,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.43,
+     "amostras": 5000
+    },
+    {
+     "t": 19000,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.04,
+     "amostras": 100
+    },
+    {
+     "t": 19490,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27242446933670367,
+   "mse_rel_linear_online": 1.0197884991090582,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 710,
+    "tempo_deteccao": {
+     "x0": 2900
+    },
+    "estrutura_final": [
+     "x0",
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  },
+  {
+   "nome": "rho0.8_s325",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3792226000581329,
+    "mae": 0.49236717580032413,
+    "n": 16000
+   },
+   "cobertura": 0.9005,
+   "custo_medio": 356.46999000000005,
+   "us_por_passo": 87.38657000000103,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3889555254743147,
+     "mae": 0.9414113458319007,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3721586611764506,
+     "mae": 0.48767594615630294,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 820,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.53,
+     "amostras": 300
+    },
+    {
+     "t": 890,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 110
+    },
+    {
+     "t": 920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.8,
+     "amostras": 100
+    },
+    {
+     "t": 2270,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 670
+    },
+    {
+     "t": 2920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.41,
+     "amostras": 100
+    },
+    {
+     "t": 3380,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 100
+    },
+    {
+     "t": 4550,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 4920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.68,
+     "amostras": 100
+    },
+    {
+     "t": 5400,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 6600,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.54,
+     "amostras": 100
+    },
+    {
+     "t": 6920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.93,
+     "amostras": 100
+    },
+    {
+     "t": 7920,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 8640,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.61,
+     "amostras": 100
+    },
+    {
+     "t": 8920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.18,
+     "amostras": 100
+    },
+    {
+     "t": 10580,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 10980,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 11080,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.42,
+     "amostras": 100
+    },
+    {
+     "t": 12120,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 13080,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.58,
+     "amostras": 100
+    },
+    {
+     "t": 14430,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 15080,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.79,
+     "amostras": 100
+    },
+    {
+     "t": 16200,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.61,
+     "amostras": 110
+    },
+    {
+     "t": 16610,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 17080,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.07,
+     "amostras": 100
+    },
+    {
+     "t": 17510,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 17860,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 18720,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 19080,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.23,
+     "amostras": 100
+    },
+    {
+     "t": 19920,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 130
+    }
+   ],
+   "mse_rel_ingenuo": 0.2730271726509257,
+   "mse_rel_linear_online": 1.0189809874620468,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 820
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s326",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3711737339675251,
+    "mae": 0.48690981341015493,
+    "n": 16000
+   },
+   "cobertura": 0.9004375,
+   "custo_medio": 349.938475,
+   "us_por_passo": 88.05913999999575,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3812588925644331,
+     "mae": 0.9382545381214672,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36547267131027283,
+     "mae": 0.48298873478979,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 590,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.8,
+     "amostras": 320
+    },
+    {
+     "t": 680,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 150
+    },
+    {
+     "t": 690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.66,
+     "amostras": 100
+    },
+    {
+     "t": 1780,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 3030,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 1990
+    },
+    {
+     "t": 3130,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.14,
+     "amostras": 100
+    },
+    {
+     "t": 4020,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 4540,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 4910,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 5130,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.48,
+     "amostras": 100
+    },
+    {
+     "t": 7130,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.76,
+     "amostras": 100
+    },
+    {
+     "t": 7500,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.03,
+     "amostras": 110
+    },
+    {
+     "t": 9130,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.15,
+     "amostras": 100
+    },
+    {
+     "t": 10580,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.57,
+     "amostras": 100
+    },
+    {
+     "t": 10860,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 11130,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.37,
+     "amostras": 100
+    },
+    {
+     "t": 11860,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 13130,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.56,
+     "amostras": 100
+    },
+    {
+     "t": 13490,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 15160,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 15260,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.75,
+     "amostras": 100
+    },
+    {
+     "t": 17260,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.93,
+     "amostras": 100
+    },
+    {
+     "t": 17710,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 18280,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 19140,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.57,
+     "amostras": 130
+    },
+    {
+     "t": 19260,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.18,
+     "amostras": 100
+    },
+    {
+     "t": 19760,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2687213352729315,
+   "mse_rel_linear_online": 1.0155991490056238,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 590
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s327",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.371280428666082,
+    "mae": 0.48735646110614844,
+    "n": 16000
+   },
+   "cobertura": 0.900375,
+   "custo_medio": 357.97573000000006,
+   "us_por_passo": 88.23446000000104,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3491195550406834,
+     "mae": 0.9262948178033,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36496297360119956,
+     "mae": 0.4832831136839718,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 540,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.09,
+     "amostras": 270
+    },
+    {
+     "t": 630,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.55,
+     "amostras": 100
+    },
+    {
+     "t": 640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.96,
+     "amostras": 100
+    },
+    {
+     "t": 1540,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 2230,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 1240
+    },
+    {
+     "t": 2640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.4,
+     "amostras": 100
+    },
+    {
+     "t": 4140,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 4460,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 120
+    },
+    {
+     "t": 4640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.76,
+     "amostras": 100
+    },
+    {
+     "t": 6330,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.6,
+     "amostras": 100
+    },
+    {
+     "t": 6640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.97,
+     "amostras": 100
+    },
+    {
+     "t": 7010,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 8640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.23,
+     "amostras": 100
+    },
+    {
+     "t": 10520,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 10640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.46,
+     "amostras": 100
+    },
+    {
+     "t": 12110,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.63,
+     "amostras": 100
+    },
+    {
+     "t": 12640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.65,
+     "amostras": 100
+    },
+    {
+     "t": 12740,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 230
+    },
+    {
+     "t": 14010,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 14640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.79,
+     "amostras": 100
+    },
+    {
+     "t": 15390,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 16640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.0,
+     "amostras": 100
+    },
+    {
+     "t": 18180,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 18640,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.21,
+     "amostras": 100
+    },
+    {
+     "t": 18940,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 120
+    }
+   ],
+   "mse_rel_ingenuo": 0.27520202140638744,
+   "mse_rel_linear_online": 1.0173098520174424,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 540
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s328",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3700788155394514,
+    "mae": 0.48508866315009314,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 371.70121500000005,
+   "us_por_passo": 87.92355499999758,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.349460232278595,
+     "mae": 0.9259098210912589,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36394799237277825,
+     "mae": 0.4814383224199471,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 880,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.0,
+     "amostras": 290
+    },
+    {
+     "t": 980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.04,
+     "amostras": 100
+    },
+    {
+     "t": 1230,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.51,
+     "amostras": 900
+    },
+    {
+     "t": 1400,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 2980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.39,
+     "amostras": 100
+    },
+    {
+     "t": 3010,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 4980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.72,
+     "amostras": 100
+    },
+    {
+     "t": 5660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 6490,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 160
+    },
+    {
+     "t": 6980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.94,
+     "amostras": 100
+    },
+    {
+     "t": 7690,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 8610,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 110
+    },
+    {
+     "t": 8980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.23,
+     "amostras": 100
+    },
+    {
+     "t": 9570,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.57,
+     "amostras": 100
+    },
+    {
+     "t": 10980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.45,
+     "amostras": 100
+    },
+    {
+     "t": 11770,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 12070,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.64,
+     "amostras": 100
+    },
+    {
+     "t": 12980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.62,
+     "amostras": 100
+    },
+    {
+     "t": 14450,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 14980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.85,
+     "amostras": 100
+    },
+    {
+     "t": 14990,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 16720,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 16980,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.99,
+     "amostras": 100
+    },
+    {
+     "t": 16990,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.55,
+     "amostras": 100
+    },
+    {
+     "t": 17800,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 18060,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 18320,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.66,
+     "amostras": 100
+    },
+    {
+     "t": 18930,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 19030,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.27,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27424210561178575,
+   "mse_rel_linear_online": 1.0168453276159126,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 880
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s329",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3752355643141412,
+    "mae": 0.4890291974921656,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 344.36531,
+   "us_por_passo": 86.11785999999029,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.345589198573436,
+     "mae": 0.921717752542791,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36843223470920883,
+     "mae": 0.48414912408248917,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 380,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 910,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.27,
+     "amostras": 370
+    },
+    {
+     "t": 990,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 170
+    },
+    {
+     "t": 1010,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.65,
+     "amostras": 100
+    },
+    {
+     "t": 1430,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 2020,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 3010,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.19,
+     "amostras": 100
+    },
+    {
+     "t": 3680,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 4960,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 5060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.6,
+     "amostras": 100
+    },
+    {
+     "t": 5640,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 7060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.91,
+     "amostras": 100
+    },
+    {
+     "t": 9060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.19,
+     "amostras": 100
+    },
+    {
+     "t": 9880,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 10560,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 11060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.45,
+     "amostras": 100
+    },
+    {
+     "t": 12150,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 100
+    },
+    {
+     "t": 13060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.68,
+     "amostras": 100
+    },
+    {
+     "t": 14390,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.46,
+     "amostras": 100
+    },
+    {
+     "t": 15060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.9,
+     "amostras": 100
+    },
+    {
+     "t": 15660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 100
+    },
+    {
+     "t": 15990,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 17060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.1,
+     "amostras": 100
+    },
+    {
+     "t": 17100,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.52,
+     "amostras": 100
+    },
+    {
+     "t": 19060,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.29,
+     "amostras": 100
+    },
+    {
+     "t": 19670,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2788633891472655,
+   "mse_rel_linear_online": 1.0184656198996866,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 910
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.8_s330",
+   "grupo": "rho0.8",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.368234876346658,
+    "mae": 0.4845153184499241,
+    "n": 16000
+   },
+   "cobertura": 0.9005625,
+   "custo_medio": 433.73520999999994,
+   "us_por_passo": 100.37189500000068,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3492138343681912,
+     "mae": 0.9261881826574715,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3607032603462704,
+     "mae": 0.4797914041095671,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0",
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 610,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.16,
+     "amostras": 350
+    },
+    {
+     "t": 710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.75,
+     "amostras": 100
+    },
+    {
+     "t": 1110,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 1710,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 2150,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 100
+    },
+    {
+     "t": 2710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.98,
+     "amostras": 100
+    },
+    {
+     "t": 3470,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 3510,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.04,
+     "amostras": 2990
+    },
+    {
+     "t": 3610,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 4730,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.99,
+     "amostras": 120
+    },
+    {
+     "t": 5610,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.32,
+     "amostras": 100
+    },
+    {
+     "t": 6440,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.21,
+     "amostras": 100
+    },
+    {
+     "t": 6700,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 6740,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.99,
+     "amostras": 130
+    },
+    {
+     "t": 7610,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.76,
+     "amostras": 100
+    },
+    {
+     "t": 8000,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 9590,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.02,
+     "amostras": 110
+    },
+    {
+     "t": 9690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.99,
+     "amostras": 100
+    },
+    {
+     "t": 11340,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.03,
+     "amostras": 110
+    },
+    {
+     "t": 11690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.27,
+     "amostras": 100
+    },
+    {
+     "t": 13040,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.39,
+     "amostras": 100
+    },
+    {
+     "t": 13610,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.09,
+     "amostras": 5000
+    },
+    {
+     "t": 13690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.63,
+     "amostras": 100
+    },
+    {
+     "t": 14210,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 130
+    },
+    {
+     "t": 15240,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 200
+    },
+    {
+     "t": 15690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.82,
+     "amostras": 100
+    },
+    {
+     "t": 16130,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 17560,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 120
+    },
+    {
+     "t": 17690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.11,
+     "amostras": 100
+    },
+    {
+     "t": 18610,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": 2.05,
+     "amostras": 5000
+    },
+    {
+     "t": 18710,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": 1.99,
+     "amostras": 100
+    },
+    {
+     "t": 19320,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 19730,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.21,
+     "amostras": 100
+    },
+    {
+     "t": 19830,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.26,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2729255118549053,
+   "mse_rel_linear_online": 1.020880365742071,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 610,
+    "tempo_deteccao": {
+     "x0": 3510
+    },
+    "estrutura_final": [
+     "x0",
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  },
+  {
+   "nome": "rho0.95_s341",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.43174651058172614,
+    "mae": 0.5239126790857219,
+    "n": 16000
+   },
+   "cobertura": 0.9005,
+   "custo_medio": 368.667235,
+   "us_por_passo": 89.95313499999611,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3607570153671615,
+     "mae": 0.9335107321318191,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3635209097220046,
+     "mae": 0.48078571143714977,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 770,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.15,
+     "amostras": 250
+    },
+    {
+     "t": 870,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.79,
+     "amostras": 100
+    },
+    {
+     "t": 880,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.69,
+     "amostras": 100
+    },
+    {
+     "t": 2830,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 1610
+    },
+    {
+     "t": 2930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.14,
+     "amostras": 100
+    },
+    {
+     "t": 3470,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 4120,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 4930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.46,
+     "amostras": 100
+    },
+    {
+     "t": 6750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.7,
+     "amostras": 160
+    },
+    {
+     "t": 6930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.69,
+     "amostras": 100
+    },
+    {
+     "t": 7390,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 210
+    },
+    {
+     "t": 7550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 8930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.93,
+     "amostras": 100
+    },
+    {
+     "t": 9830,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 10240,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 10930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.1,
+     "amostras": 100
+    },
+    {
+     "t": 12120,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.56,
+     "amostras": 100
+    },
+    {
+     "t": 12530,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 12930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.25,
+     "amostras": 100
+    },
+    {
+     "t": 13560,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.75,
+     "amostras": 100
+    },
+    {
+     "t": 14460,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 14930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.44,
+     "amostras": 100
+    },
+    {
+     "t": 15590,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 170
+    },
+    {
+     "t": 16820,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 16930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.62,
+     "amostras": 100
+    },
+    {
+     "t": 17310,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 18160,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 18490,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.32,
+     "amostras": 100
+    },
+    {
+     "t": 18890,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.79,
+     "amostras": 100
+    },
+    {
+     "t": 18930,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.77,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.31728406005331644,
+   "mse_rel_linear_online": 1.1876799904354765,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 1,
+    "recall": 0.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 770,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  },
+  {
+   "nome": "rho0.95_s342",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3811617294789386,
+    "mae": 0.4918141850785173,
+    "n": 16000
+   },
+   "cobertura": 0.9005,
+   "custo_medio": 348.6787,
+   "us_por_passo": 87.08800000000565,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3575023441655656,
+     "mae": 0.9275820068734825,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.37427723510852595,
+     "mae": 0.4876102886675965,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 590,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.15,
+     "amostras": 300
+    },
+    {
+     "t": 650,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.58,
+     "amostras": 100
+    },
+    {
+     "t": 690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.96,
+     "amostras": 100
+    },
+    {
+     "t": 1450,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 160
+    },
+    {
+     "t": 2690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.39,
+     "amostras": 100
+    },
+    {
+     "t": 3390,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 4690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.72,
+     "amostras": 100
+    },
+    {
+     "t": 5040,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 6430,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 6690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.98,
+     "amostras": 100
+    },
+    {
+     "t": 7440,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 8550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 8690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.33,
+     "amostras": 100
+    },
+    {
+     "t": 9020,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 9770,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 10460,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 10690,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.49,
+     "amostras": 100
+    },
+    {
+     "t": 10870,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.65,
+     "amostras": 100
+    },
+    {
+     "t": 11140,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 12680,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 12780,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.74,
+     "amostras": 100
+    },
+    {
+     "t": 14150,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 14780,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.89,
+     "amostras": 100
+    },
+    {
+     "t": 15220,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 16680,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 100
+    },
+    {
+     "t": 16780,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.07,
+     "amostras": 100
+    },
+    {
+     "t": 17250,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.68,
+     "amostras": 100
+    },
+    {
+     "t": 18320,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 18660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 18920,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 100
+    },
+    {
+     "t": 19020,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.28,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.28078163630224334,
+   "mse_rel_linear_online": 1.018394103954563,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 590
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.95_s343",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.4324041743453753,
+    "mae": 0.5219565872521205,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 366.71507,
+   "us_por_passo": 87.32240000000502,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3418231292996894,
+     "mae": 0.925584064822795,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.364348743603547,
+     "mae": 0.4801423886038207,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 370,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 850,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.01,
+     "amostras": 320
+    },
+    {
+     "t": 920,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 130
+    },
+    {
+     "t": 950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.95,
+     "amostras": 100
+    },
+    {
+     "t": 1350,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 2090,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 2950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.35,
+     "amostras": 100
+    },
+    {
+     "t": 4000,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 4560,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 4950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.69,
+     "amostras": 100
+    },
+    {
+     "t": 5600,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 140
+    },
+    {
+     "t": 6920,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 6950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.99,
+     "amostras": 100
+    },
+    {
+     "t": 7600,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 8750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 8950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.23,
+     "amostras": 100
+    },
+    {
+     "t": 9010,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.52,
+     "amostras": 100
+    },
+    {
+     "t": 9550,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 10480,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 10950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.41,
+     "amostras": 100
+    },
+    {
+     "t": 11110,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 11380,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.58,
+     "amostras": 100
+    },
+    {
+     "t": 12950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.66,
+     "amostras": 100
+    },
+    {
+     "t": 13440,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.65,
+     "amostras": 100
+    },
+    {
+     "t": 13720,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 14600,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.54,
+     "amostras": 100
+    },
+    {
+     "t": 14950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.81,
+     "amostras": 100
+    },
+    {
+     "t": 15300,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 15940,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 16940,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.34,
+     "amostras": 100
+    },
+    {
+     "t": 17040,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.95,
+     "amostras": 100
+    },
+    {
+     "t": 18350,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 19130,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 19230,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -3.07,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.32225124526736343,
+   "mse_rel_linear_online": 1.1867865113757066,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 1,
+    "recall": 0.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 850,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  },
+  {
+   "nome": "rho0.95_s344",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.42677870746673763,
+    "mae": 0.5205081771810651,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 359.54135,
+   "us_por_passo": 88.2793700000093,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3810981871064036,
+     "mae": 0.9353736593167964,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36076609851301406,
+     "mae": 0.48006860704132626,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 600,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.23,
+     "amostras": 310
+    },
+    {
+     "t": 660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 110
+    },
+    {
+     "t": 700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.78,
+     "amostras": 100
+    },
+    {
+     "t": 2070,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 2580,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 1530
+    },
+    {
+     "t": 2690,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 2700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.2,
+     "amostras": 100
+    },
+    {
+     "t": 3520,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 200
+    },
+    {
+     "t": 4020,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 4700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.48,
+     "amostras": 100
+    },
+    {
+     "t": 6700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.76,
+     "amostras": 100
+    },
+    {
+     "t": 6750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 7280,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 7940,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 8290,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.06,
+     "amostras": 100
+    },
+    {
+     "t": 8700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.93,
+     "amostras": 100
+    },
+    {
+     "t": 8810,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 9500,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.43,
+     "amostras": 100
+    },
+    {
+     "t": 9770,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 10700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.14,
+     "amostras": 100
+    },
+    {
+     "t": 11390,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 11680,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 12700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.34,
+     "amostras": 100
+    },
+    {
+     "t": 13860,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 14700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.54,
+     "amostras": 100
+    },
+    {
+     "t": 15090,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.54,
+     "amostras": 100
+    },
+    {
+     "t": 15560,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 16700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.74,
+     "amostras": 100
+    },
+    {
+     "t": 16770,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 17730,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 18580,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.48,
+     "amostras": 100
+    },
+    {
+     "t": 18700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.91,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.30901402336998174,
+   "mse_rel_linear_online": 1.1829789695478892,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 1,
+    "recall": 0.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 600,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  },
+  {
+   "nome": "rho0.95_s345",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3709036642410576,
+    "mae": 0.485563056163085,
+    "n": 16000
+   },
+   "cobertura": 0.9005625,
+   "custo_medio": 369.4636,
+   "us_por_passo": 89.02606499999592,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.348593931154165,
+     "mae": 0.9256734617137199,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.36424174560997774,
+     "mae": 0.48095772886741406,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 510,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.72,
+     "amostras": 250
+    },
+    {
+     "t": 610,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.97,
+     "amostras": 100
+    },
+    {
+     "t": 620,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.75,
+     "amostras": 100
+    },
+    {
+     "t": 2750,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 1760
+    },
+    {
+     "t": 2850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.49,
+     "amostras": 100
+    },
+    {
+     "t": 3150,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.82,
+     "amostras": 100
+    },
+    {
+     "t": 4850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.75,
+     "amostras": 100
+    },
+    {
+     "t": 5210,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.44,
+     "amostras": 100
+    },
+    {
+     "t": 5690,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 6020,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.85,
+     "amostras": 100
+    },
+    {
+     "t": 6840,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 6850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.99,
+     "amostras": 100
+    },
+    {
+     "t": 7210,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 8650,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 8850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.2,
+     "amostras": 100
+    },
+    {
+     "t": 9580,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.47,
+     "amostras": 100
+    },
+    {
+     "t": 10080,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.89,
+     "amostras": 100
+    },
+    {
+     "t": 10440,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 100
+    },
+    {
+     "t": 10850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.51,
+     "amostras": 100
+    },
+    {
+     "t": 12850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.7,
+     "amostras": 100
+    },
+    {
+     "t": 12920,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 430
+    },
+    {
+     "t": 13450,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 14850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.99,
+     "amostras": 100
+    },
+    {
+     "t": 15800,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.93,
+     "amostras": 100
+    },
+    {
+     "t": 16080,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 16850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.17,
+     "amostras": 100
+    },
+    {
+     "t": 17940,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.97,
+     "amostras": 100
+    },
+    {
+     "t": 18200,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 18750,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.2,
+     "amostras": 100
+    },
+    {
+     "t": 18850,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.37,
+     "amostras": 100
+    },
+    {
+     "t": 19390,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2750299075746453,
+   "mse_rel_linear_online": 1.0182898273231242,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 510
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.95_s346",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3644936306327381,
+    "mae": 0.4829599907333675,
+    "n": 16000
+   },
+   "cobertura": 0.900625,
+   "custo_medio": 368.86925,
+   "us_por_passo": 89.85154999999168,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3337008084035888,
+     "mae": 0.9221312828103725,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.35833626514858213,
+     "mae": 0.4787647006781556,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 600,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.27,
+     "amostras": 330
+    },
+    {
+     "t": 680,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 150
+    },
+    {
+     "t": 700,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.89,
+     "amostras": 100
+    },
+    {
+     "t": 1050,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 2710,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.33,
+     "amostras": 1410
+    },
+    {
+     "t": 2810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.24,
+     "amostras": 100
+    },
+    {
+     "t": 3410,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 100
+    },
+    {
+     "t": 4000,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 4390,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 4810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.61,
+     "amostras": 100
+    },
+    {
+     "t": 5810,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 6810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.98,
+     "amostras": 100
+    },
+    {
+     "t": 8670,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 8810,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.23,
+     "amostras": 100
+    },
+    {
+     "t": 9360,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.02,
+     "amostras": 100
+    },
+    {
+     "t": 10560,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 10820,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 10920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.47,
+     "amostras": 100
+    },
+    {
+     "t": 11080,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 11460,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 12920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.68,
+     "amostras": 100
+    },
+    {
+     "t": 13130,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.48,
+     "amostras": 100
+    },
+    {
+     "t": 13530,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 14920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.86,
+     "amostras": 100
+    },
+    {
+     "t": 15530,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 16920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.05,
+     "amostras": 100
+    },
+    {
+     "t": 17650,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 18040,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 18350,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 18750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.49,
+     "amostras": 110
+    },
+    {
+     "t": 18920,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.23,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2732949011772956,
+   "mse_rel_linear_online": 1.0171832049474614,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 600
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.95_s347",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.36890066685530654,
+    "mae": 0.4847951868593164,
+    "n": 16000
+   },
+   "cobertura": 0.9006875,
+   "custo_medio": 354.074485,
+   "us_por_passo": 88.6155350000081,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3560040098925374,
+     "mae": 0.9316803782200068,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3626774735620829,
+     "mae": 0.4798949565222091,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.18,
+     "amostras": 100
+    },
+    {
+     "t": 810,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.44,
+     "amostras": 290
+    },
+    {
+     "t": 880,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.64,
+     "amostras": 100
+    },
+    {
+     "t": 910,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.96,
+     "amostras": 100
+    },
+    {
+     "t": 1270,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.03,
+     "amostras": 100
+    },
+    {
+     "t": 2620,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 3370,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.35,
+     "amostras": 1780
+    },
+    {
+     "t": 3470,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.54,
+     "amostras": 100
+    },
+    {
+     "t": 5050,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 5470,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.92,
+     "amostras": 100
+    },
+    {
+     "t": 5540,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.68,
+     "amostras": 100
+    },
+    {
+     "t": 5820,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 7270,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.07,
+     "amostras": 100
+    },
+    {
+     "t": 7470,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.25,
+     "amostras": 100
+    },
+    {
+     "t": 7840,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.26,
+     "amostras": 100
+    },
+    {
+     "t": 9470,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.44,
+     "amostras": 100
+    },
+    {
+     "t": 11110,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 11470,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.63,
+     "amostras": 100
+    },
+    {
+     "t": 11660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 11920,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 12700,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.14,
+     "amostras": 100
+    },
+    {
+     "t": 13390,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 13490,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.77,
+     "amostras": 100
+    },
+    {
+     "t": 14500,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 15080,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 15490,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.95,
+     "amostras": 100
+    },
+    {
+     "t": 15780,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 17490,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.18,
+     "amostras": 100
+    },
+    {
+     "t": 18210,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.41,
+     "amostras": 100
+    },
+    {
+     "t": 18880,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 210
+    },
+    {
+     "t": 19490,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.48,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.27204983478223027,
+   "mse_rel_linear_online": 1.017159029018543,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 810
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.95_s348",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3762837686183068,
+    "mae": 0.4905373976002367,
+    "n": 16000
+   },
+   "cobertura": 0.9003125,
+   "custo_medio": 361.041755,
+   "us_por_passo": 88.36297500000683,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3390255998916465,
+     "mae": 0.9241473791856097,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3692313847680105,
+     "mae": 0.4864783951785272,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 580,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.08,
+     "amostras": 280
+    },
+    {
+     "t": 660,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.59,
+     "amostras": 100
+    },
+    {
+     "t": 680,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.07,
+     "amostras": 100
+    },
+    {
+     "t": 1460,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 190
+    },
+    {
+     "t": 2570,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 2850,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.37,
+     "amostras": 1910
+    },
+    {
+     "t": 2950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.38,
+     "amostras": 100
+    },
+    {
+     "t": 4770,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.04,
+     "amostras": 100
+    },
+    {
+     "t": 4950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.75,
+     "amostras": 100
+    },
+    {
+     "t": 5520,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 6950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.91,
+     "amostras": 100
+    },
+    {
+     "t": 7330,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.38,
+     "amostras": 100
+    },
+    {
+     "t": 8950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.19,
+     "amostras": 100
+    },
+    {
+     "t": 8960,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.67,
+     "amostras": 100
+    },
+    {
+     "t": 9840,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.19,
+     "amostras": 100
+    },
+    {
+     "t": 10950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.35,
+     "amostras": 100
+    },
+    {
+     "t": 11350,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.03,
+     "amostras": 100
+    },
+    {
+     "t": 12170,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 12610,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.72,
+     "amostras": 100
+    },
+    {
+     "t": 12950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.56,
+     "amostras": 100
+    },
+    {
+     "t": 13000,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.36,
+     "amostras": 100
+    },
+    {
+     "t": 13850,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 100
+    },
+    {
+     "t": 14950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.75,
+     "amostras": 100
+    },
+    {
+     "t": 15320,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 15660,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 100
+    },
+    {
+     "t": 16950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.94,
+     "amostras": 100
+    },
+    {
+     "t": 17320,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 18160,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    },
+    {
+     "t": 18430,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 100
+    },
+    {
+     "t": 18950,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.13,
+     "amostras": 100
+    },
+    {
+     "t": 19420,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.45,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2810131252522398,
+   "mse_rel_linear_online": 1.0191001744197,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 580
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.95_s349",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.3718960058994496,
+    "mae": 0.48590682359250637,
+    "n": 16000
+   },
+   "cobertura": 0.9005,
+   "custo_medio": 332.403825,
+   "us_por_passo": 84.8873000000026,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3452169916335084,
+     "mae": 0.9250118714652885,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.365045567819206,
+     "mae": 0.48140842400068073,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x0"
+   ],
+   "eventos": [
+    {
+     "t": 490,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": 6.04,
+     "amostras": 200
+    },
+    {
+     "t": 590,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -0.88,
+     "amostras": 100
+    },
+    {
+     "t": 650,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.5,
+     "amostras": 100
+    },
+    {
+     "t": 1530,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 250
+    },
+    {
+     "t": 1750,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.09,
+     "amostras": 100
+    },
+    {
+     "t": 2590,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.41,
+     "amostras": 100
+    },
+    {
+     "t": 4090,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 4590,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.75,
+     "amostras": 100
+    },
+    {
+     "t": 5650,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.55,
+     "amostras": 100
+    },
+    {
+     "t": 6690,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 100
+    },
+    {
+     "t": 6790,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -1.89,
+     "amostras": 100
+    },
+    {
+     "t": 7080,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "residual_state",
+     "sai": null,
+     "log_evidencia": -0.13,
+     "amostras": 100
+    },
+    {
+     "t": 8790,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.09,
+     "amostras": 100
+    },
+    {
+     "t": 9140,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[8-15]",
+     "sai": null,
+     "log_evidencia": -0.03,
+     "amostras": 100
+    },
+    {
+     "t": 9800,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.17,
+     "amostras": 180
+    },
+    {
+     "t": 10790,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.39,
+     "amostras": 100
+    },
+    {
+     "t": 12360,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 140
+    },
+    {
+     "t": 12790,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.59,
+     "amostras": 100
+    },
+    {
+     "t": 13250,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.24,
+     "amostras": 100
+    },
+    {
+     "t": 13660,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[16-31]",
+     "sai": null,
+     "log_evidencia": -0.15,
+     "amostras": 100
+    },
+    {
+     "t": 14790,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -2.83,
+     "amostras": 100
+    },
+    {
+     "t": 16930,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 17030,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.02,
+     "amostras": 100
+    },
+    {
+     "t": 17450,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": -0.65,
+     "amostras": 100
+    },
+    {
+     "t": 19030,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x0",
+     "log_evidencia": -3.28,
+     "amostras": 100
+    },
+    {
+     "t": 19390,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[2-3]",
+     "sai": null,
+     "log_evidencia": -0.27,
+     "amostras": 100
+    },
+    {
+     "t": 19740,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x0[4-7]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.2764580050745963,
+   "mse_rel_linear_online": 1.0187659806998024,
+   "estrutura": {
+    "verdadeiras_aceitas": [
+     "x0"
+    ],
+    "n_verdadeiras": 1,
+    "recall": 1.0,
+    "falsas_aceitas": 0,
+    "primeira_falsa": null,
+    "tempo_deteccao": {
+     "x0": 490
+    },
+    "estrutura_final": [
+     "x0"
+    ],
+    "finais_falsas": []
+   }
+  },
+  {
+   "nome": "rho0.95_s350",
+   "grupo": "rho0.95",
+   "T": 20000,
+   "d": 3,
+   "lebre": {
+    "mse": 0.43201333192874747,
+    "mae": 0.524841664314715,
+    "n": 16000
+   },
+   "cobertura": 0.9005625,
+   "custo_medio": 348.204315,
+   "us_por_passo": 86.87902499999609,
+   "previsoes_nao_finitas": 0,
+   "comparadores": {
+    "ingenuo": {
+     "mse": 1.3465320144373905,
+     "mae": 0.9249971527107168,
+     "n": 16000
+    },
+    "linear_online": {
+     "mse": 0.3623027385034718,
+     "mae": 0.4798391060687298,
+     "n": 16000
+    }
+   },
+   "estrutura_final": [
+    "x1"
+   ],
+   "eventos": [
+    {
+     "t": 660,
+     "resultado": "accepted",
+     "mudanca": "add",
+     "entra": "x1",
+     "sai": null,
+     "log_evidencia": 6.17,
+     "amostras": 380
+    },
+    {
+     "t": 760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -0.82,
+     "amostras": 100
+    },
+    {
+     "t": 850,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.42,
+     "amostras": 310
+    },
+    {
+     "t": 1170,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.1,
+     "amostras": 100
+    },
+    {
+     "t": 2290,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.25,
+     "amostras": 100
+    },
+    {
+     "t": 2580,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.22,
+     "amostras": 1160
+    },
+    {
+     "t": 2760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.2,
+     "amostras": 100
+    },
+    {
+     "t": 3420,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.31,
+     "amostras": 100
+    },
+    {
+     "t": 4760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.6,
+     "amostras": 100
+    },
+    {
+     "t": 5840,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "own_past",
+     "sai": null,
+     "log_evidencia": -0.35,
+     "amostras": 100
+    },
+    {
+     "t": 6490,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.08,
+     "amostras": 100
+    },
+    {
+     "t": 6760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -1.81,
+     "amostras": 100
+    },
+    {
+     "t": 7980,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.16,
+     "amostras": 100
+    },
+    {
+     "t": 8760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.02,
+     "amostras": 100
+    },
+    {
+     "t": 10380,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.12,
+     "amostras": 100
+    },
+    {
+     "t": 10760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.15,
+     "amostras": 100
+    },
+    {
+     "t": 12760,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.31,
+     "amostras": 100
+    },
+    {
+     "t": 13640,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[8-15]",
+     "sai": null,
+     "log_evidencia": -0.23,
+     "amostras": 100
+    },
+    {
+     "t": 13970,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x0",
+     "sai": null,
+     "log_evidencia": -0.46,
+     "amostras": 100
+    },
+    {
+     "t": 14700,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.28,
+     "amostras": 100
+    },
+    {
+     "t": 14800,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.45,
+     "amostras": 100
+    },
+    {
+     "t": 15210,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.05,
+     "amostras": 110
+    },
+    {
+     "t": 16670,
+     "resultado": "closed",
+     "mudanca": "add",
+     "entra": "x2",
+     "sai": null,
+     "log_evidencia": -0.4,
+     "amostras": 100
+    },
+    {
+     "t": 16800,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.62,
+     "amostras": 100
+    },
+    {
+     "t": 17370,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[16-31]",
+     "sai": null,
+     "log_evidencia": -0.11,
+     "amostras": 120
+    },
+    {
+     "t": 18230,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[2-3]",
+     "sai": null,
+     "log_evidencia": -0.29,
+     "amostras": 100
+    },
+    {
+     "t": 18670,
+     "resultado": "closed",
+     "mudanca": "split",
+     "entra": "x1[4-7]",
+     "sai": null,
+     "log_evidencia": -0.3,
+     "amostras": 100
+    },
+    {
+     "t": 18800,
+     "resultado": "closed",
+     "mudanca": "remove",
+     "entra": null,
+     "sai": "x1",
+     "log_evidencia": -2.76,
+     "amostras": 100
+    }
+   ],
+   "mse_rel_ingenuo": 0.3208340591213138,
+   "mse_rel_linear_online": 1.192409788877728,
+   "estrutura": {
+    "verdadeiras_aceitas": [],
+    "n_verdadeiras": 1,
+    "recall": 0.0,
+    "falsas_aceitas": 1,
+    "primeira_falsa": 660,
+    "tempo_deteccao": {},
+    "estrutura_final": [
+     "x1"
+    ],
+    "finais_falsas": [
+     "x1"
+    ]
+   }
+  }
+ ]
+}

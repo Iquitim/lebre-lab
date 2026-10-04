@@ -74,3 +74,15 @@ def test_synth_and_group_helpers():
     r = dict(grupo="a", eventos=[dict(t=5, resultado="accepted", entra="x2[1-3]")])
     assert found(r, "x2") and accept_time(r, "x2") == 5 and not found(r, "x0")
     assert list(by_group([r, dict(r, grupo="b")])) == ["a", "b"]
+
+
+def test_online_linear_is_stable_on_long_series():
+    """Regressão do problema de 2026-10-04: sem simetrizar P, o RLS divergia perto de 25 mil passos."""
+    from lab.synth import ar1, lag
+    rng = np.random.default_rng(601); T = 40000
+    X = ar1(rng, T, 2); y = np.cos(2 * np.pi * np.arange(T) / 30000) * lag(X[:, 0], 3) + 0.6 * rng.standard_normal(T)
+    m = OnlineLinear(2); f = np.empty(T)
+    for t in range(T):
+        f[t] = m.predict(X[t]); m.observe(y[t])
+    e = (y - f) ** 2
+    assert e[-5000:].mean() < 0.6 and np.allclose(m.P, m.P.T)

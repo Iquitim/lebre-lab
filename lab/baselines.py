@@ -99,4 +99,9 @@ class OnlineLinear(_Base):
         Pz = self.P @ z
         g = Pz / (self.lam + z @ Pz)
         self.w = self.w + g * (v - self.w @ z)
-        self.P = (self.P - np.outer(g, Pz)) / self.lam
+        P = (self.P - np.outer(g, Pz)) / self.lam
+        # Simetria forçada a cada passo: sem isso o arredondamento cresce ~8x a cada 2000 passos e, perto de
+        # 25 mil passos, P deixa de ser positiva definida e o filtro diverge (visto em A05-A07 e A12, 2026-10-04).
+        self.P = (P + P.T) / 2
+        if not np.isfinite(self.P).all() or np.diag(self.P).min() <= 0:   # trava de segurança: reinicia P
+            self.P = np.eye(self.k) * 100.0
