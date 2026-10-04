@@ -114,3 +114,12 @@ def test_run_series_reports_extras():
     r = run_series(s, 0.2)
     e = r["extras"]["ens"]
     assert math.isfinite(e["mse_rel_lebre"]) and e["custo_rel_lebre"] > 0 and "mse_rel_linear_online" in e
+
+
+def test_summary_with_heterogeneous_baselines():
+    """Regressão de 2026-10-04 (D03): séries com e sem sazonal ingênuo no mesmo cenário quebravam o resumo."""
+    from lab.metrics import group_table
+    a = dict(grupo="g", custo_medio=1.0, us_por_passo=1.0, cobertura=0.9, mse_rel_ingenuo=0.5, mse_rel_sazonal_ingenuo=0.4)
+    b = dict(grupo="g", custo_medio=1.0, us_por_passo=1.0, cobertura=0.9, mse_rel_ingenuo=0.5)
+    s = summarise([a, b]); assert s["mse_rel_sazonal_ingenuo_geo"] == pytest.approx(0.4)
+    assert group_table([a, b])["g"]["mse_rel_sazonal_ingenuo_geo"] == pytest.approx(0.4)

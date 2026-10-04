@@ -16,3 +16,13 @@ O registro (`REGISTRO.csv`) nunca é editado. Problemas descobertos depois de um
   e d = 50, A04, A08, A09, A11), o MSE ficou idêntico ao registrado.
 - **Correção:** simetrização de P a cada passo e reinício de segurança (`lab/baselines.py`), com teste de regressão de
   40 mil passos. A05, A06, A07 e A12 foram rodados de novo como execuções novas, com nota citando as originais.
+
+## 2026-10-04: execução de D03 abortada e não registrada
+
+- **O que aconteceu:** a primeira execução de D03 (19:04 a 19:07, commit `b34e037`) rodou as 26 séries e quebrou no
+  resumo (`KeyError: 'mse_rel_sazonal_ingenuo'`): o cenário mistura séries com e sem sazonal ingênuo (as marés de B07
+  não declaram ciclo), e o resumo supunha os mesmos comparadores em todas.
+- **Por que não está em REGISTRO.csv:** o executor ainda não registrava execuções que quebravam. Esta anotação cumpre
+  a regra 3 do PLANO no lugar da linha que faltou.
+- **Correções:** o resumo aceita comparadores diferentes entre séries (com teste de regressão), e o executor agora
+  registra qualquer execução que quebre como `abortado`. D03 foi rodado de novo, sem mudança no cenário.

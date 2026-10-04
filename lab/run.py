@@ -111,7 +111,7 @@ def summarise(per_series):
     out = {"n_series": len(per_series)}
     keys = sorted({k for r in per_series for k in r if k.startswith("mse_rel_")})
     for k in keys:
-        v = np.array([r[k] for r in per_series], float); v = v[np.isfinite(v) & (v > 0)]
+        v = np.array([r.get(k, np.nan) for r in per_series], float); v = v[np.isfinite(v) & (v > 0)]
         out[k + "_geo"] = float(np.exp(np.mean(np.log(v)))) if len(v) else np.nan
     out["cobertura_media"] = float(np.nanmean([r["cobertura"] for r in per_series]))
     out["custo_medio"] = float(np.mean([r["custo_medio"] for r in per_series]))
@@ -149,8 +149,17 @@ def main(argv):
     extra = argv[argv.index("--nota") + 1] if "--nota" in argv else ""
     mod = load(path); S = mod.SPEC
     commit = "ensaio" if dry else check_committed(path)
-    per = [run_series(mod.gerar(seed), S.get("aquecimento", 0.2)) for seed in S["sementes"]]
-    resumo = summarise(per)
+    try:
+        per = [run_series(mod.gerar(seed), S.get("aquecimento", 0.2)) for seed in S["sementes"]]
+        resumo = summarise(per)
+    except Exception as ex:                              # noqa: BLE001  a execução abortada também vai para o registro
+        if not dry:
+            stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+            register(dict(id=f"{stamp}_{S['id']}", data=dt.date.today().isoformat(), cenario=S["id"], frente=S["frente"],
+                          commit=commit, versao_lebre=lebre.__version__, sementes=" ".join(map(str, S["sementes"])),
+                          n_series=0, criterio=S["criterio"], resultado="abortado", resumo=json.dumps({"erro": repr(ex)}),
+                          notas=" | ".join(x for x in (S.get("notas", ""), extra) if x)), dict(spec=S, erro=repr(ex)))
+        raise
     try:
         resultado = mod.avaliar(resumo, per)
     except Exception as ex:                          # noqa: BLE001  (a execução não se perde)

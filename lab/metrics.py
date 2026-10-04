@@ -81,7 +81,7 @@ def group_table(series, names=None):
             row["recall_medio"] = float(np.nanmean([x["recall"] for x in st]))
             row["series_com_falsa"] = int(sum(x["falsas_aceitas"] > 0 for x in st))
         for k in sorted({k for r in rs for k in r if k.startswith("mse_rel_")}):
-            v = np.array([r[k] for r in rs], float); v = v[np.isfinite(v) & (v > 0)]
+            v = np.array([r.get(k, np.nan) for r in rs], float); v = v[np.isfinite(v) & (v > 0)]
             row[k + "_geo"] = float(np.exp(np.mean(np.log(v)))) if len(v) else np.nan
         for nm in names or []:
             row[f"aceita_{nm}"] = int(sum(found(r, nm) for r in rs))
