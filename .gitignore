@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# dados brutos nunca entram no git (fontes e licenças em dados/FONTES.md)
+dados/*
+!dados/FONTES.md
