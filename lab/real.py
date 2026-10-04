@@ -3,9 +3,16 @@ import numpy as np
 import pandas as pd
 
 
-def serie(nome, alvo, entradas, grupo=None, season=None, season2=None):
-    """alvo: Series horária; entradas: DataFrame horário. Alinha numa grade horária completa (lacunas viram NaN)."""
-    idx = pd.date_range(max(alvo.index.min(), entradas.index.min()), min(alvo.index.max(), entradas.index.max()), freq="h")
+def serie(nome, alvo, entradas, grupo=None, season=None, season2=None, freq="h"):
+    """Alinha alvo e entradas numa grade completa de frequência `freq` (lacunas viram NaN).
+
+    freq=None mantém o calendário do próprio alvo (ex. dias úteis ou meses já montados pelo cenário).
+    """
+    ini, fim = max(alvo.index.min(), entradas.index.min()), min(alvo.index.max(), entradas.index.max())
+    if freq is None:
+        idx = alvo.index[(alvo.index >= ini) & (alvo.index <= fim)]
+    else:
+        idx = pd.date_range(ini, fim, freq=freq)
     a = alvo[~alvo.index.duplicated()].reindex(idx)
     e = entradas[~entradas.index.duplicated()].reindex(idx)
     return dict(nome=nome, grupo=grupo or nome, y=a.to_numpy(float), X=e.to_numpy(float), season=season, season2=season2,
@@ -46,3 +53,17 @@ def criterio_padrao(resumo, series, ref):
     c3 = 0.85 <= resumo["cobertura_media"] <= 0.95
     resumo["partes_do_criterio"] = dict(vence_referencia=bool(c1), empata_ou_vence_linear=bool(c2), cobertura_ok=bool(c3))
     return "atende" if c1 and c2 and c3 else "nao_atende"
+
+
+def criterio_nulo(resumo, series, ref, tol=1.02, max_series_com_falsa=1):
+    """Critério dos testes negativos (nada externo a descobrir):
+    (1) MSE relativo ao comparador `ref` (média geométrica) <= tol (não piora a previsão trivial);
+    (2) no máximo `max_series_com_falsa` séries com alguma entrada externa aceita (o próprio passado não conta).
+    """
+    resumo["entradas_aceitas"] = {r["nome"]: aceitas(r) for r in series}
+    resumo["mse_rel_por_serie"] = {r["nome"]: {k[8:]: round(v, 3) for k, v in r.items() if k.startswith("mse_rel_")}
+                                   for r in series}
+    c1 = resumo[f"mse_rel_{ref}_geo"] <= tol
+    c2 = resumo["series_com_falsa"] <= max_series_com_falsa
+    resumo["partes_do_criterio"] = dict(nao_piora_referencia=bool(c1), sem_espurias=bool(c2))
+    return "atende" if c1 and c2 else "nao_atende"

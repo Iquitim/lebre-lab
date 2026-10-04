@@ -68,13 +68,17 @@ Expectativa realista: o retorno do próximo passo é quase imprevisível para qu
 
 | ID | Cenário | Pergunta |
 |---|---|---|
-| C01 | Retornos diários com várias entradas plausíveis | Ela evita aceitar entradas espúrias? Empata com "prever zero"? |
-| C02 | Volatilidade realizada, com volatilidade implícita como entrada | Ela aproveita uma estrutura que se sabe existir? |
-| C03 | Câmbio BRL/USD com dólar global e commodities | Há ganho sobre o passeio aleatório? |
-| C04 | Curva de juros: variação de spreads | Ela encontra relações entre prazos? |
-| C05 | Volume negociado e sazonalidade | Ela aproveita padrões de calendário? |
+| C01 | Retornos diários de câmbio e petróleo | Ela evita aceitar entradas espúrias? Empata com "prever zero"? |
+| C02 | Volatilidade realizada (\|retorno\|), com a agitação de outros mercados como entrada | Ela aproveita uma estrutura que se sabe existir? |
+| C03 | Níveis de preço (câmbio, petróleo) | Ela bate o passeio aleatório? Cai na regressão espúria? |
+| C04 | Variação diária dos juros americanos | Ela acha algo além do próprio passado? |
+| C05 | Inflação mensal (série curta, ~360 pontos) | Como ela se comporta perto do limite de dados? |
 
-Fontes preferidas: Banco Central (SGS) e FRED, com a licença de cada série conferida antes do uso.
+Fontes: Banco Central (SGS, ODbL) e FRED (só séries de domínio público). **Todas as entradas financeiras entram com 1
+dia (ou 1 mês) de atraso**: o valor de outro mercado no mesmo dia só é conhecido junto com o alvo.
+
+**Ajustes feitos antes de rodar (2026-10-04):** C02 ficou sem volatilidade implícita, porque o VIX tem copyright da
+CBOE; C05, que seria volume negociado, virou o teste de série macro curta, porque não há fonte aberta de volume.
 
 ### Frente D: ensembles com a LEBRE (curiosidade)
 

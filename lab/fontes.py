@@ -102,3 +102,32 @@ def noaa(estacao, produto, ano, extra=None):
     if key not in d:
         raise RuntimeError(f"NOAA {estacao} {produto} {ano}: {str(d)[:200]}")
     return pd.DataFrame(d[key])
+
+
+# ------------------------------------------------------------------ Banco Central do Brasil, SGS (ODbL)
+def bcb_sgs(codigo, inicio, fim):
+    """Série do SGS entre os anos inicio e fim (inclusive), em blocos de até 10 anos (limite do API para séries diárias)."""
+    partes = []
+    for a in range(inicio, fim + 1, 10):
+        b = min(a + 9, fim)
+        q = dict(formato="json", dataInicial=f"01/01/{a}", dataFinal=f"31/12/{b}")
+        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados?" + urllib.parse.urlencode(q)
+        d = json.loads(_get(url, CACHE / "bcb" / f"sgs{codigo}_{a}_{b}.json"))
+        partes.append(pd.DataFrame(d))
+    df = pd.concat(partes)
+    return pd.Series(pd.to_numeric(df["valor"], errors="coerce").to_numpy(),
+                     index=pd.to_datetime(df["data"], format="%d/%m/%Y"), name=f"sgs{codigo}").sort_index()
+
+
+# ------------------------------------------------------------------ FRED: só séries de domínio público (dados/FONTES.md)
+FRED_DOMINIO_PUBLICO = {"DGS10", "DGS2", "DTB3", "DEXUSEU", "DEXJPUS", "DCOILWTICO"}
+
+
+def fred(serie):
+    """Série diária do FRED (download do CSV público). Recusa séries fora da lista de domínio público conferida."""
+    if serie not in FRED_DOMINIO_PUBLICO:
+        raise ValueError(f"{serie}: licença não conferida (dados/FONTES.md)")
+    b = _get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={serie}", CACHE / "fred" / f"{serie}.csv")
+    df = pd.read_csv(io.BytesIO(b))
+    return pd.Series(pd.to_numeric(df.iloc[:, 1], errors="coerce").to_numpy(), index=pd.to_datetime(df.iloc[:, 0]),
+                     name=serie).sort_index()

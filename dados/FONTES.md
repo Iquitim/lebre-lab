@@ -12,6 +12,11 @@ Cada conjunto é registrado aqui **antes** de ser baixado. Dados brutos não ent
 | InfoDengue (casos semanais por município) | B04 | https://info.dengue.mat.br/services/api | **Nenhuma licença explícita** na documentação | Não confirmado: **não usar** | 2026-10-04 |
 | OpenDataSUS, SINAN Dengue (notificações individuais) | B04 | https://opendatasus.saude.gov.br (redireciona para dadosabertos.saude.gov.br) | Indicação de Creative Commons com atribuição em fontes secundárias; **não confirmada na página do conjunto** | Não confirmado: B04 adiado até confirmar | 2026-10-04 |
 | Métricas de servidor | B05 | nenhuma fonte escolhida | — | — | B05 adiado |
+| Banco Central do Brasil, SGS: dólar PTAX diário (1) e Selic acumulada no mês (4390) | C01-C05 | https://dadosabertos.bcb.gov.br (licença conferida nas páginas das séries 1 e 4390) | ODbL (Open Database License) | Sim, com atribuição e mantendo a mesma licença em bases derivadas | 2026-10-04 |
+| IBGE: IPCA (433) e INPC (188), lidos pelo SGS do BCB | C05 | https://dados.gov.br/dados/conjuntos-dados/ia-indice-nacional-de-precos-ao-consumidor-amplo-ipca; política do IBGE: reuso permitido citando o IBGE como fonte | Domínio público no portal federal; reuso com citação | Sim, citando o IBGE | 2026-10-04 |
+| FGV: IGP-M (189) | (C05, descartado) | — | Licença da FGV não conferida | **Não usar** | 2026-10-04 |
+| FRED: DGS10, DGS2, DTB3 (Fed H.15), DEXUSEU, DEXJPUS (Fed H.10), DCOILWTICO (EIA) | C01-C04 | https://fred.stlouisfed.org (status conferido na página de cada série); termos: https://fred.stlouisfed.org/legal/ | Domínio público, citação solicitada | Sim | 2026-10-04 |
+| FRED: VIXCLS e S&P 500 | (C02, descartado) | https://fred.stlouisfed.org/legal/ | Copyright do fornecedor (CBOE, S&P) | Não sem permissão: **não usar** | 2026-10-04 |
 
 ## Observações de uso
 
@@ -21,4 +26,6 @@ Cada conjunto é registrado aqui **antes** de ser baixado. Dados brutos não ent
 - **Geração programada do ONS não é usada como entrada** nos cenários B01 e B06: ela é um plano feito com informação
   que a LEBRE não tem, e tornaria a tarefa trivial.
 - Atribuições exigidas em qualquer material derivado: ONS (Dados Abertos); Open-Meteo e Copernicus Climate Change
-  Service (ERA5); De Vito, S. (2008), UCI; NOAA National Ocean Service.
+  Service (ERA5); De Vito, S. (2008), UCI; NOAA National Ocean Service; Banco Central do Brasil (SGS); IBGE;
+  Board of Governors of the Federal Reserve System e U.S. Energy Information Administration, via FRED.
+- O código só baixa do FRED as séries de domínio público listadas acima (`lab/fontes.py` recusa as outras).
