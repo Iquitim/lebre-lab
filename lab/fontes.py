@@ -1,0 +1,104 @@
+"""Carregadores de dados reais (Frente B). Cada fonte é baixada uma vez para dados/ (fora do git) e lida de lá.
+
+Licenças e atribuições: dados/FONTES.md (conferidas antes de qualquer download).
+"""
+import io
+import json
+import time
+import urllib.parse
+import urllib.request
+import zipfile
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+CACHE = ROOT / "dados"
+UA = {"User-Agent": "lebre-lab (pesquisa sem fins comerciais; github.com/Iquitim/lebre)"}
+
+
+def _get(url, path, tries=4):
+    """Baixa url para path (uma vez). Devolve os bytes."""
+    path = Path(path)
+    if path.exists():
+        return path.read_bytes()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    for k in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=300) as r:
+                b = r.read()
+            path.write_bytes(b)
+            return b
+        except Exception as ex:                                   # noqa: BLE001
+            if k == tries - 1:
+                raise RuntimeError(f"falhou: {url}: {ex}") from ex
+            time.sleep(5 * (k + 1))
+
+
+# ------------------------------------------------------------------ UCI Air Quality (CC BY 4.0)
+def uci_air():
+    """DataFrame horário com as colunas originais; -200 vira NaN; índice = data e hora local."""
+    b = _get("https://archive.ics.uci.edu/static/public/360/air+quality.zip", CACHE / "uci_air" / "air+quality.zip")
+    with zipfile.ZipFile(io.BytesIO(b)) as z:
+        df = pd.read_csv(z.open("AirQualityUCI.csv"), sep=";", decimal=",")
+    df = df.dropna(how="all", axis=1).dropna(subset=["Date"])
+    df.index = pd.to_datetime(df["Date"] + " " + df["Time"], format="%d/%m/%Y %H.%M.%S")
+    df = df.drop(columns=["Date", "Time"]).astype(float).replace(-200.0, np.nan)
+    return df.asfreq("h")
+
+
+# ------------------------------------------------------------------ ONS (CC-BY)
+def _ons_resources(dataset):
+    url = f"https://dados.ons.org.br/api/3/action/package_show?id={dataset}"
+    meta = json.loads(_get(url, CACHE / "ons" / f"{dataset}.json"))
+    return meta["result"]["resources"]
+
+
+def ons_csvs(dataset, keep):
+    """Lê e concatena os CSVs de um conjunto do ONS cujo nome satisfaz keep(nome)."""
+    out = []
+    for r in _ons_resources(dataset):
+        if r["format"].upper() == "CSV" and keep(r["name"]):
+            fn = r["url"].rsplit("/", 1)[-1]
+            b = _get(r["url"], CACHE / "ons" / dataset / fn)
+            out.append(pd.read_csv(io.BytesIO(b), sep=";", decimal="."))
+    return pd.concat(out, ignore_index=True)
+
+
+def ons_carga(anos):
+    """Carga horária por subsistema (MWmed), horário local de Brasília."""
+    df = ons_csvs("curva-carga", lambda n: any(str(a) in n for a in anos))
+    df["din_instante"] = pd.to_datetime(df["din_instante"])
+    return df.pivot_table(index="din_instante", columns="nom_subsistema", values="val_cargaenergiahomwmed")
+
+
+def ons_fator(anos):
+    """Geração horária verificada por usina eólica/solar, com capacidade e coordenadas."""
+    df = ons_csvs("fator-capacidade-2", lambda n: any(f"{a}" in n for a in anos))
+    df["din_instante"] = pd.to_datetime(df["din_instante"])
+    return df
+
+
+# ------------------------------------------------------------------ Open-Meteo, reanálise histórica (CC BY 4.0)
+def open_meteo(lat, lon, inicio, fim, variaveis, fuso="America/Sao_Paulo"):
+    """Série horária de reanálise (ERA5) num ponto. inicio/fim: 'AAAA-MM-DD'."""
+    q = dict(latitude=f"{lat:.4f}", longitude=f"{lon:.4f}", start_date=inicio, end_date=fim,
+             hourly=",".join(variaveis), timezone=fuso)
+    url = "https://archive-api.open-meteo.com/v1/archive?" + urllib.parse.urlencode(q)
+    fn = f"{lat:.4f}_{lon:.4f}_{inicio}_{fim}_{'-'.join(variaveis)}_{fuso.replace('/', '-')}.json"
+    d = json.loads(_get(url, CACHE / "open_meteo" / fn))["hourly"]
+    return pd.DataFrame({k: d[k] for k in variaveis}, index=pd.to_datetime(d["time"])).astype(float)
+
+
+# ------------------------------------------------------------------ NOAA CO-OPS (domínio público)
+def noaa(estacao, produto, ano, extra=None):
+    """Um ano de um produto horário de uma estação NOAA (UTC, unidades métricas)."""
+    q = dict(product=produto, application="lebre-lab", begin_date=f"{ano}0101", end_date=f"{ano}1231",
+             station=estacao, time_zone="gmt", units="metric", format="json", **(extra or {}))
+    url = "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?" + urllib.parse.urlencode(q)
+    d = json.loads(_get(url, CACHE / "noaa" / f"{estacao}_{produto}_{ano}.json"))
+    key = "predictions" if produto == "predictions" else "data"
+    if key not in d:
+        raise RuntimeError(f"NOAA {estacao} {produto} {ano}: {str(d)[:200]}")
+    return pd.DataFrame(d[key])

@@ -80,7 +80,7 @@ def run_series(s, warmup):
     for mm in models:
         for t in range(T):
             F[mm.name][t] = mm.predict(X[t]); mm.observe(None if not math.isfinite(y[t]) else float(y[t]))
-    res = dict(nome=s.get("nome", ""), grupo=s.get("grupo"), T=T, d=d,
+    res = dict(nome=s.get("nome", ""), grupo=s.get("grupo"), T=T, d=d, entradas=s.get("entradas"),
                lebre=forecast_metrics(y, f, start), cobertura=coverage(y, lo, hi, start),
                custo_medio=m.cost_per_step, us_por_passo=sec / T * 1e6,
                previsoes_nao_finitas=int(np.sum(~np.isfinite(f[start:]))),
