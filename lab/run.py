@@ -92,6 +92,17 @@ def run_series(s, warmup):
         res[f"mse_rel_{k}"] = res["lebre"]["mse"] / v["mse"] if v["mse"] and math.isfinite(v["mse"]) else np.nan
     if s.get("truth") is not None:
         res["estrutura"] = structure_metrics(m.events, m.structure, s["truth"])
+    if s.get("extras"):                                      # Frente D: modelos construídos em volta da LEBRE
+        res["extras"] = {}
+        for fab in s["extras"]:
+            mm = fab(d); fx = np.full(T, np.nan); t0 = time.perf_counter()
+            for t in range(T):
+                fx[t] = mm.predict(X[t]); mm.observe(None if not math.isfinite(y[t]) else float(y[t]))
+            met = forecast_metrics(y, fx, start)
+            res["extras"][mm.name] = dict(mse=met["mse"], mse_rel_lebre=met["mse"] / res["lebre"]["mse"],
+                                          custo=getattr(mm, "custo", None), custo_rel_lebre=(getattr(mm, "custo", 0.0) or 0.0)
+                                          / m.cost_per_step, us_por_passo=(time.perf_counter() - t0) / T * 1e6,
+                                          **{f"mse_rel_{k}": met["mse"] / v["mse"] for k, v in res["comparadores"].items()})
     return res
 
 

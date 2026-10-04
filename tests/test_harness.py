@@ -86,3 +86,31 @@ def test_online_linear_is_stable_on_long_series():
         f[t] = m.predict(X[t]); m.observe(y[t])
     e = (y - f) ** 2
     assert e[-5000:].mean() < 0.6 and np.allclose(m.P, m.P.T)
+
+
+def test_ensembles_combine_and_weight():
+    from lab.ensembles import LebreW, Media, PesosOnline
+
+    class Const:
+        def __init__(self, v): self.v, self.name, self.custo = v, f"c{v}", 1.0
+        def predict(self, x): return self.v
+        def observe(self, y): pass
+
+    m = Media([Const(1.0), Const(3.0), Const(math.nan)], "media")
+    assert m.predict([0]) == 2.0 and m.custo == 3.0
+    w = PesosOnline([Const(0.0), Const(10.0)], "pesos", alpha=0.5)
+    for _ in range(20):
+        w.predict([0]); w.observe(0.0)                    # o membro que acerta (0) ganha quase todo o peso
+    assert w.pesos()[0] > 0.99 and abs(w.predict([0])) < 0.1
+    s = _toy(3000); lw = LebreW(2, cols=[0]); f = []
+    for t in range(3000):
+        f.append(lw.predict(s["X"][t])); lw.observe(s["y"][t])
+    assert np.isfinite(f[-1]) and lw.custo > 0
+
+
+def test_run_series_reports_extras():
+    from lab.ensembles import LebreW, Media
+    s = _toy(3000); s["extras"] = [lambda d: Media([LebreW(d, cols=[0], name="a"), LebreW(d, cols=[1], name="b")], "ens")]
+    r = run_series(s, 0.2)
+    e = r["extras"]["ens"]
+    assert math.isfinite(e["mse_rel_lebre"]) and e["custo_rel_lebre"] > 0 and "mse_rel_linear_online" in e
