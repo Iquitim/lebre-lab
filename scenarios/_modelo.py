@@ -27,6 +27,6 @@ def gerar(semente):
                 truth=dict(relevant=[]))           # entradas verdadeiras, ex. ["x0"]
 
 
-def avaliar(resumo):
-    """Aplica o critério ao resumo agregado. Devolve 'atende', 'nao_atende' ou 'inconclusivo'."""
+def avaliar(resumo, series):
+    """Aplica o critério ao resumo agregado (e, se preciso, aos resultados por série). Devolve 'atende', 'nao_atende' ou 'inconclusivo'."""
     return "atende" if resumo.get("falsas_aceitas_total", 0) == 0 else "nao_atende"

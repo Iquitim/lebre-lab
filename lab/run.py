@@ -6,7 +6,8 @@ Uso:  python -m lab.run scenarios/A/A02_exemplo.py
 Um cenário é um arquivo .py com:
   SPEC = dict(id, frente, pergunta, expectativa, criterio, sementes, aquecimento)
   def gerar(semente) -> dict(y, X, season=None, season2=None, truth=None, nome=...)   # uma série por semente
-  def avaliar(resumo) -> "atende" | "nao_atende" | "inconclusivo"                      # o critério, em código
+  def avaliar(resumo, series) -> "atende" | "nao_atende" | "inconclusivo"              # o critério, em código
+  (gerar pode devolver grupo="..." para o critério avaliar por grupo, ex. por número de entradas)
 
 Regras aplicadas aqui: o cenário e o código comum (lab/) precisam estar commitados; cada execução registrada vira uma
 linha em runs/REGISTRO.csv e uma pasta runs/<id>/ com os detalhes.
@@ -74,13 +75,14 @@ def run_series(s, warmup):
         fc = m.step(X[t], yt)
         f[t], lo[t], hi[t] = fc.value, fc.lower, fc.upper
     sec = time.perf_counter() - t0
+    start = int(warmup * T) if warmup < 1 else int(warmup)
     for mm in models:
         for t in range(T):
             F[mm.name][t] = mm.predict(X[t]); mm.observe(None if not math.isfinite(y[t]) else float(y[t]))
-    start = int(warmup * T) if warmup < 1 else int(warmup)
-    res = dict(nome=s.get("nome", ""), T=T, d=d,
+    res = dict(nome=s.get("nome", ""), grupo=s.get("grupo"), T=T, d=d,
                lebre=forecast_metrics(y, f, start), cobertura=coverage(y, lo, hi, start),
                custo_medio=m.cost_per_step, us_por_passo=sec / T * 1e6,
+               previsoes_nao_finitas=int(np.sum(~np.isfinite(f[start:]))),
                comparadores={k: forecast_metrics(y, v, start) for k, v in F.items()},
                estrutura_final=m.structure,
                eventos=[dict(t=e.t, resultado=e.outcome, mudanca=e.change, entra=e.added, sai=e.removed,
@@ -136,7 +138,7 @@ def main(argv):
     commit = "ensaio" if dry else check_committed(path)
     per = [run_series(mod.gerar(seed), S.get("aquecimento", 0.2)) for seed in S["sementes"]]
     resumo = summarise(per)
-    resultado = mod.avaliar(resumo)
+    resultado = mod.avaliar(resumo, per)
     print(json.dumps(resumo, indent=1, ensure_ascii=False, default=_json)); print("resultado:", resultado)
     if dry:
         print("(ensaio: nada foi registrado)"); return

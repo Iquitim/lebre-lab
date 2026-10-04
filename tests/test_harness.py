@@ -62,3 +62,15 @@ def test_register_appends_and_never_overwrites(tmp_path):
     register(dict(row, id="r1"), {"a": 1}, reg); register(dict(row, id="r2"), {"a": np.float64(2)}, reg)
     rows = list(csv.DictReader(open(reg, encoding="utf-8")))
     assert [r["id"] for r in rows] == ["r1", "r2"] and (tmp_path / "r2" / "detalhes.json").exists()
+
+
+def test_synth_and_group_helpers():
+    from lab.metrics import accept_time, by_group, found
+    from lab.synth import ar1, base_truth, lag
+    rng = np.random.default_rng(1); x = ar1(rng, 20000, 2)
+    assert abs(x.var() - 1) < 0.1 and abs(np.corrcoef(x[1:, 0], x[:-1, 0])[0, 1] - 0.5) < 0.05
+    assert list(lag(np.arange(5.0), 2)) == [0, 0, 0, 1, 2]
+    X, y = base_truth(rng, 1000, 4); assert X.shape == (1000, 4) and y.shape == (1000,)
+    r = dict(grupo="a", eventos=[dict(t=5, resultado="accepted", entra="x2[1-3]")])
+    assert found(r, "x2") and accept_time(r, "x2") == 5 and not found(r, "x0")
+    assert list(by_group([r, dict(r, grupo="b")])) == ["a", "b"]

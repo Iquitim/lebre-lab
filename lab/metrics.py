@@ -45,3 +45,45 @@ def structure_metrics(events, final_structure, truth):
         tempo_deteccao={u: t for u, t in true_first.items()},
         estrutura_final=sorted(final), finais_falsas=sorted(final - rel),
     )
+
+
+def by_group(series):
+    """Agrupa os resultados por série pelo campo `grupo`."""
+    g = {}
+    for r in series:
+        g.setdefault(r.get("grupo"), []).append(r)
+    return g
+
+
+def found(r, name):
+    """A entrada `name` foi aceita alguma vez nesta série?"""
+    return name in r.get("estrutura", {}).get("verdadeiras_aceitas", []) or any(
+        e["resultado"] == "accepted" and e["entra"] and e["entra"].split("[")[0] == name for e in r["eventos"])
+
+
+def accept_time(r, name):
+    """Primeiro passo em que `name` foi aceita, ou None."""
+    ts = [e["t"] for e in r["eventos"] if e["resultado"] == "accepted" and e["entra"] and e["entra"].split("[")[0] == name]
+    return min(ts) if ts else None
+
+
+def group_table(series, names=None):
+    """Resumo por grupo: número de séries, recall médio, séries com entrada falsa aceita, custo e MSE relativos.
+
+    names: entradas cuja taxa de aceitação deve ser reportada (ex. ["x0", "x1"]).
+    """
+    out = {}
+    for g, rs in by_group(series).items():
+        st = [r["estrutura"] for r in rs if "estrutura" in r]
+        row = dict(n=len(rs), custo_medio=float(np.mean([r["custo_medio"] for r in rs])),
+                   us_por_passo=float(np.mean([r["us_por_passo"] for r in rs])))
+        if st:
+            row["recall_medio"] = float(np.nanmean([x["recall"] for x in st]))
+            row["series_com_falsa"] = int(sum(x["falsas_aceitas"] > 0 for x in st))
+        for k in sorted({k for r in rs for k in r if k.startswith("mse_rel_")}):
+            v = np.array([r[k] for r in rs], float); v = v[np.isfinite(v) & (v > 0)]
+            row[k + "_geo"] = float(np.exp(np.mean(np.log(v)))) if len(v) else np.nan
+        for nm in names or []:
+            row[f"aceita_{nm}"] = int(sum(found(r, nm) for r in rs))
+        out[str(g)] = row
+    return out
