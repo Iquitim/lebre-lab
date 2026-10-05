@@ -123,3 +123,17 @@ def test_summary_with_heterogeneous_baselines():
     b = dict(grupo="g", custo_medio=1.0, us_por_passo=1.0, cobertura=0.9, mse_rel_ingenuo=0.5)
     s = summarise([a, b]); assert s["mse_rel_sazonal_ingenuo_geo"] == pytest.approx(0.4)
     assert group_table([a, b])["g"]["mse_rel_sazonal_ingenuo_geo"] == pytest.approx(0.4)
+
+
+def test_reserve_of_v053_is_refused():
+    from lab import fontes as F
+    from lab.reserva import USINAS, SerieReservada, checar_usina
+    with pytest.raises(SerieReservada):
+        F.ons_carga([2026])
+    with pytest.raises(SerieReservada):
+        F.fred("DEXUSUK")
+    with pytest.raises(SerieReservada):
+        F.open_meteo(-23.55, -46.63, "2026-01-01", "2026-02-01", ["temperature_2m"])
+    with pytest.raises(SerieReservada):
+        checar_usina(sorted(USINAS)[0])
+    checar_usina("Conj. Janaúba")                         # usina usada no Lab: liberada

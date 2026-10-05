@@ -68,6 +68,8 @@ def ons_csvs(dataset, keep):
 
 def ons_carga(anos):
     """Carga horária por subsistema (MWmed), horário local de Brasília."""
+    from lab.reserva import checar_data
+    checar_data(f"{max(anos)}-12-31", "carga do ONS")
     df = ons_csvs("curva-carga", lambda n: any(str(a) in n for a in anos))
     df["din_instante"] = pd.to_datetime(df["din_instante"])
     return df.pivot_table(index="din_instante", columns="nom_subsistema", values="val_cargaenergiahomwmed")
@@ -83,6 +85,8 @@ def ons_fator(anos):
 # ------------------------------------------------------------------ Open-Meteo, reanálise histórica (CC BY 4.0)
 def open_meteo(lat, lon, inicio, fim, variaveis, fuso="America/Sao_Paulo"):
     """Série horária de reanálise (ERA5) num ponto. inicio/fim: 'AAAA-MM-DD'."""
+    from lab.reserva import checar_data
+    checar_data(fim, "meteorologia")
     q = dict(latitude=f"{lat:.4f}", longitude=f"{lon:.4f}", start_date=inicio, end_date=fim,
              hourly=",".join(variaveis), timezone=fuso)
     url = "https://archive-api.open-meteo.com/v1/archive?" + urllib.parse.urlencode(q)
@@ -125,6 +129,8 @@ FRED_DOMINIO_PUBLICO = {"DGS10", "DGS2", "DTB3", "DEXUSEU", "DEXJPUS", "DCOILWTI
 
 def fred(serie):
     """Série diária do FRED (download do CSV público). Recusa séries fora da lista de domínio público conferida."""
+    from lab.reserva import checar_fred
+    checar_fred(serie)
     if serie not in FRED_DOMINIO_PUBLICO:
         raise ValueError(f"{serie}: licença não conferida (dados/FONTES.md)")
     b = _get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={serie}", CACHE / "fred" / f"{serie}.csv")

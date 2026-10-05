@@ -8,6 +8,7 @@ import functools
 import pandas as pd
 
 from lab import fontes as F
+from lab.reserva import USINAS as RESERVADAS, checar_usina
 
 ANOS = [2024, 2025]
 HORAS = pd.date_range("2024-01-01 00:00", "2025-12-31 23:00", freq="h")
@@ -34,10 +35,12 @@ def escolher(tipo, n=6):
     """As n maiores usinas do tipo por capacidade, com coordenadas e >= 95% das horas com geração."""
     m = _tabela()["meta"]
     m = m[(m["tipo"] == tipo) & m["lat"].notna() & m["lon"].notna() & (m["completude"] >= 0.95)]
+    m = m[~m.index.isin(RESERVADAS)]                      # reserva da v0.53 (lab/reserva.py)
     m = m.sort_values("cap", ascending=False).head(n)
     return [dict(nome=k, cap=round(float(r.cap), 1), lat=float(r.lat), lon=float(r.lon),
                  completude=round(float(r.completude), 4)) for k, r in m.iterrows()]
 
 
 def geracao(nome):
+    checar_usina(nome)
     return _tabela()["ger"][nome]
