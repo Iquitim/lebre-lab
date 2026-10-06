@@ -84,3 +84,23 @@ class PesosOnline(Media):
                 if math.isfinite(err[k]):
                     self.e2[k] = err[k] if math.isnan(self.e2[k]) else (1 - self.alpha) * self.e2[k] + self.alpha * err[k]
         super().observe(y)
+
+
+class Porta(Media):
+    """Protótipo de M2 (v0.53): começa na referência trivial (membro 1) e só usa a LEBRE (membro 0) enquanto a média
+    exponencial da diferença de perda (referência - LEBRE) for positiva, isto é, enquanto a LEBRE estiver acertando mais."""
+
+    def __init__(self, membros, name, alpha=0.01):
+        super().__init__(membros, name)
+        self.alpha, self.d, self._p = alpha, 0.0, None
+
+    def predict(self, x):
+        self._p = [m.predict(x) for m in self.membros]
+        lebre_p, ref_p = self._p
+        usar_lebre = self.d > 0 and math.isfinite(lebre_p)
+        return lebre_p if usar_lebre or not math.isfinite(ref_p) else ref_p
+
+    def observe(self, y):
+        if y is not None and math.isfinite(y) and self._p is not None and all(math.isfinite(v) for v in self._p):
+            self.d = (1 - self.alpha) * self.d + self.alpha * ((y - self._p[1]) ** 2 - (y - self._p[0]) ** 2)
+        super().observe(y)
