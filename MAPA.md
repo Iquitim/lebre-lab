@@ -109,3 +109,12 @@ Os ensembles são métodos novos construídos em volta da LEBRE: os resultados d
   saber o ciclo certo, a cerca de 4 vezes o custo. Declarar o ciclo errado (ou nenhum) custa muito mais caro em erro.
 - **Combinar a LEBRE com uma regressão recursiva barata** é uma proteção eficaz contra a falha F6 (relação quase exata
   no mesmo instante): a combinação segue o membro que acerta. O preço é perder de 4% a 9% onde a LEBRE já era a melhor.
+
+## Protótipo de M2 da v0.53 (D04, `20261006-063405_D04`, 06/10/2026)
+
+Porta que parte da referência trivial e só usa a LEBRE enquanto ela erra menos (média exponencial da diferença de
+perda). **Não atendeu** ao critério declarado (até 1% da referência nos testes negativos), mas reduziu a perda contra a
+referência de 6,9% para 1,5% nos retornos, de 6,8% para 3,8% nos níveis e de 5,2% para 0,3% nos juros, **sem nenhuma
+perda** na carga e na solar (razão 1,000 contra a LEBRE). A versão por pesos perdeu 5% a 11% na carga e na solar.
+Leitura: a ideia de M2 é boa; a regra de troca (média exponencial com alfa fixo) é ruidosa demais para fechar a
+diferença. Uma troca governada por evidência sempre válida, como as mudanças estruturais, é o candidato natural.
