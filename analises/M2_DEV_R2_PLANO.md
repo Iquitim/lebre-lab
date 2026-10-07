@@ -64,3 +64,12 @@ ajustar parâmetros**. C05 não vira limitação declarada nesta rodada: a condi
 
 Peso médio de L na janela de avaliação; em C05, primeiro passo com peso de L > 0,9; trocas de regime do FlipFlop;
 eventos de auditoria; cobertura do intervalo da saída.
+
+## Adendo 1 (08/10/2026, depois da primeira execução de CURTAS, que abortou)
+
+A execução de CURTAS abortou ao calcular o intervalo: a série B01 "Conj. Arinos 2 500 kV" não tem nenhum alvo observado
+nos primeiros 360 passos (a usina começa a gerar depois), e o bootstrap fica sem réplicas finitas. O plano não previa
+isso. Regra acrescentada, que depende só da disponibilidade de dados e de nenhum resultado: **uma série curta com menos
+de metade dos alvos observados na janela de avaliação (144 de 288) é excluída e listada.** Só Arinos é afetada (as
+demais têm de 264 a 288). Nenhum critério ou parâmetro muda. Antes do aborto, só o arquivo de C05 tinha sido gravado
+(família completa, não afetada).

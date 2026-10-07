@@ -26,3 +26,10 @@ O registro (`REGISTRO.csv`) nunca é editado. Problemas descobertos depois de um
   a regra 3 do PLANO no lugar da linha que faltou.
 - **Correções:** o resumo aceita comparadores diferentes entre séries (com teste de regressão), e o executor agora
   registra qualquer execução que quebre como `abortado`. D03 foi rodado de novo, sem mudança no cenário.
+
+## 08/10/2026: medição da M2, rascunho 2, família CURTAS abortada
+
+`analises/m2_dev_r2.py CURTAS` abortou (IndexError no quantil): a série B01 "Conj. Arinos 2 500 kV" não tem alvo
+observado nos primeiros 360 passos. Corrigido por regra de disponibilidade declarada no adendo 1 de
+`analises/M2_DEV_R2_PLANO.md` (exclui séries curtas com menos de 144 de 288 alvos observados na janela); só essa série é
+afetada. CURTAS rodada de novo depois do commit da correção.

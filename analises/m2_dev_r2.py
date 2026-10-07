@@ -52,6 +52,10 @@ def _series(fam):
                 raise SystemExit(f"C05 deveria ter {N_CURTA} passos, tem {len(s['y'])}")
             s["y"] = np.asarray(s["y"], float)[:N_CURTA]; s["X"] = np.asarray(s["X"], float)[:N_CURTA]
             s["truth"] = None
+            ini = int(0.2 * N_CURTA)
+            if np.isfinite(s["y"][ini:]).sum() < (N_CURTA - ini) / 2:      # adendo 1 do plano (só disponibilidade)
+                print("CURTAS: excluída por falta de alvo observado:", f, s["nome"], flush=True)
+                continue
             yield f, i, s
 
 
