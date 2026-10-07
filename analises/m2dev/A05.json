@@ -1,0 +1,1951 @@
+{
+ "familia": "A05",
+ "prototipo": {
+  "commit": "da200a1",
+  "model053_sha256": "04c4cb43877b4c8197b710d131c00d5e8d7bee9efc8a4eef2e4a998184199c0b"
+ },
+ "execucao_lab_conferida": "20261004-180630_A05",
+ "B": 2000,
+ "semente": 20261008,
+ "bloco": 20,
+ "series_com_externa_v052": 20,
+ "max_dif_reproducao": 0.0,
+ "resumo": {
+  "R0": {
+   "vs_ref": {
+    "geo": 0.3101030005352497,
+    "ic95": [
+     0.3081250640735125,
+     0.31218745805117587
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.007327202207793,
+    "ic95": [
+     1.0062804911334862,
+     1.008462945301016
+    ]
+   },
+   "trocas_por_2000": 0.06666666666666667,
+   "series_com_externa": 20,
+   "acrescimo_custo": 18.91231166666666
+  },
+  "R2": {
+   "vs_ref": {
+    "geo": 0.3101030005352497,
+    "ic95": [
+     0.3080951488629029,
+     0.3121421694834968
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.007327202207793,
+    "ic95": [
+     1.006298210119267,
+     1.0084069826105528
+    ]
+   },
+   "trocas_por_2000": 0.06666666666666667,
+   "series_com_externa": 20,
+   "acrescimo_custo": 18.91231166666666
+  },
+  "R5": {
+   "vs_ref": {
+    "geo": 0.3100999243323933,
+    "ic95": [
+     0.30804510957099757,
+     0.31221448020685594
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.00731720958337,
+    "ic95": [
+     1.006261086377311,
+     1.0084688144646703
+    ]
+   },
+   "trocas_por_2000": 0.06666666666666667,
+   "series_com_externa": 20,
+   "acrescimo_custo": 18.909014999999997
+  },
+  "P0": {
+   "vs_ref": {
+    "geo": 0.3076361305869265,
+    "ic95": [
+     0.30564182243598936,
+     0.30968424447421594
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.999313912433216,
+    "ic95": [
+     0.9989392077185427,
+     0.9996580496844167
+    ]
+   },
+   "trocas_por_2000": 0.06666666666666667,
+   "series_com_externa": 20,
+   "acrescimo_custo": 18.06095666666666
+  },
+  "P2": {
+   "vs_ref": {
+    "geo": 0.3076361305869265,
+    "ic95": [
+     0.30550929175172675,
+     0.30976512364124287
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.999313912433216,
+    "ic95": [
+     0.9989308847575245,
+     0.9996609792784351
+    ]
+   },
+   "trocas_por_2000": 0.06666666666666667,
+   "series_com_externa": 20,
+   "acrescimo_custo": 18.06095666666666
+  },
+  "P5": {
+   "vs_ref": {
+    "geo": 0.3076361305869265,
+    "ic95": [
+     0.30571925758223395,
+     0.30964769038283063
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.999313912433216,
+    "ic95": [
+     0.998933503818176,
+     0.9996463817194307
+    ]
+   },
+   "trocas_por_2000": 0.06666666666666667,
+   "series_com_externa": 20,
+   "acrescimo_custo": 18.06095666666666
+  }
+ },
+ "series": [
+  {
+   "serie": "s501",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.4145418509044045,
+   "mse_ref": 1.3609771207242711,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.44597000000005,
+   "configs": {
+    "R0": {
+     "mse": 0.4145418509044045,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 470,
+     "externas": 2,
+     "custo": 395.8446366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.3045913444039366,
+     "razao_v052": 1.0
+    },
+    "R2": {
+     "mse": 0.4145418509044045,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 500,
+     "externas": 2,
+     "custo": 395.8446366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.3045913444039366,
+     "razao_v052": 1.0
+    },
+    "R5": {
+     "mse": 0.4145418509044045,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 530,
+     "externas": 2,
+     "custo": 395.8446366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.3045913444039366,
+     "razao_v052": 1.0
+    },
+    "P0": {
+     "mse": 0.4145418509044045,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 470,
+     "externas": 2,
+     "custo": 395.8446366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.3045913444039366,
+     "razao_v052": 1.0
+    },
+    "P2": {
+     "mse": 0.4145418509044045,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 500,
+     "externas": 2,
+     "custo": 395.8446366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.3045913444039366,
+     "razao_v052": 1.0
+    },
+    "P5": {
+     "mse": 0.4145418509044045,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 530,
+     "externas": 2,
+     "custo": 395.8446366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.3045913444039366,
+     "razao_v052": 1.0
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s502",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.40440814924463164,
+   "mse_ref": 1.3745221280717466,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 386.72529333333335,
+   "configs": {
+    "R0": {
+     "mse": 0.40758084466969,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 403.88759000000005,
+     "acrescimo_custo": 17.16229666666669,
+     "cobertura": 0.9004333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.29652548791009015,
+     "razao_v052": 1.0078452806427973
+    },
+    "R2": {
+     "mse": 0.40758084466969,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 530,
+     "externas": 2,
+     "custo": 403.88759000000005,
+     "acrescimo_custo": 17.16229666666669,
+     "cobertura": 0.9004333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.29652548791009015,
+     "razao_v052": 1.0078452806427973
+    },
+    "R5": {
+     "mse": 0.40758084466969,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 540,
+     "externas": 2,
+     "custo": 403.88759000000005,
+     "acrescimo_custo": 17.16229666666669,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.29652548791009015,
+     "razao_v052": 1.0078452806427973
+    },
+    "P0": {
+     "mse": 0.4040643611461356,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 404.9810933333333,
+     "acrescimo_custo": 18.255799999999965,
+     "cobertura": 0.9004333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.29396715621666913,
+     "razao_v052": 0.9991498981928574
+    },
+    "P2": {
+     "mse": 0.4040643611461356,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 530,
+     "externas": 2,
+     "custo": 404.9810933333333,
+     "acrescimo_custo": 18.255799999999965,
+     "cobertura": 0.9004333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.29396715621666913,
+     "razao_v052": 0.9991498981928574
+    },
+    "P5": {
+     "mse": 0.4040643611461356,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 540,
+     "externas": 2,
+     "custo": 404.9810933333333,
+     "acrescimo_custo": 18.255799999999965,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.29396715621666913,
+     "razao_v052": 0.9991498981928574
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s503",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.42205695055577697,
+   "mse_ref": 1.3600559143283135,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 383.1523466666667,
+   "configs": {
+    "R0": {
+     "mse": 0.4252911264628693,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 330,
+     "externas": 2,
+     "custo": 402.3375466666667,
+     "acrescimo_custo": 19.18520000000001,
+     "cobertura": 0.8998,
+     "recall": 1.0,
+     "razao_ref": 0.3127012073418367,
+     "razao_v052": 1.007662889813409
+    },
+    "R2": {
+     "mse": 0.4252911264628693,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 330,
+     "externas": 2,
+     "custo": 402.3375466666667,
+     "acrescimo_custo": 19.18520000000001,
+     "cobertura": 0.8998,
+     "recall": 1.0,
+     "razao_ref": 0.3127012073418367,
+     "razao_v052": 1.007662889813409
+    },
+    "R5": {
+     "mse": 0.4252911264628693,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 402.3375466666667,
+     "acrescimo_custo": 19.18520000000001,
+     "cobertura": 0.8997666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3127012073418367,
+     "razao_v052": 1.007662889813409
+    },
+    "P0": {
+     "mse": 0.42124990488313674,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 330,
+     "externas": 2,
+     "custo": 401.04808,
+     "acrescimo_custo": 17.89573333333334,
+     "cobertura": 0.8998,
+     "recall": 1.0,
+     "razao_ref": 0.30972984304926765,
+     "razao_v052": 0.9980878275512878
+    },
+    "P2": {
+     "mse": 0.42124990488313674,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 330,
+     "externas": 2,
+     "custo": 401.04808,
+     "acrescimo_custo": 17.89573333333334,
+     "cobertura": 0.8998,
+     "recall": 1.0,
+     "razao_ref": 0.30972984304926765,
+     "razao_v052": 0.9980878275512878
+    },
+    "P5": {
+     "mse": 0.42124990488313674,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 401.04808,
+     "acrescimo_custo": 17.89573333333334,
+     "cobertura": 0.8998,
+     "recall": 1.0,
+     "razao_ref": 0.30972984304926765,
+     "razao_v052": 0.9980878275512878
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s504",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.4260981597609469,
+   "mse_ref": 1.3608303362174936,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 4,
+   "custo_v052": 398.93021333333337,
+   "configs": {
+    "R0": {
+     "mse": 0.4541753875525983,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 270,
+     "externas": 4,
+     "custo": 422.58655,
+     "acrescimo_custo": 23.65633666666662,
+     "cobertura": 0.9006333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.33374872345586076,
+     "razao_v052": 1.0658938020464663
+    },
+    "R2": {
+     "mse": 0.4541753875525983,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 270,
+     "externas": 4,
+     "custo": 422.58655,
+     "acrescimo_custo": 23.65633666666662,
+     "cobertura": 0.9006333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.33374872345586076,
+     "razao_v052": 1.0658938020464663
+    },
+    "R5": {
+     "mse": 0.4541753875525983,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 300,
+     "externas": 4,
+     "custo": 422.58655,
+     "acrescimo_custo": 23.65633666666662,
+     "cobertura": 0.9006666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.33374872345586076,
+     "razao_v052": 1.0658938020464663
+    },
+    "P0": {
+     "mse": 0.42671482021807294,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 270,
+     "externas": 4,
+     "custo": 417.9440566666667,
+     "acrescimo_custo": 19.01384333333334,
+     "cobertura": 0.9006333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3135694501080505,
+     "razao_v052": 1.001447226285774
+    },
+    "P2": {
+     "mse": 0.42671482021807294,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 270,
+     "externas": 4,
+     "custo": 417.9440566666667,
+     "acrescimo_custo": 19.01384333333334,
+     "cobertura": 0.9006333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3135694501080505,
+     "razao_v052": 1.001447226285774
+    },
+    "P5": {
+     "mse": 0.42671482021807294,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 300,
+     "externas": 4,
+     "custo": 417.9440566666667,
+     "acrescimo_custo": 19.01384333333334,
+     "cobertura": 0.9006666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3135694501080505,
+     "razao_v052": 1.001447226285774
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s505",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.42079231810192935,
+   "mse_ref": 1.3471686876660625,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 383.49238333333335,
+   "configs": {
+    "R0": {
+     "mse": 0.42258865823959485,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 360,
+     "externas": 2,
+     "custo": 402.66665,
+     "acrescimo_custo": 19.174266666666654,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3136865205586982,
+     "razao_v052": 1.0042689470800423
+    },
+    "R2": {
+     "mse": 0.42258865823959485,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 402.66665,
+     "acrescimo_custo": 19.174266666666654,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3136865205586982,
+     "razao_v052": 1.0042689470800423
+    },
+    "R5": {
+     "mse": 0.42258865823959485,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 402.66665,
+     "acrescimo_custo": 19.174266666666654,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3136865205586982,
+     "razao_v052": 1.0042689470800423
+    },
+    "P0": {
+     "mse": 0.42050787179665905,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 360,
+     "externas": 2,
+     "custo": 401.8277166666667,
+     "acrescimo_custo": 18.335333333333324,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3121419579051966,
+     "razao_v052": 0.9993240221053621
+    },
+    "P2": {
+     "mse": 0.42050787179665905,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 401.8277166666667,
+     "acrescimo_custo": 18.335333333333324,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3121419579051966,
+     "razao_v052": 0.9993240221053621
+    },
+    "P5": {
+     "mse": 0.42050787179665905,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 401.8277166666667,
+     "acrescimo_custo": 18.335333333333324,
+     "cobertura": 0.9004666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3121419579051966,
+     "razao_v052": 0.9993240221053621
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s506",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.45518904973905483,
+   "mse_ref": 1.3684296643261327,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 383.2248833333333,
+   "configs": {
+    "R0": {
+     "mse": 0.45727239857305,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 690,
+     "externas": 2,
+     "custo": 402.67955,
+     "acrescimo_custo": 19.454666666666697,
+     "cobertura": 0.8996666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.33415849604387854,
+     "razao_v052": 1.0045768869773768
+    },
+    "R2": {
+     "mse": 0.45727239857305,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 720,
+     "externas": 2,
+     "custo": 402.67955,
+     "acrescimo_custo": 19.454666666666697,
+     "cobertura": 0.8996666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.33415849604387854,
+     "razao_v052": 1.0045768869773768
+    },
+    "R5": {
+     "mse": 0.45727239857305,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 730,
+     "externas": 2,
+     "custo": 402.67955,
+     "acrescimo_custo": 19.454666666666697,
+     "cobertura": 0.8996666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.33415849604387854,
+     "razao_v052": 1.0045768869773768
+    },
+    "P0": {
+     "mse": 0.45474150006115466,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 690,
+     "externas": 2,
+     "custo": 401.42834999999997,
+     "acrescimo_custo": 18.203466666666657,
+     "cobertura": 0.8996333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3323090049243319,
+     "razao_v052": 0.9990167828550428
+    },
+    "P2": {
+     "mse": 0.45474150006115466,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 720,
+     "externas": 2,
+     "custo": 401.42834999999997,
+     "acrescimo_custo": 18.203466666666657,
+     "cobertura": 0.8996333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3323090049243319,
+     "razao_v052": 0.9990167828550428
+    },
+    "P5": {
+     "mse": 0.45474150006115466,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 730,
+     "externas": 2,
+     "custo": 401.42834999999997,
+     "acrescimo_custo": 18.203466666666657,
+     "cobertura": 0.8996333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3323090049243319,
+     "razao_v052": 0.9990167828550428
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s507",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.41867233224685846,
+   "mse_ref": 1.355092895124279,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 397.1926266666667,
+   "configs": {
+    "R0": {
+     "mse": 0.421525594079439,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 416.4328266666667,
+     "acrescimo_custo": 19.240200000000016,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3110676733647694,
+     "razao_v052": 1.0068150236182747
+    },
+    "R2": {
+     "mse": 0.421525594079439,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 530,
+     "externas": 2,
+     "custo": 416.4328266666667,
+     "acrescimo_custo": 19.240200000000016,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3110676733647694,
+     "razao_v052": 1.0068150236182747
+    },
+    "R5": {
+     "mse": 0.421525594079439,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 550,
+     "externas": 2,
+     "custo": 416.4328266666667,
+     "acrescimo_custo": 19.240200000000016,
+     "cobertura": 0.9005,
+     "recall": 1.0,
+     "razao_ref": 0.3110676733647694,
+     "razao_v052": 1.0068150236182747
+    },
+    "P0": {
+     "mse": 0.4182919851622158,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 413.9586066666667,
+     "acrescimo_custo": 16.765980000000013,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.30868140971534885,
+     "razao_v052": 0.9990915399577481
+    },
+    "P2": {
+     "mse": 0.4182919851622158,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 530,
+     "externas": 2,
+     "custo": 413.9586066666667,
+     "acrescimo_custo": 16.765980000000013,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.30868140971534885,
+     "razao_v052": 0.9990915399577481
+    },
+    "P5": {
+     "mse": 0.4182919851622158,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 550,
+     "externas": 2,
+     "custo": 413.9586066666667,
+     "acrescimo_custo": 16.765980000000013,
+     "cobertura": 0.9005,
+     "recall": 1.0,
+     "razao_ref": 0.30868140971534885,
+     "razao_v052": 0.9990915399577481
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s508",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.4204570743100635,
+   "mse_ref": 1.3737119892661809,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 389.8882533333334,
+   "configs": {
+    "R0": {
+     "mse": 0.4247832511399169,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 409.3210533333334,
+     "acrescimo_custo": 19.432799999999986,
+     "cobertura": 0.8999333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.30922293352541136,
+     "razao_v052": 1.010289223547855
+    },
+    "R2": {
+     "mse": 0.4247832511399169,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 409.3210533333334,
+     "acrescimo_custo": 19.432799999999986,
+     "cobertura": 0.8999333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.30922293352541136,
+     "razao_v052": 1.010289223547855
+    },
+    "R5": {
+     "mse": 0.4247832511399169,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 420,
+     "externas": 2,
+     "custo": 409.3210533333334,
+     "acrescimo_custo": 19.432799999999986,
+     "cobertura": 0.8999666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.30922293352541136,
+     "razao_v052": 1.010289223547855
+    },
+    "P0": {
+     "mse": 0.4183958590649913,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 407.8152533333334,
+     "acrescimo_custo": 17.926999999999964,
+     "cobertura": 0.8999666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3045732019042019,
+     "razao_v052": 0.9950976797133109
+    },
+    "P2": {
+     "mse": 0.4183958590649913,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 407.8152533333334,
+     "acrescimo_custo": 17.926999999999964,
+     "cobertura": 0.8999333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.3045732019042019,
+     "razao_v052": 0.9950976797133109
+    },
+    "P5": {
+     "mse": 0.4183958590649913,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 420,
+     "externas": 2,
+     "custo": 407.8152533333334,
+     "acrescimo_custo": 17.926999999999964,
+     "cobertura": 0.8999333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.3045732019042019,
+     "razao_v052": 0.9950976797133109
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s509",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.47534384291485154,
+   "mse_ref": 1.3783439294035384,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 380.71003,
+   "configs": {
+    "R0": {
+     "mse": 0.47441763552325894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 390,
+     "externas": 2,
+     "custo": 398.85016333333334,
+     "acrescimo_custo": 18.140133333333324,
+     "cobertura": 0.9002666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3441939456493688,
+     "razao_v052": 0.9980515001816095
+    },
+    "R2": {
+     "mse": 0.47441763552325894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 398.85016333333334,
+     "acrescimo_custo": 18.140133333333324,
+     "cobertura": 0.9002666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3441939456493688,
+     "razao_v052": 0.9980515001816095
+    },
+    "R5": {
+     "mse": 0.47441763552325894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 398.85016333333334,
+     "acrescimo_custo": 18.140133333333324,
+     "cobertura": 0.9002666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3441939456493688,
+     "razao_v052": 0.9980515001816095
+    },
+    "P0": {
+     "mse": 0.47441763552325894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 390,
+     "externas": 2,
+     "custo": 398.85016333333334,
+     "acrescimo_custo": 18.140133333333324,
+     "cobertura": 0.9002666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3441939456493688,
+     "razao_v052": 0.9980515001816095
+    },
+    "P2": {
+     "mse": 0.47441763552325894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 398.85016333333334,
+     "acrescimo_custo": 18.140133333333324,
+     "cobertura": 0.9002666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3441939456493688,
+     "razao_v052": 0.9980515001816095
+    },
+    "P5": {
+     "mse": 0.47441763552325894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 398.85016333333334,
+     "acrescimo_custo": 18.140133333333324,
+     "cobertura": 0.9002666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3441939456493688,
+     "razao_v052": 0.9980515001816095
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s510",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.43464881514294623,
+   "mse_ref": 1.3356603378402958,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 398.2975,
+   "configs": {
+    "R0": {
+     "mse": 0.43806542442405605,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 300,
+     "externas": 2,
+     "custo": 415.06316666666663,
+     "acrescimo_custo": 16.76566666666662,
+     "cobertura": 0.9000666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3279766659331882,
+     "razao_v052": 1.0078606202572673
+    },
+    "R2": {
+     "mse": 0.43806542442405605,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 300,
+     "externas": 2,
+     "custo": 415.06316666666663,
+     "acrescimo_custo": 16.76566666666662,
+     "cobertura": 0.9000666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.3279766659331882,
+     "razao_v052": 1.0078606202572673
+    },
+    "R5": {
+     "mse": 0.43806542442405605,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 310,
+     "externas": 2,
+     "custo": 415.06316666666663,
+     "acrescimo_custo": 16.76566666666662,
+     "cobertura": 0.9000333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.3279766659331882,
+     "razao_v052": 1.0078606202572673
+    },
+    "P0": {
+     "mse": 0.4342155857406717,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 300,
+     "externas": 2,
+     "custo": 417.39287666666667,
+     "acrescimo_custo": 19.095376666666652,
+     "cobertura": 0.9000666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.32509431734925903,
+     "razao_v052": 0.9990032656545216
+    },
+    "P2": {
+     "mse": 0.4342155857406717,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 300,
+     "externas": 2,
+     "custo": 417.39287666666667,
+     "acrescimo_custo": 19.095376666666652,
+     "cobertura": 0.9000666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.32509431734925903,
+     "razao_v052": 0.9990032656545216
+    },
+    "P5": {
+     "mse": 0.4342155857406717,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 310,
+     "externas": 2,
+     "custo": 417.39287666666667,
+     "acrescimo_custo": 19.095376666666652,
+     "cobertura": 0.9000666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.32509431734925903,
+     "razao_v052": 0.9990032656545216
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s511",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.39277118377497405,
+   "mse_ref": 1.3449221769046478,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 386.8092533333334,
+   "configs": {
+    "R0": {
+     "mse": 0.39277118377497405,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 405.20792000000006,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.2920400827049644,
+     "razao_v052": 1.0
+    },
+    "R2": {
+     "mse": 0.39277118377497405,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 405.20792000000006,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.2920400827049644,
+     "razao_v052": 1.0
+    },
+    "R5": {
+     "mse": 0.39277118377497405,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 405.20792000000006,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.2920400827049644,
+     "razao_v052": 1.0
+    },
+    "P0": {
+     "mse": 0.39277118377497405,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 405.20792000000006,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.2920400827049644,
+     "razao_v052": 1.0
+    },
+    "P2": {
+     "mse": 0.39277118377497405,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 405.20792000000006,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.2920400827049644,
+     "razao_v052": 1.0
+    },
+    "P5": {
+     "mse": 0.39277118377497405,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 405.20792000000006,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.2920400827049644,
+     "razao_v052": 1.0
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s512",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.4196785055362647,
+   "mse_ref": 1.37362604057928,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 375.74355,
+   "configs": {
+    "R0": {
+     "mse": 0.4239435396230241,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 360,
+     "externas": 2,
+     "custo": 394.47704000000004,
+     "acrescimo_custo": 18.733490000000018,
+     "cobertura": 0.9003666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3086309716756974,
+     "razao_v052": 1.0101626221750613
+    },
+    "R2": {
+     "mse": 0.4239435396230241,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 394.47704000000004,
+     "acrescimo_custo": 18.733490000000018,
+     "cobertura": 0.9003666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3086309716756974,
+     "razao_v052": 1.0101626221750613
+    },
+    "R5": {
+     "mse": 0.4239435396230241,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 420,
+     "externas": 2,
+     "custo": 394.47704000000004,
+     "acrescimo_custo": 18.733490000000018,
+     "cobertura": 0.9003666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.3086309716756974,
+     "razao_v052": 1.0101626221750613
+    },
+    "P0": {
+     "mse": 0.4194588112572207,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 360,
+     "externas": 2,
+     "custo": 391.55128333333334,
+     "acrescimo_custo": 15.807733333333317,
+     "cobertura": 0.9003333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.30536608863379455,
+     "razao_v052": 0.9994765176768744
+    },
+    "P2": {
+     "mse": 0.4194588112572207,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 391.55128333333334,
+     "acrescimo_custo": 15.807733333333317,
+     "cobertura": 0.9003333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.30536608863379455,
+     "razao_v052": 0.9994765176768744
+    },
+    "P5": {
+     "mse": 0.4194588112572207,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 420,
+     "externas": 2,
+     "custo": 391.55128333333334,
+     "acrescimo_custo": 15.807733333333317,
+     "cobertura": 0.9003333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.30536608863379455,
+     "razao_v052": 0.9994765176768744
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s513",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.40157850697549385,
+   "mse_ref": 1.3642696925777522,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 390.0831566666667,
+   "configs": {
+    "R0": {
+     "mse": 0.4033797678967079,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 340,
+     "externas": 2,
+     "custo": 409.8321566666667,
+     "acrescimo_custo": 19.749000000000024,
+     "cobertura": 0.9005,
+     "recall": 1.0,
+     "razao_ref": 0.29567450636137216,
+     "razao_v052": 1.004485451511786
+    },
+    "R2": {
+     "mse": 0.4033797678967079,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 409.8321566666667,
+     "acrescimo_custo": 19.749000000000024,
+     "cobertura": 0.9005,
+     "recall": 1.0,
+     "razao_ref": 0.29567450636137216,
+     "razao_v052": 1.004485451511786
+    },
+    "R5": {
+     "mse": 0.4033797678967079,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 380,
+     "externas": 2,
+     "custo": 409.8321566666667,
+     "acrescimo_custo": 19.749000000000024,
+     "cobertura": 0.9005,
+     "recall": 1.0,
+     "razao_ref": 0.29567450636137216,
+     "razao_v052": 1.004485451511786
+    },
+    "P0": {
+     "mse": 0.4014767579684359,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 340,
+     "externas": 2,
+     "custo": 406.3463566666667,
+     "acrescimo_custo": 16.263199999999983,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.2942796135930103,
+     "razao_v052": 0.99974662735856
+    },
+    "P2": {
+     "mse": 0.4014767579684359,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 370,
+     "externas": 2,
+     "custo": 406.3463566666667,
+     "acrescimo_custo": 16.263199999999983,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.2942796135930103,
+     "razao_v052": 0.99974662735856
+    },
+    "P5": {
+     "mse": 0.4014767579684359,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 380,
+     "externas": 2,
+     "custo": 406.3463566666667,
+     "acrescimo_custo": 16.263199999999983,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.2942796135930103,
+     "razao_v052": 0.99974662735856
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s514",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.42390609065504964,
+   "mse_ref": 1.359710368403259,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.6433166666667,
+   "configs": {
+    "R0": {
+     "mse": 0.42390609065504964,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 396.04198333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3117620491140719,
+     "razao_v052": 1.0
+    },
+    "R2": {
+     "mse": 0.42390609065504964,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 430,
+     "externas": 2,
+     "custo": 396.04198333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9005,
+     "recall": 1.0,
+     "razao_ref": 0.3117620491140719,
+     "razao_v052": 1.0
+    },
+    "R5": {
+     "mse": 0.42390609065504964,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 450,
+     "externas": 2,
+     "custo": 396.04198333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3117620491140719,
+     "razao_v052": 1.0
+    },
+    "P0": {
+     "mse": 0.42390609065504964,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 396.04198333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3117620491140719,
+     "razao_v052": 1.0
+    },
+    "P2": {
+     "mse": 0.42390609065504964,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 430,
+     "externas": 2,
+     "custo": 396.04198333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9005,
+     "recall": 1.0,
+     "razao_ref": 0.3117620491140719,
+     "razao_v052": 1.0
+    },
+    "P5": {
+     "mse": 0.42390609065504964,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 450,
+     "externas": 2,
+     "custo": 396.04198333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9005333333333333,
+     "recall": 1.0,
+     "razao_ref": 0.3117620491140719,
+     "razao_v052": 1.0
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s515",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.4222596874329065,
+   "mse_ref": 1.3476546184266172,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 387.74620333333337,
+   "configs": {
+    "R0": {
+     "mse": 0.42328642740903083,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 406.34007,
+     "acrescimo_custo": 18.593866666666656,
+     "cobertura": 0.9007333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.31409117857156643,
+     "razao_v052": 1.0024315368165175
+    },
+    "R2": {
+     "mse": 0.42328642740903083,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 540,
+     "externas": 2,
+     "custo": 406.34007,
+     "acrescimo_custo": 18.593866666666656,
+     "cobertura": 0.9007333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.31409117857156643,
+     "razao_v052": 1.0024315368165175
+    },
+    "R5": {
+     "mse": 0.4232024558117488,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 610,
+     "externas": 2,
+     "custo": 406.2741366666667,
+     "acrescimo_custo": 18.52793333333335,
+     "cobertura": 0.9007333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.3140288691369874,
+     "razao_v052": 1.0022326743634322
+    },
+    "P0": {
+     "mse": 0.42202247896320894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 520,
+     "externas": 2,
+     "custo": 406.09200333333337,
+     "acrescimo_custo": 18.345799999999997,
+     "cobertura": 0.9007333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.313153291053103,
+     "razao_v052": 0.9994382403133493
+    },
+    "P2": {
+     "mse": 0.42202247896320894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 540,
+     "externas": 2,
+     "custo": 406.09200333333337,
+     "acrescimo_custo": 18.345799999999997,
+     "cobertura": 0.9007333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.313153291053103,
+     "razao_v052": 0.9994382403133493
+    },
+    "P5": {
+     "mse": 0.42202247896320894,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 610,
+     "externas": 2,
+     "custo": 406.09200333333337,
+     "acrescimo_custo": 18.345799999999997,
+     "cobertura": 0.9007333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.313153291053103,
+     "razao_v052": 0.9994382403133493
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s516",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.39335230711278313,
+   "mse_ref": 1.3620603039855856,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 382.4377233333334,
+   "configs": {
+    "R0": {
+     "mse": 0.39335230711278313,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 550,
+     "externas": 2,
+     "custo": 400.83639000000005,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.28879213788242514,
+     "razao_v052": 1.0
+    },
+    "R2": {
+     "mse": 0.39335230711278313,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 560,
+     "externas": 2,
+     "custo": 400.83639000000005,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.28879213788242514,
+     "razao_v052": 1.0
+    },
+    "R5": {
+     "mse": 0.39335230711278313,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 600,
+     "externas": 2,
+     "custo": 400.83639000000005,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.28879213788242514,
+     "razao_v052": 1.0
+    },
+    "P0": {
+     "mse": 0.39335230711278313,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 550,
+     "externas": 2,
+     "custo": 400.83639000000005,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.28879213788242514,
+     "razao_v052": 1.0
+    },
+    "P2": {
+     "mse": 0.39335230711278313,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 560,
+     "externas": 2,
+     "custo": 400.83639000000005,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.28879213788242514,
+     "razao_v052": 1.0
+    },
+    "P5": {
+     "mse": 0.39335230711278313,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 600,
+     "externas": 2,
+     "custo": 400.83639000000005,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9,
+     "recall": 1.0,
+     "razao_ref": 0.28879213788242514,
+     "razao_v052": 1.0
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s517",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.4042360999069153,
+   "mse_ref": 1.3425676962267044,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.5827066666667,
+   "configs": {
+    "R0": {
+     "mse": 0.40907867809932397,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 397.6454266666667,
+     "acrescimo_custo": 20.062720000000013,
+     "cobertura": 0.9005666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.30469873455844526,
+     "razao_v052": 1.0119795787499528
+    },
+    "R2": {
+     "mse": 0.40907867809932397,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 397.6454266666667,
+     "acrescimo_custo": 20.062720000000013,
+     "cobertura": 0.9005666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.30469873455844526,
+     "razao_v052": 1.0119795787499528
+    },
+    "R5": {
+     "mse": 0.40907867809932397,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 500,
+     "externas": 2,
+     "custo": 397.6454266666667,
+     "acrescimo_custo": 20.062720000000013,
+     "cobertura": 0.9005666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.30469873455844526,
+     "razao_v052": 1.0119795787499528
+    },
+    "P0": {
+     "mse": 0.4039781000098822,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 395.9617733333334,
+     "acrescimo_custo": 18.379066666666688,
+     "cobertura": 0.9005666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.30089961284281264,
+     "razao_v052": 0.9993617593849425
+    },
+    "P2": {
+     "mse": 0.4039781000098822,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 480,
+     "externas": 2,
+     "custo": 395.9617733333334,
+     "acrescimo_custo": 18.379066666666688,
+     "cobertura": 0.9005666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.30089961284281264,
+     "razao_v052": 0.9993617593849425
+    },
+    "P5": {
+     "mse": 0.4039781000098822,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 500,
+     "externas": 2,
+     "custo": 395.9617733333334,
+     "acrescimo_custo": 18.379066666666688,
+     "cobertura": 0.9005666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.30089961284281264,
+     "razao_v052": 0.9993617593849425
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s518",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.42743492932340027,
+   "mse_ref": 1.3588009938306704,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 387.74367000000007,
+   "configs": {
+    "R0": {
+     "mse": 0.42743492932340027,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 440,
+     "externas": 2,
+     "custo": 406.1423366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.8998666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.31456771908768993,
+     "razao_v052": 1.0
+    },
+    "R2": {
+     "mse": 0.42743492932340027,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 450,
+     "externas": 2,
+     "custo": 406.1423366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.8998666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.31456771908768993,
+     "razao_v052": 1.0
+    },
+    "R5": {
+     "mse": 0.42743492932340027,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 470,
+     "externas": 2,
+     "custo": 406.1423366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.8998666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.31456771908768993,
+     "razao_v052": 1.0
+    },
+    "P0": {
+     "mse": 0.42743492932340027,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 440,
+     "externas": 2,
+     "custo": 406.1423366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.8998666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.31456771908768993,
+     "razao_v052": 1.0
+    },
+    "P2": {
+     "mse": 0.42743492932340027,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 450,
+     "externas": 2,
+     "custo": 406.1423366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.8998666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.31456771908768993,
+     "razao_v052": 1.0
+    },
+    "P5": {
+     "mse": 0.42743492932340027,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 470,
+     "externas": 2,
+     "custo": 406.1423366666667,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.8998666666666667,
+     "recall": 1.0,
+     "razao_ref": 0.31456771908768993,
+     "razao_v052": 1.0
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s519",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.388473426771756,
+   "mse_ref": 1.3582233419399719,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.3186366666667,
+   "configs": {
+    "R0": {
+     "mse": 0.388473426771756,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 540,
+     "externas": 2,
+     "custo": 395.71730333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.28601586703472,
+     "razao_v052": 1.0
+    },
+    "R2": {
+     "mse": 0.388473426771756,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 550,
+     "externas": 2,
+     "custo": 395.71730333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9003666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.28601586703472,
+     "razao_v052": 1.0
+    },
+    "R5": {
+     "mse": 0.388473426771756,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 570,
+     "externas": 2,
+     "custo": 395.71730333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9003666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.28601586703472,
+     "razao_v052": 1.0
+    },
+    "P0": {
+     "mse": 0.388473426771756,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 540,
+     "externas": 2,
+     "custo": 395.71730333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9004,
+     "recall": 1.0,
+     "razao_ref": 0.28601586703472,
+     "razao_v052": 1.0
+    },
+    "P2": {
+     "mse": 0.388473426771756,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 550,
+     "externas": 2,
+     "custo": 395.71730333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9003666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.28601586703472,
+     "razao_v052": 1.0
+    },
+    "P5": {
+     "mse": 0.388473426771756,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 570,
+     "externas": 2,
+     "custo": 395.71730333333335,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9003666666666666,
+     "recall": 1.0,
+     "razao_ref": 0.28601586703472,
+     "razao_v052": 1.0
+    }
+   },
+   "recall_v052": 1.0
+  },
+  {
+   "serie": "s520",
+   "T": 30000,
+   "referencia": "persistencia",
+   "mse_v052": 0.4150088855648527,
+   "mse_ref": 1.3685722645586338,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 384.8537766666667,
+   "configs": {
+    "R0": {
+     "mse": 0.4175438565474933,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 390,
+     "externas": 2,
+     "custo": 403.3573666666667,
+     "acrescimo_custo": 18.503589999999974,
+     "cobertura": 0.9000333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.3050944896082281,
+     "razao_v052": 1.0061082330302165
+    },
+    "R2": {
+     "mse": 0.4175438565474933,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 403.3573666666667,
+     "acrescimo_custo": 18.503589999999974,
+     "cobertura": 0.9000333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.3050944896082281,
+     "razao_v052": 1.0061082330302165
+    },
+    "R5": {
+     "mse": 0.4175438565474933,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 403.3573666666667,
+     "acrescimo_custo": 18.503589999999974,
+     "cobertura": 0.9000333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.3050944896082281,
+     "razao_v052": 1.0061082330302165
+    },
+    "P0": {
+     "mse": 0.4150088855648527,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 390,
+     "externas": 2,
+     "custo": 403.25244333333336,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9000333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.30324221549140745,
+     "razao_v052": 1.0
+    },
+    "P2": {
+     "mse": 0.4150088855648527,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 403.25244333333336,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9000333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.30324221549140745,
+     "razao_v052": 1.0
+    },
+    "P5": {
+     "mse": 0.4150088855648527,
+     "trocas": 1,
+     "trocas_por_2000": 0.06666666666666667,
+     "primeira_promocao": 410,
+     "externas": 2,
+     "custo": 403.25244333333336,
+     "acrescimo_custo": 18.398666666666657,
+     "cobertura": 0.9000333333333334,
+     "recall": 1.0,
+     "razao_ref": 0.30324221549140745,
+     "razao_v052": 1.0
+    }
+   },
+   "recall_v052": 1.0
+  }
+ ]
+}
