@@ -1,0 +1,169 @@
+{
+ "familia": "B02",
+ "prototipo": {
+  "commit": "bda07f4",
+  "model053_sha256": "ca14b4369bd4d3e51e6b822bd5050b924b61a8a614aee7a9bf21a133a33ee4a6"
+ },
+ "execucao_lab_conferida": "20261004-183302_B02",
+ "B": 2000,
+ "semente": 20261011,
+ "series_com_externa_v052": 4,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "S": {
+   "vs_ref": {
+    "geo": 0.04148199148553755,
+    "ic95": [
+     0.03794729689927373,
+     0.045318131369971766
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.1620729133621737,
+    "ic95": [
+     1.0814942904554217,
+     1.2453089126382928
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.1620729133621737,
+    "ic95": [
+     1.0819908059601655,
+     1.2446282732260012
+    ]
+   },
+   "series_com_externa": 4,
+   "acrescimo_custo": 55.39715947980835,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.003429005729695961,
+   "peso_L_medio": 0.9941345435741458
+  }
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo",
+   "origem": "B02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 321890.0838354073,
+   "mse_ref": 14181865.2562956,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 3,
+   "custo_v052": 737.628567761807,
+   "configs": {
+    "S": {
+     "mse": 350972.2981115645,
+     "peso_L_medio": 0.9956604250123565,
+     "variacao_peso_por_passo": 0.002198975110693263,
+     "primeiro_peso_L_acima_0_9": 19,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 3,
+     "custo": 793.0257272416153,
+     "acrescimo_custo": 55.39715947980835,
+     "cobertura": 0.9022929500342232,
+     "estrutura_identica": true,
+     "razao_ref": 0.024747964514453498,
+     "razao_v052": 1.0903482764353432,
+     "razao_melhor": 1.0903482764353432
+    }
+   }
+  },
+  {
+   "serie": "SUL_Porto Alegre",
+   "origem": "B02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 91531.64543265502,
+   "mse_ref": 3271341.466988166,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 3,
+   "custo_v052": 727.3583618526125,
+   "configs": {
+    "S": {
+     "mse": 98778.4604417224,
+     "peso_L_medio": 0.9976924602391272,
+     "variacao_peso_por_passo": 0.0020372199004076424,
+     "primeiro_peso_L_acima_0_9": 18,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 3,
+     "custo": 782.7555213324208,
+     "acrescimo_custo": 55.39715947980835,
+     "cobertura": 0.9021788729180926,
+     "estrutura_identica": true,
+     "razao_ref": 0.03019509318685249,
+     "razao_v052": 1.0791727819904569,
+     "razao_melhor": 1.0791727819904569
+    }
+   }
+  },
+  {
+   "serie": "NORDESTE_Recife",
+   "origem": "B02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 39054.82382013011,
+   "mse_ref": 858954.2575284992,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 5,
+   "custo_v052": 746.3666295916039,
+   "configs": {
+    "S": {
+     "mse": 46312.98769849163,
+     "peso_L_medio": 0.9931366614637124,
+     "variacao_peso_por_passo": 0.004692201018923067,
+     "primeiro_peso_L_acima_0_9": 19,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 5,
+     "custo": 801.7637890714122,
+     "acrescimo_custo": 55.39715947980835,
+     "cobertura": 0.902606662103582,
+     "estrutura_identica": true,
+     "razao_ref": 0.05391787431352829,
+     "razao_v052": 1.185845515826407,
+     "razao_melhor": 1.185845515826407
+    }
+   }
+  },
+  {
+   "serie": "NORTE_Belem",
+   "origem": "B02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 10051.597395045594,
+   "mse_ref": 178753.4723919653,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 716.1322895277207,
+   "configs": {
+    "S": {
+     "mse": 13136.638778327126,
+     "peso_L_medio": 0.990048627581387,
+     "variacao_peso_por_passo": 0.004787626888759873,
+     "primeiro_peso_L_acima_0_9": 19,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 771.529449007529,
+     "acrescimo_custo": 55.39715947980835,
+     "cobertura": 0.9024925849874516,
+     "estrutura_identica": true,
+     "razao_ref": 0.07349025785368518,
+     "razao_v052": 1.306920508455914,
+     "razao_melhor": 1.306920508455914
+    }
+   }
+  }
+ ]
+}

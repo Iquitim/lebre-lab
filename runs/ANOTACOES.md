@@ -33,3 +33,10 @@ O registro (`REGISTRO.csv`) nunca é editado. Problemas descobertos depois de um
 observado nos primeiros 360 passos. Corrigido por regra de disponibilidade declarada no adendo 1 de
 `analises/M2_DEV_R2_PLANO.md` (exclui séries curtas com menos de 144 de 288 alvos observados na janela); só essa série é
 afetada. CURTAS rodada de novo depois do commit da correção.
+
+## 08/10/2026: medição da M2, rascunho 3, interrompida de propósito
+
+`analises/m2_dev_r3.py` foi interrompido (processos parados) depois que a configuração única S já falhava nos critérios
+1, 2 e 7 em várias famílias; pela regra do plano (escolha só se atender a todos) as famílias restantes não podiam mudar o
+resultado. Medidas: C05, CURTAS, B01, B02, C01-C04. Não medidas: A01-A12, B03, B06, B07. Arquivos parciais de logs não
+foram versionados. Resultado em `analises/M2_DEV_R3_RESULTADO.md`.
