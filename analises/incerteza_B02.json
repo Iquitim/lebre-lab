@@ -1,0 +1,99 @@
+{
+ "familia": "B02",
+ "bloco": 168,
+ "B": 2000,
+ "semente": 20261007,
+ "conferencia": [
+  {
+   "serie": "SUDESTE_Sao Paulo",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "SUL_Porto Alegre",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "NORDESTE_Recife",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "NORTE_Belem",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  }
+ ],
+ "comparacoes": {
+  "lebre/linear_online": {
+   "n_series": 4,
+   "razao_geo": 0.47317574944814444,
+   "ic95": [
+    0.45952618871040357,
+    0.48747675192519113
+   ],
+   "series_abaixo_de_1": 4,
+   "por_serie": {
+    "SUDESTE_Sao Paulo": 0.4303,
+    "SUL_Porto Alegre": 0.3974,
+    "NORDESTE_Recife": 0.5273,
+    "NORTE_Belem": 0.5559
+   }
+  },
+  "lebre/sazonal_ingenuo": {
+   "n_series": 4,
+   "razao_geo": 0.03569654796059185,
+   "ic95": [
+    0.03460371848558979,
+    0.036834289759856115
+   ],
+   "series_abaixo_de_1": 4,
+   "por_serie": {
+    "SUDESTE_Sao Paulo": 0.0227,
+    "SUL_Porto Alegre": 0.028,
+    "NORDESTE_Recife": 0.0455,
+    "NORTE_Belem": 0.0562
+   }
+  },
+  "porta/lebre": {
+   "n_series": 4,
+   "razao_geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "SUDESTE_Sao Paulo": 1.0,
+    "SUL_Porto Alegre": 1.0,
+    "NORDESTE_Recife": 1.0,
+    "NORTE_Belem": 1.0
+   }
+  }
+ }
+}

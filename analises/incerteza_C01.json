@@ -1,0 +1,99 @@
+{
+ "familia": "C01",
+ "bloco": 20,
+ "B": 2000,
+ "semente": 20261007,
+ "conferencia": [
+  {
+   "serie": "dolar_real",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "zero": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "euro_dolar",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "zero": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "iene_dolar",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "zero": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "petroleo_wti",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "zero": 0.0,
+    "m2_porta": 0.0
+   }
+  }
+ ],
+ "comparacoes": {
+  "lebre/linear_online": {
+   "n_series": 4,
+   "razao_geo": 1.0202627441559053,
+   "ic95": [
+    0.977505469884497,
+    1.065909719839905
+   ],
+   "series_abaixo_de_1": 1,
+   "por_serie": {
+    "dolar_real": 0.9905,
+    "euro_dolar": 1.0062,
+    "iene_dolar": 1.0001,
+    "petroleo_wti": 1.0871
+   }
+  },
+  "lebre/zero": {
+   "n_series": 4,
+   "razao_geo": 1.0686525847885406,
+   "ic95": [
+    1.0351714014125883,
+    1.1035603861150798
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "dolar_real": 1.0249,
+    "euro_dolar": 1.0589,
+    "iene_dolar": 1.0354,
+    "petroleo_wti": 1.1607
+   }
+  },
+  "porta/zero": {
+   "n_series": 4,
+   "razao_geo": 1.015012136629154,
+   "ic95": [
+    1.0037214141170998,
+    1.0305854183343233
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "dolar_real": 1.0073,
+    "euro_dolar": 1.006,
+    "iene_dolar": 1.011,
+    "petroleo_wti": 1.036
+   }
+  }
+ }
+}

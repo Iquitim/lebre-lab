@@ -49,7 +49,7 @@ Fonte: execuções de B01, B02, B03, B06 e B07 em `runs/REGISTRO.csv` (B04 e B05
 |---|---|---|---|---|
 | Carga elétrica (4 subsistemas do ONS) | atende | 0,47 | 0,04 (sazonal) | B02 |
 | Geração solar (6 usinas) | atende | 0,72 | 0,23 (sazonal) | B01 |
-| Geração eólica (6 usinas) | atende | 1,02 (empate) | 0,12 (sazonal) | B06 |
+| Geração eólica (6 usinas) | atende | 1,02 (ligeiramente pior: IC 1,009–1,026; ver `analises/INCERTEZA_RESULTADO.md`) | 0,12 (sazonal) | B06 |
 | Qualidade do ar (4 poluentes) | **não atende** | **2,08** (5,5 no benzeno) | 0,11 (sazonal) | B03 |
 | Maré meteorológica (6 estações) | **não atende** | **1,07** | 0,94 (persistência); pior que ela em 3 de 6 | B07 |
 
@@ -118,3 +118,12 @@ referência de 6,9% para 1,5% nos retornos, de 6,8% para 3,8% nos níveis e de 5
 perda** na carga e na solar (razão 1,000 contra a LEBRE). A versão por pesos perdeu 5% a 11% na carga e na solar.
 Leitura: a ideia de M2 é boa; a regra de troca (média exponencial com alfa fixo) é ruidosa demais para fechar a
 diferença. Uma troca governada por evidência sempre válida, como as mudanças estruturais, é o candidato natural.
+
+## Incerteza dos resultados centrais (07/10/2026, `analises/INCERTEZA_RESULTADO.md`)
+
+Bootstrap de blocos pareado, com plano commitado antes do cálculo. Reprodutibilidade: o MSE recalculado de todos os
+modelos em todas as séries das famílias B e C saiu idêntico ao das execuções originais.
+- A maioria das conclusões se confirma com intervalo de 95%.
+- **Correções:** a eólica é ligeiramente pior que o linear online (1,7%), não empate; a margem de 1% da porta em C04 não
+  está confirmada; nas marés a LEBRE é melhor que a persistência no conjunto, embora perca em 3 de 6 estações.
+- Os intervalos tratam as séries como independentes e tendem a ser estreitos demais quando elas compartilham o tempo.

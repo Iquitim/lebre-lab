@@ -1,0 +1,99 @@
+{
+ "familia": "B03",
+ "bloco": 168,
+ "B": 2000,
+ "semente": 20261007,
+ "conferencia": [
+  {
+   "serie": "CO(GT)",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "NOx(GT)",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "NO2(GT)",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "C6H6(GT)",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  }
+ ],
+ "comparacoes": {
+  "lebre/linear_online": {
+   "n_series": 4,
+   "razao_geo": 2.0763119986063803,
+   "ic95": [
+    1.904213598505615,
+    2.2999559620147343
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "CO(GT)": 1.7163,
+    "NOx(GT)": 1.4959,
+    "NO2(GT)": 1.3082,
+    "C6H6(GT)": 5.5334
+   }
+  },
+  "lebre/sazonal_ingenuo": {
+   "n_series": 4,
+   "razao_geo": 0.11267733601590561,
+   "ic95": [
+    0.10292690417003138,
+    0.1244518662211353
+   ],
+   "series_abaixo_de_1": 4,
+   "por_serie": {
+    "CO(GT)": 0.1245,
+    "NOx(GT)": 0.1335,
+    "NO2(GT)": 0.1845,
+    "C6H6(GT)": 0.0526
+   }
+  },
+  "porta/lebre": {
+   "n_series": 4,
+   "razao_geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "CO(GT)": 1.0,
+    "NOx(GT)": 1.0,
+    "NO2(GT)": 1.0,
+    "C6H6(GT)": 1.0
+   }
+  }
+ }
+}

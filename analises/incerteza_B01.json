@@ -1,0 +1,127 @@
+{
+ "familia": "B01",
+ "bloco": 168,
+ "B": 2000,
+ "semente": 20261007,
+ "conferencia": [
+  {
+   "serie": "Conj. Janaúba",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Arinos 2 500 kV",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Futura",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Sol do Cerrado",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Helio Valgas",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Lar do Sol",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  }
+ ],
+ "comparacoes": {
+  "lebre/linear_online": {
+   "n_series": 6,
+   "razao_geo": 0.7210750759046601,
+   "ic95": [
+    0.7049249334486629,
+    0.7375854864865745
+   ],
+   "series_abaixo_de_1": 6,
+   "por_serie": {
+    "Conj. Janaúba": 0.7227,
+    "Conj. Arinos 2 500 kV": 0.7022,
+    "Conj. Futura": 0.6517,
+    "Conj. Sol do Cerrado": 0.7222,
+    "Conj. Helio Valgas": 0.7485,
+    "Conj. Lar do Sol": 0.7862
+   }
+  },
+  "lebre/sazonal_ingenuo": {
+   "n_series": 6,
+   "razao_geo": 0.23091610355417583,
+   "ic95": [
+    0.22311607798115837,
+    0.23867822684438342
+   ],
+   "series_abaixo_de_1": 6,
+   "por_serie": {
+    "Conj. Janaúba": 0.2279,
+    "Conj. Arinos 2 500 kV": 0.2279,
+    "Conj. Futura": 0.1991,
+    "Conj. Sol do Cerrado": 0.2568,
+    "Conj. Helio Valgas": 0.2395,
+    "Conj. Lar do Sol": 0.2384
+   }
+  },
+  "porta/lebre": {
+   "n_series": 6,
+   "razao_geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "Conj. Janaúba": 1.0,
+    "Conj. Arinos 2 500 kV": 1.0,
+    "Conj. Futura": 1.0,
+    "Conj. Sol do Cerrado": 1.0,
+    "Conj. Helio Valgas": 1.0,
+    "Conj. Lar do Sol": 1.0
+   }
+  }
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "familia": "B06",
+ "bloco": 168,
+ "B": 2000,
+ "semente": 20261007,
+ "conferencia": [
+  {
+   "serie": "Conj. São Roque",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Lagoa dos Ventos",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Caju",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Monte Verde",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Serra do Mel A",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "Conj. Santa Vitória do Palmar",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  }
+ ],
+ "comparacoes": {
+  "lebre/linear_online": {
+   "n_series": 6,
+   "razao_geo": 1.0169409461652148,
+   "ic95": [
+    1.0090102796822478,
+    1.0255424491143796
+   ],
+   "series_abaixo_de_1": 1,
+   "por_serie": {
+    "Conj. São Roque": 1.0184,
+    "Conj. Lagoa dos Ventos": 1.0337,
+    "Conj. Caju": 0.9912,
+    "Conj. Monte Verde": 1.0006,
+    "Conj. Serra do Mel A": 1.0071,
+    "Conj. Santa Vitória do Palmar": 1.0518
+   }
+  },
+  "lebre/sazonal_ingenuo": {
+   "n_series": 6,
+   "razao_geo": 0.11650823122043631,
+   "ic95": [
+    0.11241588372418657,
+    0.12105656129226167
+   ],
+   "series_abaixo_de_1": 6,
+   "por_serie": {
+    "Conj. São Roque": 0.1363,
+    "Conj. Lagoa dos Ventos": 0.1197,
+    "Conj. Caju": 0.1303,
+    "Conj. Monte Verde": 0.139,
+    "Conj. Serra do Mel A": 0.1371,
+    "Conj. Santa Vitória do Palmar": 0.0617
+   }
+  },
+  "porta/lebre": {
+   "n_series": 6,
+   "razao_geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "Conj. São Roque": 1.0,
+    "Conj. Lagoa dos Ventos": 1.0,
+    "Conj. Caju": 1.0,
+    "Conj. Monte Verde": 1.0,
+    "Conj. Serra do Mel A": 1.0,
+    "Conj. Santa Vitória do Palmar": 1.0
+   }
+  }
+ }
+}

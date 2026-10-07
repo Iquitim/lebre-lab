@@ -1,0 +1,71 @@
+{
+ "familia": "C05",
+ "bloco": 12,
+ "B": 2000,
+ "semente": 20261007,
+ "conferencia": [
+  {
+   "serie": "ipca",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "inpc",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "sazonal_ingenuo": 0.0,
+    "m2_porta": 0.0
+   }
+  }
+ ],
+ "comparacoes": {
+  "lebre/linear_online": {
+   "n_series": 2,
+   "razao_geo": 0.8968449559775694,
+   "ic95": [
+    0.7806704019473993,
+    0.9935274338425962
+   ],
+   "series_abaixo_de_1": 2,
+   "por_serie": {
+    "ipca": 0.8519,
+    "inpc": 0.9441
+   }
+  },
+  "lebre/ingenuo": {
+   "n_series": 2,
+   "razao_geo": 0.8950384914257258,
+   "ic95": [
+    0.8370594189428188,
+    0.9695601890456533
+   ],
+   "series_abaixo_de_1": 2,
+   "por_serie": {
+    "ipca": 0.8758,
+    "inpc": 0.9147
+   }
+  },
+  "porta/lebre": {
+   "n_series": 2,
+   "razao_geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "ipca": 1.0,
+    "inpc": 1.0
+   }
+  }
+ }
+}

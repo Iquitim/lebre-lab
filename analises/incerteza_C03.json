@@ -1,0 +1,110 @@
+{
+ "familia": "C03",
+ "bloco": 20,
+ "B": 2000,
+ "semente": 20261007,
+ "conferencia": [
+  {
+   "serie": "nivel_dolar_real",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "nivel_euro_dolar",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "nivel_iene_dolar",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "m2_porta": 0.0
+   }
+  },
+  {
+   "serie": "nivel_petroleo_wti",
+   "max_dif_relativa": 0.0,
+   "por_modelo": {
+    "lebre": 0.0,
+    "ingenuo": 0.0,
+    "linear_online": 0.0,
+    "m2_porta": 0.0
+   }
+  }
+ ],
+ "comparacoes": {
+  "lebre/linear_online": {
+   "n_series": 4,
+   "razao_geo": 0.5586972836262699,
+   "ic95": [
+    0.508079877719587,
+    0.6125278300628095
+   ],
+   "series_abaixo_de_1": 4,
+   "por_serie": {
+    "nivel_dolar_real": 0.9018,
+    "nivel_euro_dolar": 0.2119,
+    "nivel_iene_dolar": 0.5582,
+    "nivel_petroleo_wti": 0.9134
+   }
+  },
+  "lebre/ingenuo": {
+   "n_series": 4,
+   "razao_geo": 1.0684903210748535,
+   "ic95": [
+    1.041008251340039,
+    1.0871658534780455
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "nivel_dolar_real": 1.0445,
+    "nivel_euro_dolar": 1.03,
+    "nivel_iene_dolar": 1.0504,
+    "nivel_petroleo_wti": 1.1534
+   }
+  },
+  "porta/ingenuo": {
+   "n_series": 4,
+   "razao_geo": 1.0383543044078134,
+   "ic95": [
+    1.0087127703594165,
+    1.0569806442483012
+   ],
+   "series_abaixo_de_1": 0,
+   "por_serie": {
+    "nivel_dolar_real": 1.0144,
+    "nivel_euro_dolar": 1.0082,
+    "nivel_iene_dolar": 1.0087,
+    "nivel_petroleo_wti": 1.1269
+   }
+  },
+  "lebre/sem_entradas": {
+   "n_series": 4,
+   "razao_geo": 0.9921478245733425,
+   "ic95": [
+    0.979424877690147,
+    1.0001579033975612
+   ],
+   "series_abaixo_de_1": 4,
+   "por_serie": {
+    "nivel_dolar_real": 0.9999,
+    "nivel_euro_dolar": 0.9986,
+    "nivel_iene_dolar": 1.0,
+    "nivel_petroleo_wti": 0.9704
+   }
+  }
+ }
+}
