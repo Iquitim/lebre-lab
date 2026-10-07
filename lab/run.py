@@ -172,8 +172,20 @@ def main(argv):
                commit=commit, versao_lebre=lebre.__version__, sementes=" ".join(map(str, S["sementes"])),
                n_series=len(per), criterio=S["criterio"], resultado=resultado,
                resumo=json.dumps(resumo, ensure_ascii=False, default=_json), notas=" | ".join(x for x in (S.get("notas", ""), extra) if x))
-    register(row, dict(spec=S, resumo=resumo, series=per))
+    register(row, dict(spec=S, resumo=resumo, series=per, dados=estado_dos_dados()))
     print("registrado:", row["id"])
+
+
+def estado_dos_dados():
+    """SHA-256 do manifesto de dados (scripts/manifesto_dados.py) e quantos arquivos de dados são mais novos que ele."""
+    man = ROOT / "dados" / "MANIFESTO_SHA256.tsv"
+    if not man.exists():
+        return dict(manifesto="ausente")
+    t = man.stat().st_mtime
+    novos = [p.relative_to(ROOT).as_posix() for p in (ROOT / "dados").rglob("*")
+             if p.is_file() and p.name not in ("MANIFESTO_SHA256.tsv", "FONTES.md") and p.stat().st_mtime > t]
+    import hashlib
+    return dict(manifesto_sha256=hashlib.sha256(man.read_bytes()).hexdigest(), arquivos_mais_novos_que_o_manifesto=novos)
 
 
 if __name__ == "__main__":
