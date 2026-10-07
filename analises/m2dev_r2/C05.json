@@ -1,0 +1,169 @@
+{
+ "familia": "C05",
+ "prototipo": {
+  "commit": "82e7b16",
+  "model053_sha256": "74058faaedfe3e6248f65988fd2fedce69978fa009dd6da111fd683e7a417b19"
+ },
+ "execucao_lab_conferida": "20261004-184218_C05",
+ "B": 2000,
+ "semente": 20261010,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r1": 0.0,
+ "resumo": {
+  "H": {
+   "vs_ref": {
+    "geo": 0.4029774576210612,
+    "ic95": [
+     0.2944426984226996,
+     0.5168539616547271
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0000023189601388,
+    "ic95": [
+     1.000000000001879,
+     1.0000191796231346
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0000023189601388,
+    "ic95": [
+     1.000000000002193,
+     1.000019548731799
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 66.15555555555557,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0054910638924006265,
+   "peso_L_medio": 0.9999910557768708
+  },
+  "F": {
+   "vs_ref": {
+    "geo": 0.4029765231345672,
+    "ic95": [
+     0.2985639431731662,
+     0.5112283650183569
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 66.15555555555557,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.007741931297354182,
+   "peso_L_medio": 1.0
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.09975597539470435,
+   "mse_ref": 0.2552420138888889,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 194.2,
+   "configs": {
+    "H": {
+     "mse": 0.09975643787141601,
+     "peso_L_medio": 0.9999821387696632,
+     "variacao_peso_por_passo": 0.006733326579444129,
+     "primeiro_peso_L_acima_0_9": 33,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 260.35555555555555,
+     "acrescimo_custo": 66.15555555555557,
+     "cobertura": 0.9444444444444444,
+     "estrutura_identica": true,
+     "razao_ref": 0.3908307897728845,
+     "razao_v052": 1.0000046360802932,
+     "razao_melhor": 1.0000046360802932
+    },
+    "F": {
+     "mse": 0.09975597539470435,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.009776536312849162,
+     "primeiro_peso_L_acima_0_9": 3,
+     "trocas_regime": 2,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 260.35555555555555,
+     "acrescimo_custo": 66.15555555555557,
+     "cobertura": 0.9444444444444444,
+     "estrutura_identica": true,
+     "razao_ref": 0.39082897785836224,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r1_dif_rel": 0.0
+  },
+  {
+   "serie": "inpc",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.13041672896706713,
+   "mse_ref": 0.31387777777777776,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 194.2,
+   "configs": {
+    "H": {
+     "mse": 0.13041672920773204,
+     "peso_L_medio": 0.9999999727840783,
+     "variacao_peso_por_passo": 0.004248801205357124,
+     "primeiro_peso_L_acima_0_9": 17,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 260.35555555555555,
+     "acrescimo_custo": 66.15555555555557,
+     "cobertura": 0.95,
+     "estrutura_identica": true,
+     "razao_ref": 0.4155016329319935,
+     "razao_v052": 1.0000000018453532,
+     "razao_melhor": 1.0000000018453532
+    },
+    "F": {
+     "mse": 0.13041672896706713,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0057073262818592005,
+     "primeiro_peso_L_acima_0_9": 2,
+     "trocas_regime": 2,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 260.35555555555555,
+     "acrescimo_custo": 66.15555555555557,
+     "cobertura": 0.95,
+     "estrutura_identica": true,
+     "razao_ref": 0.4155016321652462,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r1_dif_rel": 0.0
+  }
+ ]
+}
