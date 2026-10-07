@@ -1,0 +1,169 @@
+{
+ "familia": "C02",
+ "prototipo": {
+  "commit": "432ef71",
+  "model053_sha256": "9fd13bdf546fff91d2236c3938d5636c642800132fd250def2a393561a18c121"
+ },
+ "execucao_lab_conferida": "20261004-184213_C02",
+ "B": 2000,
+ "semente": 20261012,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "K": {
+   "vs_ref": {
+    "geo": 0.6020597406732551,
+    "ic95": [
+     0.5654713723851882,
+     0.6225807016615934
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 71.25347388596069,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0006169788249739226,
+   "peso_L_medio": 1.0
+  }
+ },
+ "series": [
+  {
+   "serie": "abs_dolar_real",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.3731740684880106,
+   "mse_ref": 0.6338831377752305,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 453.38737422137035,
+   "configs": {
+    "K": {
+     "mse": 0.3731740684880106,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0003829150406843632,
+     "primeiro_peso_L_acima_0_9": 6,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 525.063464302827,
+     "acrescimo_custo": 71.67609008145666,
+     "cobertura": 0.8964659034345446,
+     "estrutura_identica": true,
+     "razao_ref": 0.5887111460288362,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "abs_euro_dolar",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.10287385648462505,
+   "mse_ref": 0.18942376387794688,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 447.35903210349784,
+   "configs": {
+    "K": {
+     "mse": 0.10287385648462505,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0008994937168093412,
+     "primeiro_peso_L_acima_0_9": 20,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 518.7246286535697,
+     "acrescimo_custo": 71.36559655007181,
+     "cobertura": 0.89825,
+     "estrutura_identica": true,
+     "razao_ref": 0.543088440323204,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "abs_iene_dolar",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.1671574691355383,
+   "mse_ref": 0.29765440036323493,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 439.56633924293243,
+   "configs": {
+    "K": {
+     "mse": 0.1671574691355383,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0003707931537113361,
+     "primeiro_peso_L_acima_0_9": 11,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 510.9319357930043,
+     "acrescimo_custo": 71.36559655007187,
+     "cobertura": 0.90525,
+     "estrutura_identica": true,
+     "razao_ref": 0.5615823886075662,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "abs_petroleo_wti",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 5.052683511347591,
+   "mse_ref": 6.904783154405746,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 441.50261140392905,
+   "configs": {
+    "K": {
+     "mse": 5.052683511347591,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00081471338869065,
+     "primeiro_peso_L_acima_0_9": 10,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 512.1092237661715,
+     "acrescimo_custo": 70.6066123622424,
+     "cobertura": 0.8981294236602629,
+     "estrutura_identica": true,
+     "razao_ref": 0.7317657047815639,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "familia": "B06",
+ "prototipo": {
+  "commit": "432ef71",
+  "model053_sha256": "9fd13bdf546fff91d2236c3938d5636c642800132fd250def2a393561a18c121"
+ },
+ "execucao_lab_conferida": "20261004-183324_B06",
+ "B": 2000,
+ "semente": 20261012,
+ "series_com_externa_v052": 4,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": 0.0,
+ "resumo": {
+  "K": {
+   "vs_ref": {
+    "geo": 0.11650823122043631,
+    "ic95": [
+     0.11241190846092616,
+     0.12111778808741341
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 4,
+   "acrescimo_custo": 74.24441404468763,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 9.849081852337908e-05,
+   "peso_L_medio": 1.0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. São Roque",
+   "origem": "B06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 3436.0849902357268,
+   "mse_ref": 25202.0358403221,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 580.4923734610122,
+   "configs": {
+    "K": {
+     "mse": 3436.0849902357268,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00013113638432283084,
+     "primeiro_peso_L_acima_0_9": 28,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 654.8845303237573,
+     "acrescimo_custo": 74.39215686274508,
+     "cobertura": 0.9005357957136343,
+     "estrutura_identica": true,
+     "razao_ref": 0.13634156430879082,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Lagoa dos Ventos",
+   "origem": "B06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 3158.6684848526534,
+   "mse_ref": 26387.559506616275,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 548.4804434564523,
+   "configs": {
+    "K": {
+     "mse": 3158.6684848526534,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 7.342631742974738e-05,
+     "primeiro_peso_L_acima_0_9": 21,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 622.8726003191974,
+     "acrescimo_custo": 74.39215686274508,
+     "cobertura": 0.9020177838577291,
+     "estrutura_identica": true,
+     "razao_ref": 0.11970294123110042,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Caju",
+   "origem": "B06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1948.9624636847993,
+   "mse_ref": 14958.939089170563,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 650.74453374373,
+   "configs": {
+    "K": {
+     "mse": 1948.9624636847993,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 9.838144258891485e-05,
+     "primeiro_peso_L_acima_0_9": 29,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 725.1366906064751,
+     "acrescimo_custo": 74.39215686274508,
+     "cobertura": 0.9000227998176015,
+     "estrutura_identica": true,
+     "razao_ref": 0.13028747908304136,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Monte Verde",
+   "origem": "B06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1463.125701511499,
+   "mse_ref": 10529.171551584068,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 593.6425501595987,
+   "configs": {
+    "K": {
+     "mse": 1463.125701511499,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 7.7405218494227e-05,
+     "primeiro_peso_L_acima_0_9": 27,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 668.0347070223438,
+     "acrescimo_custo": 74.39215686274508,
+     "cobertura": 0.9010487916096671,
+     "estrutura_identica": true,
+     "razao_ref": 0.13895924236236593,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Serra do Mel A",
+   "origem": "B06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 819.0123747883849,
+   "mse_ref": 5972.467981506728,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 738.3179491564067,
+   "configs": {
+    "K": {
+     "mse": 819.0123747883849,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 6.123956400226854e-05,
+     "primeiro_peso_L_acima_0_9": 26,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 811.8236491108071,
+     "acrescimo_custo": 73.50569995440037,
+     "cobertura": 0.9013734995383195,
+     "estrutura_identica": true,
+     "razao_ref": 0.13713131277126836,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Santa Vitória do Palmar",
+   "origem": "B06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 2627.0141217833134,
+   "mse_ref": 42558.13614658884,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 626.2888850889193,
+   "configs": {
+    "K": {
+     "mse": 2627.0141217833134,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00014935598430228583,
+     "primeiro_peso_L_acima_0_9": 4,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 700.6810419516644,
+     "acrescimo_custo": 74.39215686274508,
+     "cobertura": 0.9023597811217511,
+     "estrutura_identica": true,
+     "razao_ref": 0.0617276591421844,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  }
+ ]
+}

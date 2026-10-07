@@ -1,0 +1,169 @@
+{
+ "familia": "B03",
+ "prototipo": {
+  "commit": "432ef71",
+  "model053_sha256": "9fd13bdf546fff91d2236c3938d5636c642800132fd250def2a393561a18c121"
+ },
+ "execucao_lab_conferida": "20261004-183309_B03",
+ "B": 2000,
+ "semente": 20261012,
+ "series_com_externa_v052": 4,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "K": {
+   "vs_ref": {
+    "geo": 0.11267733601590561,
+    "ic95": [
+     0.10276926338947347,
+     0.1246289901804312
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 4,
+   "acrescimo_custo": 64.13123864486482,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0005064373691383557,
+   "peso_L_medio": 1.0
+  }
+ },
+ "series": [
+  {
+   "serie": "CO(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 0.21174712728934125,
+   "mse_ref": 1.7008883125303937,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 3,
+   "custo_v052": 761.2318264400983,
+   "configs": {
+    "K": {
+     "mse": 0.21174712728934125,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0006426888692414091,
+     "primeiro_peso_L_acima_0_9": 276,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 3,
+     "custo": 822.666046809875,
+     "acrescimo_custo": 61.434220369776654,
+     "cobertura": 0.9069585613760751,
+     "estrutura_identica": true,
+     "razao_ref": 0.12449208200762299,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "NOx(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 4647.347581186515,
+   "mse_ref": 34824.0551092545,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 652.0769904884045,
+   "configs": {
+    "K": {
+     "mse": 4647.347581186515,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.000626576456307228,
+     "primeiro_peso_L_acima_0_9": 90,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 713.8497809126858,
+     "acrescimo_custo": 61.77279042428131,
+     "cobertura": 0.9050272091215341,
+     "estrutura_identica": true,
+     "razao_ref": 0.13345222337278811,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "NO2(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 276.4349925562213,
+   "mse_ref": 1498.324706638804,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 724.2114780378326,
+   "configs": {
+    "K": {
+     "mse": 276.4349925562213,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0003204925344883734,
+     "primeiro_peso_L_acima_0_9": 113,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 785.9611841402159,
+     "acrescimo_custo": 61.74970610238324,
+     "cobertura": 0.9044718081659106,
+     "estrutura_identica": true,
+     "razao_ref": 0.1844960517112133,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "C6H6(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 2.1832040601863327,
+   "mse_ref": 41.514773076385985,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 3,
+   "custo_v052": 788.3557550496954,
+   "configs": {
+    "K": {
+     "mse": 2.1832040601863327,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0004359916165164125,
+     "primeiro_peso_L_acima_0_9": 89,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 3,
+     "custo": 859.9239927327135,
+     "acrescimo_custo": 71.56823768301808,
+     "cobertura": 0.9061283505727951,
+     "estrutura_identica": true,
+     "razao_ref": 0.0525886063780067,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  }
+ ]
+}
