@@ -1,0 +1,165 @@
+{
+ "familia": "VC05",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 0.5431357470900368,
+    "ic95": [
+     0.4742268721186337,
+     0.6221438406498492
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9973404076062224,
+    "ic95": [
+     0.9380197019854175,
+     1.0629843999832242
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.9973404076062224,
+    "ic95": [
+     0.9388716756988968,
+     1.0634564521850802
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 71.90666666666668,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.013238517250664678,
+   "peso_L_medio": 0.7753394672778269
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca15",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.07670559522418584,
+   "mse_ref": 0.1672625,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 193.32666666666665,
+   "configs": {
+    "R6": {
+     "mse": 0.07668081014726913,
+     "peso_L_medio": 0.9980997816928343,
+     "variacao_peso_por_passo": 0.011039773050350173,
+     "primeiro_peso_L_acima_0_9": 40,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 265.23333333333335,
+     "acrescimo_custo": 71.9066666666667,
+     "cobertura": 0.94,
+     "estrutura_identica": true,
+     "razao_ref": 0.45844591673130036,
+     "razao_v052": 0.9996768804564481,
+     "razao_melhor": 0.9996768804564481
+    }
+   }
+  },
+  {
+   "serie": "ipca_alimentos_bebidas",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.375945049605895,
+   "mse_ref": 0.87981625,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 279.18833333333333,
+   "configs": {
+    "R6": {
+     "mse": 0.3758574361732174,
+     "peso_L_medio": 0.999330800749968,
+     "variacao_peso_por_passo": 0.011447072493920877,
+     "primeiro_peso_L_acima_0_9": 5,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 351.095,
+     "acrescimo_custo": 71.9066666666667,
+     "cobertura": 0.9033333333333333,
+     "estrutura_identica": true,
+     "razao_ref": 0.42719992518121525,
+     "razao_v052": 0.9997669514925933,
+     "razao_melhor": 0.9997669514925933
+    }
+   }
+  },
+  {
+   "serie": "ipca_servicos",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.08466816933951918,
+   "mse_ref": 0.09086124999999999,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 269.40833333333336,
+   "configs": {
+    "R6": {
+     "mse": 0.0838136057685047,
+     "peso_L_medio": 0.10740894478740506,
+     "variacao_peso_por_passo": 0.016401179211372564,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 341.31500000000005,
+     "acrescimo_custo": 71.9066666666667,
+     "cobertura": 0.91,
+     "estrutura_identica": true,
+     "razao_ref": 0.9224350949222547,
+     "razao_v052": 0.9899069086094484,
+     "razao_melhor": 0.9899069086094484
+    }
+   }
+  },
+  {
+   "serie": "ipca_monitorados",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.6340876538588102,
+   "mse_ref": 1.3164116666666668,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 307.74833333333333,
+   "configs": {
+    "R6": {
+     "mse": 0.6341181401537824,
+     "peso_L_medio": 0.9965183418810998,
+     "variacao_peso_por_passo": 0.014066044247015104,
+     "primeiro_peso_L_acima_0_9": 9,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 379.655,
+     "acrescimo_custo": 71.90666666666664,
+     "cobertura": 0.8866666666666667,
+     "estrutura_identica": true,
+     "razao_ref": 0.4817020056951149,
+     "razao_v052": 1.0000480789915822,
+     "razao_melhor": 1.0000480789915822
+    }
+   }
+  }
+ ]
+}

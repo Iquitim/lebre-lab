@@ -1,0 +1,165 @@
+{
+ "familia": "VC02",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 0.5838236283004503,
+    "ic95": [
+     0.5585222850630303,
+     0.6071286935328027
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9999983636579902,
+    "ic95": [
+     0.999995200947403,
+     1.0000014879062227
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.9999983636579902,
+    "ic95": [
+     0.999995039406636,
+     1.000001512725782
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 67.56841701801457,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0012837282367475183,
+   "peso_L_medio": 0.9999810222333092
+  }
+ },
+ "series": [
+  {
+   "serie": "abs_dolar_real_2000_2009",
+   "origem": "VC02",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.5511278938426118,
+   "mse_ref": 0.755560980179605,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 457.6525488692986,
+   "configs": {
+    "R6": {
+     "mse": 0.5511258639558071,
+     "peso_L_medio": 0.9999644710237383,
+     "variacao_peso_por_passo": 0.0007470312894190502,
+     "primeiro_peso_L_acima_0_9": 40,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 527.3673821387505,
+     "acrescimo_custo": 69.7148332694519,
+     "cobertura": 0.9072082835523696,
+     "estrutura_identica": true,
+     "razao_ref": 0.7294260535063608,
+     "razao_v052": 0.9999963168498137,
+     "razao_melhor": 0.9999963168498137
+    }
+   }
+  },
+  {
+   "serie": "abs_euro_dolar_2000_2009",
+   "origem": "VC02",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.18864103173331737,
+   "mse_ref": 0.3718916051851302,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 434.2589114603296,
+   "configs": {
+    "R6": {
+     "mse": 0.18864109578684254,
+     "peso_L_medio": 0.9999885592659409,
+     "variacao_peso_por_passo": 0.00200674627321145,
+     "primeiro_peso_L_acima_0_9": 12,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 504.10789574549636,
+     "acrescimo_custo": 69.84898428516675,
+     "cobertura": 0.9069952305246423,
+     "estrutura_identica": true,
+     "razao_ref": 0.5072475236243521,
+     "razao_v052": 1.0000003395524535,
+     "razao_melhor": 1.0000003395524535
+    }
+   }
+  },
+  {
+   "serie": "abs_iene_dolar_2000_2009",
+   "origem": "VC02",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.2067328152615205,
+   "mse_ref": 0.3879729861107344,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 411.66722882330396,
+   "configs": {
+    "R6": {
+     "mse": 0.2067328159466556,
+     "peso_L_medio": 0.9999893533292986,
+     "variacao_peso_por_passo": 0.001409278427104558,
+     "primeiro_peso_L_acima_0_9": 6,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 481.5162131084707,
+     "acrescimo_custo": 69.84898428516675,
+     "cobertura": 0.9069952305246423,
+     "estrutura_identica": true,
+     "razao_ref": 0.5328536350405859,
+     "razao_v052": 1.0000000033141092,
+     "razao_melhor": 1.0000000033141092
+    }
+   }
+  },
+  {
+   "serie": "abs_petroleo_wti_2000_2009",
+   "origem": "VC02",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 3.657287576979607,
+   "mse_ref": 6.206406083764455,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 450.50739747029513,
+   "configs": {
+    "R6": {
+     "mse": 3.6572758550884075,
+     "peso_L_medio": 0.999981705314259,
+     "variacao_peso_por_passo": 0.0009718569572550146,
+     "primeiro_peso_L_acima_0_9": 8,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 511.368263702568,
+     "acrescimo_custo": 60.86086623227288,
+     "cobertura": 0.9078404401650619,
+     "estrutura_identica": true,
+     "razao_ref": 0.5892743410160668,
+     "razao_v052": 0.9999967949222058,
+     "razao_melhor": 0.9999967949222058
+    }
+   }
+  }
+ ]
+}

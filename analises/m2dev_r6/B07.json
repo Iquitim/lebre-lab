@@ -1,0 +1,225 @@
+{
+ "familia": "B07",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": "20261004-183352_B07",
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 1,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 0.9199008799593487,
+    "ic95": [
+     0.9104148817024809,
+     0.9289734890184939
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9779680077159412,
+    "ic95": [
+     0.9710500237966921,
+     0.9846446173317316
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.9981075906777721,
+    "ic95": [
+     0.9959075465135951,
+     1.0001981050418873
+    ]
+   },
+   "series_com_externa": 1,
+   "acrescimo_custo": 72.39618982432125,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0006197030170031033,
+   "peso_L_medio": 0.49258645656407746
+  }
+ },
+ "series": [
+  {
+   "serie": "8518750_The Battery NY",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0019477782393484788,
+   "mse_ref": 0.002338172215884785,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 394.40846737394486,
+   "configs": {
+    "R6": {
+     "mse": 0.001947771649571045,
+     "peso_L_medio": 0.9999873645053142,
+     "variacao_peso_por_passo": 0.0008197870296237515,
+     "primeiro_peso_L_acima_0_9": 219,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 466.8046571982661,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9006388318503308,
+     "estrutura_identica": true,
+     "razao_ref": 0.8330317315116974,
+     "razao_v052": 0.9999966167722277,
+     "razao_melhor": 0.9999966167722277
+    }
+   }
+  },
+  {
+   "serie": "8443970_Boston",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0018992637401315693,
+   "mse_ref": 0.002247135213175531,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 435.5821526351814,
+   "configs": {
+    "R6": {
+     "mse": 0.001889946690167374,
+     "peso_L_medio": 0.8327288364028919,
+     "variacao_peso_por_passo": 0.00033371539366793153,
+     "primeiro_peso_L_acima_0_9": 11855,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 507.97834245950264,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9005532740132329,
+     "estrutura_identica": true,
+     "razao_ref": 0.841047160440605,
+     "razao_v052": 0.9950943885426098,
+     "razao_melhor": 0.9950943885426098
+    }
+   }
+  },
+  {
+   "serie": "8534720_Atlantic City",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0017641611819749646,
+   "mse_ref": 0.001714069299871667,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 448.7505932010039,
+   "configs": {
+    "R6": {
+     "mse": 0.0017069950416377102,
+     "peso_L_medio": 0.12858444272765804,
+     "variacao_peso_por_passo": 0.0010295599783745123,
+     "primeiro_peso_L_acima_0_9": 5,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 521.1467830253251,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9000399269906457,
+     "estrutura_identica": true,
+     "razao_ref": 0.9958728283421875,
+     "razao_v052": 0.9675958518295604,
+     "razao_melhor": 0.9958728283421875
+    }
+   }
+  },
+  {
+   "serie": "8665530_Charleston",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0013239944909344686,
+   "mse_ref": 0.0015209789676315418,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 437.2025581793293,
+   "configs": {
+    "R6": {
+     "mse": 0.0013209533224811008,
+     "peso_L_medio": 0.9941054518181868,
+     "variacao_peso_por_passo": 0.0007280808820409287,
+     "primeiro_peso_L_acima_0_9": 5,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 509.59874800365054,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9010666210358202,
+     "estrutura_identica": true,
+     "razao_ref": 0.8684888815642733,
+     "razao_v052": 0.9977030354172989,
+     "razao_melhor": 0.9977030354172989
+    }
+   }
+  },
+  {
+   "serie": "8771450_Galveston",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0007466631387576439,
+   "mse_ref": 0.0007089281334664195,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 434.640950832763,
+   "configs": {
+    "R6": {
+     "mse": 0.0007089235011065758,
+     "peso_L_medio": 9.434310392013987e-05,
+     "variacao_peso_por_passo": 0.0007405352027821873,
+     "primeiro_peso_L_acima_0_9": 1854,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 507.03714065708425,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9020362765229295,
+     "estrutura_identica": true,
+     "razao_ref": 0.9999934656848487,
+     "razao_v052": 0.949455603615491,
+     "razao_melhor": 0.9999934656848487
+    }
+   }
+  },
+  {
+   "serie": "8724580_Key West",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.00022911895406182005,
+   "mse_ref": 0.00021977441893626122,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 433.80971081451065,
+   "configs": {
+    "R6": {
+     "mse": 0.0002197739148796553,
+     "peso_L_medio": 1.83008264939023e-05,
+     "variacao_peso_por_passo": 6.653961552930814e-05,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 506.2059006388319,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9014373716632443,
+     "estrutura_identica": true,
+     "razao_ref": 0.9999977064819083,
+     "razao_v052": 0.9592131553653859,
+     "razao_melhor": 0.9999977064819083
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,665 @@
+{
+ "familia": "A05",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": "20261004-180630_A05",
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 20,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 0.30784733784886154,
+    "ic95": [
+     0.3058373402770947,
+     0.3098933583998806
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9999999903488882,
+    "ic95": [
+     0.9999999875504979,
+     0.9999999927475968
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.9999999903488882,
+    "ic95": [
+     0.9999999878155178,
+     0.9999999926724525
+    ]
+   },
+   "series_com_externa": 20,
+   "acrescimo_custo": 72.39506666666666,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00015209828998034798,
+   "peso_L_medio": 0.9999999381736979
+  }
+ },
+ "series": [
+  {
+   "serie": "s501",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.4145418509044045,
+   "mse_ref": 1.3609771207242711,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.44597000000005,
+   "configs": {
+    "R6": {
+     "mse": 0.41454184758281326,
+     "peso_L_medio": 0.9999999281211227,
+     "variacao_peso_por_passo": 0.00020617487113814393,
+     "primeiro_peso_L_acima_0_9": 95,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 449.8410366666667,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9004,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.30459134196334364,
+     "razao_v052": 0.9999999919873199,
+     "razao_melhor": 0.9999999919873199
+    }
+   }
+  },
+  {
+   "serie": "s502",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.40440814924463164,
+   "mse_ref": 1.3745221280717466,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 386.72529333333335,
+   "configs": {
+    "R6": {
+     "mse": 0.4044081445390744,
+     "peso_L_medio": 0.9999999487612212,
+     "variacao_peso_por_passo": 8.988568716719483e-05,
+     "primeiro_peso_L_acima_0_9": 17,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 459.12036,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9005,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2942172674268983,
+     "razao_v052": 0.9999999883643362,
+     "razao_melhor": 0.9999999883643362
+    }
+   }
+  },
+  {
+   "serie": "s503",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.42205695055577697,
+   "mse_ref": 1.3600559143283135,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 383.1523466666667,
+   "configs": {
+    "R6": {
+     "mse": 0.4220569488314016,
+     "peso_L_medio": 0.9999999336014742,
+     "variacao_peso_por_passo": 0.00017777095709349737,
+     "primeiro_peso_L_acima_0_9": 10,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 455.54741333333334,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.8998,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3103232333207724,
+     "razao_v052": 0.9999999959143538,
+     "razao_melhor": 0.9999999959143538
+    }
+   }
+  },
+  {
+   "serie": "s504",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.4260981597609469,
+   "mse_ref": 1.3608303362174936,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 4,
+   "custo_v052": 398.93021333333337,
+   "configs": {
+    "R6": {
+     "mse": 0.42609815814543134,
+     "peso_L_medio": 0.9999999459593761,
+     "variacao_peso_por_passo": 0.00015286008407040444,
+     "primeiro_peso_L_acima_0_9": 8,
+     "eventos_auditoria": 1,
+     "externas": 4,
+     "custo": 471.32528,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9006666666666666,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.31311629878107783,
+     "razao_v052": 0.9999999962085835,
+     "razao_melhor": 0.9999999962085835
+    }
+   }
+  },
+  {
+   "serie": "s505",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.42079231810192935,
+   "mse_ref": 1.3471686876660625,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 383.49238333333335,
+   "configs": {
+    "R6": {
+     "mse": 0.4207923138297818,
+     "peso_L_medio": 0.9999999265359978,
+     "variacao_peso_por_passo": 0.0001683913596010707,
+     "primeiro_peso_L_acima_0_9": 83,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 455.88745,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9004666666666666,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3123530985260609,
+     "razao_v052": 0.9999999898473727,
+     "razao_melhor": 0.9999999898473727
+    }
+   }
+  },
+  {
+   "serie": "s506",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.45518904973905483,
+   "mse_ref": 1.3684296643261327,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 383.2248833333333,
+   "configs": {
+    "R6": {
+     "mse": 0.4551890422494729,
+     "peso_L_medio": 0.9999999394834631,
+     "variacao_peso_por_passo": 0.00012059211716318845,
+     "primeiro_peso_L_acima_0_9": 21,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 455.61994999999996,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.8996,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3326360529268601,
+     "razao_v052": 0.9999999835462167,
+     "razao_melhor": 0.9999999835462167
+    }
+   }
+  },
+  {
+   "serie": "s507",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.41867233224685846,
+   "mse_ref": 1.355092895124279,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 397.1926266666667,
+   "configs": {
+    "R6": {
+     "mse": 0.4186723302462495,
+     "peso_L_medio": 0.9999999386495171,
+     "variacao_peso_por_passo": 0.00012761322766050487,
+     "primeiro_peso_L_acima_0_9": 6,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 469.58769333333333,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9005333333333333,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.308962087951802,
+     "razao_v052": 0.99999999522154,
+     "razao_melhor": 0.99999999522154
+    }
+   }
+  },
+  {
+   "serie": "s508",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.4204570743100635,
+   "mse_ref": 1.3737119892661809,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 389.8882533333334,
+   "configs": {
+    "R6": {
+     "mse": 0.42045707120661396,
+     "peso_L_medio": 0.9999999241942007,
+     "variacao_peso_por_passo": 0.000197784803201645,
+     "primeiro_peso_L_acima_0_9": 14,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 462.28332000000006,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.8999,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3060736708217977,
+     "razao_v052": 0.9999999926188672,
+     "razao_melhor": 0.9999999926188672
+    }
+   }
+  },
+  {
+   "serie": "s509",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.47534384291485154,
+   "mse_ref": 1.3783439294035384,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 380.71003,
+   "configs": {
+    "R6": {
+     "mse": 0.47534384089199827,
+     "peso_L_medio": 0.9999999514669736,
+     "variacao_peso_por_passo": 0.00012585369468220102,
+     "primeiro_peso_L_acima_0_9": 37,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 453.10509666666667,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9003333333333333,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.34486591535807576,
+     "razao_v052": 0.9999999957444421,
+     "razao_melhor": 0.9999999957444421
+    }
+   }
+  },
+  {
+   "serie": "s510",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.43464881514294623,
+   "mse_ref": 1.3356603378402958,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 398.2975,
+   "configs": {
+    "R6": {
+     "mse": 0.4346488055599786,
+     "peso_L_medio": 0.9999999358571371,
+     "variacao_peso_por_passo": 0.00012534255738115525,
+     "primeiro_peso_L_acima_0_9": 5,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 470.69256666666666,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9001333333333333,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3254186661429107,
+     "razao_v052": 0.9999999779523898,
+     "razao_melhor": 0.9999999779523898
+    }
+   }
+  },
+  {
+   "serie": "s511",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.39277118377497405,
+   "mse_ref": 1.3449221769046478,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 386.8092533333334,
+   "configs": {
+    "R6": {
+     "mse": 0.39277118127142063,
+     "peso_L_medio": 0.9999999558637868,
+     "variacao_peso_por_passo": 9.899141601067263e-05,
+     "primeiro_peso_L_acima_0_9": 9,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 459.20432000000005,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.29204008084347866,
+     "razao_v052": 0.999999993625924,
+     "razao_melhor": 0.999999993625924
+    }
+   }
+  },
+  {
+   "serie": "s512",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.4196785055362647,
+   "mse_ref": 1.37362604057928,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 375.74355,
+   "configs": {
+    "R6": {
+     "mse": 0.41967850360337766,
+     "peso_L_medio": 0.9999999619717749,
+     "variacao_peso_por_passo": 8.743672895214651e-05,
+     "primeiro_peso_L_acima_0_9": 45,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 448.1386166666667,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9004,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.30552602470057466,
+     "razao_v052": 0.9999999953943626,
+     "razao_melhor": 0.9999999953943626
+    }
+   }
+  },
+  {
+   "serie": "s513",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.40157850697549385,
+   "mse_ref": 1.3642696925777522,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 390.0831566666667,
+   "configs": {
+    "R6": {
+     "mse": 0.4015785031678622,
+     "peso_L_medio": 0.999999946412627,
+     "variacao_peso_por_passo": 0.00012863195503525862,
+     "primeiro_peso_L_acima_0_9": 5,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 462.47822333333335,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9005333333333333,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2943541921019223,
+     "razao_v052": 0.9999999905183381,
+     "razao_melhor": 0.9999999905183381
+    }
+   }
+  },
+  {
+   "serie": "s514",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.42390609065504964,
+   "mse_ref": 1.359710368403259,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.6433166666667,
+   "configs": {
+    "R6": {
+     "mse": 0.4239060825463978,
+     "peso_L_medio": 0.9999999245335003,
+     "variacao_peso_por_passo": 0.00021316813302275914,
+     "primeiro_peso_L_acima_0_9": 21,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 450.03838333333334,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9005333333333333,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3117620431505579,
+     "razao_v052": 0.9999999808715845,
+     "razao_melhor": 0.9999999808715845
+    }
+   }
+  },
+  {
+   "serie": "s515",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.4222596874329065,
+   "mse_ref": 1.3476546184266172,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 387.74620333333337,
+   "configs": {
+    "R6": {
+     "mse": 0.42225967934535596,
+     "peso_L_medio": 0.9999999163000002,
+     "variacao_peso_por_passo": 0.0001951022057965829,
+     "primeiro_peso_L_acima_0_9": 109,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 460.14127,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9007333333333334,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3133293008251201,
+     "razao_v052": 0.9999999808469746,
+     "razao_melhor": 0.9999999808469746
+    }
+   }
+  },
+  {
+   "serie": "s516",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.39335230711278313,
+   "mse_ref": 1.3620603039855856,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 382.4377233333334,
+   "configs": {
+    "R6": {
+     "mse": 0.3933523046055784,
+     "peso_L_medio": 0.9999999278664204,
+     "variacao_peso_por_passo": 0.0002364040662196145,
+     "primeiro_peso_L_acima_0_9": 9,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 454.83279000000005,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9000333333333334,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.28879213604168086,
+     "razao_v052": 0.9999999936260582,
+     "razao_melhor": 0.9999999936260582
+    }
+   }
+  },
+  {
+   "serie": "s517",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.4042360999069153,
+   "mse_ref": 1.3425676962267044,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.5827066666667,
+   "configs": {
+    "R6": {
+     "mse": 0.4042360961661108,
+     "peso_L_medio": 0.9999999319802064,
+     "variacao_peso_por_passo": 0.00013684037745475704,
+     "primeiro_peso_L_acima_0_9": 82,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 449.97777333333335,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9005666666666666,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.3010917790605413,
+     "razao_v052": 0.9999999907459911,
+     "razao_melhor": 0.9999999907459911
+    }
+   }
+  },
+  {
+   "serie": "s518",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.42743492932340027,
+   "mse_ref": 1.3588009938306704,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 387.74367000000007,
+   "configs": {
+    "R6": {
+     "mse": 0.4274349219657367,
+     "peso_L_medio": 0.9999999467309384,
+     "variacao_peso_por_passo": 8.088213900289078e-05,
+     "primeiro_peso_L_acima_0_9": 8,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 460.1387366666667,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.8998666666666667,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.31456771367286934,
+     "razao_v052": 0.999999982786471,
+     "razao_melhor": 0.999999982786471
+    }
+   }
+  },
+  {
+   "serie": "s519",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.388473426771756,
+   "mse_ref": 1.3582233419399719,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 377.3186366666667,
+   "configs": {
+    "R6": {
+     "mse": 0.3884734246620663,
+     "peso_L_medio": 0.9999999201608006,
+     "variacao_peso_por_passo": 0.00025405499792003066,
+     "primeiro_peso_L_acima_0_9": 5,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 449.71370333333334,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9004,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2860158654814484,
+     "razao_v052": 0.9999999945692819,
+     "razao_melhor": 0.9999999945692819
+    }
+   }
+  },
+  {
+   "serie": "s520",
+   "origem": "A05",
+   "T": 30000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.4150088855648527,
+   "mse_ref": 1.3685722645586338,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 384.8537766666667,
+   "configs": {
+    "R6": {
+     "mse": 0.41500888414857534,
+     "peso_L_medio": 0.9999999590234211,
+     "variacao_peso_por_passo": 0.00011818442103324099,
+     "primeiro_peso_L_acima_0_9": 45,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 457.24884333333335,
+     "acrescimo_custo": 72.39506666666665,
+     "cobertura": 0.9000666666666667,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.30324221445654986,
+     "razao_v052": 0.9999999965873566,
+     "razao_melhor": 0.9999999965873566
+    }
+   }
+  }
+ ]
+}

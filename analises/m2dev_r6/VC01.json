@@ -1,0 +1,169 @@
+{
+ "familia": "VC01",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 1.0009443705433438,
+    "ic95": [
+     0.9962627529255992,
+     1.0065013561141227
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9568579212721041,
+    "ic95": [
+     0.946005152737439,
+     0.9675601538909004
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0009443705433438,
+    "ic95": [
+     0.9960425127050275,
+     1.005856564301453
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 67.59524722115752,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00445634968400901,
+   "peso_L_medio": 0.09870571252253757
+  }
+ },
+ "series": [
+  {
+   "serie": "dolar_real_2000_2009",
+   "origem": "VC01",
+   "T": 2609,
+   "referencia": "zero",
+   "bloco": 20,
+   "mse_v052": 1.23449274399576,
+   "mse_ref": 1.180497447020034,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 313.9403602912994,
+   "configs": {
+    "R6": {
+     "mse": 1.1847851279573867,
+     "peso_L_medio": 0.37453008229946294,
+     "variacao_peso_por_passo": 0.007046714646830213,
+     "primeiro_peso_L_acima_0_9": 336,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 383.6820237638942,
+     "acrescimo_custo": 69.74166347259484,
+     "cobertura": 0.9036240541616886,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.0036320967471606,
+     "razao_v052": 0.9597343797441195,
+     "razao_melhor": 1.0036320967471606
+    }
+   }
+  },
+  {
+   "serie": "euro_dolar_2000_2009",
+   "origem": "VC01",
+   "T": 2609,
+   "referencia": "zero",
+   "bloco": 20,
+   "mse_v052": 0.43000171658437597,
+   "mse_ref": 0.41568348087747775,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 320.3707934074358,
+   "configs": {
+    "R6": {
+     "mse": 0.41571455962685633,
+     "peso_L_medio": 0.01818020731380623,
+     "variacao_peso_por_passo": 0.005877121157430532,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 390.2466078957455,
+     "acrescimo_custo": 69.87581448830969,
+     "cobertura": 0.9042130365659777,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.0000747654184212,
+     "razao_v052": 0.9667741862264958,
+     "razao_melhor": 1.0000747654184212
+    }
+   }
+  },
+  {
+   "serie": "iene_dolar_2000_2009",
+   "origem": "VC01",
+   "T": 2609,
+   "referencia": "zero",
+   "bloco": 20,
+   "mse_v052": 0.48708690612457733,
+   "mse_ref": 0.465697592996584,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 324.86906860866236,
+   "configs": {
+    "R6": {
+     "mse": 0.4657099152569919,
+     "peso_L_medio": 0.0018996265886534718,
+     "variacao_peso_por_passo": 0.002508405334852975,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 394.74488309697205,
+     "acrescimo_custo": 69.87581448830969,
+     "cobertura": 0.9042130365659777,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.000026459789772,
+     "razao_v052": 0.9561125733441128,
+     "razao_melhor": 1.000026459789772
+    }
+   }
+  },
+  {
+   "serie": "petroleo_wti_2000_2009",
+   "origem": "VC01",
+   "T": 2609,
+   "referencia": "zero",
+   "bloco": 20,
+   "mse_v052": 8.573642488265866,
+   "mse_ref": 8.101189753984826,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 378.8742046761211,
+   "configs": {
+    "R6": {
+     "mse": 8.101586405630702,
+     "peso_L_medio": 0.00021293388822770016,
+     "variacao_peso_por_passo": 0.00239315759692232,
+     "primeiro_peso_L_acima_0_9": 10,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 439.761901111537,
+     "acrescimo_custo": 60.887696435415876,
+     "cobertura": 0.9046309032553874,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.0000489621472797,
+     "razao_v052": 0.9449410115617446,
+     "razao_melhor": 1.0000489621472797
+    }
+   }
+  }
+ ]
+}

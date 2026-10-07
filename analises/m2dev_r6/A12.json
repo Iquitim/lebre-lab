@@ -1,0 +1,76 @@
+{
+ "familia": "A12",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": "20261004-181040_A12",
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 1,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 0.2927413395893742,
+    "ic95": [
+     0.2904145431088478,
+     0.29493333308046865
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9999999999491128,
+    "ic95": [
+     0.9999999999176888,
+     0.9999999999783117
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.9999999999491128,
+    "ic95": [
+     0.9999999999190214,
+     0.9999999999796991
+    ]
+   },
+   "series_com_externa": 1,
+   "acrescimo_custo": 72.39926000000014,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 2.5234601306778735e-05,
+   "peso_L_medio": 0.9999999988707398
+  }
+ },
+ "series": [
+  {
+   "serie": "s1201",
+   "origem": "A12",
+   "T": 200000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.5005519504438802,
+   "mse_ref": 1.709877911744643,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 3164.14829,
+   "configs": {
+    "R6": {
+     "mse": 0.5005519504184085,
+     "peso_L_medio": 0.9999999988707398,
+     "variacao_peso_por_passo": 2.5234601306778735e-05,
+     "primeiro_peso_L_acima_0_9": 6,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 3236.5475500000002,
+     "acrescimo_custo": 72.39926000000014,
+     "cobertura": 0.90047,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2927413395893742,
+     "razao_v052": 0.9999999999491128,
+     "razao_melhor": 0.9999999999491128
+    }
+   }
+  }
+ ]
+}

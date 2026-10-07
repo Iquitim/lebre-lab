@@ -1,0 +1,107 @@
+{
+ "familia": "C05",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": "20261004-184218_C05",
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": 0.0,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 0.40331459944943443,
+    "ic95": [
+     0.29894068530680273,
+     0.5057466745074307
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0008389479174555,
+    "ic95": [
+     1.000100605045866,
+     1.002332322376519
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0008389479174555,
+    "ic95": [
+     1.0000960627395856,
+     1.0023313938377663
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 71.98888888888888,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.007675555677830884,
+   "peso_L_medio": 0.9984335329036775
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.09975597539470435,
+   "mse_ref": 0.2552420138888889,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 194.2,
+   "configs": {
+    "R6": {
+     "mse": 0.09984615634264599,
+     "peso_L_medio": 0.9988975209241013,
+     "variacao_peso_por_passo": 0.0065676199443711865,
+     "primeiro_peso_L_acima_0_9": 31,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 266.18888888888887,
+     "acrescimo_custo": 71.98888888888888,
+     "cobertura": 0.9444444444444444,
+     "estrutura_identica": true,
+     "razao_ref": 0.3911822933120669,
+     "razao_v052": 1.0009040154996713,
+     "razao_melhor": 1.0009040154996713
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  },
+  {
+   "serie": "inpc",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.13041672896706713,
+   "mse_ref": 0.31387777777777776,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 194.2,
+   "configs": {
+    "R6": {
+     "mse": 0.13051765646065938,
+     "peso_L_medio": 0.9979695448832536,
+     "variacao_peso_por_passo": 0.00878349141129058,
+     "primeiro_peso_L_acima_0_9": 19,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 266.18888888888887,
+     "acrescimo_custo": 71.98888888888888,
+     "cobertura": 0.95,
+     "estrutura_identica": true,
+     "razao_ref": 0.4158231824651968,
+     "razao_v052": 1.0007738845652059,
+     "razao_melhor": 1.0007738845652059
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  }
+ ]
+}

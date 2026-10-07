@@ -1,0 +1,225 @@
+{
+ "familia": "VB07",
+ "prototipo": {
+  "commit": "6a007d2",
+  "model053_sha256": "49c3f71ba9b2ba4e3148b9c0393b508ebf4acc46a7046a5f66ff6fd8cc54c330"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261014,
+ "series_com_externa_v052": 2,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "R6": {
+   "vs_ref": {
+    "geo": 0.9483772914669105,
+    "ic95": [
+     0.8867844668736589,
+     1.0078232182060753
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9765664286359992,
+    "ic95": [
+     0.9675162313648119,
+     0.9858265990039274
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0406075296519803,
+    "ic95": [
+     0.9762297299452086,
+     1.1034256745016804
+    ]
+   },
+   "series_com_externa": 2,
+   "acrescimo_custo": 70.75119780971937,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0005072352612412413,
+   "peso_L_medio": 0.7890340654584457
+  }
+ },
+ "series": [
+  {
+   "serie": "8574680_Baltimore",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.000537987569766425,
+   "mse_ref": 0.0006116906459432482,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 475.044190622861,
+   "configs": {
+    "R6": {
+     "mse": 0.000537532402023783,
+     "peso_L_medio": 0.9957548488508728,
+     "variacao_peso_por_passo": 0.0007272435582825632,
+     "primeiro_peso_L_acima_0_9": 169,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 547.4403804471822,
+     "acrescimo_custo": 72.3961898243212,
+     "cobertura": 0.9018366415697011,
+     "estrutura_identica": true,
+     "razao_ref": 0.8787651169569373,
+     "razao_v052": 0.9991539437559132,
+     "razao_melhor": 0.9991539437559132
+    }
+   }
+  },
+  {
+   "serie": "8726520_St. Petersburg",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0005892610107534338,
+   "mse_ref": 0.000457396157136746,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 441.53108601414556,
+   "configs": {
+    "R6": {
+     "mse": 0.0005895108438483003,
+     "peso_L_medio": 0.9619634182693406,
+     "variacao_peso_por_passo": 0.0005475437519035039,
+     "primeiro_peso_L_acima_0_9": 341,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 513.9272758384668,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9016370066164727,
+     "estrutura_identica": true,
+     "razao_ref": 1.2888408322854719,
+     "razao_v052": 1.0004239769648886,
+     "razao_melhor": 1.2888408322854719
+    }
+   }
+  },
+  {
+   "serie": "8761724_Grand Isle",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0004259319103256674,
+   "mse_ref": 0.00037483862113218313,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 452.0483686972393,
+   "configs": {
+    "R6": {
+     "mse": 0.0003748385732997743,
+     "peso_L_medio": 1.2835477826850756e-06,
+     "variacao_peso_por_passo": 0.00010579255419934369,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 524.4445585215606,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9033196440793977,
+     "estrutura_identica": true,
+     "razao_ref": 0.9999998723919945,
+     "razao_v052": 0.8800434158905185,
+     "razao_melhor": 0.9999998723919945
+    }
+   }
+  },
+  {
+   "serie": "9414290_San Francisco",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.00048068006146871563,
+   "mse_ref": 0.0005648101523281981,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 365.6348990417522,
+   "configs": {
+    "R6": {
+     "mse": 0.000479908206674636,
+     "peso_L_medio": 0.9718045843517701,
+     "variacao_peso_por_passo": 0.0007020058285969245,
+     "primeiro_peso_L_acima_0_9": 6359,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 428.1611367784622,
+     "acrescimo_custo": 62.526237736710016,
+     "cobertura": 0.9003652058432935,
+     "estrutura_identica": true,
+     "razao_ref": 0.8496805602668636,
+     "razao_v052": 0.9983942442053426,
+     "razao_melhor": 0.9983942442053426
+    }
+   }
+  },
+  {
+   "serie": "9447130_Seattle",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0008299791671558472,
+   "mse_ref": 0.0010579351204905174,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 428.080424366872,
+   "configs": {
+    "R6": {
+     "mse": 0.0008299789141924989,
+     "peso_L_medio": 0.9999990256895205,
+     "variacao_peso_por_passo": 8.439145191435137e-05,
+     "primeiro_peso_L_acima_0_9": 55,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 500.4766141911933,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9005817932922656,
+     "estrutura_identica": true,
+     "razao_ref": 0.7845272343427587,
+     "razao_v052": 0.9999996952172316,
+     "razao_melhor": 0.9999996952172316
+    }
+   }
+  },
+  {
+   "serie": "9410230_La Jolla",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0002468779373324908,
+   "mse_ref": 0.0002529993226864395,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 448.483550079854,
+   "configs": {
+    "R6": {
+     "mse": 0.00024382065300027135,
+     "peso_L_medio": 0.8046812320413871,
+     "variacao_peso_por_passo": 0.0008764344225507611,
+     "primeiro_peso_L_acima_0_9": 11195,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 520.8797399041753,
+     "acrescimo_custo": 72.39618982432125,
+     "cobertura": 0.9008669860825919,
+     "estrutura_identica": true,
+     "razao_ref": 0.963720576052514,
+     "razao_v052": 0.9876162108074406,
+     "razao_melhor": 0.9876162108074406
+    }
+   }
+  }
+ ]
+}
