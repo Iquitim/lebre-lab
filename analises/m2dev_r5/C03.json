@@ -1,0 +1,173 @@
+{
+ "familia": "C03",
+ "prototipo": {
+  "commit": "244f7b3",
+  "model053_sha256": "111622515f046b8396946d17390fb3159f42e8eb4e8fc004a57c1dce84ed2581"
+ },
+ "execucao_lab_conferida": "20261004-184216_C03",
+ "B": 2000,
+ "semente": 20261013,
+ "series_com_externa_v052": 4,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "Q": {
+   "vs_ref": {
+    "geo": 1.0118509677089096,
+    "ic95": [
+     1.0014068287602316,
+     1.0192102010223474
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9469912340347947,
+    "ic95": [
+     0.9361237090615173,
+     0.962361410936663
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0118509677089096,
+    "ic95": [
+     1.0013434823958955,
+     1.0188970156068295
+    ]
+   },
+   "series_com_externa": 4,
+   "acrescimo_custo": 69.36607570675613,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.003151364360111071,
+   "peso_L_medio": 0.2913052068047089
+  }
+ },
+ "series": [
+  {
+   "serie": "nivel_dolar_real",
+   "origem": "C03",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.0016595251251781307,
+   "mse_ref": 0.001588814557040722,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 532.0307139434595,
+   "configs": {
+    "Q": {
+     "mse": 0.001587887439390497,
+     "peso_L_medio": 0.337618118416263,
+     "variacao_peso_por_passo": 0.0037591072267133896,
+     "primeiro_peso_L_acima_0_9": null,
+     "trocas_regime": 0,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 601.7992812649737,
+     "acrescimo_custo": 69.76856732151418,
+     "cobertura": 0.907439661607365,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 0.9994164720822096,
+     "razao_v052": 0.9568324186836615,
+     "razao_melhor": 0.9994164720822096
+    }
+   }
+  },
+  {
+   "serie": "nivel_euro_dolar",
+   "origem": "C03",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 3.119801345578184e-05,
+   "mse_ref": 3.0289403124999996e-05,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 573.6823430761859,
+   "configs": {
+    "Q": {
+     "mse": 3.0355049341711323e-05,
+     "peso_L_medio": 0.2984881023495173,
+     "variacao_peso_por_passo": 0.0029373532650231442,
+     "primeiro_peso_L_acima_0_9": null,
+     "trocas_regime": 0,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 643.1490416866316,
+     "acrescimo_custo": 69.46669861044563,
+     "cobertura": 0.9112721819545113,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.0021672997794118,
+     "razao_v052": 0.9729801990352596,
+     "razao_melhor": 1.0021672997794118
+    }
+   }
+  },
+  {
+   "serie": "nivel_iene_dolar",
+   "origem": "C03",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.5683065228938112,
+   "mse_ref": 0.5410549999999996,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 674.9881648298993,
+   "configs": {
+    "Q": {
+     "mse": 0.5434529985275304,
+     "peso_L_medio": 0.2833448740868875,
+     "variacao_peso_por_passo": 0.002534030576028817,
+     "primeiro_peso_L_acima_0_9": null,
+     "trocas_regime": 0,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 744.454863440345,
+     "acrescimo_custo": 69.46669861044563,
+     "cobertura": 0.9082729317670583,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.004432079044701,
+     "razao_v052": 0.9562673955601866,
+     "razao_melhor": 1.004432079044701
+    }
+   }
+  },
+  {
+   "serie": "nivel_petroleo_wti",
+   "origem": "C03",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 4.621372749240149,
+   "mse_ref": 4.006606606136506,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 603.2017489218974,
+   "configs": {
+    "Q": {
+     "mse": 4.17479930787841,
+     "peso_L_medio": 0.2457697323661678,
+     "variacao_peso_por_passo": 0.0033749663726789334,
+     "primeiro_peso_L_acima_0_9": null,
+     "trocas_regime": 0,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 671.9640872065165,
+     "acrescimo_custo": 68.76233828461909,
+     "cobertura": 0.9093205354887598,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.0419788410183073,
+     "razao_v052": 0.9033677944642823,
+     "razao_melhor": 1.0419788410183073
+    }
+   }
+  }
+ ]
+}

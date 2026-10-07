@@ -1,0 +1,169 @@
+{
+ "familia": "C02",
+ "prototipo": {
+  "commit": "244f7b3",
+  "model053_sha256": "111622515f046b8396946d17390fb3159f42e8eb4e8fc004a57c1dce84ed2581"
+ },
+ "execucao_lab_conferida": "20261004-184213_C02",
+ "B": 2000,
+ "semente": 20261013,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "Q": {
+   "vs_ref": {
+    "geo": 0.6011549840742322,
+    "ic95": [
+     0.5664275645232844,
+     0.6226869787187649
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.99849723119169,
+    "ic95": [
+     0.9975746349697607,
+     0.9993065604016719
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.99849723119169,
+    "ic95": [
+     0.9975985422059958,
+     0.9993349791692671
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 69.34091998083373,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0028803649787139058,
+   "peso_L_medio": 0.9814143670477444
+  }
+ },
+ "series": [
+  {
+   "serie": "abs_dolar_real",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.3731740684880106,
+   "mse_ref": 0.6338831377752305,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 453.38737422137035,
+   "configs": {
+    "Q": {
+     "mse": 0.37229524190592006,
+     "peso_L_medio": 0.9837197083479124,
+     "variacao_peso_por_passo": 0.003123330251502936,
+     "primeiro_peso_L_acima_0_9": 35,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 523.1391710589362,
+     "acrescimo_custo": 69.75179683756585,
+     "cobertura": 0.8964659034345446,
+     "estrutura_identica": true,
+     "razao_ref": 0.5873247286756708,
+     "razao_v052": 0.9976449955763237,
+     "razao_melhor": 0.9976449955763237
+    }
+   }
+  },
+  {
+   "serie": "abs_euro_dolar",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.10287385648462505,
+   "mse_ref": 0.18942376387794688,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 447.35903210349784,
+   "configs": {
+    "Q": {
+     "mse": 0.10270154153140637,
+     "peso_L_medio": 0.9786321091472008,
+     "variacao_peso_por_passo": 0.002855142217388858,
+     "primeiro_peso_L_acima_0_9": 193,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 516.8089602299953,
+     "acrescimo_custo": 69.44992812649741,
+     "cobertura": 0.8985,
+     "estrutura_identica": true,
+     "razao_ref": 0.542178760620452,
+     "razao_v052": 0.9983249879113414,
+     "razao_melhor": 0.9983249879113414
+    }
+   }
+  },
+  {
+   "serie": "abs_iene_dolar",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.1671574691355383,
+   "mse_ref": 0.29765440036323493,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 439.56633924293243,
+   "configs": {
+    "Q": {
+     "mse": 0.16696007811612185,
+     "peso_L_medio": 0.9825493079219787,
+     "variacao_peso_por_passo": 0.0028026074760012717,
+     "primeiro_peso_L_acima_0_9": 82,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 509.0162673694298,
+     "acrescimo_custo": 69.44992812649735,
+     "cobertura": 0.90525,
+     "estrutura_identica": true,
+     "razao_ref": 0.560919233555346,
+     "razao_v052": 0.9988191313230735,
+     "razao_melhor": 0.9988191313230735
+    }
+   }
+  },
+  {
+   "serie": "abs_petroleo_wti",
+   "origem": "C02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 5.052683511347591,
+   "mse_ref": 6.904783154405746,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 441.50261140392905,
+   "configs": {
+    "Q": {
+     "mse": 5.048643830945975,
+     "peso_L_medio": 0.9807563427738859,
+     "variacao_peso_por_passo": 0.002740379969962558,
+     "primeiro_peso_L_acima_0_9": 106,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 510.21463823670337,
+     "acrescimo_custo": 68.71202683277431,
+     "cobertura": 0.897876643073812,
+     "estrutura_identica": true,
+     "razao_ref": 0.7311806494204787,
+     "razao_v052": 0.9992004881381263,
+     "razao_melhor": 0.9992004881381263
+    }
+   }
+  }
+ ]
+}

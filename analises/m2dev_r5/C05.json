@@ -1,0 +1,109 @@
+{
+ "familia": "C05",
+ "prototipo": {
+  "commit": "244f7b3",
+  "model053_sha256": "111622515f046b8396946d17390fb3159f42e8eb4e8fc004a57c1dce84ed2581"
+ },
+ "execucao_lab_conferida": "20261004-184218_C05",
+ "B": 2000,
+ "semente": 20261013,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": 0.0,
+ "resumo": {
+  "Q": {
+   "vs_ref": {
+    "geo": 0.4270456479022574,
+    "ic95": [
+     0.3276673975690134,
+     0.5287311785925537
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0597283548442664,
+    "ic95": [
+     1.0065145476146573,
+     1.132081571456427
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0597283548442664,
+    "ic95": [
+     1.0059563262630422,
+     1.1322274494050955
+    ]
+   },
+   "series_com_externa": 0,
+   "acrescimo_custo": 71.98888888888888,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.016665896986272907,
+   "peso_L_medio": 0.8641326866943244
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.09975597539470435,
+   "mse_ref": 0.2552420138888889,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 194.2,
+   "configs": {
+    "Q": {
+     "mse": 0.1072420935639434,
+     "peso_L_medio": 0.8608996392618324,
+     "variacao_peso_por_passo": 0.015356190009924017,
+     "primeiro_peso_L_acima_0_9": 97,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 266.18888888888887,
+     "acrescimo_custo": 71.98888888888888,
+     "cobertura": 0.95,
+     "estrutura_identica": true,
+     "razao_ref": 0.420158468153396,
+     "razao_v052": 1.0750443082694419,
+     "razao_melhor": 1.0750443082694419
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  },
+  {
+   "serie": "inpc",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "mse_v052": 0.13041672896706713,
+   "mse_ref": 0.31387777777777776,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 194.2,
+   "configs": {
+    "Q": {
+     "mse": 0.13623730647226695,
+     "peso_L_medio": 0.8673657341268164,
+     "variacao_peso_por_passo": 0.017975603962621794,
+     "primeiro_peso_L_acima_0_9": 92,
+     "trocas_regime": 0,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 266.18888888888887,
+     "acrescimo_custo": 71.98888888888888,
+     "cobertura": 0.95,
+     "estrutura_identica": true,
+     "razao_ref": 0.4340457213531108,
+     "razao_v052": 1.0446306049177914,
+     "razao_melhor": 1.0446306049177914
+    }
+   },
+   "conferencia_r2_dif_rel": 0.0
+  }
+ ]
+}

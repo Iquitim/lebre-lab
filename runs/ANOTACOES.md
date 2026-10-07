@@ -40,3 +40,8 @@ afetada. CURTAS rodada de novo depois do commit da correção.
 1, 2 e 7 em várias famílias; pela regra do plano (escolha só se atender a todos) as famílias restantes não podiam mudar o
 resultado. Medidas: C05, CURTAS, B01, B02, C01-C04. Não medidas: A01-A12, B03, B06, B07. Arquivos parciais de logs não
 foram versionados. Resultado em `analises/M2_DEV_R3_RESULTADO.md`.
+
+## 08/10/2026: medição da M2, rascunho 5, interrompida de propósito
+
+`analises/m2_dev_r5.py` interrompido depois que C05 já falhava o critério 2 (regra decidida); B01 foi esperado de
+propósito para saber se o compartilhamento resolvia a série Arinos (resolveu). Medidas: C05, CURTAS, B01, C01-C04.
