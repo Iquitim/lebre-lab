@@ -1,0 +1,286 @@
+{
+ "familia": "B06",
+ "prototipo": {
+  "commit": "9bfdd0d",
+  "model053_sha256": "0cef0d7a251af94f7de57720212883b6f741774f078d97e2a2f60b9370347735"
+ },
+ "execucao_lab_conferida": "20261004-183324_B06",
+ "B": 2000,
+ "semente": 20261009,
+ "bloco": 168,
+ "series_com_externa_v052": 4,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r0": 0.0,
+ "resumo": {
+  "A1": {
+   "vs_ref": {
+    "geo": 0.11650823122043631,
+    "ic95": [
+     0.11251208627923526,
+     0.1209051861550845
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.11399908800729595,
+   "series_com_externa": 4,
+   "acrescimo_custo": 18.365709074327356,
+   "estrutura_identica": true
+  },
+  "A5": {
+   "vs_ref": {
+    "geo": 0.11650823122043631,
+    "ic95": [
+     0.11248717684713654,
+     0.12101433969404175
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.11399908800729595,
+   "series_com_externa": 4,
+   "acrescimo_custo": 18.365709074327356,
+   "estrutura_identica": true
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. São Roque",
+   "T": 17544,
+   "referencia": "sazonal",
+   "mse_v052": 3436.0849902357268,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 580.4923734610122,
+   "configs": {
+    "A1": {
+     "mse": 3436.0849902357268,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 190,
+     "externas": 0,
+     "custo": 598.8909142726857,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9007067943456453,
+     "estrutura_identica": true,
+     "razao_ref": 0.13634156430879082,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 3436.0849902357268,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 150,
+     "externas": 0,
+     "custo": 598.8909142726857,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9006497948016415,
+     "estrutura_identica": true,
+     "razao_ref": 0.13634156430879082,
+     "razao_v052": 1.0
+    }
+   },
+   "conferencia_r0_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Lagoa dos Ventos",
+   "T": 17544,
+   "referencia": "sazonal",
+   "mse_v052": 3158.6684848526534,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 548.4804434564523,
+   "configs": {
+    "A1": {
+     "mse": 3158.6684848526534,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 150,
+     "externas": 2,
+     "custo": 566.8789842681258,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9020177838577291,
+     "estrutura_identica": true,
+     "razao_ref": 0.11970294123110042,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 3158.6684848526534,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 130,
+     "externas": 2,
+     "custo": 566.8789842681258,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9020177838577291,
+     "estrutura_identica": true,
+     "razao_ref": 0.11970294123110042,
+     "razao_v052": 1.0
+    }
+   },
+   "conferencia_r0_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Caju",
+   "T": 17544,
+   "referencia": "sazonal",
+   "mse_v052": 1948.9624636847993,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 650.74453374373,
+   "configs": {
+    "A1": {
+     "mse": 1948.9624636847993,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 80,
+     "externas": 2,
+     "custo": 669.1430745554035,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9000227998176015,
+     "estrutura_identica": true,
+     "razao_ref": 0.13028747908304136,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 1948.9624636847993,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 70,
+     "externas": 2,
+     "custo": 669.1430745554035,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.8999658002735978,
+     "estrutura_identica": true,
+     "razao_ref": 0.13028747908304136,
+     "razao_v052": 1.0
+    }
+   },
+   "conferencia_r0_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Monte Verde",
+   "T": 17544,
+   "referencia": "sazonal",
+   "mse_v052": 1463.125701511499,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 593.6425501595987,
+   "configs": {
+    "A1": {
+     "mse": 1463.125701511499,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 80,
+     "externas": 1,
+     "custo": 612.0410909712722,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9011627906976745,
+     "estrutura_identica": true,
+     "razao_ref": 0.13895924236236593,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 1463.125701511499,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 60,
+     "externas": 1,
+     "custo": 612.0410909712722,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9011057911536707,
+     "estrutura_identica": true,
+     "razao_ref": 0.13895924236236593,
+     "razao_v052": 1.0
+    }
+   },
+   "conferencia_r0_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Serra do Mel A",
+   "T": 17544,
+   "referencia": "sazonal",
+   "mse_v052": 819.0123747883849,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 738.3179491564067,
+   "configs": {
+    "A1": {
+     "mse": 819.0123747883849,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 70,
+     "externas": 1,
+     "custo": 756.5194995440036,
+     "acrescimo_custo": 18.201550387596853,
+     "cobertura": 0.9013734995383195,
+     "estrutura_identica": true,
+     "razao_ref": 0.13713131277126836,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 819.0123747883849,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 60,
+     "externas": 1,
+     "custo": 756.5194995440036,
+     "acrescimo_custo": 18.201550387596853,
+     "cobertura": 0.9013734995383195,
+     "estrutura_identica": true,
+     "razao_ref": 0.13713131277126836,
+     "razao_v052": 1.0
+    }
+   },
+   "conferencia_r0_dif_rel": 0.0
+  },
+  {
+   "serie": "Conj. Santa Vitória do Palmar",
+   "T": 17544,
+   "referencia": "sazonal",
+   "mse_v052": 2627.0141217833134,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 626.2888850889193,
+   "configs": {
+    "A1": {
+     "mse": 2627.0141217833134,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 150,
+     "externas": 0,
+     "custo": 644.6874259005928,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9024167806657547,
+     "estrutura_identica": true,
+     "razao_ref": 0.0617276591421844,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 2627.0141217833134,
+     "trocas": 1,
+     "trocas_por_2000": 0.11399908800729594,
+     "primeira_promocao": 140,
+     "externas": 0,
+     "custo": 644.6874259005928,
+     "acrescimo_custo": 18.398540811673456,
+     "cobertura": 0.9024167806657547,
+     "estrutura_identica": true,
+     "razao_ref": 0.0617276591421844,
+     "razao_v052": 1.0
+    }
+   },
+   "conferencia_r0_dif_rel": 0.0
+  }
+ ]
+}

@@ -1,0 +1,1618 @@
+{
+ "familia": "A04",
+ "prototipo": {
+  "commit": "9bfdd0d",
+  "model053_sha256": "0cef0d7a251af94f7de57720212883b6f741774f078d97e2a2f60b9370347735"
+ },
+ "execucao_lab_conferida": "20261004-175513_A04",
+ "B": 2000,
+ "semente": 20261009,
+ "bloco": 20,
+ "series_com_externa_v052": 10,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r0": null,
+ "resumo": {
+  "A1": {
+   "vs_ref": {
+    "geo": 0.5417485366504924,
+    "ic95": [
+     0.5402713474807472,
+     0.5431573436287973
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.1,
+   "series_com_externa": 10,
+   "acrescimo_custo": 18.398000000000014,
+   "estrutura_identica": true
+  },
+  "A5": {
+   "vs_ref": {
+    "geo": 0.5417485366504924,
+    "ic95": [
+     0.5403050081112758,
+     0.5432430461718556
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.1,
+   "series_com_externa": 10,
+   "acrescimo_custo": 18.398000000000014,
+   "estrutura_identica": true
+  }
+ },
+ "series": [
+  {
+   "serie": "lag24_s401",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.372816455464558,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 307.99821000000003,
+   "configs": {
+    "A1": {
+     "mse": 0.372816455464558,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 360,
+     "externas": 1,
+     "custo": 326.39621000000005,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89995,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2737486023941335,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.372816455464558,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 290,
+     "externas": 1,
+     "custo": 326.39621000000005,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89995,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2737486023941335,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s402",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.3696087343058551,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 298.65533,
+   "configs": {
+    "A1": {
+     "mse": 0.3696087343058551,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 420,
+     "externas": 1,
+     "custo": 317.05333,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9001,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27509569089971053,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.3696087343058551,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 330,
+     "externas": 1,
+     "custo": 317.05333,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9001,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27509569089971053,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s403",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.36979481125429764,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 306.78234000000003,
+   "configs": {
+    "A1": {
+     "mse": 0.36979481125429764,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 320,
+     "externas": 1,
+     "custo": 325.18034000000006,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89985,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2752415154427654,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.36979481125429764,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 210,
+     "externas": 1,
+     "custo": 325.18034000000006,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89985,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2752415154427654,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s404",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.3727171265435722,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 314.17679,
+   "configs": {
+    "A1": {
+     "mse": 0.3727171265435722,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 420,
+     "externas": 1,
+     "custo": 332.57479,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.8994,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2697636664073798,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.3727171265435722,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 300,
+     "externas": 1,
+     "custo": 332.57479,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89945,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2697636664073798,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s405",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.36955891486678355,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 291.25076,
+   "configs": {
+    "A1": {
+     "mse": 0.36955891486678355,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 380,
+     "externas": 1,
+     "custo": 309.64876000000004,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9009,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27846770248995956,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.36955891486678355,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 310,
+     "externas": 1,
+     "custo": 309.64876000000004,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9009,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27846770248995956,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s406",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.3701875794052237,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 289.93161000000003,
+   "configs": {
+    "A1": {
+     "mse": 0.3701875794052237,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 430,
+     "externas": 1,
+     "custo": 308.32961000000006,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90075,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2692021524612756,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.3701875794052237,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 370,
+     "externas": 1,
+     "custo": 308.32961000000006,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90075,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2692021524612756,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s407",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.3754218006390048,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 314.00547,
+   "configs": {
+    "A1": {
+     "mse": 0.3754218006390048,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 410,
+     "externas": 1,
+     "custo": 332.40347,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9006,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27424653977181385,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.3754218006390048,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 290,
+     "externas": 1,
+     "custo": 332.40347,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9006,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27424653977181385,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s408",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.3717286921888981,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 302.65501,
+   "configs": {
+    "A1": {
+     "mse": 0.3717286921888981,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 410,
+     "externas": 1,
+     "custo": 321.05301000000003,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90095,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.271344120898593,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.3717286921888981,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 380,
+     "externas": 1,
+     "custo": 321.05301000000003,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90095,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.271344120898593,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s409",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.37319406906590824,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 298.85999,
+   "configs": {
+    "A1": {
+     "mse": 0.37319406906590824,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 490,
+     "externas": 1,
+     "custo": 317.25799,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90025,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27388947616486986,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.37319406906590824,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 320,
+     "externas": 1,
+     "custo": 317.25799,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90025,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.27388947616486986,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag24_s410",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.3733016702118459,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 293.77695,
+   "configs": {
+    "A1": {
+     "mse": 0.3733016702118459,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 490,
+     "externas": 1,
+     "custo": 312.17495,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.8999,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2730888089947484,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.3733016702118459,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 350,
+     "externas": 1,
+     "custo": 312.17495,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89985,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.2730888089947484,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s421",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.91228481796848,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 250.39534,
+   "configs": {
+    "A1": {
+     "mse": 0.91228481796848,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 360,
+     "externas": 0,
+     "custo": 268.79334,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89995,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6832781767943022,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.91228481796848,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 300,
+     "externas": 0,
+     "custo": 268.79334,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89995,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6832781767943022,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s422",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9307159771724294,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 245.01925,
+   "configs": {
+    "A1": {
+     "mse": 0.9307159771724294,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 700,
+     "externas": 0,
+     "custo": 263.41725,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9004,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6724752606687944,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9307159771724294,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 590,
+     "externas": 0,
+     "custo": 263.41725,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9004,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6724752606687944,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s423",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9257686108537957,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 225.51779000000005,
+   "configs": {
+    "A1": {
+     "mse": 0.9257686108537957,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 470,
+     "externas": 0,
+     "custo": 243.91579000000004,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89915,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6793573502684002,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9257686108537957,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 310,
+     "externas": 0,
+     "custo": 243.91579000000004,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8991,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6793573502684002,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s424",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9304731548993016,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 243.11757000000003,
+   "configs": {
+    "A1": {
+     "mse": 0.9304731548993016,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 370,
+     "externas": 0,
+     "custo": 261.51557,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89875,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6762445651131814,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9304731548993016,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 270,
+     "externas": 0,
+     "custo": 261.51557,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89875,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6762445651131814,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s425",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.941836141051528,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 267.06765,
+   "configs": {
+    "A1": {
+     "mse": 0.941836141051528,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 410,
+     "externas": 0,
+     "custo": 285.46565000000004,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9002,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6830563176830745,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.941836141051528,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 350,
+     "externas": 0,
+     "custo": 285.46565000000004,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9002,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6830563176830745,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s426",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9277867181165325,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 238.08282999999997,
+   "configs": {
+    "A1": {
+     "mse": 0.9277867181165325,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 410,
+     "externas": 0,
+     "custo": 256.48082999999997,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.90075,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6851552880570153,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9277867181165325,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 330,
+     "externas": 0,
+     "custo": 256.48082999999997,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.90075,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6851552880570153,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s427",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9358440905520433,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 228.83088999999998,
+   "configs": {
+    "A1": {
+     "mse": 0.9358440905520433,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 420,
+     "externas": 0,
+     "custo": 247.22888999999998,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.899,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6860432048480836,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9358440905520433,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 360,
+     "externas": 0,
+     "custo": 247.22888999999998,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89905,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6860432048480836,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s428",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9288331918568546,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 233.53479000000004,
+   "configs": {
+    "A1": {
+     "mse": 0.9288331918568546,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 590,
+     "externas": 0,
+     "custo": 251.93279000000004,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89955,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6807521358475904,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9288331918568546,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 480,
+     "externas": 0,
+     "custo": 251.93279000000004,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89955,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6807521358475904,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s429",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9346584476471147,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 245.89583,
+   "configs": {
+    "A1": {
+     "mse": 0.9346584476471147,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 480,
+     "externas": 0,
+     "custo": 264.29383,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89965,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6833385731539346,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9346584476471147,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 340,
+     "externas": 0,
+     "custo": 264.29383,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89965,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6833385731539346,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag48_s430",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9306386483223082,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 263.89013,
+   "configs": {
+    "A1": {
+     "mse": 0.9306386483223082,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 350,
+     "externas": 0,
+     "custo": 282.28813,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89925,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6794544390402101,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9306386483223082,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 250,
+     "externas": 0,
+     "custo": 282.28813,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.8992,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6794544390402101,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s441",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9112185920217949,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 264.63951000000003,
+   "configs": {
+    "A1": {
+     "mse": 0.9112185920217949,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 380,
+     "externas": 0,
+     "custo": 283.03751000000005,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89915,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6754047733109169,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9112185920217949,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 230,
+     "externas": 0,
+     "custo": 283.03751000000005,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89915,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6754047733109169,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s442",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9127683261955057,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 230.24391,
+   "configs": {
+    "A1": {
+     "mse": 0.9127683261955057,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 390,
+     "externas": 0,
+     "custo": 248.64191,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8993,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6783362003735932,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9127683261955057,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 290,
+     "externas": 0,
+     "custo": 248.64191,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8993,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6783362003735932,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s443",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9372411468603006,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 238.44415,
+   "configs": {
+    "A1": {
+     "mse": 0.9372411468603006,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 460,
+     "externas": 0,
+     "custo": 256.84215,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.9003,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6775706616100454,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9372411468603006,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 350,
+     "externas": 0,
+     "custo": 256.84215,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.9003,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6775706616100454,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s444",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9144150320564837,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 253.30209,
+   "configs": {
+    "A1": {
+     "mse": 0.9144150320564837,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 230,
+     "externas": 0,
+     "custo": 271.70009,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8997,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6766377647852323,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9144150320564837,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 170,
+     "externas": 0,
+     "custo": 271.70009,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8997,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6766377647852323,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s445",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9203078348459135,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 245.40807,
+   "configs": {
+    "A1": {
+     "mse": 0.9203078348459135,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 550,
+     "externas": 0,
+     "custo": 263.80607000000003,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89935,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6738416562251478,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9203078348459135,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 470,
+     "externas": 0,
+     "custo": 263.80607000000003,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.8993,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6738416562251478,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s446",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9125381962021981,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 240.84058000000002,
+   "configs": {
+    "A1": {
+     "mse": 0.9125381962021981,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 410,
+     "externas": 0,
+     "custo": 259.23858,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89905,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6801736683811116,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9125381962021981,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 340,
+     "externas": 0,
+     "custo": 259.23858,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.899,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6801736683811116,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s447",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9302768387221592,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 228.83088999999998,
+   "configs": {
+    "A1": {
+     "mse": 0.9302768387221592,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 440,
+     "externas": 0,
+     "custo": 247.22888999999998,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89995,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6816073657627698,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9302768387221592,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 370,
+     "externas": 0,
+     "custo": 247.22888999999998,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89995,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6816073657627698,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s448",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9224356894796591,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 244.24222999999998,
+   "configs": {
+    "A1": {
+     "mse": 0.9224356894796591,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 240,
+     "externas": 0,
+     "custo": 262.64023,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8999,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6814928398829602,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9224356894796591,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 100,
+     "externas": 0,
+     "custo": 262.64023,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89995,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6814928398829602,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s449",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9130319880762094,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 244.49787,
+   "configs": {
+    "A1": {
+     "mse": 0.9130319880762094,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 310,
+     "externas": 0,
+     "custo": 262.89587,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89985,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6825071989525152,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9130319880762094,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 210,
+     "externas": 0,
+     "custo": 262.89587,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89985,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6825071989525152,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag96_s450",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9328006219973507,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 248.57835,
+   "configs": {
+    "A1": {
+     "mse": 0.9328006219973507,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 440,
+     "externas": 0,
+     "custo": 266.97635,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9001,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6786394956440988,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9328006219973507,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 370,
+     "externas": 0,
+     "custo": 266.97635,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9001,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6786394956440988,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s461",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9319427506034488,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 225.00357000000002,
+   "configs": {
+    "A1": {
+     "mse": 0.9319427506034488,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 260,
+     "externas": 0,
+     "custo": 243.40157000000002,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.89975,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6755216288814501,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9319427506034488,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 190,
+     "externas": 0,
+     "custo": 243.40157000000002,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8998,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6755216288814501,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s462",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9266749932808952,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 237.94181,
+   "configs": {
+    "A1": {
+     "mse": 0.9266749932808952,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 210,
+     "externas": 0,
+     "custo": 256.33981,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.90035,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6787832646502145,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9266749932808952,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 180,
+     "externas": 0,
+     "custo": 256.33981,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.90035,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6787832646502145,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s463",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9180888426607722,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 257.12339,
+   "configs": {
+    "A1": {
+     "mse": 0.9180888426607722,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 330,
+     "externas": 0,
+     "custo": 275.52139,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.8992,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6874538730980726,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9180888426607722,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 290,
+     "externas": 0,
+     "custo": 275.52139,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89925,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6874538730980726,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s464",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9115643770962046,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 258.91803,
+   "configs": {
+    "A1": {
+     "mse": 0.9115643770962046,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 400,
+     "externas": 0,
+     "custo": 277.31603,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89885,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.685505762930703,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9115643770962046,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 220,
+     "externas": 0,
+     "custo": 277.31603,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89885,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.685505762930703,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s465",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9261045129207411,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 254.94967000000003,
+   "configs": {
+    "A1": {
+     "mse": 0.9261045129207411,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 280,
+     "externas": 0,
+     "custo": 273.34767000000005,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9005,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6852053783126614,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9261045129207411,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 200,
+     "externas": 0,
+     "custo": 273.34767000000005,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.9005,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6852053783126614,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s466",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9082831285874381,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 237.3321,
+   "configs": {
+    "A1": {
+     "mse": 0.9082831285874381,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 220,
+     "externas": 0,
+     "custo": 255.7301,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8998,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6847668109855325,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9082831285874381,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 190,
+     "externas": 0,
+     "custo": 255.7301,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.8998,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6847668109855325,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s467",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9365657780443736,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 239.91607000000002,
+   "configs": {
+    "A1": {
+     "mse": 0.9365657780443736,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 340,
+     "externas": 0,
+     "custo": 258.31407,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.90025,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6860441134869955,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9365657780443736,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 210,
+     "externas": 0,
+     "custo": 258.31407,
+     "acrescimo_custo": 18.397999999999996,
+     "cobertura": 0.90025,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6860441134869955,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s468",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9206924374337361,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 246.32963999999998,
+   "configs": {
+    "A1": {
+     "mse": 0.9206924374337361,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 170,
+     "externas": 0,
+     "custo": 264.72764,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90005,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6857898880171871,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9206924374337361,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 100,
+     "externas": 0,
+     "custo": 264.72764,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.90005,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6857898880171871,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s469",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.9197834577339363,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 244.0399,
+   "configs": {
+    "A1": {
+     "mse": 0.9197834577339363,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 420,
+     "externas": 0,
+     "custo": 262.4379,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89875,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6696582419790711,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.9197834577339363,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 260,
+     "externas": 0,
+     "custo": 262.4379,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89875,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6696582419790711,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "lag200_s470",
+   "T": 20000,
+   "referencia": "persistencia",
+   "mse_v052": 0.915799702625453,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 257.68791,
+   "configs": {
+    "A1": {
+     "mse": 0.915799702625453,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 310,
+     "externas": 0,
+     "custo": 276.08591,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89955,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6799859978719243,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.915799702625453,
+     "trocas": 1,
+     "trocas_por_2000": 0.1,
+     "primeira_promocao": 180,
+     "externas": 0,
+     "custo": 276.08591,
+     "acrescimo_custo": 18.398000000000025,
+     "cobertura": 0.89955,
+     "estrutura_identica": true,
+     "recall": 0.0,
+     "razao_ref": 0.6799859978719243,
+     "razao_v052": 1.0
+    }
+   }
+  }
+ ]
+}

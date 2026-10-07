@@ -1,0 +1,97 @@
+{
+ "familia": "A12",
+ "prototipo": {
+  "commit": "9bfdd0d",
+  "model053_sha256": "0cef0d7a251af94f7de57720212883b6f741774f078d97e2a2f60b9370347735"
+ },
+ "execucao_lab_conferida": "20261004-181040_A12",
+ "B": 2000,
+ "semente": 20261009,
+ "bloco": 20,
+ "series_com_externa_v052": 1,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r0": null,
+ "resumo": {
+  "A1": {
+   "vs_ref": {
+    "geo": 0.29274133960427096,
+    "ic95": [
+     0.29046262654474614,
+     0.29486937766689403
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.01,
+   "series_com_externa": 1,
+   "acrescimo_custo": 18.39980000000014,
+   "estrutura_identica": true
+  },
+  "A5": {
+   "vs_ref": {
+    "geo": 0.29274133960427096,
+    "ic95": [
+     0.2904369016697472,
+     0.2949112767005792
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.01,
+   "series_com_externa": 1,
+   "acrescimo_custo": 18.39980000000014,
+   "estrutura_identica": true
+  }
+ },
+ "series": [
+  {
+   "serie": "s1201",
+   "T": 200000,
+   "referencia": "persistencia",
+   "mse_v052": 0.5005519504438802,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 3164.14829,
+   "configs": {
+    "A1": {
+     "mse": 0.5005519504438802,
+     "trocas": 1,
+     "trocas_por_2000": 0.01,
+     "primeira_promocao": 610,
+     "externas": 2,
+     "custo": 3182.5480900000002,
+     "acrescimo_custo": 18.39980000000014,
+     "cobertura": 0.900475,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.29274133960427096,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.5005519504438802,
+     "trocas": 1,
+     "trocas_por_2000": 0.01,
+     "primeira_promocao": 560,
+     "externas": 2,
+     "custo": 3182.5480900000002,
+     "acrescimo_custo": 18.39980000000014,
+     "cobertura": 0.900475,
+     "estrutura_identica": true,
+     "recall": 1.0,
+     "razao_ref": 0.29274133960427096,
+     "razao_v052": 1.0
+    }
+   }
+  }
+ ]
+}

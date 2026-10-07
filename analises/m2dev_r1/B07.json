@@ -1,0 +1,280 @@
+{
+ "familia": "B07",
+ "prototipo": {
+  "commit": "9bfdd0d",
+  "model053_sha256": "0cef0d7a251af94f7de57720212883b6f741774f078d97e2a2f60b9370347735"
+ },
+ "execucao_lab_conferida": "20261004-183352_B07",
+ "B": 2000,
+ "semente": 20261009,
+ "bloco": 168,
+ "series_com_externa_v052": 1,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r0": null,
+ "resumo": {
+  "A1": {
+   "vs_ref": {
+    "geo": 0.9328033246285775,
+    "ic95": [
+     0.9241099268829189,
+     0.9422197848398176
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.991684896548995,
+    "ic95": [
+     0.9825818551644625,
+     1.000687308027893
+    ]
+   },
+   "trocas_por_2000": 0.02851927903262606,
+   "series_com_externa": 1,
+   "acrescimo_custo": 18.399269906456766,
+   "estrutura_identica": true
+  },
+  "A5": {
+   "vs_ref": {
+    "geo": 0.9269040587373962,
+    "ic95": [
+     0.9171344205452019,
+     0.9364632854925389
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9854132498571905,
+    "ic95": [
+     0.9778541855312459,
+     0.9930453929711144
+    ]
+   },
+   "trocas_por_2000": 0.02851927903262606,
+   "series_com_externa": 1,
+   "acrescimo_custo": 18.399269906456766,
+   "estrutura_identica": true
+  }
+ },
+ "series": [
+  {
+   "serie": "8518750_The Battery NY",
+   "T": 35064,
+   "referencia": "persistencia",
+   "mse_v052": 0.0019477782393484788,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 394.40846737394486,
+   "configs": {
+    "A1": {
+     "mse": 0.002022397121239967,
+     "trocas": 1,
+     "trocas_por_2000": 0.05703855806525211,
+     "primeira_promocao": 13450,
+     "externas": 0,
+     "custo": 412.8077372804016,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.900695870408396,
+     "estrutura_identica": true,
+     "razao_ref": 0.8649478885688809,
+     "razao_v052": 1.0383097420353395
+    },
+    "A5": {
+     "mse": 0.002015821321835448,
+     "trocas": 1,
+     "trocas_por_2000": 0.05703855806525211,
+     "primeira_promocao": 11370,
+     "externas": 0,
+     "custo": 412.8077372804016,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.900695870408396,
+     "estrutura_identica": true,
+     "razao_ref": 0.8621355211308261,
+     "razao_v052": 1.0349336906596356
+    }
+   }
+  },
+  {
+   "serie": "8443970_Boston",
+   "T": 35064,
+   "referencia": "persistencia",
+   "mse_v052": 0.0018992637401315693,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 435.5821526351814,
+   "configs": {
+    "A1": {
+     "mse": 0.001900946758453463,
+     "trocas": 1,
+     "trocas_por_2000": 0.05703855806525211,
+     "primeira_promocao": 12350,
+     "externas": 0,
+     "custo": 453.98142254163815,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.9005247547342004,
+     "estrutura_identica": true,
+     "razao_ref": 0.8459423123752073,
+     "razao_v052": 1.000886142501608
+    },
+    "A5": {
+     "mse": 0.0018988882187701305,
+     "trocas": 1,
+     "trocas_por_2000": 0.05703855806525211,
+     "primeira_promocao": 12290,
+     "externas": 0,
+     "custo": 453.98142254163815,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.9005247547342004,
+     "estrutura_identica": true,
+     "razao_ref": 0.8450262394699087,
+     "razao_v052": 0.9998022805608806
+    }
+   }
+  },
+  {
+   "serie": "8534720_Atlantic City",
+   "T": 35064,
+   "referencia": "persistencia",
+   "mse_v052": 0.0017641611819749646,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 448.7505932010039,
+   "configs": {
+    "A1": {
+     "mse": 0.001714069299871667,
+     "trocas": 0,
+     "trocas_por_2000": 0.0,
+     "primeira_promocao": null,
+     "externas": 1,
+     "custo": 467.14986310746065,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.9001254848277436,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9716058358980441
+    },
+    "A5": {
+     "mse": 0.001714069299871667,
+     "trocas": 0,
+     "trocas_por_2000": 0.0,
+     "primeira_promocao": null,
+     "externas": 1,
+     "custo": 467.14986310746065,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.9001254848277436,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9716058358980441
+    }
+   }
+  },
+  {
+   "serie": "8665530_Charleston",
+   "T": 35064,
+   "referencia": "persistencia",
+   "mse_v052": 0.0013239944909344686,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 437.2025581793293,
+   "configs": {
+    "A1": {
+     "mse": 0.0013694085322717292,
+     "trocas": 1,
+     "trocas_por_2000": 0.05703855806525211,
+     "primeira_promocao": 14110,
+     "externas": 0,
+     "custo": 455.60182808578605,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.901009582477755,
+     "estrutura_identica": true,
+     "razao_ref": 0.9003467907279238,
+     "razao_v052": 1.03430077817409
+    },
+    "A5": {
+     "mse": 0.0013239944909344686,
+     "trocas": 1,
+     "trocas_por_2000": 0.05703855806525211,
+     "primeira_promocao": 2310,
+     "externas": 0,
+     "custo": 455.60182808578605,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.9010666210358202,
+     "estrutura_identica": true,
+     "razao_ref": 0.8704883625025953,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "8771450_Galveston",
+   "T": 35064,
+   "referencia": "persistencia",
+   "mse_v052": 0.0007466631387576439,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 434.640950832763,
+   "configs": {
+    "A1": {
+     "mse": 0.0007089281334664195,
+     "trocas": 0,
+     "trocas_por_2000": 0.0,
+     "primeira_promocao": null,
+     "externas": 0,
+     "custo": 453.04022073921976,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.9020077572438969,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9494618076981666
+    },
+    "A5": {
+     "mse": 0.0007089281334664195,
+     "trocas": 0,
+     "trocas_por_2000": 0.0,
+     "primeira_promocao": null,
+     "externas": 0,
+     "custo": 453.04022073921976,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.9020077572438969,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9494618076981666
+    }
+   }
+  },
+  {
+   "serie": "8724580_Key West",
+   "T": 35064,
+   "referencia": "persistencia",
+   "mse_v052": 0.00022911895406182005,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 433.80971081451065,
+   "configs": {
+    "A1": {
+     "mse": 0.00021977441893626122,
+     "trocas": 0,
+     "trocas_por_2000": 0.0,
+     "primeira_promocao": null,
+     "externas": 0,
+     "custo": 452.2089807209674,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.901465890942277,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9592153553431572
+    },
+    "A5": {
+     "mse": 0.00021977441893626122,
+     "trocas": 0,
+     "trocas_por_2000": 0.0,
+     "primeira_promocao": null,
+     "externas": 0,
+     "custo": 452.2089807209674,
+     "acrescimo_custo": 18.399269906456766,
+     "cobertura": 0.901465890942277,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9592153553431572
+    }
+   }
+  }
+ ]
+}

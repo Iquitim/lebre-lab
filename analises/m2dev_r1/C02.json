@@ -1,0 +1,206 @@
+{
+ "familia": "C02",
+ "prototipo": {
+  "commit": "9bfdd0d",
+  "model053_sha256": "0cef0d7a251af94f7de57720212883b6f741774f078d97e2a2f60b9370347735"
+ },
+ "execucao_lab_conferida": "20261004-184213_C02",
+ "B": 2000,
+ "semente": 20261009,
+ "bloco": 20,
+ "series_com_externa_v052": 0,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r0": null,
+ "resumo": {
+  "A1": {
+   "vs_ref": {
+    "geo": 0.6020597406732551,
+    "ic95": [
+     0.5656408329229254,
+     0.6233089605816575
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.4791566842357451,
+   "series_com_externa": 0,
+   "acrescimo_custo": 17.701964542405378,
+   "estrutura_identica": true
+  },
+  "A5": {
+   "vs_ref": {
+    "geo": 0.6020597406732551,
+    "ic95": [
+     0.565836951631351,
+     0.6227520961384782
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.4791566842357451,
+   "series_com_externa": 0,
+   "acrescimo_custo": 17.701964542405378,
+   "estrutura_identica": true
+  }
+ },
+ "series": [
+  {
+   "serie": "abs_dolar_real",
+   "T": 4174,
+   "referencia": "persistencia",
+   "mse_v052": 0.3731740684880106,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 453.38737422137035,
+   "configs": {
+    "A1": {
+     "mse": 0.3731740684880106,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 430,
+     "externas": 0,
+     "custo": 471.18325347388594,
+     "acrescimo_custo": 17.79587925251559,
+     "cobertura": 0.8964659034345446,
+     "estrutura_identica": true,
+     "razao_ref": 0.5887111460288362,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.3731740684880106,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 400,
+     "externas": 0,
+     "custo": 471.18325347388594,
+     "acrescimo_custo": 17.79587925251559,
+     "cobertura": 0.8967147834743654,
+     "estrutura_identica": true,
+     "razao_ref": 0.5887111460288362,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "abs_euro_dolar",
+   "T": 4174,
+   "referencia": "persistencia",
+   "mse_v052": 0.10287385648462505,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 447.35903210349784,
+   "configs": {
+    "A1": {
+     "mse": 0.10287385648462505,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 380,
+     "externas": 0,
+     "custo": 465.0859127934835,
+     "acrescimo_custo": 17.72688068998565,
+     "cobertura": 0.89825,
+     "estrutura_identica": true,
+     "razao_ref": 0.543088440323204,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.10287385648462505,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 320,
+     "externas": 0,
+     "custo": 465.0859127934835,
+     "acrescimo_custo": 17.72688068998565,
+     "cobertura": 0.898,
+     "estrutura_identica": true,
+     "razao_ref": 0.543088440323204,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "abs_iene_dolar",
+   "T": 4174,
+   "referencia": "persistencia",
+   "mse_v052": 0.1671574691355383,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 439.56633924293243,
+   "configs": {
+    "A1": {
+     "mse": 0.1671574691355383,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 320,
+     "externas": 0,
+     "custo": 457.2932199329181,
+     "acrescimo_custo": 17.72688068998565,
+     "cobertura": 0.9055,
+     "estrutura_identica": true,
+     "razao_ref": 0.5615823886075662,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.1671574691355383,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 260,
+     "externas": 0,
+     "custo": 457.2932199329181,
+     "acrescimo_custo": 17.72688068998565,
+     "cobertura": 0.90525,
+     "estrutura_identica": true,
+     "razao_ref": 0.5615823886075662,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "abs_petroleo_wti",
+   "T": 4174,
+   "referencia": "persistencia",
+   "mse_v052": 5.052683511347591,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 441.50261140392905,
+   "configs": {
+    "A1": {
+     "mse": 5.052683511347591,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 400,
+     "externas": 0,
+     "custo": 459.0608289410637,
+     "acrescimo_custo": 17.558217537134624,
+     "cobertura": 0.8968655207280081,
+     "estrutura_identica": true,
+     "razao_ref": 0.7317657047815639,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 5.052683511347591,
+     "trocas": 1,
+     "trocas_por_2000": 0.4791566842357451,
+     "primeira_promocao": 300,
+     "externas": 0,
+     "custo": 459.0608289410637,
+     "acrescimo_custo": 17.558217537134624,
+     "cobertura": 0.8968655207280081,
+     "estrutura_identica": true,
+     "razao_ref": 0.7317657047815639,
+     "razao_v052": 1.0
+    }
+   }
+  }
+ ]
+}

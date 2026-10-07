@@ -1,0 +1,206 @@
+{
+ "familia": "B03",
+ "prototipo": {
+  "commit": "9bfdd0d",
+  "model053_sha256": "0cef0d7a251af94f7de57720212883b6f741774f078d97e2a2f60b9370347735"
+ },
+ "execucao_lab_conferida": "20261004-183309_B03",
+ "B": 2000,
+ "semente": 20261009,
+ "bloco": 168,
+ "series_com_externa_v052": 4,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r0": null,
+ "resumo": {
+  "A1": {
+   "vs_ref": {
+    "geo": 0.11267733601590561,
+    "ic95": [
+     0.10348757411391188,
+     0.1245174243694514
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.21374372127818744,
+   "series_com_externa": 4,
+   "acrescimo_custo": 16.117986534145558,
+   "estrutura_identica": true
+  },
+  "A5": {
+   "vs_ref": {
+    "geo": 0.11267733601590561,
+    "ic95": [
+     0.1026469876807214,
+     0.12385768897338842
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "trocas_por_2000": 0.21374372127818744,
+   "series_com_externa": 4,
+   "acrescimo_custo": 16.117986534145558,
+   "estrutura_identica": true
+  }
+ },
+ "series": [
+  {
+   "serie": "CO(GT)",
+   "T": 9357,
+   "referencia": "sazonal",
+   "mse_v052": 0.21174712728934125,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 3,
+   "custo_v052": 761.2318264400983,
+   "configs": {
+    "A1": {
+     "mse": 0.21174712728934125,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 440,
+     "externas": 3,
+     "custo": 776.7504755797798,
+     "acrescimo_custo": 15.518649139681543,
+     "cobertura": 0.9073494917904613,
+     "estrutura_identica": true,
+     "razao_ref": 0.12449208200762299,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 0.21174712728934125,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 430,
+     "externas": 3,
+     "custo": 776.7504755797798,
+     "acrescimo_custo": 15.518649139681543,
+     "cobertura": 0.9072191816523325,
+     "estrutura_identica": true,
+     "razao_ref": 0.12449208200762299,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "NOx(GT)",
+   "T": 9357,
+   "referencia": "sazonal",
+   "mse_v052": 4647.347581186515,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 652.0769904884045,
+   "configs": {
+    "A1": {
+     "mse": 4647.347581186515,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 440,
+     "externas": 2,
+     "custo": 667.6708774179759,
+     "acrescimo_custo": 15.593886929571454,
+     "cobertura": 0.9050272091215341,
+     "estrutura_identica": true,
+     "razao_ref": 0.13345222337278811,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 4647.347581186515,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 400,
+     "externas": 2,
+     "custo": 667.6708774179759,
+     "acrescimo_custo": 15.593886929571454,
+     "cobertura": 0.9051567763669345,
+     "estrutura_identica": true,
+     "razao_ref": 0.13345222337278811,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "NO2(GT)",
+   "T": 9357,
+   "referencia": "sazonal",
+   "mse_v052": 276.4349925562213,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 2,
+   "custo_v052": 724.2114780378326,
+   "configs": {
+    "A1": {
+     "mse": 276.4349925562213,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 340,
+     "externas": 2,
+     "custo": 739.8002351180934,
+     "acrescimo_custo": 15.588757080260734,
+     "cobertura": 0.9048606610499028,
+     "estrutura_identica": true,
+     "razao_ref": 0.1844960517112133,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 276.4349925562213,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 310,
+     "externas": 2,
+     "custo": 739.8002351180934,
+     "acrescimo_custo": 15.588757080260734,
+     "cobertura": 0.9047310434219054,
+     "estrutura_identica": true,
+     "razao_ref": 0.1844960517112133,
+     "razao_v052": 1.0
+    }
+   }
+  },
+  {
+   "serie": "C6H6(GT)",
+   "T": 9357,
+   "referencia": "sazonal",
+   "mse_v052": 2.1832040601863327,
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 3,
+   "custo_v052": 788.3557550496954,
+   "configs": {
+    "A1": {
+     "mse": 2.1832040601863327,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 520,
+     "externas": 3,
+     "custo": 806.1264080367639,
+     "acrescimo_custo": 17.7706529870685,
+     "cobertura": 0.9063507952396841,
+     "estrutura_identica": true,
+     "razao_ref": 0.0525886063780067,
+     "razao_v052": 1.0
+    },
+    "A5": {
+     "mse": 2.1832040601863327,
+     "trocas": 1,
+     "trocas_por_2000": 0.21374372127818744,
+     "primeira_promocao": 480,
+     "externas": 3,
+     "custo": 806.1264080367639,
+     "acrescimo_custo": 17.7706529870685,
+     "cobertura": 0.9063507952396841,
+     "estrutura_identica": true,
+     "razao_ref": 0.0525886063780067,
+     "razao_v052": 1.0
+    }
+   }
+  }
+ ]
+}
