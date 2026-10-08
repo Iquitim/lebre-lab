@@ -1,0 +1,119 @@
+{
+ "familia": "C05",
+ "prototipo": {
+  "commit": "462faee",
+  "model053_sha256": "7075c6cebdc9c83f8ded9b604a4dc6753975259c09ab1e555f19bf61f41eade7"
+ },
+ "semente": 20261018,
+ "semente_classe": 20261019,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.024120945362451,
+   "ic95": [
+    0.9999505564125392,
+    1.0645984389682641
+   ],
+   "n": 2
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.4126966978314466,
+   "ic95": [
+    0.30062331575074236,
+    0.523851363656208
+   ],
+   "n": 2
+  },
+  "todas_vs_v052": {
+   "geo": 1.024120945362451,
+   "ic95": [
+    0.9999505564125392,
+    1.0645984389682641
+   ],
+   "n": 2
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 64.68888888888887,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 2,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.39082897785836224,
+   "v052_sobre_ref_ic95": [
+    0.251203826136977,
+    0.5323374248476821
+   ],
+   "mse": 0.10018861754810454,
+   "peso_L_medio": 0.996495446691562,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 64.68888888888887,
+   "cobertura": 0.9444444444444444,
+   "estrutura_identica": true,
+   "razao_ref": 0.39252400504768903,
+   "ic95_ref": [
+    0.255657616667804,
+    0.5395782421884765
+   ],
+   "razao_v052": 1.004337004893074,
+   "ic95_v052": [
+    0.9999911055633302,
+    1.0114715557791834
+   ],
+   "razao_melhor": 1.004337004893074,
+   "ic95_melhor": [
+    1.0000017772397267,
+    1.0114761833468044
+   ]
+  },
+  {
+   "serie": "inpc",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4155016321652462,
+   "v052_sobre_ref_ic95": [
+    0.26571898026024426,
+    0.5901726527169567
+   ],
+   "mse": 0.1361934858021896,
+   "peso_L_medio": 0.9885536766296538,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 64.68888888888887,
+   "cobertura": 0.95,
+   "estrutura_identica": true,
+   "razao_ref": 0.4339061107365593,
+   "ic95_ref": [
+    0.27722283738959375,
+    0.6191645280897314
+   ],
+   "razao_v052": 1.0442945999403284,
+   "ic95_v052": [
+    0.9992652649683325,
+    1.129556881229396
+   ],
+   "razao_melhor": 1.0442945999403284,
+   "ic95_melhor": [
+    0.9992305064609962,
+    1.1225545332946816
+   ]
+  }
+ ]
+}
