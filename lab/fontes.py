@@ -126,7 +126,9 @@ def bcb_sgs(codigo, inicio, fim):
 # ------------------------------------------------------------------ FRED: só séries de domínio público (dados/FONTES.md)
 FRED_DOMINIO_PUBLICO = {"DGS10", "DGS2", "DTB3", "DEXUSEU", "DEXJPUS", "DCOILWTICO",
                         # validação 2 da v0.53 (status conferido em 08/10/2026, dados/FONTES.md)
-                        "DEXINUS", "DEXSIUS", "DEXTHUS", "DEXDNUS", "DGS1", "DGS5", "DGS30"}
+                        "DEXINUS", "DEXSIUS", "DEXTHUS", "DEXDNUS", "DGS1", "DGS5", "DGS30",
+                        # validação 3 da v0.53 (status conferido em 08/10/2026, dados/FONTES.md)
+                        "DEXMAUS", "DEXTAUS", "DEXSLUS", "DEXSFUS", "DGS3", "DGS7", "DGS20"}
 
 
 def fred(serie):
