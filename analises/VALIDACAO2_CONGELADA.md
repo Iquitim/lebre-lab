@@ -5,7 +5,7 @@
 só com metadados, **sem nenhuma previsão**. Manifesto `dados/VALIDACAO2_SHA256.tsv` (SHA-256 `462238216c70c8c8e0fe9727339ed2434526d01fc833f0fb4ec0bdece68d5392`). Nenhum arquivo do
 desenvolvimento nem da validação 1 mudou.
 
-## Séries (45)
+## Séries (40; a primeira versão deste registro dizia 45, erro de contagem corrigido)
 
 | Família | Séries | Passos | Observações |
 |---|---|---|---|

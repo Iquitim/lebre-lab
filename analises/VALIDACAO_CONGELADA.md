@@ -8,7 +8,7 @@ fração de alvo observado, período), **sem nenhuma previsão**.
 com o desenvolvimento (FRED, tabela das usinas, séries 1, 433 e 4390 do SGS). Nenhum arquivo do desenvolvimento mudou
 (conferido contra `dados/MANIFESTO_SHA256.tsv`).
 
-## Séries (45)
+## Séries (41; a primeira versão deste registro dizia 45, erro de contagem corrigido em 08/10/2026)
 
 | Família | Séries | Passos | Observações |
 |---|---|---|---|
