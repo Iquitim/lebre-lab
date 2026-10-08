@@ -1,0 +1,154 @@
+{
+ "familia": "WC05",
+ "prototipo": {
+  "commit": "4c8f102",
+  "model053_sha256": "e5677765e4ffd78d5af8a90783938f7d0899d06a190cf2ee3bbc7ef7c93758d8"
+ },
+ "semente": 20261024,
+ "semente_classe": 20261025,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 0.9997938744380808,
+   "ic95": [
+    0.9996374064792347,
+    1.000010052099264
+   ],
+   "n": 3
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.5781400312621197,
+   "ic95": [
+    0.4860039610410812,
+    0.6707607560719638
+   ],
+   "n": 3
+  },
+  "todas_vs_v052": {
+   "geo": 0.9997938744380808,
+   "ic95": [
+    0.9996374064792347,
+    1.000010052099264
+   ],
+   "n": 3
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 711.8666666666667,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 3,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca_habitacao",
+   "origem": "WC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.6015160967482986,
+   "v052_sobre_ref_ic95": [
+    0.43492833759159644,
+    0.7626433593287721
+   ],
+   "mse": 0.7432892298808816,
+   "peso_L_medio": 0.9999891012679263,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666666,
+   "cobertura": 0.88,
+   "estrutura_identica": true,
+   "razao_ref": 0.6015157314511639,
+   "ic95_ref": [
+    0.43948661352421114,
+    0.7726490343628837
+   ],
+   "razao_v052": 0.9999993927059695,
+   "ic95_v052": [
+    0.9999985877369597,
+    1.0000000395997009
+   ],
+   "razao_melhor": 0.9999993927059695,
+   "ic95_melhor": [
+    0.999998610699109,
+    1.0000000397058972
+   ]
+  },
+  {
+   "serie": "ipca_transportes",
+   "origem": "WC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4635960446904865,
+   "v052_sobre_ref_ic95": [
+    0.33917082070299587,
+    0.627409711664374
+   ],
+   "mse": 0.7224159214891082,
+   "peso_L_medio": 0.9999999999977197,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666666,
+   "cobertura": 0.8833333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.46359604468951215,
+   "ic95_ref": [
+    0.3438808985668735,
+    0.6217776406125943
+   ],
+   "razao_v052": 0.9999999999978982,
+   "ic95_v052": [
+    0.9999999999972217,
+    1.000000000000106
+   ],
+   "razao_melhor": 0.9999999999978982,
+   "ic95_melhor": [
+    0.9999999999971982,
+    1.0000000000001037
+   ]
+  },
+  {
+   "serie": "ipca_despesas_pessoais",
+   "origem": "WC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.6933950458521482,
+   "v052_sobre_ref_ic95": [
+    0.5430983639145923,
+    0.8709799950056321
+   ],
+   "mse": 0.12589185161993136,
+   "peso_L_medio": 0.9980524769674404,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666668,
+   "cobertura": 0.9066666666666666,
+   "estrutura_identica": true,
+   "razao_ref": 0.6929667757341237,
+   "ic95_ref": [
+    0.5389380629157955,
+    0.8707665006478437
+   ],
+   "razao_v052": 0.9993823576897667,
+   "ic95_v052": [
+    0.9989127453157407,
+    1.0000304154493673
+   ],
+   "razao_melhor": 0.9993823576897667,
+   "ic95_melhor": [
+    0.9988876256073762,
+    1.000028106909644
+   ]
+  }
+ ]
+}

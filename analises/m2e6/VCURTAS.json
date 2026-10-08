@@ -1,0 +1,1463 @@
+{
+ "familia": "VCURTAS",
+ "prototipo": {
+  "commit": "4c8f102",
+  "model053_sha256": "e5677765e4ffd78d5af8a90783938f7d0899d06a190cf2ee3bbc7ef7c93758d8"
+ },
+ "semente": 20261024,
+ "semente_classe": 20261025,
+ "B": 2000,
+ "resumo": {
+  "c1": {
+   "geo": 1.0021598296559782,
+   "ic95": [
+    0.9998080752330092,
+    1.0052429661113031
+   ],
+   "n": 5
+  },
+  "c2": {
+   "geo": 1.0023642432445978,
+   "ic95": [
+    0.9990594020653142,
+    1.0062865538615624
+   ],
+   "n": 23
+  },
+  "c7": {
+   "geo": 0.9993464907890474,
+   "ic95": [
+    0.9933504041293743,
+    1.005343343408576
+   ],
+   "n": 40
+  },
+  "todas_vs_ref": {
+   "geo": 0.4850623827741575,
+   "ic95": [
+    0.46338451368606476,
+    0.5168003160392151
+   ],
+   "n": 40
+  },
+  "todas_vs_v052": {
+   "geo": 0.9838385297020171,
+   "ic95": [
+    0.9770233499616745,
+    0.9924523794904194
+   ],
+   "n": 40
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 814.2524305555555,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 23,
+   "referência melhor": 5,
+   "indecidível": 12
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Serra do Mel C",
+   "origem": "VB01",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "indecidível",
+   "v052_sobre_ref": 0.7968030650700794,
+   "v052_sobre_ref_ic95": [
+    0.44745944676504346,
+    1.8854820893278792
+   ],
+   "mse": 2656.186513440643,
+   "peso_L_medio": 0.999999999999955,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8277777777777777,
+   "estrutura_identica": true,
+   "razao_ref": 0.7968030650700644,
+   "ic95_ref": [
+    0.43368294906781213,
+    2.0557936358480955
+   ],
+   "razao_v052": 0.9999999999999811,
+   "ic95_v052": [
+    0.999999999999964,
+    0.9999999999999917
+   ],
+   "razao_melhor": 0.9999999999999811,
+   "ic95_melhor": [
+    0.9999999999999644,
+    0.9999999999999923
+   ]
+  },
+  {
+   "serie": "Conj. Paracatu",
+   "origem": "VB01",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.32466240354169673,
+   "v052_sobre_ref_ic95": [
+    0.2306339948414282,
+    0.44030157881446685
+   ],
+   "mse": 1466.1347596904368,
+   "peso_L_medio": 0.9999776773572187,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8277777777777777,
+   "estrutura_identica": true,
+   "razao_ref": 0.3246649878784045,
+   "ic95_ref": [
+    0.23254448558805685,
+    0.44180203089266806
+   ],
+   "razao_v052": 1.0000079600738476,
+   "ic95_v052": [
+    0.9999992437824732,
+    1.000017618807463
+   ],
+   "razao_melhor": 1.0000079600738476,
+   "ic95_melhor": [
+    0.9999992315645445,
+    1.0000181958130807
+   ]
+  },
+  {
+   "serie": "Conj. Pirapora 2",
+   "origem": "VB01",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2674053487755035,
+   "v052_sobre_ref_ic95": [
+    0.19190328546498597,
+    0.397484415254248
+   ],
+   "mse": 1195.0649309967785,
+   "peso_L_medio": 0.9999999999966536,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8444444444444444,
+   "estrutura_identica": true,
+   "razao_ref": 0.2674053487754545,
+   "ic95_ref": [
+    0.18923345252062057,
+    0.38869487863094526
+   ],
+   "razao_v052": 0.9999999999998168,
+   "ic95_v052": [
+    0.9999999999996049,
+    1.0000000000000937
+   ],
+   "razao_melhor": 0.9999999999998168,
+   "ic95_melhor": [
+    0.9999999999996104,
+    1.0000000000000953
+   ]
+  },
+  {
+   "serie": "Conj. Ciranda",
+   "origem": "VB01",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.44967409332123665,
+   "v052_sobre_ref_ic95": [
+    0.30522473584711557,
+    0.6170557334913034
+   ],
+   "mse": 837.6270381131648,
+   "peso_L_medio": 0.9999999999276583,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8166666666666667,
+   "estrutura_identica": true,
+   "razao_ref": 0.4496740932953664,
+   "ic95_ref": [
+    0.2997364447923977,
+    0.6213786066766825
+   ],
+   "razao_v052": 0.9999999999424688,
+   "ic95_v052": [
+    0.9999999998874859,
+    1.0000000000000226
+   ],
+   "razao_melhor": 0.9999999999424688,
+   "ic95_melhor": [
+    0.9999999998806817,
+    1.0000000000000318
+   ]
+  },
+  {
+   "serie": "Conj. Rio Alto",
+   "origem": "VB01",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.5342279098641904,
+   "v052_sobre_ref_ic95": [
+    0.34880723414573955,
+    0.7996499423940935
+   ],
+   "mse": 417.4969985519849,
+   "peso_L_medio": 0.9999999999994889,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8333333333333334,
+   "estrutura_identica": true,
+   "razao_ref": 0.5342279098640823,
+   "ic95_ref": [
+    0.3558059151375323,
+    0.8040419438203673
+   ],
+   "razao_v052": 0.9999999999997976,
+   "ic95_v052": [
+    0.9999999999993885,
+    1.0000000000002316
+   ],
+   "razao_melhor": 0.9999999999997976,
+   "ic95_melhor": [
+    0.9999999999994054,
+    1.0000000000002311
+   ]
+  },
+  {
+   "serie": "SUDESTE_Sao Paulo_2018_2021",
+   "origem": "VB02",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.10403486647140484,
+   "v052_sobre_ref_ic95": [
+    0.0677178981443385,
+    0.2669186137232075
+   ],
+   "mse": 1351662.1422127793,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.9861111111111112,
+   "estrutura_identica": true,
+   "razao_ref": 0.10403486647140484,
+   "ic95_ref": [
+    0.06560983859056058,
+    0.2642075013613183
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "SUL_Porto Alegre_2018_2021",
+   "origem": "VB02",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.08819436597596805,
+   "v052_sobre_ref_ic95": [
+    0.05394500973805397,
+    0.238484871066045
+   ],
+   "mse": 249211.2197000494,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.9833333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.08819436597596805,
+   "ic95_ref": [
+    0.05476673829568215,
+    0.23171091353164663
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "NORDESTE_Recife_2018_2021",
+   "origem": "VB02",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.15618314358696306,
+   "v052_sobre_ref_ic95": [
+    0.09844572214964444,
+    0.4349985779698133
+   ],
+   "mse": 116118.6510300794,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.9888888888888889,
+   "estrutura_identica": true,
+   "razao_ref": 0.15618314358696306,
+   "ic95_ref": [
+    0.09914412090163338,
+    0.42735485879819807
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "NORTE_Belem_2018_2021",
+   "origem": "VB02",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.13054014952979517,
+   "v052_sobre_ref_ic95": [
+    0.09194953022761919,
+    0.2824077661492864
+   ],
+   "mse": 14285.416323886118,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.9916666666666667,
+   "estrutura_identica": true,
+   "razao_ref": 0.13054014952979517,
+   "ic95_ref": [
+    0.09029278871099643,
+    0.2950464368936257
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Oitis",
+   "origem": "VB06",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2411577789903665,
+   "v052_sobre_ref_ic95": [
+    0.15969538587379445,
+    0.325453241508706
+   ],
+   "mse": 1955.9452738807242,
+   "peso_L_medio": 0.9999999999999011,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8861111111111111,
+   "estrutura_identica": true,
+   "razao_ref": 0.24115777899036667,
+   "ic95_ref": [
+    0.1638454237022871,
+    0.32813011532852804
+   ],
+   "razao_v052": 1.0000000000000007,
+   "ic95_v052": [
+    0.9999999999999994,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0000000000000007,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "Conj. Ourolândia II",
+   "origem": "VB06",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.13109832349073045,
+   "v052_sobre_ref_ic95": [
+    0.08277000838785506,
+    0.22716215863022932
+   ],
+   "mse": 545.6552613199348,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8527777777777777,
+   "estrutura_identica": true,
+   "razao_ref": 0.13109832349073045,
+   "ic95_ref": [
+    0.08206925029131446,
+    0.22931452841976926
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Rio do Vento Expansão",
+   "origem": "VB06",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.09298354961363699,
+   "v052_sobre_ref_ic95": [
+    0.06400407832873521,
+    0.1315538564633619
+   ],
+   "mse": 911.9174276894596,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.9194444444444444,
+   "estrutura_identica": true,
+   "razao_ref": 0.09298354961363699,
+   "ic95_ref": [
+    0.06512364371207417,
+    0.13205926800703677
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Laranjeiras",
+   "origem": "VB06",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.26132352135233894,
+   "v052_sobre_ref_ic95": [
+    0.1854296892477273,
+    0.444835527722361
+   ],
+   "mse": 2626.5712605927943,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.7972222222222223,
+   "estrutura_identica": true,
+   "razao_ref": 0.26132352135233894,
+   "ic95_ref": [
+    0.18496544877750007,
+    0.4427837300140558
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Rio do Vento",
+   "origem": "VB06",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.140316348806854,
+   "v052_sobre_ref_ic95": [
+    0.08915231209837907,
+    0.21300608774980687
+   ],
+   "mse": 1269.0825717983353,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8916666666666667,
+   "estrutura_identica": true,
+   "razao_ref": 0.140316348806854,
+   "ic95_ref": [
+    0.08850616071620998,
+    0.21262177888407063
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Serra do Seridó",
+   "origem": "VB06",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.1876036293249749,
+   "v052_sobre_ref_ic95": [
+    0.12659437400841492,
+    0.2671908400333104
+   ],
+   "mse": 927.7401713927811,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 804.6222222222223,
+   "cobertura": 0.8833333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.1876036293249749,
+   "ic95_ref": [
+    0.1294202796290605,
+    0.2715782213948043
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "8574680_Baltimore",
+   "origem": "VB07",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.7693178136838099,
+   "v052_sobre_ref_ic95": [
+    0.6643766060099016,
+    0.9105258466457428
+   ],
+   "mse": 0.00023051730275633404,
+   "peso_L_medio": 0.7413805355478985,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 910.8027777777777,
+   "cobertura": 0.9111111111111111,
+   "estrutura_identica": true,
+   "razao_ref": 0.8119883953697264,
+   "ic95_ref": [
+    0.6944421400998666,
+    0.9560721128120714
+   ],
+   "razao_v052": 1.0554654798406296,
+   "ic95_v052": [
+    0.9785801845075016,
+    1.1550314112870808
+   ],
+   "razao_melhor": 1.0554654798406296,
+   "ic95_melhor": [
+    0.9726603867887792,
+    1.1553348646871753
+   ]
+  },
+  {
+   "serie": "8726520_St. Petersburg",
+   "origem": "VB07",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 24,
+   "classe": "indecidível",
+   "v052_sobre_ref": 0.9722547631912426,
+   "v052_sobre_ref_ic95": [
+    0.8759159847034071,
+    1.021591472066921
+   ],
+   "mse": 0.0003331122458698011,
+   "peso_L_medio": 0.3633036652936051,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 910.8027777777779,
+   "cobertura": 0.9833333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.9808638026593195,
+   "ic95_ref": [
+    0.9223232276734499,
+    1.0014317684037193
+   ],
+   "razao_v052": 1.0088547156506793,
+   "ic95_v052": [
+    0.9691124519041235,
+    1.074732553703792
+   ],
+   "razao_melhor": 1.0088547156506793,
+   "ic95_melhor": [
+    0.9689980492605031,
+    1.0737127071368051
+   ]
+  },
+  {
+   "serie": "8761724_Grand Isle",
+   "origem": "VB07",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 24,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.1621177213906355,
+   "v052_sobre_ref_ic95": [
+    1.0521931899273176,
+    1.2187132788172779
+   ],
+   "mse": 0.0006182017186304266,
+   "peso_L_medio": 0.003369028291434337,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 910.8027777777777,
+   "cobertura": 0.9861111111111112,
+   "estrutura_identica": true,
+   "razao_ref": 1.0003657493134668,
+   "ic95_ref": [
+    1.0000198751031382,
+    1.001018816462607
+   ],
+   "razao_v052": 0.8608127480548097,
+   "ic95_v052": [
+    0.819687472889039,
+    0.948875925294761
+   ],
+   "razao_melhor": 1.0003657493134668,
+   "ic95_melhor": [
+    1.0000083167465357,
+    1.0010494649688275
+   ]
+  },
+  {
+   "serie": "9414290_San Francisco",
+   "origem": "VB07",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 24,
+   "classe": "indecidível",
+   "v052_sobre_ref": 1.0278877340803005,
+   "v052_sobre_ref_ic95": [
+    0.8987717492660133,
+    1.1628877194166394
+   ],
+   "mse": 0.0007096257081220899,
+   "peso_L_medio": 0.37963435326073713,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 910.8027777777777,
+   "cobertura": 0.9166666666666666,
+   "estrutura_identica": true,
+   "razao_ref": 1.0166709146763866,
+   "ic95_ref": [
+    0.9515624204653514,
+    1.0822468272343109
+   ],
+   "razao_v052": 0.9890875053451725,
+   "ic95_v052": [
+    0.8965358985856743,
+    1.075923290562678
+   ],
+   "razao_melhor": 1.0166709146763866,
+   "ic95_melhor": [
+    0.9516051251694033,
+    1.0819094383504981
+   ]
+  },
+  {
+   "serie": "9447130_Seattle",
+   "origem": "VB07",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 24,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.716097110445972,
+   "v052_sobre_ref_ic95": [
+    0.612296442427473,
+    0.7972081174973137
+   ],
+   "mse": 0.0009209261048378677,
+   "peso_L_medio": 0.9999983776565186,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 910.8027777777777,
+   "cobertura": 0.9388888888888889,
+   "estrutura_identica": true,
+   "razao_ref": 0.7160973875157434,
+   "ic95_ref": [
+    0.6130588353606271,
+    0.7941807093514861
+   ],
+   "razao_v052": 1.0000003869164773,
+   "ic95_v052": [
+    0.9999999999314197,
+    1.0000008732396515
+   ],
+   "razao_melhor": 1.0000003869164773,
+   "ic95_melhor": [
+    0.9999999999528064,
+    1.0000008670928149
+   ]
+  },
+  {
+   "serie": "9410230_La Jolla",
+   "origem": "VB07",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 24,
+   "classe": "indecidível",
+   "v052_sobre_ref": 1.0390505690059355,
+   "v052_sobre_ref_ic95": [
+    0.9423714365899911,
+    1.1083356207262594
+   ],
+   "mse": 0.00038660457159796983,
+   "peso_L_medio": 0.06622513839760223,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 910.8027777777779,
+   "cobertura": 0.9444444444444444,
+   "estrutura_identica": true,
+   "razao_ref": 0.9991306151366696,
+   "ic95_ref": [
+    0.9937026166098033,
+    1.0036533402176546
+   ],
+   "razao_v052": 0.9615803551241423,
+   "ic95_v052": [
+    0.8993713480662425,
+    1.05548747498882
+   ],
+   "razao_melhor": 0.9991306151366696,
+   "ic95_melhor": [
+    0.993453175728282,
+    1.0040424354479178
+   ]
+  },
+  {
+   "serie": "dolar_real_2000_2009",
+   "origem": "VC01",
+   "T": 360,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "indecidível",
+   "v052_sobre_ref": 0.9623515973721763,
+   "v052_sobre_ref_ic95": [
+    0.9124638699551496,
+    1.06101786455096
+   ],
+   "mse": 0.3767968680127928,
+   "peso_L_medio": 0.07287435572917425,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 837.0111111111112,
+   "cobertura": 0.9273255813953488,
+   "estrutura_identica": true,
+   "razao_ref": 0.9808517493559662,
+   "ic95_ref": [
+    0.9675392655184405,
+    1.0076458693512909
+   ],
+   "razao_v052": 1.0192239011545332,
+   "ic95_v052": [
+    0.9474476842286824,
+    1.070781564633327
+   ],
+   "razao_melhor": 1.0192239011545332,
+   "ic95_melhor": [
+    0.952547924337289,
+    1.0715125673774866
+   ]
+  },
+  {
+   "serie": "euro_dolar_2000_2009",
+   "origem": "VC01",
+   "T": 360,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "indecidível",
+   "v052_sobre_ref": 1.0014192213219495,
+   "v052_sobre_ref_ic95": [
+    0.9636501399078952,
+    1.0391403311711007
+   ],
+   "mse": 0.5496464167400635,
+   "peso_L_medio": 0.5936864487235147,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 856.3833333333333,
+   "cobertura": 0.9310344827586207,
+   "estrutura_identica": true,
+   "razao_ref": 1.0019889355003728,
+   "ic95_ref": [
+    0.9805710824706574,
+    1.023973772981258
+   ],
+   "razao_v052": 1.0005689067738,
+   "ic95_v052": [
+    0.9832852756829211,
+    1.0189253947518346
+   ],
+   "razao_melhor": 1.0019889355003728,
+   "ic95_melhor": [
+    0.9801954920877499,
+    1.0251316310087824
+   ]
+  },
+  {
+   "serie": "iene_dolar_2000_2009",
+   "origem": "VC01",
+   "T": 360,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "indecidível",
+   "v052_sobre_ref": 1.0334323990773469,
+   "v052_sobre_ref_ic95": [
+    0.983779554528818,
+    1.075042335245454
+   ],
+   "mse": 0.3370049295027099,
+   "peso_L_medio": 0.10910724840979635,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 856.3833333333333,
+   "cobertura": 0.9339080459770115,
+   "estrutura_identica": true,
+   "razao_ref": 1.0052931529023093,
+   "ic95_ref": [
+    0.9993275937922609,
+    1.0108576522417911
+   ],
+   "razao_v052": 0.9727710818819301,
+   "ic95_v052": [
+    0.9377607008859885,
+    1.0165028077835019
+   ],
+   "razao_melhor": 1.0052931529023093,
+   "ic95_melhor": [
+    0.9992190841908396,
+    1.0104849215587368
+   ]
+  },
+  {
+   "serie": "petroleo_wti_2000_2009",
+   "origem": "VC01",
+   "T": 360,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.050100113178008,
+   "v052_sobre_ref_ic95": [
+    1.0130023135393864,
+    1.0910064893096565
+   ],
+   "mse": 8.845493428773544,
+   "peso_L_medio": 0.27733558430841243,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 672.661111111111,
+   "cobertura": 0.9155844155844156,
+   "estrutura_identica": true,
+   "razao_ref": 1.0092871150232239,
+   "ic95_ref": [
+    0.9967470547354264,
+    1.0243233625390737
+   ],
+   "razao_v052": 0.9611341836434354,
+   "ic95_v052": [
+    0.9365294425951232,
+    0.986508566380062
+   ],
+   "razao_melhor": 1.0092871150232239,
+   "ic95_melhor": [
+    0.9969709010588597,
+    1.023706333034748
+   ]
+  },
+  {
+   "serie": "abs_dolar_real_2000_2009",
+   "origem": "VC02",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.6113769824997879,
+   "v052_sobre_ref_ic95": [
+    0.45364858794585317,
+    0.7748949587603552
+   ],
+   "mse": 0.15065668930562737,
+   "peso_L_medio": 0.9999999902755251,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 832.2027777777778,
+   "cobertura": 0.9447674418604651,
+   "estrutura_identica": true,
+   "razao_ref": 0.6113769906544589,
+   "ic95_ref": [
+    0.462273905926027,
+    0.7774166581553479
+   ],
+   "razao_v052": 1.000000013338204,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000217507317
+   ],
+   "razao_melhor": 1.000000013338204,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.000000022435452
+   ]
+  },
+  {
+   "serie": "abs_euro_dolar_2000_2009",
+   "origem": "VC02",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.544330763257641,
+   "v052_sobre_ref_ic95": [
+    0.4877587658381909,
+    0.6249815531158148
+   ],
+   "mse": 0.23370959072318456,
+   "peso_L_medio": 0.9999998220803552,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 851.5194444444444,
+   "cobertura": 0.9540229885057471,
+   "estrutura_identica": true,
+   "razao_ref": 0.5443307924200534,
+   "ic95_ref": [
+    0.4870176067043076,
+    0.6203224747943387
+   ],
+   "razao_v052": 1.0000000535748013,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000862331666
+   ],
+   "razao_melhor": 1.0000000535748013,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.000000088328463
+   ]
+  },
+  {
+   "serie": "abs_iene_dolar_2000_2009",
+   "origem": "VC02",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.5381839769274249,
+   "v052_sobre_ref_ic95": [
+    0.46995910814150343,
+    0.6026742966567723
+   ],
+   "mse": 0.1493522368725359,
+   "peso_L_medio": 0.999999987806913,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 851.5194444444443,
+   "cobertura": 0.9511494252873564,
+   "estrutura_identica": true,
+   "razao_ref": 0.5381839776618474,
+   "ic95_ref": [
+    0.4725391673374296,
+    0.6006443442357012
+   ],
+   "razao_v052": 1.000000001364631,
+   "ic95_v052": [
+    0.99999999763362,
+    1.0000000070771424
+   ],
+   "razao_melhor": 1.000000001364631,
+   "ic95_melhor": [
+    0.9999999974923356,
+    1.000000007201187
+   ]
+  },
+  {
+   "serie": "abs_petroleo_wti_2000_2009",
+   "origem": "VC02",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.5505004788783532,
+   "v052_sobre_ref_ic95": [
+    0.4785725011588956,
+    0.6280976898651778
+   ],
+   "mse": 4.694320669932307,
+   "peso_L_medio": 0.999635089882275,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 668.3527777777776,
+   "cobertura": 0.9285714285714286,
+   "estrutura_identica": true,
+   "razao_ref": 0.5506783836416074,
+   "ic95_ref": [
+    0.47935931780393454,
+    0.631096777223137
+   ],
+   "razao_v052": 1.000323169134415,
+   "ic95_v052": [
+    1.0000000001671727,
+    1.0004146682144055
+   ],
+   "razao_melhor": 1.000323169134415,
+   "ic95_melhor": [
+    1.0000000001689249,
+    1.0004167712011038
+   ]
+  },
+  {
+   "serie": "nivel_dolar_real_2000_2009",
+   "origem": "VC03",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "indecidível",
+   "v052_sobre_ref": 1.041076664674878,
+   "v052_sobre_ref_ic95": [
+    0.976172717724605,
+    1.0788055908034062
+   ],
+   "mse": 0.00016477321272874773,
+   "peso_L_medio": 0.0183733357568859,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 837.0111111111112,
+   "cobertura": 1.0,
+   "estrutura_identica": true,
+   "razao_ref": 1.016737691320706,
+   "ic95_ref": [
+    1.0004321770694675,
+    1.0330958155009633
+   ],
+   "razao_v052": 0.9766213438644571,
+   "ic95_v052": [
+    0.9392665442068884,
+    1.029208243212812
+   ],
+   "razao_melhor": 1.016737691320706,
+   "ic95_melhor": [
+    1.0003136512244208,
+    1.0330682310490653
+   ]
+  },
+  {
+   "serie": "nivel_euro_dolar_2000_2009",
+   "origem": "VC03",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.0367581582399816,
+   "v052_sobre_ref_ic95": [
+    1.008460006365344,
+    1.0833407169470912
+   ],
+   "mse": 4.4775478227336635e-05,
+   "peso_L_medio": 0.008963040691435553,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 856.3833333333333,
+   "cobertura": 1.0,
+   "estrutura_identica": true,
+   "razao_ref": 1.000316167184366,
+   "ic95_ref": [
+    0.9999300037753525,
+    1.002248942906853
+   ],
+   "razao_v052": 0.9648500561428132,
+   "ic95_v052": [
+    0.9248500197509637,
+    0.9911670306723311
+   ],
+   "razao_melhor": 1.000316167184366,
+   "ic95_melhor": [
+    0.9999393678229838,
+    1.001994069828334
+   ]
+  },
+  {
+   "serie": "nivel_iene_dolar_2000_2009",
+   "origem": "VC03",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "indecidível",
+   "v052_sobre_ref": 1.0341606171442672,
+   "v052_sobre_ref_ic95": [
+    0.9822750714476338,
+    1.0888260990650402
+   ],
+   "mse": 0.4295190470107305,
+   "peso_L_medio": 0.013650681626916477,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 856.3833333333334,
+   "cobertura": 1.0,
+   "estrutura_identica": true,
+   "razao_ref": 1.0005378088257626,
+   "ic95_ref": [
+    0.9995933102613299,
+    1.0015296040399932
+   ],
+   "razao_v052": 0.967487827556854,
+   "ic95_v052": [
+    0.9201576517084892,
+    1.0161483627983343
+   ],
+   "razao_melhor": 1.0005378088257626,
+   "ic95_melhor": [
+    0.9995423099673669,
+    1.0015822990265248
+   ]
+  },
+  {
+   "serie": "nivel_petroleo_wti_2000_2009",
+   "origem": "VC03",
+   "T": 360,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.1182932374332766,
+   "v052_sobre_ref_ic95": [
+    1.066880074611843,
+    1.1682861296462446
+   ],
+   "mse": 0.8059561845807769,
+   "peso_L_medio": 0.0030529486867546278,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 672.6611111111112,
+   "cobertura": 1.0,
+   "estrutura_identica": true,
+   "razao_ref": 1.0002874279965028,
+   "ic95_ref": [
+    1.000058729539404,
+    1.0005873398258047
+   ],
+   "razao_v052": 0.8944768639506194,
+   "ic95_v052": [
+    0.8575345610393157,
+    0.9365301354188227
+   ],
+   "razao_melhor": 1.0002874279965028,
+   "ic95_melhor": [
+    1.0000595398771164,
+    1.00060015446522
+   ]
+  },
+  {
+   "serie": "d_juro_3m_2000_2009",
+   "origem": "VC04",
+   "T": 360,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "indecidível",
+   "v052_sobre_ref": 0.9875070097737433,
+   "v052_sobre_ref_ic95": [
+    0.9360779246440891,
+    1.0671143710488573
+   ],
+   "mse": 0.004294095395800308,
+   "peso_L_medio": 0.24460954632976595,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 846.6694444444445,
+   "cobertura": 0.8063583815028902,
+   "estrutura_identica": true,
+   "razao_ref": 0.9935386106220228,
+   "ic95_ref": [
+    0.9627530923762728,
+    1.0129563723649218
+   ],
+   "razao_v052": 1.006107906869098,
+   "ic95_v052": [
+    0.9482956458815237,
+    1.0357614493771483
+   ],
+   "razao_melhor": 1.006107906869098,
+   "ic95_melhor": [
+    0.9430210247202572,
+    1.0371530461173775
+   ]
+  },
+  {
+   "serie": "d_juro_2a_2000_2009",
+   "origem": "VC04",
+   "T": 360,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "indecidível",
+   "v052_sobre_ref": 1.0023048526990974,
+   "v052_sobre_ref_ic95": [
+    0.9606296709486123,
+    1.0543233784199106
+   ],
+   "mse": 0.0035927020931919716,
+   "peso_L_medio": 0.08288821519515881,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 846.6694444444445,
+   "cobertura": 0.8988439306358381,
+   "estrutura_identica": true,
+   "razao_ref": 1.001689461312708,
+   "ic95_ref": [
+    0.9968932652891509,
+    1.0072581857750729
+   ],
+   "razao_v052": 0.9993860237384543,
+   "ic95_v052": [
+    0.9470456496717274,
+    1.0396333850496764
+   ],
+   "razao_melhor": 1.001689461312708,
+   "ic95_melhor": [
+    0.9972205256461149,
+    1.007204137511987
+   ]
+  },
+  {
+   "serie": "d_juro_10a_2000_2009",
+   "origem": "VC04",
+   "T": 360,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.107709067703375,
+   "v052_sobre_ref_ic95": [
+    1.0157853192300588,
+    1.2655437892902002
+   ],
+   "mse": 0.0033391004147588876,
+   "peso_L_medio": 0.013173897025820811,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 846.6694444444445,
+   "cobertura": 0.9104046242774566,
+   "estrutura_identica": true,
+   "razao_ref": 1.0005742264043829,
+   "ic95_ref": [
+    0.9997943481813913,
+    1.0021251538740688
+   ],
+   "razao_v052": 0.9032825094398516,
+   "ic95_v052": [
+    0.7886677446457824,
+    0.9825655209557662
+   ],
+   "razao_melhor": 1.0005742264043829,
+   "ic95_melhor": [
+    0.9998025142278726,
+    1.002140150597071
+   ]
+  },
+  {
+   "serie": "ipca15",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.45859409744674295,
+   "v052_sobre_ref_ic95": [
+    0.33553867438550855,
+    0.616335675538437
+   ],
+   "mse": 0.07670559522418584,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666668,
+   "cobertura": 0.9366666666666666,
+   "estrutura_identica": true,
+   "razao_ref": 0.45859409744674295,
+   "ic95_ref": [
+    0.332515121536573,
+    0.6198015178490461
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "ipca_alimentos_bebidas",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4272995066934658,
+   "v052_sobre_ref_ic95": [
+    0.32113383879874113,
+    0.6023893998301573
+   ],
+   "mse": 0.375945049605895,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666668,
+   "cobertura": 0.9033333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.4272995066934658,
+   "ic95_ref": [
+    0.31876815149221255,
+    0.59370648164333
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "ipca_servicos",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "indecidível",
+   "v052_sobre_ref": 0.9318402436629385,
+   "v052_sobre_ref_ic95": [
+    0.7164881837750839,
+    1.2089330207832216
+   ],
+   "mse": 0.07164967626187953,
+   "peso_L_medio": 0.3693345913417492,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666668,
+   "cobertura": 0.9133333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.788561419327596,
+   "ic95_ref": [
+    0.6745319672624601,
+    0.9222531166293116
+   ],
+   "razao_v052": 0.8462409996673542,
+   "ic95_v052": [
+    0.6976384831631361,
+    1.0235518894547504
+   ],
+   "razao_melhor": 0.8462409996673542,
+   "ic95_melhor": [
+    0.7063009663597644,
+    1.026913018112433
+   ]
+  },
+  {
+   "serie": "ipca_monitorados",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.48167884706188174,
+   "v052_sobre_ref_ic95": [
+    0.3306756825011765,
+    0.6279000938907552
+   ],
+   "mse": 0.6340876538506948,
+   "peso_L_medio": 0.9999999999421921,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666667,
+   "cobertura": 0.8866666666666667,
+   "estrutura_identica": true,
+   "razao_ref": 0.4816788470557169,
+   "ic95_ref": [
+    0.3346425180315218,
+    0.6350975281428088
+   ],
+   "razao_v052": 0.9999999999872013,
+   "ic95_v052": [
+    0.9999999999769704,
+    1.0000000000005242
+   ],
+   "razao_melhor": 0.9999999999872013,
+   "ic95_melhor": [
+    0.9999999999772067,
+    1.000000000000515
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "familia": "C05",
+ "prototipo": {
+  "commit": "85da1ff",
+  "model053_sha256": "d280ab10116c3f927e0ee0961e09d921ff806f14273496e48a395208e8550361"
+ },
+ "semente": 20261022,
+ "semente_classe": 20261023,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0000000000000027,
+   "ic95": [
+    1.0,
+    1.0000000000000067
+   ],
+   "n": 2
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.4029765231345683,
+   "ic95": [
+    0.3001108394341876,
+    0.520060118370621
+   ],
+   "n": 2
+  },
+  "todas_vs_v052": {
+   "geo": 1.0000000000000027,
+   "ic95": [
+    1.0,
+    1.0000000000000067
+   ],
+   "n": 2
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 861.7055555555555,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 2,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.39082897785836224,
+   "v052_sobre_ref_ic95": [
+    0.25927178190340217,
+    0.5353902336402795
+   ],
+   "mse": 0.09975597539470489,
+   "peso_L_medio": 0.9999999999999891,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 861.7055555555555,
+   "cobertura": 0.9444444444444444,
+   "estrutura_identica": true,
+   "razao_ref": 0.39082897785836435,
+   "ic95_ref": [
+    0.259228759187428,
+    0.5381444922286944
+   ],
+   "razao_v052": 1.0000000000000056,
+   "ic95_v052": [
+    1.0,
+    1.0000000000000133
+   ],
+   "razao_melhor": 1.0000000000000056,
+   "ic95_melhor": [
+    1.0,
+    1.0000000000000133
+   ]
+  },
+  {
+   "serie": "inpc",
+   "origem": "C05",
+   "T": 360,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4155016321652462,
+   "v052_sobre_ref_ic95": [
+    0.2647527519380482,
+    0.5906512663136975
+   ],
+   "mse": 0.13041672896706713,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 861.7055555555555,
+   "cobertura": 0.95,
+   "estrutura_identica": true,
+   "razao_ref": 0.4155016321652462,
+   "ic95_ref": [
+    0.2648617579756699,
+    0.5995222270144245
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

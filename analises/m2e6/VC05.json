@@ -1,0 +1,189 @@
+{
+ "familia": "VC05",
+ "prototipo": {
+  "commit": "4c8f102",
+  "model053_sha256": "e5677765e4ffd78d5af8a90783938f7d0899d06a190cf2ee3bbc7ef7c93758d8"
+ },
+ "semente": 20261024,
+ "semente_classe": 20261025,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 0.9999999999957337,
+   "ic95": [
+    0.9999999999925652,
+    1.0000000000001827
+   ],
+   "n": 3
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.5223222038047388,
+   "ic95": [
+    0.44931199421862855,
+    0.6001493731262403
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 0.9591212554787755,
+   "ic95": [
+    0.9168968489687732,
+    1.0047035525389032
+   ],
+   "n": 4
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 711.8666666666668,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 3,
+   "referência melhor": 0,
+   "indecidível": 1
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca15",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.45859409744674295,
+   "v052_sobre_ref_ic95": [
+    0.33579634980622186,
+    0.6098419287023492
+   ],
+   "mse": 0.07670559522418584,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666668,
+   "cobertura": 0.9366666666666666,
+   "estrutura_identica": true,
+   "razao_ref": 0.45859409744674295,
+   "ic95_ref": [
+    0.33430008762305374,
+    0.6273284860525251
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "ipca_alimentos_bebidas",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4272995066934658,
+   "v052_sobre_ref_ic95": [
+    0.3205672363693353,
+    0.5889343175076208
+   ],
+   "mse": 0.375945049605895,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666668,
+   "cobertura": 0.9033333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.4272995066934658,
+   "ic95_ref": [
+    0.31746214580578236,
+    0.5935279781417464
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "ipca_servicos",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "indecidível",
+   "v052_sobre_ref": 0.9318402436629385,
+   "v052_sobre_ref_ic95": [
+    0.720087429048659,
+    1.2220958408476894
+   ],
+   "mse": 0.07164967626187953,
+   "peso_L_medio": 0.3693345913417492,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666668,
+   "cobertura": 0.9133333333333333,
+   "estrutura_identica": true,
+   "razao_ref": 0.788561419327596,
+   "ic95_ref": [
+    0.6705798004139266,
+    0.9260341081442385
+   ],
+   "razao_v052": 0.8462409996673542,
+   "ic95_v052": [
+    0.7067762069344313,
+    1.0189473673184648
+   ],
+   "razao_melhor": 0.8462409996673542,
+   "ic95_melhor": [
+    0.6976935900846266,
+    1.0316923746200264
+   ]
+  },
+  {
+   "serie": "ipca_monitorados",
+   "origem": "VC05",
+   "T": 300,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.48167884706188174,
+   "v052_sobre_ref_ic95": [
+    0.32200712540068205,
+    0.6429336826440867
+   ],
+   "mse": 0.6340876538506948,
+   "peso_L_medio": 0.9999999999421921,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 711.8666666666667,
+   "cobertura": 0.8866666666666667,
+   "estrutura_identica": true,
+   "razao_ref": 0.4816788470557169,
+   "ic95_ref": [
+    0.32673294297581695,
+    0.629052393971898
+   ],
+   "razao_v052": 0.9999999999872013,
+   "ic95_v052": [
+    0.9999999999776954,
+    1.0000000000005485
+   ],
+   "razao_melhor": 0.9999999999872013,
+   "ic95_melhor": [
+    0.9999999999770299,
+    1.0000000000004723
+   ]
+  }
+ ]
+}
