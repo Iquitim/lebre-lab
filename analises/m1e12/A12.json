@@ -1,0 +1,85 @@
+{
+ "familia": "A12",
+ "prototipo": {
+  "commit": "212c95f",
+  "model053_sha256": "9087c32309a6ee6309ef03ea803f50efd1a7533afcb36cabd2dfa0d16dde67c8"
+ },
+ "semente": 20261037,
+ "semente_classe": 20261038,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0006890602502037,
+   "ic95": [
+    1.000367421218661,
+    1.0010445011990063
+   ],
+   "n": 1
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.2929430560249836,
+   "ic95": [
+    0.29073164698801535,
+    0.29529552832718814
+   ],
+   "n": 1
+  },
+  "todas_vs_v052": {
+   "geo": 1.0006890602502037,
+   "ic95": [
+    1.000367421218661,
+    1.0010445011990063
+   ],
+   "n": 1
+  },
+  "series_com_externa": 1,
+  "series_com_externa_v052": 1,
+  "acrescimo_custo": 877.68892,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 1,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "s1201",
+   "origem": "A12",
+   "T": 200000,
+   "d": 50,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.29274133960427096,
+   "v052_sobre_ref_ic95": [
+    0.2905435686755038,
+    0.2951236787716959
+   ],
+   "mse": 0.500896860896093,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 877.68892,
+   "cobertura": 0.90047,
+   "estrutura_identica": true,
+   "razao_ref": 0.2929430560249836,
+   "ic95_ref": [
+    0.29073164698801535,
+    0.29529552832718814
+   ],
+   "razao_v052": 1.0006890602502037,
+   "ic95_v052": [
+    1.000367421218661,
+    1.0010445011990063
+   ],
+   "razao_melhor": 1.0006890602502037,
+   "ic95_melhor": [
+    1.000383342317096,
+    1.0010433066231696
+   ]
+  }
+ ]
+}
