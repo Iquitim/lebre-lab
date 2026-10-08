@@ -1,0 +1,266 @@
+{
+ "familia": "WB07",
+ "prototipo": {
+  "commit": "442db78",
+  "model053_sha256": "706a6c6aa52d254c672ce12d2f4083913b8be8eb39e4dc1bc6a07e1642871132"
+ },
+ "semente": 20261016,
+ "semente_classe": 20261017,
+ "B": 2000,
+ "resumo": {
+  "c1": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 2
+  },
+  "c2": {
+   "geo": 1.0014366447712293,
+   "ic95": [
+    0.9984226203961796,
+    1.0045679711749536
+   ],
+   "n": 4
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.8779796698460319,
+   "ic95": [
+    0.8683137645390047,
+    0.8868967038955801
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 0.9836775061901232,
+   "ic95": [
+    0.9784463262014766,
+    0.988297561619454
+   ],
+   "n": 6
+  },
+  "series_com_externa": 1,
+  "series_com_externa_v052": 1,
+  "acrescimo_custo": 66.3979009810632,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 4,
+   "referência melhor": 2,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "8454000_Providence",
+   "origem": "WB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.804129884257694,
+   "v052_sobre_ref_ic95": [
+    0.78027394430296,
+    0.8312046598425801
+   ],
+   "mse": 0.004027883809675037,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 66.39790098106323,
+   "cobertura": 0.8998688113164499,
+   "estrutura_identica": true,
+   "razao_ref": 0.804129884257694,
+   "ic95_ref": [
+    0.7795794206154169,
+    0.8309719132479113
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "8658120_Wilmington",
+   "origem": "WB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.6767224575511701,
+   "v052_sobre_ref_ic95": [
+    0.6503897573239518,
+    0.7038100861104386
+   ],
+   "mse": 0.0018427474090142147,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 66.39790098106323,
+   "cobertura": 0.9011806981519507,
+   "estrutura_identica": true,
+   "razao_ref": 0.6767224575511701,
+   "ic95_ref": [
+    0.650218441637746,
+    0.701763986898134
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "8452660_Newport",
+   "origem": "WB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.9579674446063718,
+   "v052_sobre_ref_ic95": [
+    0.9302874067579466,
+    0.9909211367596502
+   ],
+   "mse": 0.001003638904569569,
+   "peso_L_medio": 0.9050260303286003,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 66.39790098106323,
+   "cobertura": 0.900695870408396,
+   "estrutura_identica": true,
+   "razao_ref": 0.9627388071662374,
+   "ic95_ref": [
+    0.9342839069036026,
+    0.9916948044357887
+   ],
+   "razao_v052": 1.0049807147275511,
+   "ic95_v052": [
+    0.9940079351785266,
+    1.0165664837581172
+   ],
+   "razao_melhor": 1.0049807147275511,
+   "ic95_melhor": [
+    0.9949514063158336,
+    1.0166431989078943
+   ]
+  },
+  {
+   "serie": "8545240_Philadelphia",
+   "origem": "WB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.8736254952320487,
+   "v052_sobre_ref_ic95": [
+    0.8558126952443316,
+    0.891724635924804
+   ],
+   "mse": 0.006638067874568708,
+   "peso_L_medio": 0.8807195676967118,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 66.39790098106317,
+   "cobertura": 0.9006103125712982,
+   "estrutura_identica": true,
+   "razao_ref": 0.8743020332895501,
+   "ic95_ref": [
+    0.8560801121062268,
+    0.8919586280115142
+   ],
+   "razao_v052": 1.00077440283187,
+   "ic95_v052": [
+    0.995605756376359,
+    1.00569078067742
+   ],
+   "razao_melhor": 1.00077440283187,
+   "ic95_melhor": [
+    0.9953776699086542,
+    1.0054090316144955
+   ]
+  },
+  {
+   "serie": "9418767_North Spit",
+   "origem": "WB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.0543909715636586,
+   "v052_sobre_ref_ic95": [
+    1.0329391860153811,
+    1.078927704522179
+   ],
+   "mse": 0.0007501130757165264,
+   "peso_L_medio": 7.45139418802445e-26,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 66.39790098106317,
+   "cobertura": 0.900695870408396,
+   "estrutura_identica": true,
+   "razao_ref": 1.0,
+   "ic95_ref": [
+    1.0,
+    1.0
+   ],
+   "razao_v052": 0.9484147977073467,
+   "ic95_v052": [
+    0.9260241374976544,
+    0.9680372645249334
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "9435380_South Beach",
+   "origem": "WB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.0528725309476519,
+   "v052_sobre_ref_ic95": [
+    1.0352970933714836,
+    1.0685135534383936
+   ],
+   "mse": 0.0006388644303436475,
+   "peso_L_medio": 1.6722181578018265e-82,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 66.39790098106317,
+   "cobertura": 0.9000969655487109,
+   "estrutura_identica": true,
+   "razao_ref": 1.0,
+   "ic95_ref": [
+    1.0,
+    1.0
+   ],
+   "razao_v052": 0.9497825905857158,
+   "ic95_v052": [
+    0.9368233357298835,
+    0.9649735189720795
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
