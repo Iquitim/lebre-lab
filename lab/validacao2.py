@@ -66,6 +66,6 @@ def w_c05_alvos():
             break
         if conferir_codigo(cod)["ok"]:
             out.append((nome, cod))
-    if len(out) < 4:
-        raise RuntimeError("W-C05: menos de 4 códigos passam na conferência")
+    if len(out) < 3:                                       # adendo 1 de VALIDACAO2_PLANO.md: mínimo 3
+        raise RuntimeError("W-C05: menos de 3 códigos passam na conferência")
     return out

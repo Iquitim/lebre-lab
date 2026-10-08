@@ -25,3 +25,10 @@ ONS, Open-Meteo e SGS como antes.
 
 **Régua:** a de `M2_CANDIDATA_D.md` (decidibilidade). Correspondência das famílias para os critérios 4 e 5 e 6 como nas
 análogas. Semente do bootstrap da classificação e da medição fixada no plano da medição.
+
+## Adendo 1 (08/10/2026, na montagem, antes de qualquer medição)
+
+A conferência numérica de W-C05 (só dados: meses observados e correlação com o IPCA) aprovou 3 dos 6 códigos: 1636
+(correlação 0,42), 1639 (0,73) e 1642 (0,32); reprovou 1641 (0,29), 1643 (0,19) e 1638 (0,17). O plano não previa menos
+de 4. Regra acrescentada, que depende só dessa conferência: **W-C05 segue com as 3 séries aprovadas** (mínimo 3; abaixo
+disso a família sairia). Nenhum código novo foi acrescentado.

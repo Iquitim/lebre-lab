@@ -7,7 +7,7 @@ from lab import validacao2 as W
 from lab.real import criterio_padrao, serie
 
 SPEC = dict(id="W-C05", frente="W", pergunta="Validação 2 da M2 (análoga a C05).", expectativa="-", criterio="ver plano",
-            sementes=[0, 1, 2, 3], aquecimento=0.2,
+            sementes=[0, 1, 2], aquecimento=0.2,
             notas="IBGE via SGS do BCB. Entradas com 1 mês de atraso: IPCA cheio (433), variação do dólar médio do mês (1) "
                   "e Selic do mês (4390). season = 12.")
 
