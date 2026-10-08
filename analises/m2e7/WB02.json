@@ -1,0 +1,189 @@
+{
+ "familia": "WB02",
+ "prototipo": {
+  "commit": "5c81d07",
+  "model053_sha256": "218cc6b4e09f1b03a9c09eb4e3a95d1f4b84a3a01c72a18b66a522b8fcb04b76"
+ },
+ "semente": 20261026,
+ "semente_classe": 20261027,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000004
+   ],
+   "n": 4
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.037073899915288644,
+   "ic95": [
+    0.0358018128513879,
+    0.03809658859142473
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000004
+   ],
+   "n": 4
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 134.12411590235,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 4,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2014_2017",
+   "origem": "WB02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.024783017188755665,
+   "v052_sobre_ref_ic95": [
+    0.023383498742120926,
+    0.02602443954702692
+   ],
+   "mse": 343901.8346612376,
+   "peso_L_medio": 1.0,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 134.12411590235,
+   "cobertura": 0.9026048212041585,
+   "estrutura_identica": true,
+   "razao_ref": 0.024783017188755665,
+   "ic95_ref": [
+    0.023434486351086373,
+    0.025956204608601163
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "SUL_Porto Alegre_2014_2017",
+   "origem": "WB02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.030147443346698492,
+   "v052_sobre_ref_ic95": [
+    0.028649460884481687,
+    0.03169759013525841
+   ],
+   "mse": 77016.3888276914,
+   "peso_L_medio": 1.0,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 134.12411590235,
+   "cobertura": 0.902404889752085,
+   "estrutura_identica": true,
+   "razao_ref": 0.030147443346698492,
+   "ic95_ref": [
+    0.02865729482436798,
+    0.0317067565818951
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999993,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999993,
+    1.0
+   ]
+  },
+  {
+   "serie": "NORDESTE_Recife_2014_2017",
+   "origem": "WB02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.04763952146478241,
+   "v052_sobre_ref_ic95": [
+    0.0442205648552064,
+    0.05057932217097133
+   ],
+   "mse": 31788.4589793824,
+   "peso_L_medio": 1.0,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 134.12411590235,
+   "cobertura": 0.9030903690163372,
+   "estrutura_identica": true,
+   "razao_ref": 0.04763952146478241,
+   "ic95_ref": [
+    0.04446956088941017,
+    0.05062194978263515
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "NORTE_Belem_2014_2017",
+   "origem": "WB02",
+   "T": 35064,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.053076348441975396,
+   "v052_sobre_ref_ic95": [
+    0.04926361210287822,
+    0.056818795516360175
+   ],
+   "mse": 6286.173366989964,
+   "peso_L_medio": 1.0,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 134.12411590235,
+   "cobertura": 0.9022049583000115,
+   "estrutura_identica": true,
+   "razao_ref": 0.05307634844197541,
+   "ic95_ref": [
+    0.0491012786605263,
+    0.05706819770662684
+   ],
+   "razao_v052": 1.0000000000000002,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000024
+   ],
+   "razao_melhor": 1.0000000000000002,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000022
+   ]
+  }
+ ]
+}

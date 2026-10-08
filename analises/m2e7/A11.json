@@ -1,0 +1,1449 @@
+{
+ "familia": "A11",
+ "prototipo": {
+  "commit": "5c81d07",
+  "model053_sha256": "218cc6b4e09f1b03a9c09eb4e3a95d1f4b84a3a01c72a18b66a522b8fcb04b76"
+ },
+ "semente": 20261026,
+ "semente_classe": 20261027,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 0.9999999945897652,
+   "ic95": [
+    0.999999971117772,
+    1.000000019215743
+   ],
+   "n": 40
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.31122918498526675,
+   "ic95": [
+    0.30571355315352966,
+    0.314333858389351
+   ],
+   "n": 40
+  },
+  "todas_vs_v052": {
+   "geo": 0.9999999945897652,
+   "ic95": [
+    0.999999971117772,
+    1.000000019215743
+   ],
+   "n": 40
+  },
+  "series_com_externa": 40,
+  "series_com_externa_v052": 40,
+  "acrescimo_custo": 134.3888,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 40,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "t2.5_s1101",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3103806467686599,
+   "v052_sobre_ref_ic95": [
+    0.2766015298592218,
+    0.34622724296492646
+   ],
+   "mse": 0.5496588692370535,
+   "peso_L_medio": 0.9999999987696218,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90095,
+   "estrutura_identica": true,
+   "razao_ref": 0.31038064675313887,
+   "ic95_ref": [
+    0.27819124710578663,
+    0.344511946182538
+   ],
+   "razao_v052": 0.9999999999499934,
+   "ic95_v052": [
+    0.9999999997575602,
+    1.0000000002506286
+   ],
+   "razao_melhor": 0.9999999999499934,
+   "ic95_melhor": [
+    0.9999999997525196,
+    1.0000000002566307
+   ]
+  },
+  {
+   "serie": "t2.5_s1102",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.28382850511935287,
+   "v052_sobre_ref_ic95": [
+    0.25664991061492304,
+    0.31445416362907974
+   ],
+   "mse": 0.476928736880102,
+   "peso_L_medio": 0.9999902820188633,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.9005,
+   "estrutura_identica": true,
+   "razao_ref": 0.28382844371039856,
+   "ic95_ref": [
+    0.256350808589619,
+    0.3151069953393966
+   ],
+   "razao_v052": 0.9999997836406379,
+   "ic95_v052": [
+    0.9999988444545467,
+    1.0000007686479817
+   ],
+   "razao_melhor": 0.9999997836406379,
+   "ic95_melhor": [
+    0.999998825820725,
+    1.000000808281698
+   ]
+  },
+  {
+   "serie": "t2.5_s1103",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.277072096014642,
+   "v052_sobre_ref_ic95": [
+    0.25834312183013647,
+    0.2994992854523171
+   ],
+   "mse": 0.4304096452755618,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90185,
+   "estrutura_identica": true,
+   "razao_ref": 0.277072096014642,
+   "ic95_ref": [
+    0.2584662436257366,
+    0.3007224588154592
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1104",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.27410098776825065,
+   "v052_sobre_ref_ic95": [
+    0.2559097016289063,
+    0.29494468506412075
+   ],
+   "mse": 0.42614417326512083,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90125,
+   "estrutura_identica": true,
+   "razao_ref": 0.27410098776825065,
+   "ic95_ref": [
+    0.2543446546125493,
+    0.29395420182290694
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1105",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.29117212982567287,
+   "v052_sobre_ref_ic95": [
+    0.2618663902073995,
+    0.3216607080724187
+   ],
+   "mse": 0.5195879944768624,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90175,
+   "estrutura_identica": true,
+   "razao_ref": 0.29117212982567287,
+   "ic95_ref": [
+    0.2612998789427494,
+    0.3206882513760692
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1106",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.26408848580207767,
+   "v052_sobre_ref_ic95": [
+    0.24780920655557911,
+    0.28123048410457274
+   ],
+   "mse": 0.41608155702279553,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.9006,
+   "estrutura_identica": true,
+   "razao_ref": 0.26408848580207767,
+   "ic95_ref": [
+    0.24756816232384546,
+    0.28196519297138484
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1107",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.24831152135571188,
+   "v052_sobre_ref_ic95": [
+    0.23685863382356181,
+    0.2607393491038987
+   ],
+   "mse": 0.35337011060494333,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.9006,
+   "estrutura_identica": true,
+   "razao_ref": 0.24831152135571183,
+   "ic95_ref": [
+    0.23626210338165313,
+    0.26059077036021416
+   ],
+   "razao_v052": 0.9999999999999999,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 0.9999999999999999,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "t2.5_s1108",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.26873917147112253,
+   "v052_sobre_ref_ic95": [
+    0.2501585565769303,
+    0.2886852242132727
+   ],
+   "mse": 0.41097350161529084,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.9002,
+   "estrutura_identica": true,
+   "razao_ref": 0.26873917147112253,
+   "ic95_ref": [
+    0.25010645193489683,
+    0.2879847465536707
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "t2.5_s1109",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2914826426974008,
+   "v052_sobre_ref_ic95": [
+    0.27446115536599647,
+    0.30824211576345517
+   ],
+   "mse": 0.4669452390183896,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90045,
+   "estrutura_identica": true,
+   "razao_ref": 0.2914826426974008,
+   "ic95_ref": [
+    0.27521028572182465,
+    0.30778277038354573
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1110",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.28088788841098405,
+   "v052_sobre_ref_ic95": [
+    0.2515761658239841,
+    0.3184181774066883
+   ],
+   "mse": 0.4542777979681169,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.902,
+   "estrutura_identica": true,
+   "razao_ref": 0.28088788841098405,
+   "ic95_ref": [
+    0.2523841556527062,
+    0.31831181594502206
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1111",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2726413408998731,
+   "v052_sobre_ref_ic95": [
+    0.25350341764572687,
+    0.2926865554137338
+   ],
+   "mse": 0.4509989400972534,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.903,
+   "estrutura_identica": true,
+   "razao_ref": 0.2726413408998731,
+   "ic95_ref": [
+    0.25301724659177227,
+    0.29314460892896543
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1112",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.26778726784782125,
+   "v052_sobre_ref_ic95": [
+    0.25485213844402477,
+    0.2815048696424829
+   ],
+   "mse": 0.4059247811894394,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.9007,
+   "estrutura_identica": true,
+   "razao_ref": 0.26778726784782125,
+   "ic95_ref": [
+    0.2541377587277834,
+    0.2825939056091983
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "t2.5_s1113",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2676781349687014,
+   "v052_sobre_ref_ic95": [
+    0.25078506975747755,
+    0.2870675669411787
+   ],
+   "mse": 0.4140123630614074,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90095,
+   "estrutura_identica": true,
+   "razao_ref": 0.2676781349687014,
+   "ic95_ref": [
+    0.2500988085386323,
+    0.2872051518609871
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "t2.5_s1114",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2610602363500779,
+   "v052_sobre_ref_ic95": [
+    0.2491564040064451,
+    0.2729447426558526
+   ],
+   "mse": 0.40806650182791443,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.9005,
+   "estrutura_identica": true,
+   "razao_ref": 0.2610602363500779,
+   "ic95_ref": [
+    0.24827388442745477,
+    0.27382458890969136
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1115",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.27536556947015184,
+   "v052_sobre_ref_ic95": [
+    0.2551543255494299,
+    0.2983533643986186
+   ],
+   "mse": 0.42603203157993724,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.89965,
+   "estrutura_identica": true,
+   "razao_ref": 0.2753655694701518,
+   "ic95_ref": [
+    0.2547208051504749,
+    0.29786812874170354
+   ],
+   "razao_v052": 0.9999999999999999,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 0.9999999999999999,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1116",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4040250410729695,
+   "v052_sobre_ref_ic95": [
+    0.27223963387038674,
+    0.5247188067302752
+   ],
+   "mse": 1.3433533068471049,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90065,
+   "estrutura_identica": true,
+   "razao_ref": 0.4040250410729695,
+   "ic95_ref": [
+    0.27233655297210296,
+    0.5268331535956491
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1117",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2942886045105801,
+   "v052_sobre_ref_ic95": [
+    0.25125894555408124,
+    0.3376494783279435
+   ],
+   "mse": 0.5257333842013204,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90045,
+   "estrutura_identica": true,
+   "razao_ref": 0.2942886045105801,
+   "ic95_ref": [
+    0.25116145038181953,
+    0.3424204058382493
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "t2.5_s1118",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2735992965561608,
+   "v052_sobre_ref_ic95": [
+    0.2540284211203578,
+    0.2953286043101016
+   ],
+   "mse": 0.4334858175814486,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90015,
+   "estrutura_identica": true,
+   "razao_ref": 0.2735992965561608,
+   "ic95_ref": [
+    0.25435532956273765,
+    0.2974669471429965
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1119",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2733841138022764,
+   "v052_sobre_ref_ic95": [
+    0.26014465623849825,
+    0.28781604853664183
+   ],
+   "mse": 0.41450786623624836,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90015,
+   "estrutura_identica": true,
+   "razao_ref": 0.2733841138022764,
+   "ic95_ref": [
+    0.2599056949518743,
+    0.2872396011617117
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "t2.5_s1120",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2662608709405741,
+   "v052_sobre_ref_ic95": [
+    0.25168759916313793,
+    0.28119205179084567
+   ],
+   "mse": 0.40310447135163247,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.9009,
+   "estrutura_identica": true,
+   "razao_ref": 0.2662608709405741,
+   "ic95_ref": [
+    0.2513453209451695,
+    0.28285376830512826
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1131",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.33734125185450115,
+   "v052_sobre_ref_ic95": [
+    0.3293758103768783,
+    0.346498441988177
+   ],
+   "mse": 0.7538934132702215,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.89995,
+   "estrutura_identica": true,
+   "razao_ref": 0.33734125185450115,
+   "ic95_ref": [
+    0.3296154339651875,
+    0.3463293405893107
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1132",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.34284068050910016,
+   "v052_sobre_ref_ic95": [
+    0.3343943169322239,
+    0.35111360358297267
+   ],
+   "mse": 0.7692583466009787,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.9,
+   "estrutura_identica": true,
+   "razao_ref": 0.34284068050910016,
+   "ic95_ref": [
+    0.33454632579470117,
+    0.3516446180066385
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1133",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.34726269382418795,
+   "v052_sobre_ref_ic95": [
+    0.3390455856825285,
+    0.3567758867627855
+   ],
+   "mse": 0.7801732386748426,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.9013,
+   "estrutura_identica": true,
+   "razao_ref": 0.34726269382418795,
+   "ic95_ref": [
+    0.3384024288114149,
+    0.35662230292175623
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1134",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3393347678488419,
+   "v052_sobre_ref_ic95": [
+    0.33132809025077675,
+    0.34798304308892114
+   ],
+   "mse": 0.754060560961736,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.9023,
+   "estrutura_identica": true,
+   "razao_ref": 0.3393347678488419,
+   "ic95_ref": [
+    0.3311981923421861,
+    0.34798560573347914
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1135",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3443242936301526,
+   "v052_sobre_ref_ic95": [
+    0.33625560559588447,
+    0.35311887885915444
+   ],
+   "mse": 0.7559482325231375,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.90045,
+   "estrutura_identica": true,
+   "razao_ref": 0.3443242936301526,
+   "ic95_ref": [
+    0.3361636965231206,
+    0.3531152121379223
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1136",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3394046824111199,
+   "v052_sobre_ref_ic95": [
+    0.3311192109037917,
+    0.34826401855686684
+   ],
+   "mse": 0.7703270032774339,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90015,
+   "estrutura_identica": true,
+   "razao_ref": 0.3394046824111199,
+   "ic95_ref": [
+    0.3314337787745012,
+    0.34814136946024
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1137",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.34594842318254393,
+   "v052_sobre_ref_ic95": [
+    0.3371654100424105,
+    0.35503042955734077
+   ],
+   "mse": 0.7571859983146246,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.9005,
+   "estrutura_identica": true,
+   "razao_ref": 0.34594842318254393,
+   "ic95_ref": [
+    0.3370971720818525,
+    0.3546908345495987
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "hetero_s1138",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.33784613476115677,
+   "v052_sobre_ref_ic95": [
+    0.3291602504313999,
+    0.34618693369571996
+   ],
+   "mse": 0.762149354877629,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.9001,
+   "estrutura_identica": true,
+   "razao_ref": 0.33784613476115677,
+   "ic95_ref": [
+    0.32933672746028403,
+    0.34625021322058064
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "hetero_s1139",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3499740782766018,
+   "v052_sobre_ref_ic95": [
+    0.34152616275634273,
+    0.358127583882913
+   ],
+   "mse": 0.7742970939212148,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.9006,
+   "estrutura_identica": true,
+   "razao_ref": 0.3499740782766018,
+   "ic95_ref": [
+    0.34097562430234307,
+    0.3578740621071748
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "hetero_s1140",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.34266518744176955,
+   "v052_sobre_ref_ic95": [
+    0.33408764078495323,
+    0.35125465927964583
+   ],
+   "mse": 0.7577770466747843,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.8998,
+   "estrutura_identica": true,
+   "razao_ref": 0.34266518744176955,
+   "ic95_ref": [
+    0.3346738952618458,
+    0.35117939992022423
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "hetero_s1141",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3418563334116898,
+   "v052_sobre_ref_ic95": [
+    0.3341767366216644,
+    0.3502871317146759
+   ],
+   "mse": 0.7558926881332582,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90125,
+   "estrutura_identica": true,
+   "razao_ref": 0.3418563334116898,
+   "ic95_ref": [
+    0.3336053343719191,
+    0.3504402293086098
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1142",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3643935786169835,
+   "v052_sobre_ref_ic95": [
+    0.3550062014173027,
+    0.37366136822747154
+   ],
+   "mse": 0.8273980061968196,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90125,
+   "estrutura_identica": true,
+   "razao_ref": 0.3643935786169835,
+   "ic95_ref": [
+    0.3552355944450205,
+    0.37382744972618714
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "hetero_s1143",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3415275945141579,
+   "v052_sobre_ref_ic95": [
+    0.33288172193226445,
+    0.35010587140001365
+   ],
+   "mse": 0.7634444247734057,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90115,
+   "estrutura_identica": true,
+   "razao_ref": 0.3415275945141579,
+   "ic95_ref": [
+    0.33245696672014197,
+    0.3503931008096339
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1144",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.35673934961989084,
+   "v052_sobre_ref_ic95": [
+    0.34747561768465307,
+    0.36644451411201234
+   ],
+   "mse": 0.8067456507698475,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.9011,
+   "estrutura_identica": true,
+   "razao_ref": 0.35673934961989084,
+   "ic95_ref": [
+    0.3472230196854792,
+    0.3661617036347305
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "hetero_s1145",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.34315913784056395,
+   "v052_sobre_ref_ic95": [
+    0.335566025800322,
+    0.35157777284976716
+   ],
+   "mse": 0.776952997759309,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.89995,
+   "estrutura_identica": true,
+   "razao_ref": 0.34315913784056395,
+   "ic95_ref": [
+    0.3352121678329474,
+    0.35194155592915016
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "hetero_s1146",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3414021544093266,
+   "v052_sobre_ref_ic95": [
+    0.33264938801694194,
+    0.35010103830519074
+   ],
+   "mse": 0.7558051210886892,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90105,
+   "estrutura_identica": true,
+   "razao_ref": 0.3414021544093266,
+   "ic95_ref": [
+    0.33253823680113764,
+    0.35049700531691325
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1147",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.3576492459955443,
+   "v052_sobre_ref_ic95": [
+    0.3494449280164443,
+    0.36678971931831267
+   ],
+   "mse": 0.8104893134930351,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38879999999995,
+   "cobertura": 0.9004,
+   "estrutura_identica": true,
+   "razao_ref": 0.3576492459955443,
+   "ic95_ref": [
+    0.34880896675366724,
+    0.3669311266724799
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1148",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.34746654979053154,
+   "v052_sobre_ref_ic95": [
+    0.33874379513336966,
+    0.3560922638400217
+   ],
+   "mse": 0.7688928956144138,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90065,
+   "estrutura_identica": true,
+   "razao_ref": 0.34746654979053154,
+   "ic95_ref": [
+    0.3384402183689771,
+    0.35580083327837425
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1149",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.33559552614178206,
+   "v052_sobre_ref_ic95": [
+    0.3270169987816747,
+    0.34426169968826886
+   ],
+   "mse": 0.7499756643670861,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.38880000000006,
+   "cobertura": 0.90095,
+   "estrutura_identica": true,
+   "razao_ref": 0.33559552614178206,
+   "ic95_ref": [
+    0.3266478126923976,
+    0.3448125072979918
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "hetero_s1150",
+   "origem": "A11",
+   "T": 20000,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.34154993439499454,
+   "v052_sobre_ref_ic95": [
+    0.3332912437268038,
+    0.3497452818085491
+   ],
+   "mse": 0.7327519947154826,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.3888,
+   "cobertura": 0.90055,
+   "estrutura_identica": true,
+   "razao_ref": 0.34154993439499454,
+   "ic95_ref": [
+    0.3333023947291202,
+    0.34967449784914567
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

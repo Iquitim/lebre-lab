@@ -1,0 +1,259 @@
+{
+ "familia": "B01",
+ "prototipo": {
+  "commit": "5c81d07",
+  "model053_sha256": "218cc6b4e09f1b03a9c09eb4e3a95d1f4b84a3a01c72a18b66a522b8fcb04b76"
+ },
+ "semente": 20261026,
+ "semente_classe": 20261027,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0000005064879374,
+   "ic95": [
+    0.9999999999996178,
+    1.0000004961286204
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.2309162205103968,
+   "ic95": [
+    0.2232002520121799,
+    0.23884720979843757
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0000005064879374,
+   "ic95": [
+    0.9999999999996178,
+    1.0000004961286204
+   ],
+   "n": 6
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 133.33698130414953,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Janaúba",
+   "origem": "B01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.22785151320929023,
+   "v052_sobre_ref_ic95": [
+    0.2099619355378628,
+    0.2452726533697496
+   ],
+   "mse": 10507.472013971721,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 134.23985408116732,
+   "cobertura": 0.9020177838577291,
+   "estrutura_identica": true,
+   "razao_ref": 0.22785151320929023,
+   "ic95_ref": [
+    0.20986750204574217,
+    0.24634236959908873
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Arinos 2 500 kV",
+   "origem": "B01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2279299594773356,
+   "v052_sobre_ref_ic95": [
+    0.20777129582318282,
+    0.25095722618284294
+   ],
+   "mse": 8606.575786791294,
+   "peso_L_medio": 0.9999791361557131,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 128.82261741906063,
+   "cobertura": 0.9004398478364242,
+   "estrutura_identica": true,
+   "razao_ref": 0.22793065214086286,
+   "ic95_ref": [
+    0.20690236701353282,
+    0.251910929698612
+   ],
+   "razao_v052": 1.0000030389314718,
+   "ic95_v052": [
+    0.9999999999977065,
+    1.000002976775415
+   ],
+   "razao_melhor": 1.0000030389314718,
+   "ic95_melhor": [
+    0.9999999999977601,
+    1.0000028547087285
+   ]
+  },
+  {
+   "serie": "Conj. Futura",
+   "origem": "B01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.19912702495760262,
+   "v052_sobre_ref_ic95": [
+    0.1814114847784538,
+    0.21787185125688652
+   ],
+   "mse": 2857.046629710691,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 134.23985408116732,
+   "cobertura": 0.9009347925216599,
+   "estrutura_identica": true,
+   "razao_ref": 0.19912702495760262,
+   "ic95_ref": [
+    0.18158052818124704,
+    0.21754831912484643
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Sol do Cerrado",
+   "origem": "B01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2567752967600593,
+   "v052_sobre_ref_ic95": [
+    0.23540132770797345,
+    0.2805367815884075
+   ],
+   "mse": 2212.8526244184286,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 134.23985408116732,
+   "cobertura": 0.9018467852257182,
+   "estrutura_identica": true,
+   "razao_ref": 0.2567752967600593,
+   "ic95_ref": [
+    0.2363511450921596,
+    0.2789355768548233
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Helio Valgas",
+   "origem": "B01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.23947026226015555,
+   "v052_sobre_ref_ic95": [
+    0.2188486256522676,
+    0.25888084362377445
+   ],
+   "mse": 2505.9074513370956,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 134.23985408116732,
+   "cobertura": 0.9020747834017327,
+   "estrutura_identica": true,
+   "razao_ref": 0.23947026226015555,
+   "ic95_ref": [
+    0.21896244200019938,
+    0.2574503868966803
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Lar do Sol",
+   "origem": "B01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.23841685709628668,
+   "v052_sobre_ref_ic95": [
+    0.2226654258731881,
+    0.25666690323662184
+   ],
+   "mse": 1828.4342316723457,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 134.23985408116732,
+   "cobertura": 0.9022457820337437,
+   "estrutura_identica": true,
+   "razao_ref": 0.23841685709628668,
+   "ic95_ref": [
+    0.22178144701212565,
+    0.2573130627020135
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
