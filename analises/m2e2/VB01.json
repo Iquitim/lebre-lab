@@ -1,0 +1,343 @@
+{
+ "familia": "VB01",
+ "prototipo": {
+  "commit": "a0e20e1",
+  "model053_sha256": "706a6c6aa52d254c672ce12d2f4083913b8be8eb39e4dc1bc6a07e1642871132"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261015,
+ "series_com_externa_v052": 3,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "H": {
+   "vs_ref": {
+    "geo": 0.23167718712259822,
+    "ic95": [
+     0.2234685274359043,
+     0.23996421435784293
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 3,
+   "acrescimo_custo": 65.95804833561331,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.0001329782917277942,
+   "peso_L_medio": 1.0
+  },
+  "D": {
+   "vs_ref": {
+    "geo": 0.23167718712259822,
+    "ic95": [
+     0.22364517624717847,
+     0.23993986809646178
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 3,
+   "acrescimo_custo": 65.89512083903325,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00014100277031948443,
+   "peso_L_medio": 1.0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Açú III 230 kV",
+   "origem": "VB01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1548.3912228075615,
+   "mse_ref": 6920.024492053506,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 555.4540469676243,
+   "configs": {
+    "H": {
+     "mse": 1548.3912228075615,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00025439512043018474,
+     "primeiro_peso_L_acima_0_9": 899,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 619.2233128134976,
+     "acrescimo_custo": 63.76926584587329,
+     "cobertura": 0.9017475035663338,
+     "estrutura_identica": true,
+     "razao_ref": 0.22375516511330715,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 1548.3912228075615,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00022445629061900946,
+     "primeiro_peso_L_acima_0_9": 756,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 619.1603853169175,
+     "acrescimo_custo": 63.70633834929322,
+     "cobertura": 0.9019852591535901,
+     "estrutura_identica": true,
+     "razao_ref": 0.22375516511330715,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Serra do Mel C",
+   "origem": "VB01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1576.6363069026936,
+   "mse_ref": 7191.520439531846,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 658.0301869585043,
+   "configs": {
+    "H": {
+     "mse": 1576.6363069026936,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 8.842751575273585e-05,
+     "primeiro_peso_L_acima_0_9": 32,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 724.4259917920656,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9010487916096671,
+     "estrutura_identica": true,
+     "razao_ref": 0.21923546211951384,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 1576.6363069026936,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00010451959299412836,
+     "primeiro_peso_L_acima_0_9": 26,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 724.3630642954855,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9010487916096671,
+     "estrutura_identica": true,
+     "razao_ref": 0.21923546211951384,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Paracatu",
+   "origem": "VB01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 815.3212398713379,
+   "mse_ref": 3365.7331970154605,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 550.8056201550388,
+   "configs": {
+    "H": {
+     "mse": 815.3212398713379,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00018876776391451165,
+     "primeiro_peso_L_acima_0_9": 65,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 617.2014249886001,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9024167806657547,
+     "estrutura_identica": true,
+     "razao_ref": 0.24224179165309898,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 815.3212398713379,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.000245392499569036,
+     "primeiro_peso_L_acima_0_9": 26,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 617.1384974920201,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9023597811217511,
+     "estrutura_identica": true,
+     "razao_ref": 0.24224179165309898,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Pirapora 2",
+   "origem": "VB01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 878.101368015632,
+   "mse_ref": 3585.131292184668,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 510.2728112175102,
+   "configs": {
+    "H": {
+     "mse": 878.101368015632,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00011242772732907105,
+     "primeiro_peso_L_acima_0_9": 40,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 576.6686160510715,
+     "acrescimo_custo": 66.39580483356127,
+     "cobertura": 0.9024167806657547,
+     "estrutura_identica": true,
+     "razao_ref": 0.24492865015287746,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 878.101368015632,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 8.998912503310597e-05,
+     "primeiro_peso_L_acima_0_9": 36,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 576.6056885544915,
+     "acrescimo_custo": 66.33287733698131,
+     "cobertura": 0.902530779753762,
+     "estrutura_identica": true,
+     "razao_ref": 0.24492865015287746,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Ciranda",
+   "origem": "VB01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 438.2697748706415,
+   "mse_ref": 1819.1505725691081,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 538.1422024623804,
+   "configs": {
+    "H": {
+     "mse": 438.2697748706415,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 6.270665673468323e-05,
+     "primeiro_peso_L_acima_0_9": 32,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 604.5380072959417,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9009347925216599,
+     "estrutura_identica": true,
+     "razao_ref": 0.24092001040446692,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 438.2697748706415,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 2.8540441806270263e-05,
+     "primeiro_peso_L_acima_0_9": 32,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 604.4750797993617,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9008777929776561,
+     "estrutura_identica": true,
+     "razao_ref": 0.24092001040446692,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Rio Alto",
+   "origem": "VB01",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 268.15711559044485,
+   "mse_ref": 1216.0042741523225,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 582.1455084359326,
+   "configs": {
+    "H": {
+     "mse": 268.15711559044485,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 9.114496620557863e-05,
+     "primeiro_peso_L_acima_0_9": 34,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 648.5413132694939,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9015047879616963,
+     "estrutura_identica": true,
+     "razao_ref": 0.22052316861910487,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 268.15711559044485,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00015311867189535648,
+     "primeiro_peso_L_acima_0_9": 34,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 648.4783857729138,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9015047879616963,
+     "estrutura_identica": true,
+     "razao_ref": 0.22052316861910487,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  }
+ ]
+}

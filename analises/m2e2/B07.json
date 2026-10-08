@@ -1,0 +1,343 @@
+{
+ "familia": "B07",
+ "prototipo": {
+  "commit": "a0e20e1",
+  "model053_sha256": "706a6c6aa52d254c672ce12d2f4083913b8be8eb39e4dc1bc6a07e1642871132"
+ },
+ "execucao_lab_conferida": "20261004-183352_B07",
+ "B": 2000,
+ "semente": 20261015,
+ "series_com_externa_v052": 1,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "H": {
+   "vs_ref": {
+    "geo": 0.9243917726231445,
+    "ic95": [
+     0.9158527542810605,
+     0.9331577111775603
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9827423800934006,
+    "ic95": [
+     0.9752222870430104,
+     0.9901414307175944
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0029802831105175,
+    "ic95": [
+     0.999389228128826,
+     1.006762589990718
+    ]
+   },
+   "series_com_externa": 1,
+   "acrescimo_custo": 66.39790098106322,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00026573817641701187,
+   "peso_L_medio": 0.4563394645787708
+  },
+  "D": {
+   "vs_ref": {
+    "geo": 0.9243917726231445,
+    "ic95": [
+     0.9158152784855957,
+     0.9331087108254642
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9827423800934006,
+    "ic95": [
+     0.9752125915481246,
+     0.9904897923749828
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0029802831105175,
+    "ic95": [
+     0.999406035146041,
+     1.0068862808100458
+    ]
+   },
+   "series_com_externa": 1,
+   "acrescimo_custo": 66.39790098106322,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00026573817641701187,
+   "peso_L_medio": 0.4563394645787708
+  }
+ },
+ "series": [
+  {
+   "serie": "8518750_The Battery NY",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0019477782393484788,
+   "mse_ref": 0.002338172215884785,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 394.40846737394486,
+   "configs": {
+    "H": {
+     "mse": 0.0019477550604160084,
+     "peso_L_medio": 0.9999377671218894,
+     "variacao_peso_por_passo": 0.0006000313698432319,
+     "primeiro_peso_L_acima_0_9": 212,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 460.8063683550081,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9006103125712982,
+     "estrutura_identica": true,
+     "razao_ref": 0.8330246365873271,
+     "razao_v052": 0.9999880998093099,
+     "razao_melhor": 0.9999880998093099
+    },
+    "D": {
+     "mse": 0.0019477550604160084,
+     "peso_L_medio": 0.9999377671218894,
+     "variacao_peso_por_passo": 0.0006000313698432319,
+     "primeiro_peso_L_acima_0_9": 212,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 460.8063683550081,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9006103125712982,
+     "estrutura_identica": true,
+     "razao_ref": 0.8330246365873271,
+     "razao_v052": 0.9999880998093099,
+     "razao_melhor": 0.9999880998093099
+    }
+   }
+  },
+  {
+   "serie": "8443970_Boston",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0018992637401315693,
+   "mse_ref": 0.002247135213175531,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 435.5821526351814,
+   "configs": {
+    "H": {
+     "mse": 0.0019356123219501213,
+     "peso_L_medio": 0.7491906235259123,
+     "variacao_peso_por_passo": 0.000146594119998119,
+     "primeiro_peso_L_acima_0_9": 14072,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 501.9800536162446,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9004391968971024,
+     "estrutura_identica": true,
+     "razao_ref": 0.8613688711747869,
+     "razao_v052": 1.0191382487068563,
+     "razao_melhor": 1.0191382487068563
+    },
+    "D": {
+     "mse": 0.0019356123219501213,
+     "peso_L_medio": 0.7491906235259123,
+     "variacao_peso_por_passo": 0.000146594119998119,
+     "primeiro_peso_L_acima_0_9": 14072,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 501.9800536162446,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9004391968971024,
+     "estrutura_identica": true,
+     "razao_ref": 0.8613688711747869,
+     "razao_v052": 1.0191382487068563,
+     "razao_melhor": 1.0191382487068563
+    }
+   }
+  },
+  {
+   "serie": "8534720_Atlantic City",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0017641611819749646,
+   "mse_ref": 0.001714069299871667,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 1,
+   "custo_v052": 448.7505932010039,
+   "configs": {
+    "H": {
+     "mse": 0.001714069299871667,
+     "peso_L_medio": 5.21712129413008e-31,
+     "variacao_peso_por_passo": 0.00010049160867161562,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 515.1484941820671,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9000684462696783,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9716058358980441,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 0.001714069299871667,
+     "peso_L_medio": 5.21712129413008e-31,
+     "variacao_peso_por_passo": 0.00010049160867161562,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 515.1484941820671,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9000684462696783,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.9716058358980441,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "8665530_Charleston",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0013239944909344686,
+   "mse_ref": 0.0015209789676315418,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 437.2025581793293,
+   "configs": {
+    "H": {
+     "mse": 0.001322552297697944,
+     "peso_L_medio": 0.9889005402701107,
+     "variacao_peso_por_passo": 0.0005676632928529953,
+     "primeiro_peso_L_acima_0_9": 269,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 503.60045916039246,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.9010381017567876,
+     "estrutura_identica": true,
+     "razao_ref": 0.8695401618586571,
+     "razao_v052": 0.9989107256515042,
+     "razao_melhor": 0.9989107256515042
+    },
+    "D": {
+     "mse": 0.001322552297697944,
+     "peso_L_medio": 0.9889005402701107,
+     "variacao_peso_por_passo": 0.0005676632928529953,
+     "primeiro_peso_L_acima_0_9": 269,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 503.60045916039246,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.9010381017567876,
+     "estrutura_identica": true,
+     "razao_ref": 0.8695401618586571,
+     "razao_v052": 0.9989107256515042,
+     "razao_melhor": 0.9989107256515042
+    }
+   }
+  },
+  {
+   "serie": "8771450_Galveston",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0007466631387576439,
+   "mse_ref": 0.0007089281334664195,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 434.640950832763,
+   "configs": {
+    "H": {
+     "mse": 0.0007089278200789946,
+     "peso_L_medio": 6.248333807300842e-06,
+     "variacao_peso_por_passo": 0.00016531136535041265,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 501.0388518138262,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9019792379648642,
+     "estrutura_identica": true,
+     "razao_ref": 0.9999995579418981,
+     "razao_v052": 0.9494613879808821,
+     "razao_melhor": 0.9999995579418981
+    },
+    "D": {
+     "mse": 0.0007089278200789946,
+     "peso_L_medio": 6.248333807300842e-06,
+     "variacao_peso_por_passo": 0.00016531136535041265,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 501.0388518138262,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9019792379648642,
+     "estrutura_identica": true,
+     "razao_ref": 0.9999995579418981,
+     "razao_v052": 0.9494613879808821,
+     "razao_melhor": 0.9999995579418981
+    }
+   }
+  },
+  {
+   "serie": "8724580_Key West",
+   "origem": "B07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.00022911895406182005,
+   "mse_ref": 0.00021977441893626122,
+   "melhor": "referencia",
+   "reproducao_dif_rel": 0.0,
+   "externas_v052": 0,
+   "custo_v052": 433.80971081451065,
+   "configs": {
+    "H": {
+     "mse": 0.00021977439686804673,
+     "peso_L_medio": 1.608220905092759e-06,
+     "variacao_peso_por_passo": 1.4337301785696776e-05,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 500.2076117955738,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.901465890942277,
+     "estrutura_identica": true,
+     "razao_ref": 0.9999998995869738,
+     "razao_v052": 0.9592152590254406,
+     "razao_melhor": 0.9999998995869738
+    },
+    "D": {
+     "mse": 0.00021977439686804673,
+     "peso_L_medio": 1.608220905092759e-06,
+     "variacao_peso_por_passo": 1.4337301785696776e-05,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 500.2076117955738,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.901465890942277,
+     "estrutura_identica": true,
+     "razao_ref": 0.9999998995869738,
+     "razao_v052": 0.9592152590254406,
+     "razao_melhor": 0.9999998995869738
+    }
+   }
+  }
+ ]
+}

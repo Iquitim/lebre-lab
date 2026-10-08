@@ -1,0 +1,261 @@
+{
+ "familia": "VC03",
+ "prototipo": {
+  "commit": "a0e20e1",
+  "model053_sha256": "706a6c6aa52d254c672ce12d2f4083913b8be8eb39e4dc1bc6a07e1642871132"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261015,
+ "series_com_externa_v052": 3,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "H": {
+   "vs_ref": {
+    "geo": 0.99999863933883,
+    "ic95": [
+     0.999994668907761,
+     1.0000022067255598
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9444969621654596,
+    "ic95": [
+     0.9282221388503938,
+     0.9631673312080916
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.99999863933883,
+    "ic95": [
+     0.9999945124140943,
+     1.000002155981557
+    ]
+   },
+   "series_com_externa": 3,
+   "acrescimo_custo": 62.025297048677686,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00019178269452232983,
+   "peso_L_medio": 0.0001331525188617962
+  },
+  "D": {
+   "vs_ref": {
+    "geo": 0.99999863933883,
+    "ic95": [
+     0.9999944314333267,
+     1.0000021471488594
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9444969621654596,
+    "ic95": [
+     0.9273870293780934,
+     0.961092844592326
+    ]
+   },
+   "vs_melhor": {
+    "geo": 0.99999863933883,
+    "ic95": [
+     0.9999945611626357,
+     1.0000021623136908
+    ]
+   },
+   "series_com_externa": 3,
+   "acrescimo_custo": 62.025297048677686,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00019178269452232983,
+   "peso_L_medio": 0.0001331525188617962
+  }
+ },
+ "series": [
+  {
+   "serie": "nivel_dolar_real_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.000859274220067925,
+   "mse_ref": 0.000798284910536779,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 609.0534687619778,
+   "configs": {
+    "H": {
+     "mse": 0.0007982807621548455,
+     "peso_L_medio": 0.0002009888329005041,
+     "variacao_peso_por_passo": 0.00019179094310199044,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 673.0412035262553,
+     "acrescimo_custo": 63.98773476427755,
+     "cobertura": 0.9171974522292994,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 0.9999948033817514,
+     "razao_v052": 0.9290174702224185,
+     "razao_melhor": 0.9999948033817514
+    },
+    "D": {
+     "mse": 0.0007982807621548455,
+     "peso_L_medio": 0.0002009888329005041,
+     "variacao_peso_por_passo": 0.00019179094310199044,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 673.0412035262553,
+     "acrescimo_custo": 63.98773476427755,
+     "cobertura": 0.9171974522292994,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 0.9999948033817514,
+     "razao_v052": 0.9290174702224185,
+     "razao_melhor": 0.9999948033817514
+    }
+   }
+  },
+  {
+   "serie": "nivel_euro_dolar_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 7.181704024685586e-05,
+   "mse_ref": 6.839042679900749e-05,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 658.7982368723649,
+   "configs": {
+    "H": {
+     "mse": 6.839039036872712e-05,
+     "peso_L_medio": 0.00019509841072114603,
+     "variacao_peso_por_passo": 0.0001917293066357446,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 722.9086239938674,
+     "acrescimo_custo": 64.11038712150253,
+     "cobertura": 0.9125943583631307,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 0.9999994673190084,
+     "razao_v052": 0.9522863951737587,
+     "razao_melhor": 0.9999994673190084
+    },
+    "D": {
+     "mse": 6.839039036872712e-05,
+     "peso_L_medio": 0.00019509841072114603,
+     "variacao_peso_por_passo": 0.0001917293066357446,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 722.9086239938674,
+     "acrescimo_custo": 64.11038712150253,
+     "cobertura": 0.9125943583631307,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 0.9999994673190084,
+     "razao_v052": 0.9522863951737587,
+     "razao_melhor": 0.9999994673190084
+    }
+   }
+  },
+  {
+   "serie": "nivel_iene_dolar_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 0.5662311840803045,
+   "mse_ref": 0.5418383126550871,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 585.5322729014948,
+   "configs": {
+    "H": {
+     "mse": 0.5418384679776391,
+     "peso_L_medio": 0.000136519624953092,
+     "variacao_peso_por_passo": 0.00019174559393585737,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 649.6426600229973,
+     "acrescimo_custo": 64.11038712150253,
+     "cobertura": 0.9149781485895908,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.000000286658489,
+     "razao_v052": 0.9569209241940904,
+     "razao_melhor": 1.000000286658489
+    },
+    "D": {
+     "mse": 0.5418384679776391,
+     "peso_L_medio": 0.000136519624953092,
+     "variacao_peso_por_passo": 0.00019174559393585737,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 649.6426600229973,
+     "acrescimo_custo": 64.11038712150253,
+     "cobertura": 0.9149781485895908,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.000000286658489,
+     "razao_v052": 0.9569209241940904,
+     "razao_melhor": 1.000000286658489
+    }
+   }
+  },
+  {
+   "serie": "nivel_petroleo_wti_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "mse_v052": 3.2255953604635033,
+   "mse_ref": 3.032107785467128,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 553.4144883096972,
+   "configs": {
+    "H": {
+     "mse": 3.0321077854854845,
+     "peso_L_medio": 3.2068724427091904e-09,
+     "variacao_peso_por_passo": 0.00019186493441572693,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 609.3071674971253,
+     "acrescimo_custo": 55.89267918742814,
+     "cobertura": 0.9101741521539871,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.000000000006054,
+     "razao_v052": 0.9400149264381955,
+     "razao_melhor": 1.000000000006054
+    },
+    "D": {
+     "mse": 3.0321077854854845,
+     "peso_L_medio": 3.2068724427091904e-09,
+     "variacao_peso_por_passo": 0.00019186493441572693,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 1,
+     "custo": 609.3071674971253,
+     "acrescimo_custo": 55.89267918742814,
+     "cobertura": 0.9101741521539871,
+     "estrutura_identica": true,
+     "recall": NaN,
+     "razao_ref": 1.000000000006054,
+     "razao_v052": 0.9400149264381955,
+     "razao_melhor": 1.000000000006054
+    }
+   }
+  }
+ ]
+}

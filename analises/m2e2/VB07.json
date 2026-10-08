@@ -1,0 +1,343 @@
+{
+ "familia": "VB07",
+ "prototipo": {
+  "commit": "a0e20e1",
+  "model053_sha256": "706a6c6aa52d254c672ce12d2f4083913b8be8eb39e4dc1bc6a07e1642871132"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261015,
+ "series_com_externa_v052": 2,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "H": {
+   "vs_ref": {
+    "geo": 0.9135991796461996,
+    "ic95": [
+     0.8974946027750836,
+     0.9289849757736616
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9407545879676906,
+    "ic95": [
+     0.8870340767161764,
+     0.9993691071757108
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0024472264126096,
+    "ic95": [
+     0.9946548765644225,
+     1.0129871234391008
+    ]
+   },
+   "series_com_externa": 2,
+   "acrescimo_custo": 64.89390828199863,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00024760585355426543,
+   "peso_L_medio": 0.6550878441376622
+  },
+  "D": {
+   "vs_ref": {
+    "geo": 0.9135991796461996,
+    "ic95": [
+     0.8975783244135429,
+     0.9300376338271432
+    ]
+   },
+   "vs_v052": {
+    "geo": 0.9407545879676906,
+    "ic95": [
+     0.8897010443278022,
+     0.9995733166421351
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0024472264126096,
+    "ic95": [
+     0.9946953752362475,
+     1.0126315354679425
+    ]
+   },
+   "series_com_externa": 2,
+   "acrescimo_custo": 64.89390828199863,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00024760585355426543,
+   "peso_L_medio": 0.6550878441376622
+  }
+ },
+ "series": [
+  {
+   "serie": "8574680_Baltimore",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.000537987569766425,
+   "mse_ref": 0.0006116906459432482,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 475.044190622861,
+   "configs": {
+    "H": {
+     "mse": 0.0005374418774048541,
+     "peso_L_medio": 0.9931811022511456,
+     "variacao_peso_por_passo": 0.0003534147268565142,
+     "primeiro_peso_L_acima_0_9": 425,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 541.4420916039242,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.9018651608487337,
+     "estrutura_identica": true,
+     "razao_ref": 0.8786171261064488,
+     "razao_v052": 0.9989856784947506,
+     "razao_melhor": 0.9989856784947506
+    },
+    "D": {
+     "mse": 0.0005374418774048541,
+     "peso_L_medio": 0.9931811022511456,
+     "variacao_peso_por_passo": 0.0003534147268565142,
+     "primeiro_peso_L_acima_0_9": 425,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 541.4420916039242,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.9018651608487337,
+     "estrutura_identica": true,
+     "razao_ref": 0.8786171261064488,
+     "razao_v052": 0.9989856784947506,
+     "razao_melhor": 0.9989856784947506
+    }
+   }
+  },
+  {
+   "serie": "8726520_St. Petersburg",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0005892610107534338,
+   "mse_ref": 0.000457396157136746,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 441.53108601414556,
+   "configs": {
+    "H": {
+     "mse": 0.0004543788798828062,
+     "peso_L_medio": 0.33303404754662375,
+     "variacao_peso_por_passo": 0.0002739950858124473,
+     "primeiro_peso_L_acima_0_9": 16837,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 507.9289869952088,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.901922199406799,
+     "estrutura_identica": true,
+     "razao_ref": 0.9934033611632688,
+     "razao_v052": 0.7710995154792842,
+     "razao_melhor": 0.9934033611632688
+    },
+    "D": {
+     "mse": 0.0004543788798828062,
+     "peso_L_medio": 0.33303404754662375,
+     "variacao_peso_por_passo": 0.0002739950858124473,
+     "primeiro_peso_L_acima_0_9": 16837,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 507.9289869952088,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.901922199406799,
+     "estrutura_identica": true,
+     "razao_ref": 0.9934033611632688,
+     "razao_v052": 0.7710995154792842,
+     "razao_melhor": 0.9934033611632688
+    }
+   }
+  },
+  {
+   "serie": "8761724_Grand Isle",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0004259319103256674,
+   "mse_ref": 0.00037483862113218313,
+   "melhor": "referencia",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 452.0483686972393,
+   "configs": {
+    "H": {
+     "mse": 0.00037483862113218313,
+     "peso_L_medio": 1.0536390911552877e-24,
+     "variacao_peso_por_passo": 1.4547858772784652e-05,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 518.4462696783025,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9033196440793977,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.8800435281911179,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 0.00037483862113218313,
+     "peso_L_medio": 1.0536390911552877e-24,
+     "variacao_peso_por_passo": 1.4547858772784652e-05,
+     "primeiro_peso_L_acima_0_9": null,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 518.4462696783025,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9033196440793977,
+     "estrutura_identica": true,
+     "razao_ref": 1.0,
+     "razao_v052": 0.8800435281911179,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "9414290_San Francisco",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.00048068006146871563,
+   "mse_ref": 0.0005648101523281981,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 365.6348990417522,
+   "configs": {
+    "H": {
+     "mse": 0.0004825291577414802,
+     "peso_L_medio": 0.8317240148546209,
+     "variacao_peso_por_passo": 0.0005002023802508064,
+     "primeiro_peso_L_acima_0_9": 4,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 423.008843828428,
+     "acrescimo_custo": 57.37394478667579,
+     "cobertura": 0.9003652058432935,
+     "estrutura_identica": true,
+     "razao_ref": 0.8543209709536057,
+     "razao_v052": 1.0038468337278534,
+     "razao_melhor": 1.0038468337278534
+    },
+    "D": {
+     "mse": 0.0004825291577414802,
+     "peso_L_medio": 0.8317240148546209,
+     "variacao_peso_por_passo": 0.0005002023802508064,
+     "primeiro_peso_L_acima_0_9": 4,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 423.008843828428,
+     "acrescimo_custo": 57.37394478667579,
+     "cobertura": 0.9003652058432935,
+     "estrutura_identica": true,
+     "razao_ref": 0.8543209709536057,
+     "razao_v052": 1.0038468337278534,
+     "razao_melhor": 1.0038468337278534
+    }
+   }
+  },
+  {
+   "serie": "9447130_Seattle",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0008299791671558472,
+   "mse_ref": 0.0010579351204905174,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 428.080424366872,
+   "configs": {
+    "H": {
+     "mse": 0.0008299791671558472,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 6.676045362521369e-05,
+     "primeiro_peso_L_acima_0_9": 64,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 494.4783253479352,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.9005817932922656,
+     "estrutura_identica": true,
+     "razao_ref": 0.784527473453214,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 0.0008299791671558472,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 6.676045362521369e-05,
+     "primeiro_peso_L_acima_0_9": 64,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 494.4783253479352,
+     "acrescimo_custo": 66.39790098106317,
+     "cobertura": 0.9005817932922656,
+     "estrutura_identica": true,
+     "razao_ref": 0.784527473453214,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "9410230_La Jolla",
+   "origem": "VB07",
+   "T": 35064,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "mse_v052": 0.0002468779373324908,
+   "mse_ref": 0.0002529993226864395,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 448.483550079854,
+   "configs": {
+    "H": {
+     "mse": 0.0002514774516711335,
+     "peso_L_medio": 0.772587900173583,
+     "variacao_peso_por_passo": 0.00027671461600782657,
+     "primeiro_peso_L_acima_0_9": 13608,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 514.8814510609172,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9008955053616244,
+     "estrutura_identica": true,
+     "razao_ref": 0.9939846834404683,
+     "razao_v052": 1.018630722487154,
+     "razao_melhor": 1.018630722487154
+    },
+    "D": {
+     "mse": 0.0002514774516711335,
+     "peso_L_medio": 0.772587900173583,
+     "variacao_peso_por_passo": 0.00027671461600782657,
+     "primeiro_peso_L_acima_0_9": 13608,
+     "eventos_auditoria": 0,
+     "externas": 0,
+     "custo": 514.8814510609172,
+     "acrescimo_custo": 66.39790098106323,
+     "cobertura": 0.9008955053616244,
+     "estrutura_identica": true,
+     "razao_ref": 0.9939846834404683,
+     "razao_v052": 1.018630722487154,
+     "razao_melhor": 1.018630722487154
+    }
+   }
+  }
+ ]
+}

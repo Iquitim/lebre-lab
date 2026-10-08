@@ -1,0 +1,343 @@
+{
+ "familia": "VB06",
+ "prototipo": {
+  "commit": "a0e20e1",
+  "model053_sha256": "706a6c6aa52d254c672ce12d2f4083913b8be8eb39e4dc1bc6a07e1642871132"
+ },
+ "execucao_lab_conferida": null,
+ "B": 2000,
+ "semente": 20261015,
+ "series_com_externa_v052": 4,
+ "max_dif_reproducao": 0.0,
+ "max_dif_conferencia_r2": null,
+ "resumo": {
+  "H": {
+   "vs_ref": {
+    "geo": 0.12058971265175829,
+    "ic95": [
+     0.11612004338283029,
+     0.12520696782228197
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 4,
+   "acrescimo_custo": 66.39580483356133,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 0.00012769108991620052,
+   "peso_L_medio": 1.0
+  },
+  "D": {
+   "vs_ref": {
+    "geo": 0.12058971265175829,
+    "ic95": [
+     0.11597781835644332,
+     0.12528544779845607
+    ]
+   },
+   "vs_v052": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "vs_melhor": {
+    "geo": 1.0,
+    "ic95": [
+     1.0,
+     1.0
+    ]
+   },
+   "series_com_externa": 4,
+   "acrescimo_custo": 66.33287733698126,
+   "estrutura_identica": true,
+   "variacao_peso_por_passo": 4.3805032311907746e-05,
+   "peso_L_medio": 1.0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Oitis",
+   "origem": "VB06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 2161.286516789997,
+   "mse_ref": 14750.74981405999,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 558.4611662106703,
+   "configs": {
+    "H": {
+     "mse": 2161.286516789997,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00014501299753103683,
+     "primeiro_peso_L_acima_0_9": 50,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 624.8569710442316,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9015617875056999,
+     "estrutura_identica": true,
+     "razao_ref": 0.14652045109801273,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 2161.286516789997,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 7.926591667819473e-05,
+     "primeiro_peso_L_acima_0_9": 26,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 624.7940435476515,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9015617875056999,
+     "estrutura_identica": true,
+     "razao_ref": 0.14652045109801273,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Ourolândia II",
+   "origem": "VB06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1588.440544550583,
+   "mse_ref": 13181.727100980335,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 632.8071534427725,
+   "configs": {
+    "H": {
+     "mse": 1588.440544550583,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00012259530929711722,
+     "primeiro_peso_L_acima_0_9": 48,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 699.2029582763338,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.8998518011855905,
+     "estrutura_identica": true,
+     "razao_ref": 0.12050321876504705,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 1588.440544550583,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 2.93332158556498e-05,
+     "primeiro_peso_L_acima_0_9": 28,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 699.1400307797537,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.8997378020975833,
+     "estrutura_identica": true,
+     "razao_ref": 0.12050321876504705,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Rio do Vento Expansão",
+   "origem": "VB06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1161.7742969890355,
+   "mse_ref": 11121.543906954332,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 706.899316005472,
+   "configs": {
+    "H": {
+     "mse": 1161.7742969890355,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.0001032378871072746,
+     "primeiro_peso_L_acima_0_9": 27,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 773.2951208390333,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9015617875056999,
+     "estrutura_identica": true,
+     "razao_ref": 0.1044616023376552,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 1161.7742969890355,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 2.854044180603916e-05,
+     "primeiro_peso_L_acima_0_9": 26,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 773.2321933424532,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9015617875056999,
+     "estrutura_identica": true,
+     "razao_ref": 0.1044616023376552,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Laranjeiras",
+   "origem": "VB06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1868.2590443602867,
+   "mse_ref": 14801.10220413501,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 0,
+   "custo_v052": 609.6592567259462,
+   "configs": {
+    "H": {
+     "mse": 1868.2590443602867,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00016589167607599132,
+     "primeiro_peso_L_acima_0_9": 28,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 676.0550615595075,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.8996808025535795,
+     "estrutura_identica": true,
+     "razao_ref": 0.12622431887797841,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 1868.2590443602867,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 6.278908138159917e-05,
+     "primeiro_peso_L_acima_0_9": 27,
+     "eventos_auditoria": 1,
+     "externas": 0,
+     "custo": 675.9921340629274,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.8997378020975833,
+     "estrutura_identica": true,
+     "razao_ref": 0.12622431887797841,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Rio do Vento",
+   "origem": "VB06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 1042.4687271690066,
+   "mse_ref": 9492.777352446567,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 2,
+   "custo_v052": 656.9886000911993,
+   "configs": {
+    "H": {
+     "mse": 1042.4687271690066,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00010308033954624233,
+     "primeiro_peso_L_acima_0_9": 26,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 723.3844049247606,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9013337893296853,
+     "estrutura_identica": true,
+     "razao_ref": 0.10981704178496632,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 1042.4687271690066,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 3.121741264712217e-05,
+     "primeiro_peso_L_acima_0_9": 27,
+     "eventos_auditoria": 1,
+     "externas": 2,
+     "custo": 723.3214774281805,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9013337893296853,
+     "estrutura_identica": true,
+     "razao_ref": 0.10981704178496632,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  },
+  {
+   "serie": "Conj. Serra do Seridó",
+   "origem": "VB06",
+   "T": 17544,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "mse_v052": 962.308339112231,
+   "mse_ref": 8000.535227409804,
+   "melhor": "v0.52",
+   "reproducao_dif_rel": null,
+   "externas_v052": 1,
+   "custo_v052": 622.7686673506612,
+   "configs": {
+    "H": {
+     "mse": 962.308339112231,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 0.00012632832993954082,
+     "primeiro_peso_L_acima_0_9": 3,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 689.1644721842225,
+     "acrescimo_custo": 66.39580483356133,
+     "cobertura": 0.9011057911536707,
+     "estrutura_identica": true,
+     "razao_ref": 0.1202804952117911,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    },
+    "D": {
+     "mse": 962.308339112231,
+     "peso_L_medio": 1.0,
+     "variacao_peso_por_passo": 3.168412550284147e-05,
+     "primeiro_peso_L_acima_0_9": 33,
+     "eventos_auditoria": 1,
+     "externas": 1,
+     "custo": 689.1015446876424,
+     "acrescimo_custo": 66.33287733698126,
+     "cobertura": 0.9010487916096671,
+     "estrutura_identica": true,
+     "razao_ref": 0.1202804952117911,
+     "razao_v052": 1.0,
+     "razao_melhor": 1.0
+    }
+   }
+  }
+ ]
+}
