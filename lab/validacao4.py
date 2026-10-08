@@ -19,11 +19,10 @@ ALVOS_PEQUIM = ["PM2.5", "NO2", "CO", "O3"]
 def _arquivos_pequim():
     b = F._get(URL_PEQUIM, F.CACHE / "uci_pequim" / "beijing_multi_site.zip")
     z = zipfile.ZipFile(io.BytesIO(b))
-    csvs = sorted(n for n in z.namelist() if n.lower().endswith(".csv"))
-    if not csvs:                                                    # zip dentro do zip (formato da UCI)
-        internos = [n for n in z.namelist() if n.lower().endswith(".zip")]
+    internos = [n for n in z.namelist() if n.startswith("PRSA") and n.lower().endswith(".zip")]
+    if internos:                                                    # os dados das estações vêm num zip interno
         z = zipfile.ZipFile(io.BytesIO(z.read(internos[0])))
-        csvs = sorted(n for n in z.namelist() if n.lower().endswith(".csv"))
+    csvs = sorted(n for n in z.namelist() if "PRSA_Data_" in n.split("/")[-1] and n.lower().endswith(".csv"))
     return z, csvs
 
 
