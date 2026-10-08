@@ -1,0 +1,121 @@
+{
+ "familia": "C05",
+ "prototipo": {
+  "commit": "af36e4a",
+  "model053_sha256": "c5ec60655291b201d28f35586b6e697771db2ecf08abedd0d03d1eac55c133d9"
+ },
+ "semente": 20261030,
+ "semente_classe": 20261031,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0139217933684217,
+   "ic95": [
+    1.0000004677864018,
+    1.0328969696451284
+   ],
+   "n": 2
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.40858667902197165,
+   "ic95": [
+    0.302079130487037,
+    0.525877890684707
+   ],
+   "n": 2
+  },
+  "todas_vs_v052": {
+   "geo": 1.0139217933684217,
+   "ic95": [
+    1.0000004677864018,
+    1.0328969696451284
+   ],
+   "n": 2
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 184.42222222222222,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 2,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "ipca",
+   "origem": "C05",
+   "T": 360,
+   "d": 3,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.39082897785836224,
+   "v052_sobre_ref_ic95": [
+    0.25678947490282006,
+    0.5266783947912406
+   ],
+   "mse": 0.10122381672539851,
+   "peso_L_medio": 0.99999928986023,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 184.42222222222222,
+   "cobertura": 0.9444444444444444,
+   "estrutura_identica": true,
+   "razao_ref": 0.3965797604522229,
+   "ic95_ref": [
+    0.2620903979230455,
+    0.5494480534037667
+   ],
+   "razao_v052": 1.0147143198679212,
+   "ic95_v052": [
+    1.0000000000000002,
+    1.0433691657492576
+   ],
+   "razao_melhor": 1.0147143198679212,
+   "ic95_melhor": [
+    1.0000000000000002,
+    1.0455711683807796
+   ]
+  },
+  {
+   "serie": "inpc",
+   "origem": "C05",
+   "T": 360,
+   "d": 3,
+   "referencia": "sazonal",
+   "bloco": 12,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4155016321652462,
+   "v052_sobre_ref_ic95": [
+    0.26871768735704127,
+    0.6011308026964821
+   ],
+   "mse": 0.13212908573252896,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 184.42222222222222,
+   "cobertura": 0.95,
+   "estrutura_identica": true,
+   "razao_ref": 0.4209571211698682,
+   "ic95_ref": [
+    0.2712082581702362,
+    0.6028406693941784
+   ],
+   "razao_v052": 1.0131298858591542,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0418042431862977
+   ],
+   "razao_melhor": 1.0131298858591542,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.041687258238458
+   ]
+  }
+ ]
+}

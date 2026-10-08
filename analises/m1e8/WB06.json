@@ -1,0 +1,265 @@
+{
+ "familia": "WB06",
+ "prototipo": {
+  "commit": "af36e4a",
+  "model053_sha256": "c5ec60655291b201d28f35586b6e697771db2ecf08abedd0d03d1eac55c133d9"
+ },
+ "semente": 20261030,
+ "semente_classe": 20261031,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0003043079081848,
+   "ic95": [
+    1.0000226313465688,
+    1.0006770250457588
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.1322133794590681,
+   "ic95": [
+    0.12757102856697247,
+    0.13715193640025863
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0003043079081848,
+   "ic95": [
+    1.0000226313465688,
+    1.0006770250457588
+   ],
+   "n": 6
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 208.86072161422712,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Serra do Mel B",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.13066518363563642,
+   "v052_sobre_ref_ic95": [
+    0.11873277850154333,
+    0.14371035119699285
+   ],
+   "mse": 751.0970741029827,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 209.4146716826266,
+   "cobertura": 0.9016187870497036,
+   "estrutura_identica": true,
+   "razao_ref": 0.1307860576982797,
+   "ic95_ref": [
+    0.11877644576932116,
+    0.1433268210323301
+   ],
+   "razao_v052": 1.0009250671011212,
+   "ic95_v052": [
+    0.9999999933420718,
+    1.0021372312433752
+   ],
+   "razao_melhor": 1.0009250671011212,
+   "ic95_melhor": [
+    0.999999993650809,
+    1.002220294273261
+   ]
+  },
+  {
+   "serie": "Conj. Santo Agostinho",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.1439043612861236,
+   "v052_sobre_ref_ic95": [
+    0.13322000178924118,
+    0.15505615200289552
+   ],
+   "mse": 684.4686356544569,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 208.85476516187873,
+   "cobertura": 0.8989968080255358,
+   "estrutura_identica": true,
+   "razao_ref": 0.14388931250334838,
+   "ic95_ref": [
+    0.1331517976707998,
+    0.1552051211811389
+   ],
+   "razao_v052": 0.9998954251098389,
+   "ic95_v052": [
+    0.9996579829458738,
+    1.0000008969324723
+   ],
+   "razao_melhor": 0.9998954251098389,
+   "ic95_melhor": [
+    0.9996588684169522,
+    1.0000011240331699
+   ]
+  },
+  {
+   "serie": "Conj. Paulino Neves",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.12910787420375386,
+   "v052_sobre_ref_ic95": [
+    0.11858786763821237,
+    0.14152526667111795
+   ],
+   "mse": 1555.8426387351021,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 209.58145234838128,
+   "cobertura": 0.899452804377565,
+   "estrutura_identica": true,
+   "razao_ref": 0.12912787043651344,
+   "ic95_ref": [
+    0.11867142930310925,
+    0.14175166009077106
+   ],
+   "razao_v052": 1.0001548800402988,
+   "ic95_v052": [
+    0.9999948187112517,
+    1.000491232573497
+   ],
+   "razao_melhor": 1.0001548800402988,
+   "ic95_melhor": [
+    0.9999949438500166,
+    1.0004951129727848
+   ]
+  },
+  {
+   "serie": "Conj. Novo Horizonte",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.1393983324566001,
+   "v052_sobre_ref_ic95": [
+    0.12507275009977326,
+    0.15463531035195802
+   ],
+   "mse": 1512.4130166588172,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 207.4133036935704,
+   "cobertura": 0.8992248062015504,
+   "estrutura_identica": true,
+   "razao_ref": 0.1394394135841032,
+   "ic95_ref": [
+    0.12530870745183445,
+    0.1549811776686942
+   ],
+   "razao_v052": 1.000294703148733,
+   "ic95_v052": [
+    0.9999996123229422,
+    1.0009534690908755
+   ],
+   "razao_melhor": 1.000294703148733,
+   "ic95_melhor": [
+    0.9999996381659942,
+    1.0010470769767312
+   ]
+  },
+  {
+   "serie": "Conj. Serra da Babilônia",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.13896955716125917,
+   "v052_sobre_ref_ic95": [
+    0.12854795976761377,
+    0.1501908091688944
+   ],
+   "mse": 963.369282419978,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 208.890503875969,
+   "cobertura": 0.9004787961696307,
+   "estrutura_identica": true,
+   "razao_ref": 0.13893539384438464,
+   "ic95_ref": [
+    0.12829146022148596,
+    0.14951331836636755
+   ],
+   "razao_v052": 0.9997541669012092,
+   "ic95_v052": [
+    0.9992145048965141,
+    1.000000006003603
+   ],
+   "razao_melhor": 0.9997541669012092,
+   "ic95_melhor": [
+    0.9992382310930775,
+    1.0000000076655042
+   ]
+  },
+  {
+   "serie": "Conj. Umburanas",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.11336938233676876,
+   "v052_sobre_ref_ic95": [
+    0.10200754497852978,
+    0.12507900366654232
+   ],
+   "mse": 736.1420549486321,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 209.0096329229366,
+   "cobertura": 0.8993958048335613,
+   "estrutura_identica": true,
+   "razao_ref": 0.11346032358994716,
+   "ic95_ref": [
+    0.10231670138268147,
+    0.12454109931022049
+   ],
+   "razao_v052": 1.0008021676691177,
+   "ic95_v052": [
+    0.9999994282451264,
+    1.0025213741186507
+   ],
+   "razao_melhor": 1.0008021676691177,
+   "ic95_melhor": [
+    0.9999986587166818,
+    1.002542655165568
+   ]
+  }
+ ]
+}

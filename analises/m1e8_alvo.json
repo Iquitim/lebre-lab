@@ -1,0 +1,340 @@
+{
+ "prototipo": {
+  "commit": "af36e4a",
+  "model053_sha256": "c5ec60655291b201d28f35586b6e697771db2ecf08abedd0d03d1eac55c133d9"
+ },
+ "semente": 20261032,
+ "familias": {
+  "B03": {
+   "series": [
+    {
+     "serie": "CO(GT)",
+     "d": 8,
+     "mse": {
+      "m1m2": 0.21246679014989772,
+      "m2": 0.21174712728934125,
+      "linear": 0.12337338956571269,
+      "v052": 0.21174712728934125
+     },
+     "m1m2_sobre_linear": 1.7221443854124716,
+     "m1m2_sobre_m2": 1.003398690077968,
+     "v052_sobre_linear": 1.7163111756490879,
+     "selecionadas": [
+      "PT08.S1(CO)",
+      "PT08.S2(NMHC)",
+      "PT08.S5(O3)"
+     ],
+     "peso_especialista_final": 1.291410448883731e-13,
+     "custo_m1m2": 943.2608955861922,
+     "custo_m2": 871.6009618467457
+    },
+    {
+     "serie": "NOx(GT)",
+     "d": 8,
+     "mse": {
+      "m1m2": 4647.343692365148,
+      "m2": 4647.347581186515,
+      "linear": 3106.7640824410446,
+      "v052": 4647.347581186515
+     },
+     "m1m2_sobre_linear": 1.495879174936785,
+     "m1m2_sobre_m2": 0.9999991632170182,
+     "v052_sobre_linear": 1.495880426664069,
+     "selecionadas": [
+      "PT08.S1(CO)",
+      "PT08.S2(NMHC)",
+      "PT08.S5(O3)"
+     ],
+     "peso_especialista_final": 1.5409955004498778e-31,
+     "custo_m1m2": 834.2001068718607,
+     "custo_m2": 763.0668376616437
+    },
+    {
+     "serie": "NO2(GT)",
+     "d": 8,
+     "mse": {
+      "m1m2": 276.28003869376687,
+      "m2": 276.4349925562213,
+      "linear": 211.30418245674568,
+      "v052": 276.4349925562213
+     },
+     "m1m2_sobre_linear": 1.3074991487701473,
+     "m1m2_sobre_m2": 0.9994394564124406,
+     "v052_sobre_linear": 1.3082324700922945,
+     "selecionadas": [
+      "PT08.S1(CO)",
+      "PT08.S2(NMHC)",
+      "PT08.S5(O3)"
+     ],
+     "peso_especialista_final": 3.3333959573341442e-21,
+     "custo_m1m2": 906.938634177621,
+     "custo_m2": 835.1590039542589
+    },
+    {
+     "serie": "C6H6(GT)",
+     "d": 8,
+     "mse": {
+      "m1m2": 1.5243336805553205,
+      "m2": 2.1832040601863327,
+      "linear": 0.3945496928357512,
+      "v052": 2.1832040601863327
+     },
+     "m1m2_sobre_linear": 3.8634770429029124,
+     "m1m2_sobre_m2": 0.6982094382992404,
+     "v052_sobre_linear": 5.5334070709698615,
+     "selecionadas": [
+      "PT08.S1(CO)",
+      "PT08.S2(NMHC)",
+      "PT08.S5(O3)"
+     ],
+     "peso_especialista_final": 3.1946087259650443e-11,
+     "custo_m1m2": 991.3932670727797,
+     "custo_m2": 917.2915250614512
+    }
+   ],
+   "geo_m1m2_sobre_linear": 1.8993126323709273,
+   "geo_v052_sobre_linear": 2.0763119986063803,
+   "geo_m1m2_sobre_m2": 0.9147530013050762,
+   "ic95_m1m2_sobre_m2": [
+    0.8756587360231632,
+    0.948085680204152
+   ]
+  },
+  "B01": {
+   "series": [
+    {
+     "serie": "Conj. Janaúba",
+     "d": 4,
+     "mse": {
+      "m1m2": 10507.472013971721,
+      "m2": 10507.472013971721,
+      "linear": 14538.697195867207,
+      "v052": 10507.472013971721
+     },
+     "m1m2_sobre_linear": 0.7227244554593648,
+     "m1m2_sobre_m2": 1.0,
+     "v052_sobre_linear": 0.7227244554593648,
+     "selecionadas": [
+      "shortwave_radiation",
+      "direct_normal_irradiance",
+      "temperature_2m"
+     ],
+     "peso_especialista_final": 2.6832945045365234e-47,
+     "custo_m1m2": 847.6082307341542,
+     "custo_m2": 773.4700638394893
+    },
+    {
+     "serie": "Conj. Arinos 2 500 kV",
+     "d": 4,
+     "mse": {
+      "m1m2": 8606.586455554483,
+      "m2": 8606.575786791294,
+      "linear": 12256.216068413625,
+      "v052": 8606.549632076752
+     },
+     "m1m2_sobre_linear": 0.7022221546611874,
+     "m1m2_sobre_m2": 1.0000012396060238,
+     "v052_sobre_linear": 0.7022191501875779,
+     "selecionadas": [
+      "shortwave_radiation",
+      "direct_normal_irradiance",
+      "temperature_2m"
+     ],
+     "peso_especialista_final": 1.3349100088264788e-59,
+     "custo_m1m2": 725.0049133606931,
+     "custo_m2": 652.738839489284
+    },
+    {
+     "serie": "Conj. Futura",
+     "d": 4,
+     "mse": {
+      "m1m2": 2857.5275866413363,
+      "m2": 2857.046629710691,
+      "linear": 4384.208112144287,
+      "v052": 2857.046629710691
+     },
+     "m1m2_sobre_linear": 0.6517773594565379,
+     "m1m2_sobre_m2": 1.00016834059537,
+     "v052_sobre_linear": 0.6516676573351187,
+     "selecionadas": [
+      "shortwave_radiation",
+      "direct_normal_irradiance",
+      "temperature_2m"
+     ],
+     "peso_especialista_final": 5.662992385640914e-58,
+     "custo_m1m2": 740.0703830369357,
+     "custo_m2": 665.7926812585499
+    },
+    {
+     "serie": "Conj. Sol do Cerrado",
+     "d": 4,
+     "mse": {
+      "m1m2": 2212.8526244184286,
+      "m2": 2212.8526244184286,
+      "linear": 3063.8423997597747,
+      "v052": 2212.8526244184286
+     },
+     "m1m2_sobre_linear": 0.7222475361630646,
+     "m1m2_sobre_m2": 1.0,
+     "v052_sobre_linear": 0.7222475361630646,
+     "selecionadas": [
+      "shortwave_radiation",
+      "direct_normal_irradiance",
+      "temperature_2m"
+     ],
+     "peso_especialista_final": 3.015712829303542e-70,
+     "custo_m1m2": 774.2148084815321,
+     "custo_m2": 700.727804377565
+    },
+    {
+     "serie": "Conj. Helio Valgas",
+     "d": 4,
+     "mse": {
+      "m1m2": 2510.3426323057315,
+      "m2": 2505.9074513370956,
+      "linear": 3348.0569282307497,
+      "v052": 2505.9074513370956
+     },
+     "m1m2_sobre_linear": 0.7497909044313351,
+     "m1m2_sobre_m2": 1.0017698901714305,
+     "v052_sobre_linear": 0.7484662014577272,
+     "selecionadas": [
+      "shortwave_radiation",
+      "direct_normal_irradiance",
+      "cloud_cover"
+     ],
+     "peso_especialista_final": 1.4445361478125654e-14,
+     "custo_m1m2": 854.8117419060649,
+     "custo_m2": 780.6735750114
+    },
+    {
+     "serie": "Conj. Lar do Sol",
+     "d": 4,
+     "mse": {
+      "m1m2": 1828.4342316723457,
+      "m2": 1828.4342316723457,
+      "linear": 2325.5532414784398,
+      "v052": 1828.4342316723457
+     },
+     "m1m2_sobre_linear": 0.7862362379241608,
+     "m1m2_sobre_m2": 1.0,
+     "v052_sobre_linear": 0.7862362379241608,
+     "selecionadas": [
+      "shortwave_radiation",
+      "direct_normal_irradiance",
+      "temperature_2m"
+     ],
+     "peso_especialista_final": 5.317978866864998e-74,
+     "custo_m1m2": 846.1985522115824,
+     "custo_m2": 772.130152758778
+    }
+   ],
+   "geo_m1m2_sobre_linear": 0.7213083730982893,
+   "geo_v052_sobre_linear": 0.7210750759046602,
+   "geo_m1m2_sobre_m2": 1.0003230341300202,
+   "ic95_m1m2_sobre_m2": [
+    1.0000167728136644,
+    1.0008690467554915
+   ]
+  },
+  "B02": {
+   "series": [
+    {
+     "serie": "SUDESTE_Sao Paulo",
+     "d": 5,
+     "mse": {
+      "m1m2": 322491.84645082656,
+      "m2": 321890.0838354073,
+      "linear": 747988.2580127418,
+      "v052": 321890.0838354073
+     },
+     "m1m2_sobre_linear": 0.4311456002098538,
+     "m1m2_sobre_m2": 1.0018694661489695,
+     "v052_sobre_linear": 0.4303410921056517,
+     "selecionadas": [
+      "temperature_2m",
+      "apparent_temperature",
+      "shortwave_radiation"
+     ],
+     "peso_especialista_final": 4.703434079964729e-33,
+     "custo_m1m2": 945.3117470910336,
+     "custo_m2": 871.9484399954368
+    },
+    {
+     "serie": "SUL_Porto Alegre",
+     "d": 5,
+     "mse": {
+      "m1m2": 91676.52345509069,
+      "m2": 91531.645432655,
+      "linear": 230353.3455245908,
+      "v052": 91531.64543265502
+     },
+     "m1m2_sobre_linear": 0.39798216625121247,
+     "m1m2_sobre_m2": 1.0015828189447582,
+     "v052_sobre_linear": 0.3973532280341193,
+     "selecionadas": [
+      "temperature_2m",
+      "relative_humidity_2m",
+      "apparent_temperature"
+     ],
+     "peso_especialista_final": 5.3726524133112056e-68,
+     "custo_m1m2": 935.8283310517911,
+     "custo_m2": 861.6782340862424
+    },
+    {
+     "serie": "NORDESTE_Recife",
+     "d": 5,
+     "mse": {
+      "m1m2": 39156.45760781239,
+      "m2": 39054.82382013011,
+      "linear": 74063.5374367975,
+      "v052": 39054.82382013011
+     },
+     "m1m2_sobre_linear": 0.5286873806321599,
+     "m1m2_sobre_m2": 1.0026023363503151,
+     "v052_sobre_linear": 0.5273151293031033,
+     "selecionadas": [
+      "temperature_2m",
+      "apparent_temperature",
+      "precipitation"
+     ],
+     "peso_especialista_final": 8.378779884037845e-43,
+     "custo_m1m2": 955.414770134611,
+     "custo_m2": 880.6865018252338
+    },
+    {
+     "serie": "NORTE_Belem",
+     "d": 5,
+     "mse": {
+      "m1m2": 10058.165167932857,
+      "m2": 10051.597395045594,
+      "linear": 18080.272243398736,
+      "v052": 10051.597395045594
+     },
+     "m1m2_sobre_linear": 0.5563060684335204,
+     "m1m2_sobre_m2": 1.0006534058845713,
+     "v052_sobre_linear": 0.5559428121285905,
+     "selecionadas": [
+      "temperature_2m",
+      "relative_humidity_2m",
+      "apparent_temperature"
+     ],
+     "peso_especialista_final": 3.4534305160549675e-66,
+     "custo_m1m2": 924.3459559662331,
+     "custo_m2": 850.4521617613506
+    }
+   ],
+   "geo_m1m2_sobre_linear": 0.4739691532640583,
+   "geo_v052_sobre_linear": 0.47317574944814444,
+   "geo_m1m2_sobre_m2": 1.0016767634791917,
+   "ic95_m1m2_sobre_m2": [
+    1.00067044277126,
+    1.0028547880136465
+   ]
+  }
+ },
+ "criterios": {
+  "1_B03_vs_linear": false,
+  "2_B01_B02_vs_M2": true
+ }
+}
