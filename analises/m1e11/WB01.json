@@ -1,0 +1,265 @@
+{
+ "familia": "WB01",
+ "prototipo": {
+  "commit": "bec5307",
+  "model053_sha256": "c86ad1e21e6677e8d0791bc5d39fd9c0898ce49d04d2dea6826d6881d05b25fb"
+ },
+ "semente": 20261034,
+ "semente_classe": 20261035,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0000006719673051,
+   "ic95": [
+    0.9999999136504557,
+    1.000001940829137
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.23120575753081088,
+   "ic95": [
+    0.21626650245767462,
+    0.24905897575421607
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0000006719673051,
+   "ic95": [
+    0.9999999136504557,
+    1.000001940829137
+   ],
+   "n": 6
+  },
+  "series_com_externa": 2,
+  "series_com_externa_v052": 2,
+  "acrescimo_custo": 599.1671796625627,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Nova Olinda",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.20932257328292816,
+   "v052_sobre_ref_ic95": [
+    0.18930473884695526,
+    0.23172448291918757
+   ],
+   "mse": 359.84726504124535,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 606.0194938440493,
+   "cobertura": 0.9020177838577291,
+   "estrutura_identica": true,
+   "razao_ref": 0.20932257328292816,
+   "ic95_ref": [
+    0.19035356742903856,
+    0.230791933787141
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Castilho",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.2005927400222979,
+   "v052_sobre_ref_ic95": [
+    0.18305292184330385,
+    0.22083687669904437
+   ],
+   "mse": 360.6860958585403,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 605.8700410396716,
+   "cobertura": 0.9012767897856817,
+   "estrutura_identica": true,
+   "razao_ref": 0.2005927400222979,
+   "ic95_ref": [
+    0.18334481652208712,
+    0.21968591426584977
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Ituverava",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.27390323694185276,
+   "v052_sobre_ref_ic95": [
+    0.2054114401502013,
+    0.3971950707090924
+   ],
+   "mse": 564.2362281599883,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 603.1439808481531,
+   "cobertura": 0.9016757865937073,
+   "estrutura_identica": true,
+   "razao_ref": 0.27390323694185276,
+   "ic95_ref": [
+    0.20593784474466825,
+    0.39597922255914175
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Boa Hora",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.22006875203111395,
+   "v052_sobre_ref_ic95": [
+    0.19885002152209585,
+    0.24221935955451157
+   ],
+   "mse": 321.41994999735397,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 587.0356817145463,
+   "cobertura": 0.9008274231678487,
+   "estrutura_identica": true,
+   "razao_ref": 0.22006875203111395,
+   "ic95_ref": [
+    0.1991775838777228,
+    0.24288189234001903
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Abaiara 230 kV",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.24561018404060087,
+   "v052_sobre_ref_ic95": [
+    0.2168077382235967,
+    0.2786083792779707
+   ],
+   "mse": 256.3405221308456,
+   "peso_L_medio": 0.9999910066802156,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 587.5577975376196,
+   "cobertura": 0.902698525915359,
+   "estrutura_identica": true,
+   "razao_ref": 0.24561117429434554,
+   "ic95_ref": [
+    0.2162243732192437,
+    0.2810556463133504
+   ],
+   "razao_v052": 1.0000040318106047,
+   "ic95_v052": [
+    0.9999994819028453,
+    1.0000116450313252
+   ],
+   "razao_melhor": 1.0000040318106047,
+   "ic95_melhor": [
+    0.9999995214834407,
+    1.0000112729820185
+   ]
+  },
+  {
+   "serie": "Conj. Brígida",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.24572929008422317,
+   "v052_sobre_ref_ic95": [
+    0.22718098718395105,
+    0.26775215039430317
+   ],
+   "mse": 206.07348709440242,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 605.376082991336,
+   "cobertura": 0.9008777929776561,
+   "estrutura_identica": true,
+   "razao_ref": 0.245729290084223,
+   "ic95_ref": [
+    0.22571631173408896,
+    0.2676494048503244
+   ],
+   "razao_v052": 0.9999999999999993,
+   "ic95_v052": [
+    0.9999999999999987,
+    1.0000000000000004
+   ],
+   "razao_melhor": 0.9999999999999993,
+   "ic95_melhor": [
+    0.9999999999999987,
+    1.0000000000000004
+   ]
+  }
+ ]
+}

@@ -1,0 +1,193 @@
+{
+ "familia": "WC01",
+ "prototipo": {
+  "commit": "bec5307",
+  "model053_sha256": "c86ad1e21e6677e8d0791bc5d39fd9c0898ce49d04d2dea6826d6881d05b25fb"
+ },
+ "semente": 20261034,
+ "semente_classe": 20261035,
+ "B": 2000,
+ "resumo": {
+  "c1": {
+   "geo": 1.0001899054567882,
+   "ic95": [
+    0.9999965896108792,
+    1.00044515062509
+   ],
+   "n": 4
+  },
+  "c2": null,
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 1.0001899054567882,
+   "ic95": [
+    0.9999965896108792,
+    1.00044515062509
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 0.9767396146475711,
+   "ic95": [
+    0.9689728735055168,
+    0.9841671291403761
+   ],
+   "n": 4
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 798.4732271202683,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 0,
+   "referência melhor": 4,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "rupia",
+   "origem": "WC01",
+   "T": 4174,
+   "d": 5,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.030825845095703,
+   "v052_sobre_ref_ic95": [
+    1.0099682036207074,
+    1.0523997306624489
+   ],
+   "mse": 0.1452504753430302,
+   "peso_L_medio": 0.0016799350187987712,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 797.5598945855295,
+   "cobertura": 0.9007251812953239,
+   "estrutura_identica": true,
+   "razao_ref": 1.0003338069827628,
+   "ic95_ref": [
+    0.9999721164818637,
+    1.0006990813201535
+   ],
+   "razao_v052": 0.9704197966533237,
+   "ic95_v052": [
+    0.9498091039279554,
+    0.9906227728110737
+   ],
+   "razao_melhor": 1.0003338069827628,
+   "ic95_melhor": [
+    0.9999660903367541,
+    1.000723067630501
+   ]
+  },
+  {
+   "serie": "dolar_singapura",
+   "origem": "WC01",
+   "T": 4174,
+   "d": 5,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.0221979633849723,
+   "v052_sobre_ref_ic95": [
+    1.0081995673496693,
+    1.0356282337935838
+   ],
+   "mse": 0.09466674530488561,
+   "peso_L_medio": 0.0018709969693218446,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 798.7776712985146,
+   "cobertura": 0.89675,
+   "estrutura_identica": true,
+   "razao_ref": 1.0003530058180863,
+   "ic95_ref": [
+    0.9998211494563054,
+    1.0012455905555182
+   ],
+   "razao_v052": 0.9786294256598329,
+   "ic95_v052": [
+    0.9662322110801375,
+    0.9921144160549588
+   ],
+   "razao_melhor": 1.0003530058180863,
+   "ic95_melhor": [
+    0.9997943253761452,
+    1.0012514504781123
+   ]
+  },
+  {
+   "serie": "baht",
+   "origem": "WC01",
+   "T": 4174,
+   "d": 5,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.0171831827033313,
+   "v052_sobre_ref_ic95": [
+    1.0037840333232935,
+    1.0327282153570063
+   ],
+   "mse": 0.15197355760611814,
+   "peso_L_medio": 0.01047274554425807,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 798.7776712985146,
+   "cobertura": 0.8935,
+   "estrutura_identica": true,
+   "razao_ref": 1.000027906145617,
+   "ic95_ref": [
+    0.9996781735266659,
+    1.0004439416305406
+   ],
+   "razao_v052": 0.9831345259640243,
+   "ic95_v052": [
+    0.9691948071355746,
+    0.9958578557215891
+   ],
+   "razao_melhor": 1.000027906145617,
+   "ic95_melhor": [
+    0.9996783132425319,
+    1.0004431280676576
+   ]
+  },
+  {
+   "serie": "coroa_dinamarquesa",
+   "origem": "WC01",
+   "T": 4174,
+   "d": 5,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.0258767281839045,
+   "v052_sobre_ref_ic95": [
+    1.013470638508611,
+    1.0385451676504756
+   ],
+   "mse": 0.23561816399684202,
+   "peso_L_medio": 0.0010854558314269329,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 798.7776712985147,
+   "cobertura": 0.89625,
+   "estrutura_identica": true,
+   "razao_ref": 1.0000449501542994,
+   "ic95_ref": [
+    0.9999262228905982,
+    1.0001969753404514
+   ],
+   "razao_v052": 0.9748198030816678,
+   "ic95_v052": [
+    0.962925061771053,
+    0.9865255097356033
+   ],
+   "razao_melhor": 1.0000449501542994,
+   "ic95_melhor": [
+    0.9999247894074833,
+    1.00019750355632
+   ]
+  }
+ ]
+}
