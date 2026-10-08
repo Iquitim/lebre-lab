@@ -1,0 +1,272 @@
+{
+ "familia": "YB07",
+ "prototipo": {
+  "commit": "d3e098f",
+  "model053_sha256": "9087c32309a6ee6309ef03ea803f50efd1a7533afcb36cabd2dfa0d16dde67c8"
+ },
+ "semente": 20261040,
+ "semente_classe": 20261041,
+ "B": 2000,
+ "resumo": {
+  "c1": {
+   "geo": 1.0022864879091569,
+   "ic95": [
+    0.9835621783934615,
+    1.020311133904285
+   ],
+   "n": 1
+  },
+  "c2": {
+   "geo": 0.9999820521635993,
+   "ic95": [
+    0.9999756214995258,
+    0.9999876617141209
+   ],
+   "n": 5
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.7507460298248474,
+   "ic95": [
+    0.7365201838688835,
+    0.7659610607109907
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 0.9904893298767041,
+   "ic95": [
+    0.9882767636929578,
+    0.9925747782650376
+   ],
+   "n": 6
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 134.39402235911476,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 5,
+   "referência melhor": 1,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "8410140_Eastport",
+   "origem": "YB07",
+   "T": 35064,
+   "d": 3,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.4615726464719675,
+   "v052_sobre_ref_ic95": [
+    0.4309650087236478,
+    0.49640456376985126
+   ],
+   "mse": 0.0019002971194687504,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 134.39402235911479,
+   "cobertura": 0.9002110426648414,
+   "estrutura_identica": true,
+   "razao_ref": 0.4615726464719675,
+   "ic95_ref": [
+    0.43114060731433984,
+    0.49547855546664643
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999993,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999993,
+    1.0
+   ]
+  },
+  {
+   "serie": "8413320_Bar Harbor",
+   "origem": "YB07",
+   "T": 35064,
+   "d": 3,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.8253563322140935,
+   "v052_sobre_ref_ic95": [
+    0.7892990553499287,
+    0.8619053754113123
+   ],
+   "mse": 0.001129122102743115,
+   "peso_L_medio": 0.9998631191003557,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 134.39402235911479,
+   "cobertura": 0.9002966005019393,
+   "estrutura_identica": true,
+   "razao_ref": 0.8252824054577598,
+   "ic95_ref": [
+    0.7889687900329846,
+    0.8597134475596975
+   ],
+   "razao_v052": 0.9999104304971702,
+   "ic95_v052": [
+    0.9998782100836647,
+    0.9999384809803447
+   ],
+   "razao_melhor": 0.9999104304971702,
+   "ic95_melhor": [
+    0.9998782084826656,
+    0.9999379122231096
+   ]
+  },
+  {
+   "serie": "8418150_Portland",
+   "origem": "YB07",
+   "T": 35064,
+   "d": 3,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "referência melhor",
+   "v052_sobre_ref": 1.0613389273723675,
+   "v052_sobre_ref_ic95": [
+    1.037586283780082,
+    1.0829672857768897
+   ],
+   "mse": 0.0011698931777064134,
+   "peso_L_medio": 0.4449827001322399,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 134.39402235911473,
+   "cobertura": 0.9002395619438741,
+   "estrutura_identica": true,
+   "razao_ref": 1.0022864879091569,
+   "ic95_ref": [
+    0.9835621783934615,
+    1.020311133904285
+   ],
+   "razao_v052": 0.944360431959835,
+   "ic95_v052": [
+    0.9317608274756864,
+    0.9563520584722885
+   ],
+   "razao_melhor": 1.0022864879091569,
+   "ic95_melhor": [
+    0.9835489637596626,
+    1.0199509854812605
+   ]
+  },
+  {
+   "serie": "8531680_Sandy Hook",
+   "origem": "YB07",
+   "T": 35064,
+   "d": 3,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.8041853893535433,
+   "v052_sobre_ref_ic95": [
+    0.7758259452688517,
+    0.8331195501702356
+   ],
+   "mse": 0.0014054727248022935,
+   "peso_L_medio": 0.9999994296271344,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 134.39402235911473,
+   "cobertura": 0.9003536390600045,
+   "estrutura_identica": true,
+   "razao_ref": 0.8041852554784739,
+   "ic95_ref": [
+    0.7770042926579607,
+    0.8328074622983895
+   ],
+   "razao_v052": 0.9999998335271054,
+   "ic95_v052": [
+    0.9999995971386098,
+    0.9999999991383312
+   ],
+   "razao_melhor": 0.9999998335271054,
+   "ic95_melhor": [
+    0.9999996092846197,
+    0.9999999952653981
+   ]
+  },
+  {
+   "serie": "8575512_Annapolis",
+   "origem": "YB07",
+   "T": 35064,
+   "d": 3,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.6519468771245517,
+   "v052_sobre_ref_ic95": [
+    0.6137454581080894,
+    0.6943757208286084
+   ],
+   "mse": 0.00021174680046957527,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 134.39402235911473,
+   "cobertura": 0.9021788729180926,
+   "estrutura_identica": true,
+   "razao_ref": 0.6519468771245517,
+   "ic95_ref": [
+    0.6133115416283471,
+    0.6915768482182029
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999994,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999994,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "9415020_Point Reyes",
+   "origem": "YB07",
+   "T": 35064,
+   "d": 3,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.8944486725133824,
+   "v052_sobre_ref_ic95": [
+    0.8584696358776813,
+    0.9342392670289964
+   ],
+   "mse": 0.0006086617994700422,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 134.39402235911473,
+   "cobertura": 0.9004962354551677,
+   "estrutura_identica": true,
+   "razao_ref": 0.8944486725133824,
+   "ic95_ref": [
+    0.8605445746564861,
+    0.9349024766219853
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
