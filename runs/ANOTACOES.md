@@ -45,3 +45,11 @@ foram versionados. Resultado em `analises/M2_DEV_R3_RESULTADO.md`.
 
 `analises/m2_dev_r5.py` interrompido depois que C05 já falhava o critério 2 (regra decidida); B01 foi esperado de
 propósito para saber se o compartilhamento resolvia a série Arinos (resolveu). Medidas: C05, CURTAS, B01, C01-C04.
+
+## 08/10/2026: diagnóstico E5 da M2, processos reiniciados para manter o registro de commit exato
+
+Enquanto o E5 rodava (protótipo `85da1ff` carregado em memória), o protótipo recebeu um acréscimo (oráculo de Jeffreys)
+e foi commitado em `4c8f102`. As 32 famílias já gravadas registraram `85da1ff` corretamente (nenhuma abortou; nenhuma
+começou com o protótipo sujo). As famílias ainda por começar registrariam `4c8f102` executando o código antigo; para que o
+registro seja exato, os 3 processos restantes foram parados e as 11 famílias que faltavam (A02, A04-A12, B07) rodadas de
+novo a partir de `4c8f102`, em que o caminho do oráculo `switch_mono_exato` é o mesmo (só houve acréscimos).
