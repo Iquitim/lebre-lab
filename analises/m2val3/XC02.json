@@ -1,0 +1,189 @@
+{
+ "familia": "XC02",
+ "prototipo": {
+  "commit": "6e43d9a",
+  "model053_sha256": "218cc6b4e09f1b03a9c09eb4e3a95d1f4b84a3a01c72a18b66a522b8fcb04b76"
+ },
+ "semente": 20261028,
+ "semente_classe": 20261029,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0
+   ],
+   "n": 4
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.572286795101769,
+   "ic95": [
+    0.5478362889304099,
+    0.6064563520013634
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0
+   ],
+   "n": 4
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 128.84714901772878,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 4,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "abs_ringgit",
+   "origem": "XC02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.5722381470723202,
+   "v052_sobre_ref_ic95": [
+    0.5278604092659926,
+    0.6308433701579267
+   ],
+   "mse": 0.08208572342951598,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 128.84714901772878,
+   "cobertura": 0.90325,
+   "estrutura_identica": true,
+   "razao_ref": 0.5722381470723202,
+   "ic95_ref": [
+    0.5283897215783331,
+    0.6310089450933394
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "abs_dolar_taiwan",
+   "origem": "XC02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.5807238277273808,
+   "v052_sobre_ref_ic95": [
+    0.5415955787696879,
+    0.6264985582924295
+   ],
+   "mse": 0.04845334381805724,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 128.84714901772878,
+   "cobertura": 0.906,
+   "estrutura_identica": true,
+   "razao_ref": 0.5807238277273808,
+   "ic95_ref": [
+    0.5386853914981842,
+    0.627651707742431
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "abs_rupia_sri_lanka",
+   "origem": "XC02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.6065575927898782,
+   "v052_sobre_ref_ic95": [
+    0.5377275470739864,
+    0.7254292430056698
+   ],
+   "mse": 0.16722661671442668,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 128.84714901772878,
+   "cobertura": 0.90225,
+   "estrutura_identica": true,
+   "razao_ref": 0.6065575927898782,
+   "ic95_ref": [
+    0.5299624447922957,
+    0.7240484281925417
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "abs_rand",
+   "origem": "XC02",
+   "T": 4174,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.5321528658285944,
+   "v052_sobre_ref_ic95": [
+    0.5039419738245832,
+    0.5621891825880803
+   ],
+   "mse": 0.35277654005102355,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 128.84714901772878,
+   "cobertura": 0.89825,
+   "estrutura_identica": true,
+   "razao_ref": 0.5321528658285944,
+   "ic95_ref": [
+    0.5055606208740189,
+    0.5602294656798896
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  }
+ ]
+}
