@@ -1,0 +1,265 @@
+{
+ "familia": "YB06",
+ "prototipo": {
+  "commit": "d3e098f",
+  "model053_sha256": "9087c32309a6ee6309ef03ea803f50efd1a7533afcb36cabd2dfa0d16dde67c8"
+ },
+ "semente": 20261040,
+ "semente_classe": 20261041,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 0.9999999999770847,
+   "ic95": [
+    0.999999999971065,
+    0.9999999999829957
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.06886311016022464,
+   "ic95": [
+    0.06611087887352717,
+    0.07143100948585683
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 0.9999999999770847,
+   "ic95": [
+    0.999999999971065,
+    0.9999999999829957
+   ],
+   "n": 6
+  },
+  "series_com_externa": 3,
+  "series_com_externa_v052": 3,
+  "acrescimo_custo": 812.6893904848762,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Gentio do Ouro I",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.048841165308411864,
+   "v052_sobre_ref_ic95": [
+    0.04449867681291366,
+    0.05377602419007783
+   ],
+   "mse": 816.8097877053169,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 814.8728340173278,
+   "cobertura": 0.8997948016415869,
+   "estrutura_identica": true,
+   "razao_ref": 0.04884116530205757,
+   "ic95_ref": [
+    0.04441664921411746,
+    0.05361139546140934
+   ],
+   "razao_v052": 0.9999999998698988,
+   "ic95_v052": [
+    0.9999999998338994,
+    0.9999999999052542
+   ],
+   "razao_melhor": 0.9999999998698988,
+   "ic95_melhor": [
+    0.9999999998310916,
+    0.9999999999044344
+   ]
+  },
+  {
+   "serie": "Conj. Ventos da Bahia",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.06386169961794362,
+   "v052_sobre_ref_ic95": [
+    0.0582220371719167,
+    0.07009130978045977
+   ],
+   "mse": 691.4224648519317,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 814.2473780209758,
+   "cobertura": 0.8990956959706959,
+   "estrutura_identica": true,
+   "razao_ref": 0.06386169961755497,
+   "ic95_ref": [
+    0.05867974530773759,
+    0.07013485510939531
+   ],
+   "razao_v052": 0.9999999999939143,
+   "ic95_v052": [
+    0.9999999999923428,
+    0.9999999999952585
+   ],
+   "razao_melhor": 0.9999999999939143,
+   "ic95_melhor": [
+    0.9999999999923683,
+    0.9999999999953958
+   ]
+  },
+  {
+   "serie": "Conj. Lagoa do Barro I",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.06718784993072,
+   "v052_sobre_ref_ic95": [
+    0.06233138561621349,
+    0.07284973423761007
+   ],
+   "mse": 573.3005048659708,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 807.5614455084359,
+   "cobertura": 0.9003647970816233,
+   "estrutura_identica": true,
+   "razao_ref": 0.06718784993063273,
+   "ic95_ref": [
+    0.062043804225519535,
+    0.07294073446906953
+   ],
+   "razao_v052": 0.9999999999987012,
+   "ic95_v052": [
+    0.9999999999981541,
+    0.9999999999992364
+   ],
+   "razao_melhor": 0.9999999999987012,
+   "ic95_melhor": [
+    0.9999999999981756,
+    0.9999999999992447
+   ]
+  },
+  {
+   "serie": "Conj. Igaporã II",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.05619034270113475,
+   "v052_sobre_ref_ic95": [
+    0.05023870938151947,
+    0.06247978183409893
+   ],
+   "mse": 868.6226633621844,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 813.2069653442773,
+   "cobertura": 0.9016757865937073,
+   "estrutura_identica": true,
+   "razao_ref": 0.05619034270113449,
+   "ic95_ref": [
+    0.05003273906194526,
+    0.0623309934369373
+   ],
+   "razao_v052": 0.9999999999999952,
+   "ic95_v052": [
+    0.9999999999999872,
+    0.9999999999999997
+   ],
+   "razao_melhor": 0.9999999999999952,
+   "ic95_melhor": [
+    0.9999999999999866,
+    0.9999999999999997
+   ]
+  },
+  {
+   "serie": "Conj. Jerusalém",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.09238100852039773,
+   "v052_sobre_ref_ic95": [
+    0.08267658405388909,
+    0.10180432619977718
+   ],
+   "mse": 423.695047517745,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 812.7934906520748,
+   "cobertura": 0.9009917920656635,
+   "estrutura_identica": true,
+   "razao_ref": 0.09238100852039757,
+   "ic95_ref": [
+    0.08340231867412556,
+    0.10185552655213163
+   ],
+   "razao_v052": 0.9999999999999984,
+   "ic95_v052": [
+    0.9999999999999976,
+    0.9999999999999997
+   ],
+   "razao_melhor": 0.9999999999999984,
+   "ic95_melhor": [
+    0.9999999999999976,
+    0.9999999999999997
+   ]
+  },
+  {
+   "serie": "Conj. Monte do Ronca",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.09802981597193301,
+   "v052_sobre_ref_ic95": [
+    0.08913401576620295,
+    0.10748846044513087
+   ],
+   "mse": 281.27243769263725,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 813.4542293661651,
+   "cobertura": 0.9005927952576379,
+   "estrutura_identica": true,
+   "razao_ref": 0.09802981597193301,
+   "ic95_ref": [
+    0.08875519815865267,
+    0.10742968459798913
+   ],
+   "razao_v052": 1.0000000000000002,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0000000000000002,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000004
+   ]
+  }
+ ]
+}

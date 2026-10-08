@@ -1,0 +1,193 @@
+{
+ "familia": "YB02",
+ "prototipo": {
+  "commit": "d3e098f",
+  "model053_sha256": "9087c32309a6ee6309ef03ea803f50efd1a7533afcb36cabd2dfa0d16dde67c8"
+ },
+ "semente": 20261040,
+ "semente_classe": 20261041,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "n": 4
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.027505572403086917,
+   "ic95": [
+    0.026159777381092455,
+    0.028817925080036135
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "n": 4
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 808.4270334245952,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 4,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.016075444735551284,
+   "v052_sobre_ref_ic95": [
+    0.014929254284361447,
+    0.01724049883184159
+   ],
+   "mse": 707540.694707778,
+   "peso_L_medio": 1.0,
+   "externas": 4,
+   "externas_v052": 4,
+   "acrescimo_custo": 798.5776579968058,
+   "cobertura": 0.902624073017684,
+   "estrutura_identica": true,
+   "razao_ref": 0.016075444735551284,
+   "ic95_ref": [
+    0.014894440461164766,
+    0.01731341523899342
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "SUL_Porto Alegre_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.021172041180668157,
+   "v052_sobre_ref_ic95": [
+    0.019245799118289737,
+    0.023194822518922107
+   ],
+   "mse": 107734.05269831844,
+   "peso_L_medio": 1.0,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 811.5491957563314,
+   "cobertura": 0.9031660011409013,
+   "estrutura_identica": true,
+   "razao_ref": 0.021172041180668157,
+   "ic95_ref": [
+    0.019308395578151994,
+    0.023220340269324135
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0
+   ]
+  },
+  {
+   "serie": "NORDESTE_Recife_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.03344202700729285,
+   "v052_sobre_ref_ic95": [
+    0.030050596812188465,
+    0.037264094597472104
+   ],
+   "mse": 49111.231615428886,
+   "peso_L_medio": 1.0,
+   "externas": 8,
+   "externas_v052": 8,
+   "acrescimo_custo": 821.9194330367329,
+   "cobertura": 0.9031660011409013,
+   "estrutura_identica": true,
+   "razao_ref": 0.03344202700729285,
+   "ic95_ref": [
+    0.029855871935063193,
+    0.03713339043533876
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "NORTE_Belem_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.05028800755242263,
+   "v052_sobre_ref_ic95": [
+    0.04572257782062766,
+    0.056175938382989
+   ],
+   "mse": 4714.510118802268,
+   "peso_L_medio": 1.0,
+   "externas": 4,
+   "externas_v052": 4,
+   "acrescimo_custo": 801.6618469085101,
+   "cobertura": 0.9025385054192813,
+   "estrutura_identica": true,
+   "razao_ref": 0.05028800755242263,
+   "ic95_ref": [
+    0.045772799219897645,
+    0.056161126489922775
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000007
+   ]
+  }
+ ]
+}

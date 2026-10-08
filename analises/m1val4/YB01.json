@@ -1,0 +1,265 @@
+{
+ "familia": "YB01",
+ "prototipo": {
+  "commit": "d3e098f",
+  "model053_sha256": "9087c32309a6ee6309ef03ea803f50efd1a7533afcb36cabd2dfa0d16dde67c8"
+ },
+ "semente": 20261040,
+ "semente_classe": 20261041,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.030092233471911,
+   "ic95": [
+    1.0236565713038048,
+    1.038230985270398
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.08374786193749952,
+   "ic95": [
+    0.07550360489250384,
+    0.08500204741639833
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.030092233471911,
+   "ic95": [
+    1.0236565713038048,
+    1.038230985270398
+   ],
+   "n": 6
+  },
+  "series_com_externa": 3,
+  "series_com_externa_v052": 3,
+  "acrescimo_custo": 610.407375740994,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Sol do Futuro",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.06039672259058305,
+   "v052_sobre_ref_ic95": [
+    0.05606417634732104,
+    0.06505905627698316
+   ],
+   "mse": 51.63561768940903,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 609.5823073415413,
+   "cobertura": 0.9001937984496124,
+   "estrutura_identica": true,
+   "razao_ref": 0.06039672259058305,
+   "ic95_ref": [
+    0.056000010521145636,
+    0.06518717598306416
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Dracena",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.06503497737054972,
+   "v052_sobre_ref_ic95": [
+    0.06056623989428288,
+    0.06926191103274858
+   ],
+   "mse": 63.86368411655921,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 610.298791609667,
+   "cobertura": 0.9012197902416781,
+   "estrutura_identica": true,
+   "razao_ref": 0.06503497737054972,
+   "ic95_ref": [
+    0.06062711847657206,
+    0.06952491564758224
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Horizonte",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.09643584283560687,
+   "v052_sobre_ref_ic95": [
+    0.07843832290239708,
+    0.12678965132627304
+   ],
+   "mse": 137.19703839220392,
+   "peso_L_medio": 1.0,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 608.7264021887823,
+   "cobertura": 0.9001367989056087,
+   "estrutura_identica": true,
+   "razao_ref": 0.11521132153758729,
+   "ic95_ref": [
+    0.09455795802748823,
+    0.14980003177584966
+   ],
+   "razao_v052": 1.1946939866952455,
+   "ic95_v052": [
+    1.1506034553471092,
+    1.252460151099625
+   ],
+   "razao_melhor": 1.1946939866952455,
+   "ic95_melhor": [
+    1.15330176094672,
+    1.2517804019083072
+   ]
+  },
+  {
+   "serie": "Conj. Lapa",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.07883089282645424,
+   "v052_sobre_ref_ic95": [
+    0.0742947276100873,
+    0.08474694360274958
+   ],
+   "mse": 42.11107440648381,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 611.7951436388508,
+   "cobertura": 0.9023027815777473,
+   "estrutura_identica": true,
+   "razao_ref": 0.07883089282645418,
+   "ic95_ref": [
+    0.07421005425575333,
+    0.08413649039365151
+   ],
+   "razao_v052": 0.9999999999999994,
+   "ic95_v052": [
+    0.9999999999999983,
+    1.0
+   ],
+   "razao_melhor": 0.9999999999999994,
+   "ic95_melhor": [
+    0.9999999999999983,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Bom Jesus",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.08076807467725061,
+   "v052_sobre_ref_ic95": [
+    0.07519470128603645,
+    0.0876326013108224
+   ],
+   "mse": 42.76394146988476,
+   "peso_L_medio": 1.0,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 611.109439124487,
+   "cobertura": 0.9007067943456453,
+   "estrutura_identica": true,
+   "razao_ref": 0.08076807445471268,
+   "ic95_ref": [
+    0.07539003770776029,
+    0.08775847189952561
+   ],
+   "razao_v052": 0.999999997244729,
+   "ic95_v052": [
+    0.9999999936350689,
+    0.9999999999868852
+   ],
+   "razao_melhor": 0.999999997244729,
+   "ic95_melhor": [
+    0.9999999940303337,
+    0.9999999999885112
+   ]
+  },
+  {
+   "serie": "Conj. São Pedro",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "v052_sobre_ref": 0.11974314811478846,
+   "v052_sobre_ref_ic95": [
+    0.07812967523696653,
+    0.1205715128575522
+   ],
+   "mse": 89.1391111390809,
+   "peso_L_medio": 1.0,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 610.9321705426356,
+   "cobertura": 0.9003077975376197,
+   "estrutura_identica": true,
+   "razao_ref": 0.11974314811478846,
+   "ic95_ref": [
+    0.07793361620765905,
+    0.12111158470152887
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
