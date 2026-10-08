@@ -16,6 +16,7 @@ Cada conjunto é registrado aqui **antes** de ser baixado. Dados brutos não ent
 | IBGE: IPCA (433) e INPC (188), lidos pelo SGS do BCB | C05 | https://dados.gov.br/dados/conjuntos-dados/ia-indice-nacional-de-precos-ao-consumidor-amplo-ipca; política do IBGE: reuso permitido citando o IBGE como fonte | Domínio público no portal federal; reuso com citação | Sim, citando o IBGE | 2026-10-04 |
 | FGV: IGP-M (189) | (C05, descartado) | — | Licença da FGV não conferida | **Não usar** | 2026-10-04 |
 | FRED: DGS10, DGS2, DTB3 (Fed H.15), DEXUSEU, DEXJPUS (Fed H.10), DCOILWTICO (EIA) | C01-C04 | https://fred.stlouisfed.org (status conferido na página de cada série); termos: https://fred.stlouisfed.org/legal/ | Domínio público, citação solicitada | Sim | 2026-10-04 |
+| FRED: DEXINUS, DEXSIUS, DEXTHUS, DEXDNUS (Fed H.10), DGS1, DGS5, DGS30 (Fed H.15) | validação 2 (W-C01 a W-C04) | https://fred.stlouisfed.org (etiqueta "Public Domain: Citation Requested" conferida na página de cada série); termos: https://fred.stlouisfed.org/legal/ | Domínio público, citação solicitada | Sim | 2026-10-08 |
 | FRED: VIXCLS e S&P 500 | (C02, descartado) | https://fred.stlouisfed.org/legal/ | Copyright do fornecedor (CBOE, S&P) | Não sem permissão: **não usar** | 2026-10-04 |
 
 ## Observações de uso
