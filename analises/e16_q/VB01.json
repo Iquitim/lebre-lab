@@ -1,0 +1,268 @@
+{
+ "config": "q",
+ "familia": "VB01",
+ "prototipo": {
+  "commit": "db3bf1d",
+  "model053_sha256": "3de2a1686c9da7ca9b74413952602e62c1c00e37e80511c50318706899d4fbbd"
+ },
+ "semente": 20261042,
+ "semente_classe": 20261043,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.23167718712259822,
+   "ic95": [
+    0.22342610071324012,
+    0.2400217537476058
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "series_com_externa": 3,
+  "series_com_externa_v052": 3,
+  "acrescimo_custo": 136.31235750113999,
+  "acrescimo_custo_max": 137.23575011399913,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Açú III 230 kV",
+   "origem": "VB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0019376983454348462,
+   "v052_sobre_ref": 0.22375516511330715,
+   "v052_sobre_ref_ic95": [
+    0.20444375283198682,
+    0.24214496356649545
+   ],
+   "mse": 1548.3912228075615,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 131.69539443684448,
+   "custo_v052": 555.4540469676243,
+   "estrutura_identica": true,
+   "razao_ref": 0.22375516511330715,
+   "ic95_ref": [
+    0.2050002279778633,
+    0.2432763984840263
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Serra do Mel C",
+   "origem": "VB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0017448245817312943,
+   "v052_sobre_ref": 0.21923546211951384,
+   "v052_sobre_ref_ic95": [
+    0.1989115605098485,
+    0.23943377534699536
+   ],
+   "mse": 1576.6363069026936,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 658.0301869585043,
+   "estrutura_identica": true,
+   "razao_ref": 0.21923546211951384,
+   "ic95_ref": [
+    0.19980583512253605,
+    0.23811698812267246
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Paracatu",
+   "origem": "VB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0018432696926223545,
+   "v052_sobre_ref": 0.24224179165309898,
+   "v052_sobre_ref_ic95": [
+    0.2202638724322074,
+    0.2657102116206056
+   ],
+   "mse": 815.3212398713378,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 550.8056201550388,
+   "estrutura_identica": true,
+   "razao_ref": 0.24224179165309892,
+   "ic95_ref": [
+    0.21951333150727756,
+    0.2650193502612576
+   ],
+   "razao_v052": 0.9999999999999999,
+   "ic95_v052": [
+    0.9999999999999993,
+    1.0000000000000002
+   ],
+   "razao_melhor": 0.9999999999999999,
+   "ic95_melhor": [
+    0.9999999999999993,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Pirapora 2",
+   "origem": "VB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.002014109654041236,
+   "v052_sobre_ref": 0.24492865015287746,
+   "v052_sobre_ref_ic95": [
+    0.22586917467056647,
+    0.2680819715879564
+   ],
+   "mse": 878.101368015632,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399913,
+   "custo_v052": 510.2728112175102,
+   "estrutura_identica": true,
+   "razao_ref": 0.24492865015287746,
+   "ic95_ref": [
+    0.22702509073677943,
+    0.2678458216117866
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Ciranda",
+   "origem": "VB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.002114751407948587,
+   "v052_sobre_ref": 0.24092001040446692,
+   "v052_sobre_ref_ic95": [
+    0.22166659245202522,
+    0.2617580990360908
+   ],
+   "mse": 438.2697748706415,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 538.1422024623804,
+   "estrutura_identica": true,
+   "razao_ref": 0.24092001040446692,
+   "ic95_ref": [
+    0.22127470832221247,
+    0.2621567562932695
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Rio Alto",
+   "origem": "VB01",
+   "T": 17544,
+   "d": 4,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.002168590239638134,
+   "v052_sobre_ref": 0.22052316861910487,
+   "v052_sobre_ref_ic95": [
+    0.20043835885060077,
+    0.24226434585008183
+   ],
+   "mse": 268.15711559044485,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 582.1455084359326,
+   "estrutura_identica": true,
+   "razao_ref": 0.22052316861910487,
+   "ic95_ref": [
+    0.20073744069820326,
+    0.24149363364945162
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0000000000000004
+   ]
+  }
+ ]
+}
