@@ -13,7 +13,7 @@ Nota: os arquivos do SGS dos códigos 11427 e 4467 foram baixados em 08/10, quan
 imprimiu a conferência numérica das reservas (só a correlação com o IPCA); não entraram no manifesto da validação 4 nem em
 nenhuma medição.
 
-## Séries (39)
+## Séries (43)
 
 | Família | Séries | Passos | Observações |
 |---|---|---|---|
