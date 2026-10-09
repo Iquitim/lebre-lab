@@ -1,0 +1,281 @@
+{
+ "config": "prod_q2",
+ "familia": "WB06",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261049,
+ "semente_classe": 20261050,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.1321731581218019,
+   "ic95": [
+    0.12730972364352436,
+    0.13716691447058676
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 857.4954305365558,
+  "acrescimo_custo_max": 876.5210328317372,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Serra do Mel B",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0017759851897957684,
+   "v052_sobre_ref": 0.13066518363563642,
+   "v052_sobre_ref_ic95": [
+    0.11879528026904304,
+    0.14232574609680254
+   ],
+   "mse": 750.4029010666202,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 871.6550957592339,
+   "custo_v052": 713.0794231646147,
+   "estrutura_identica": true,
+   "razao_ref": 0.13066518363563642,
+   "ic95_ref": [
+    0.11907133579263343,
+    0.142645417270942
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "Conj. Santo Agostinho",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.001398616132137455,
+   "v052_sobre_ref": 0.1439043612861236,
+   "v052_sobre_ref_ic95": [
+    0.1333049859252242,
+    0.15497824299496646
+   ],
+   "mse": 684.540221372918,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 855.3252393980849,
+   "custo_v052": 632.9492932056544,
+   "estrutura_identica": true,
+   "razao_ref": 0.14390436128612363,
+   "ic95_ref": [
+    0.13275104855487166,
+    0.15545479913020488
+   ],
+   "razao_v052": 1.0000000000000002,
+   "ic95_v052": [
+    0.9999999999999994,
+    1.0
+   ],
+   "razao_melhor": 1.0000000000000002,
+   "ic95_melhor": [
+    0.9999999999999993,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Paulino Neves",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0009112381637212985,
+   "v052_sobre_ref": 0.12910787420375386,
+   "v052_sobre_ref_ic95": [
+    0.11858385779023674,
+    0.14186121901624735
+   ],
+   "mse": 1555.6017070800206,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 876.5210328317372,
+   "custo_v052": 568.5806885544915,
+   "estrutura_identica": true,
+   "razao_ref": 0.12910787420375386,
+   "ic95_ref": [
+    0.11798310825681152,
+    0.1412641155108389
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Novo Horizonte",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0009932443233596376,
+   "v052_sobre_ref": 0.1393983324566001,
+   "v052_sobre_ref_ic95": [
+    0.12546266471239698,
+    0.15507287283487198
+   ],
+   "mse": 1511.967435094913,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 823.391415868673,
+   "custo_v052": 495.47853967168265,
+   "estrutura_identica": true,
+   "razao_ref": 0.1393983324566001,
+   "ic95_ref": [
+    0.12554603659856714,
+    0.15537616097818743
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Serra da Babilônia",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00110823864766662,
+   "v052_sobre_ref": 0.13896955716125917,
+   "v052_sobre_ref_ic95": [
+    0.12878639313810827,
+    0.15032941195027888
+   ],
+   "mse": 963.606168710446,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 857.9983470132239,
+   "custo_v052": 581.4226288189694,
+   "estrutura_identica": true,
+   "razao_ref": 0.13896955716125917,
+   "ic95_ref": [
+    0.12856086005792391,
+    0.15025062550605453
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Umburanas",
+   "origem": "WB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0012215358908128295,
+   "v052_sobre_ref": 0.11336938233676876,
+   "v052_sobre_ref_ic95": [
+    0.10233268639951394,
+    0.12504224882560258
+   ],
+   "mse": 735.5520189001162,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 860.0814523483812,
+   "custo_v052": 587.27010373917,
+   "estrutura_identica": true,
+   "razao_ref": 0.11336938233676876,
+   "ic95_ref": [
+    0.10207513451401419,
+    0.12495409832184662
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

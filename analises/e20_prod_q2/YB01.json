@@ -1,0 +1,281 @@
+{
+ "config": "prod_q2",
+ "familia": "YB01",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261049,
+ "semente_classe": 20261050,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0085011577421774,
+   "ic95": [
+    1.002900022929688,
+    1.0154701028390158
+   ],
+   "n": 5
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.08187687965515301,
+   "ic95": [
+    0.07362100922863887,
+    0.08314579046003691
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.007079295906448,
+   "ic95": [
+    1.002416102395363,
+    1.0128752317950034
+   ],
+   "n": 6
+  },
+  "series_com_externa": 3,
+  "series_com_externa_v052": 3,
+  "acrescimo_custo": 658.4610693114456,
+  "acrescimo_custo_max": 659.939124487004,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 5,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 1
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Sol do Futuro",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00040001290778657724,
+   "v052_sobre_ref": 0.06039672259058305,
+   "v052_sobre_ref_ic95": [
+    0.056117488895477755,
+    0.06552670176431429
+   ],
+   "mse": 51.63561768940903,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 657.6004331965346,
+   "custo_v052": 644.119847241222,
+   "estrutura_identica": true,
+   "razao_ref": 0.06039672259058305,
+   "ic95_ref": [
+    0.05584713673579222,
+    0.06523397368174638
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Dracena",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0003763919430281148,
+   "v052_sobre_ref": 0.06503497737054972,
+   "v052_sobre_ref_ic95": [
+    0.060705643922079854,
+    0.06923911853243937
+   ],
+   "mse": 63.86368411655921,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 658.3989968080257,
+   "custo_v052": 534.8800843593251,
+   "estrutura_identica": true,
+   "razao_ref": 0.06503497737054972,
+   "ic95_ref": [
+    0.06053148078067005,
+    0.06917763377866255
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Horizonte",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.017670166135967582,
+   "v052_sobre_ref": 0.09643584283560687,
+   "v052_sobre_ref_ic95": [
+    0.07865054639549088,
+    0.1279052404639646
+   ],
+   "mse": 119.8077189906921,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 656.62414500684,
+   "custo_v052": 657.1106817145463,
+   "estrutura_identica": true,
+   "razao_ref": 0.10060862681206303,
+   "ic95_ref": [
+    0.08208382184367903,
+    0.13117794830555143
+   ],
+   "razao_v052": 1.0432700524385883,
+   "ic95_v052": [
+    1.014597454046972,
+    1.079791280194006
+   ],
+   "razao_melhor": 1.0432700524385883,
+   "ic95_melhor": [
+    1.0138646480605134,
+    1.0806189877030643
+   ]
+  },
+  {
+   "serie": "Conj. Lapa",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0005586422536088343,
+   "v052_sobre_ref": 0.07883089282645424,
+   "v052_sobre_ref_ic95": [
+    0.07444953482240324,
+    0.08447253038466307
+   ],
+   "mse": 42.11107440648383,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 659.939124487004,
+   "custo_v052": 559.4164956680346,
+   "estrutura_identica": true,
+   "razao_ref": 0.07883089282645424,
+   "ic95_ref": [
+    0.07438246347348784,
+    0.08434234993960248
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Bom Jesus",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00048710313193063744,
+   "v052_sobre_ref": 0.08076807467725061,
+   "v052_sobre_ref_ic95": [
+    0.07514174936991984,
+    0.08788885975242047
+   ],
+   "mse": 42.7624906552724,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 659.187756497948,
+   "custo_v052": 597.9634176926585,
+   "estrutura_identica": true,
+   "razao_ref": 0.08076533430732206,
+   "ic95_ref": [
+    0.07497750580916264,
+    0.08754759071518131
+   ],
+   "razao_v052": 0.9999660711247668,
+   "ic95_v052": [
+    0.9999558636453687,
+    1.000050909017789
+   ],
+   "razao_melhor": 0.9999660711247668,
+   "ic95_melhor": [
+    0.9999554790158307,
+    1.0000509203439205
+   ]
+  },
+  {
+   "serie": "Conj. São Pedro",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "indecidível (choque)",
+   "choque": 0.09601132022967117,
+   "v052_sobre_ref": 0.11974314811478846,
+   "v052_sobre_ref_ic95": [
+    0.07848383987992247,
+    0.12082489227889898
+   ],
+   "mse": 89.1391111390809,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 659.0159598723211,
+   "custo_v052": 551.8548335613315,
+   "estrutura_identica": true,
+   "razao_ref": 0.11974314811478846,
+   "ic95_ref": [
+    0.0783888389563549,
+    0.12066016208897472
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  }
+ ]
+}

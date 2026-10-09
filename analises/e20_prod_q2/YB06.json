@@ -1,0 +1,281 @@
+{
+ "config": "prod_q2",
+ "familia": "YB06",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261049,
+ "semente_classe": 20261050,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0000000000000129,
+   "ic95": [
+    0.9999999999999994,
+    1.00000000000004
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.06886311016180356,
+   "ic95": [
+    0.06612166265361041,
+    0.07149144882177187
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0000000000000129,
+   "ic95": [
+    0.9999999999999994,
+    1.00000000000004
+   ],
+   "n": 6
+  },
+  "series_com_externa": 3,
+  "series_com_externa_v052": 3,
+  "acrescimo_custo": 860.5727694178446,
+  "acrescimo_custo_max": 862.8143524851802,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Gentio do Ouro I",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00035672844276076604,
+   "v052_sobre_ref": 0.048841165308411864,
+   "v052_sobre_ref_ic95": [
+    0.04451138721714425,
+    0.05350588903980929
+   ],
+   "mse": 816.8097878116478,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 862.8143524851802,
+   "custo_v052": 612.4182227542179,
+   "estrutura_identica": true,
+   "razao_ref": 0.048841165308415625,
+   "ic95_ref": [
+    0.04439832648694789,
+    0.05340846451541942
+   ],
+   "razao_v052": 1.000000000000077,
+   "ic95_v052": [
+    0.9999999999999969,
+    1.00000000000024
+   ],
+   "razao_melhor": 1.000000000000077,
+   "ic95_melhor": [
+    0.9999999999999981,
+    1.0000000000002494
+   ]
+  },
+  {
+   "serie": "Conj. Ventos da Bahia",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0005203068560008143,
+   "v052_sobre_ref": 0.06386169961794362,
+   "v052_sobre_ref_ic95": [
+    0.05820606842159759,
+    0.06996677288528877
+   ],
+   "mse": 691.4224648561395,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 862.2504559963519,
+   "custo_v052": 645.0463862289101,
+   "estrutura_identica": true,
+   "razao_ref": 0.06386169961794362,
+   "ic95_ref": [
+    0.05856924003268428,
+    0.07009594283814366
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999992,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999992,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Lagoa do Barro I",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0005784069857093336,
+   "v052_sobre_ref": 0.06718784993072,
+   "v052_sobre_ref_ic95": [
+    0.061578265484080144,
+    0.07257420257181725
+   ],
+   "mse": 573.3005048667154,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 855.0925672594618,
+   "custo_v052": 550.4498461012312,
+   "estrutura_identica": true,
+   "razao_ref": 0.06718784993072,
+   "ic95_ref": [
+    0.06186060215200491,
+    0.07330655711316056
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Igaporã II",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0004007430675880752,
+   "v052_sobre_ref": 0.05619034270113475,
+   "v052_sobre_ref_ic95": [
+    0.0501472967011654,
+    0.062279631957675816
+   ],
+   "mse": 868.6226633621886,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 861.1566917464661,
+   "custo_v052": 694.8603682170542,
+   "estrutura_identica": true,
+   "razao_ref": 0.05619034270113475,
+   "ic95_ref": [
+    0.04992322536097793,
+    0.06262648991084237
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Jerusalém",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0008298337127389544,
+   "v052_sobre_ref": 0.09238100852039773,
+   "v052_sobre_ref_ic95": [
+    0.08301049683444195,
+    0.10212806980462971
+   ],
+   "mse": 423.6950475177457,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 860.6392498860009,
+   "custo_v052": 680.0257010943913,
+   "estrutura_identica": true,
+   "razao_ref": 0.09238100852039773,
+   "ic95_ref": [
+    0.08263231324238203,
+    0.1023307568675214
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Monte do Ronca",
+   "origem": "YB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0009410398557977365,
+   "v052_sobre_ref": 0.09802981597193301,
+   "v052_sobre_ref_ic95": [
+    0.08934469270098111,
+    0.10729385348673309
+   ],
+   "mse": 281.27243769263725,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 861.4832991336069,
+   "custo_v052": 655.371283629731,
+   "estrutura_identica": true,
+   "razao_ref": 0.09802981597193301,
+   "ic95_ref": [
+    0.08911049515058284,
+    0.10743520318925455
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

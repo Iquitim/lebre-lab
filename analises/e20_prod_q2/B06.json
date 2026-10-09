@@ -1,0 +1,281 @@
+{
+ "config": "prod_q2",
+ "familia": "B06",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261049,
+ "semente_classe": 20261050,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999998,
+    1.0
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.11650823122043631,
+   "ic95": [
+    0.11270273146620696,
+    0.12092997141216662
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999998,
+    1.0
+   ],
+   "n": 6
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 862.5700524395805,
+  "acrescimo_custo_max": 870.8956908344732,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. São Roque",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0014020703120548698,
+   "v052_sobre_ref": 0.13634156430879082,
+   "v052_sobre_ref_ic95": [
+    0.12398862776146277,
+    0.14968302540361106
+   ],
+   "mse": 3436.0849902357268,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 855.2581509347926,
+   "custo_v052": 580.4923734610122,
+   "estrutura_identica": true,
+   "razao_ref": 0.13634156430879082,
+   "ic95_ref": [
+    0.1244183627270543,
+    0.1502625912351523
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Lagoa dos Ventos",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0012159445550967,
+   "v052_sobre_ref": 0.11970294123110042,
+   "v052_sobre_ref_ic95": [
+    0.10878908821191684,
+    0.1324483210013356
+   ],
+   "mse": 3158.6684848526534,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 855.3397742818058,
+   "custo_v052": 548.4804434564523,
+   "estrutura_identica": true,
+   "razao_ref": 0.11970294123110042,
+   "ic95_ref": [
+    0.10898657536795428,
+    0.13264147034256032
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Caju",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.001179719917084369,
+   "v052_sobre_ref": 0.13028747908304136,
+   "v052_sobre_ref_ic95": [
+    0.11972428154386316,
+    0.14089055919930274
+   ],
+   "mse": 1948.9624636847993,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 865.3418262653897,
+   "custo_v052": 650.74453374373,
+   "estrutura_identica": true,
+   "razao_ref": 0.13028747908304136,
+   "ic95_ref": [
+    0.12003704976027388,
+    0.14059116583272188
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Monte Verde",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0011163367766691616,
+   "v052_sobre_ref": 0.13895924236236593,
+   "v052_sobre_ref_ic95": [
+    0.12572148556818163,
+    0.15051300382448637
+   ],
+   "mse": 1463.125701511499,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 866.6392498860008,
+   "custo_v052": 593.6425501595987,
+   "estrutura_identica": true,
+   "razao_ref": 0.13895924236236593,
+   "ic95_ref": [
+    0.1262046519139961,
+    0.15212178646187993
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999994,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Serra do Mel A",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0018032494948073711,
+   "v052_sobre_ref": 0.13713131277126836,
+   "v052_sobre_ref_ic95": [
+    0.1257493021821831,
+    0.14754300132740014
+   ],
+   "mse": 819.0123747883849,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 861.9456224350204,
+   "custo_v052": 738.3179491564067,
+   "estrutura_identica": true,
+   "razao_ref": 0.13713131277126836,
+   "ic95_ref": [
+    0.12595129594460305,
+    0.14737599262171713
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Santa Vitória do Palmar",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0005315547566021384,
+   "v052_sobre_ref": 0.0617276591421844,
+   "v052_sobre_ref_ic95": [
+    0.057245575608268935,
+    0.06801480370110208
+   ],
+   "mse": 2627.0141217833134,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 870.8956908344732,
+   "custo_v052": 626.2888850889193,
+   "estrutura_identica": true,
+   "razao_ref": 0.0617276591421844,
+   "ic95_ref": [
+    0.057101942481841424,
+    0.06778589410698997
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  }
+ ]
+}

@@ -1,0 +1,281 @@
+{
+ "config": "prod_q2",
+ "familia": "WB01",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261049,
+ "semente_classe": 20261050,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.000000158378336,
+   "ic95": [
+    0.9999999767277655,
+    1.0000004678718124
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.23120563878616393,
+   "ic95": [
+    0.2168733306689415,
+    0.24805114099712797
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.000000158378336,
+   "ic95": [
+    0.9999999767277655,
+    1.0000004678718124
+   ],
+   "n": 6
+  },
+  "series_com_externa": 2,
+  "series_com_externa_v052": 2,
+  "acrescimo_custo": 650.3303883568932,
+  "acrescimo_custo_max": 657.7639078887369,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Nova Olinda",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0017851334151967081,
+   "v052_sobre_ref": 0.20932257328292816,
+   "v052_sobre_ref_ic95": [
+    0.1915313455319479,
+    0.23180313450921117
+   ],
+   "mse": 359.84726504124535,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 657.7639078887369,
+   "custo_v052": 617.6099179206567,
+   "estrutura_identica": true,
+   "razao_ref": 0.20932257328292816,
+   "ic95_ref": [
+    0.19095899876354724,
+    0.23051896373457487
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Castilho",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0015576647308197988,
+   "v052_sobre_ref": 0.2005927400222979,
+   "v052_sobre_ref_ic95": [
+    0.1837738741419573,
+    0.22151744919016012
+   ],
+   "mse": 360.6860958585403,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 657.641130870953,
+   "custo_v052": 533.1860579115366,
+   "estrutura_identica": true,
+   "razao_ref": 0.2005927400222979,
+   "ic95_ref": [
+    0.18292248829507116,
+    0.22053218521176712
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Ituverava",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0093945284703938,
+   "v052_sobre_ref": 0.27390323694185276,
+   "v052_sobre_ref_ic95": [
+    0.20337820742029183,
+    0.3885871112840725
+   ],
+   "mse": 564.2362281599883,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 654.5534655722753,
+   "custo_v052": 530.3243274053808,
+   "estrutura_identica": true,
+   "razao_ref": 0.27390323694185276,
+   "ic95_ref": [
+    0.2046529163169733,
+    0.3932886965328558
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999999,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Boa Hora",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.004220915596469782,
+   "v052_sobre_ref": 0.22006875203111395,
+   "v052_sobre_ref_ic95": [
+    0.20024056017940506,
+    0.24278446841559578
+   ],
+   "mse": 321.41994999735397,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 637.0609895120839,
+   "custo_v052": 514.8575125398996,
+   "estrutura_identica": true,
+   "razao_ref": 0.22006875203111395,
+   "ic95_ref": [
+    0.19988612932786548,
+    0.24321181600682226
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Abaiara 230 kV",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.007905126848477459,
+   "v052_sobre_ref": 0.24561018404060087,
+   "v052_sobre_ref_ic95": [
+    0.21662362495645865,
+    0.28136866786645826
+   ],
+   "mse": 256.33973221040344,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 637.8719790241679,
+   "custo_v052": 598.1083675330598,
+   "estrutura_identica": true,
+   "razao_ref": 0.24561041743668693,
+   "ic95_ref": [
+    0.21615548571916074,
+    0.2791589584993527
+   ],
+   "razao_v052": 1.0000009502703928,
+   "ic95_v052": [
+    0.9999998603666016,
+    1.000002807234158
+   ],
+   "razao_melhor": 1.0000009502703928,
+   "ic95_melhor": [
+    0.9999998677386528,
+    1.0000027346651827
+   ]
+  },
+  {
+   "serie": "Conj. Brígida",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0018475861445734795,
+   "v052_sobre_ref": 0.24572929008422317,
+   "v052_sobre_ref_ic95": [
+    0.2268984145121363,
+    0.2682531884304325
+   ],
+   "mse": 206.07348709440257,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 657.0908572731419,
+   "custo_v052": 626.3290925672595,
+   "estrutura_identica": true,
+   "razao_ref": 0.24572929008422317,
+   "ic95_ref": [
+    0.2269118138737355,
+    0.26709341867390557
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

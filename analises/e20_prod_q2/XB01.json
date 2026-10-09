@@ -1,0 +1,281 @@
+{
+ "config": "prod_q2",
+ "familia": "XB01",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261049,
+ "semente_classe": 20261050,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.2272332500710227,
+   "ic95": [
+    0.21887818189130193,
+    0.23547197036479225
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "series_com_externa": 1,
+  "series_com_externa_v052": 1,
+  "acrescimo_custo": 655.6276979784161,
+  "acrescimo_custo_max": 658.173506611947,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Guaimbê",
+   "origem": "XB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.01336377549456861,
+   "v052_sobre_ref": 0.20089958380274994,
+   "v052_sobre_ref_ic95": [
+    0.17828316951520898,
+    0.22394354461002688
+   ],
+   "mse": 127.97417760791541,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 656.6890104879162,
+   "custo_v052": 591.6959074327406,
+   "estrutura_identica": true,
+   "razao_ref": 0.20089958380274991,
+   "ic95_ref": [
+    0.17766653969807344,
+    0.22349794676993906
+   ],
+   "razao_v052": 0.9999999999999999,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000007
+   ],
+   "razao_melhor": 0.9999999999999999,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "Conj. Francisco Sá",
+   "origem": "XB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0017619987300458988,
+   "v052_sobre_ref": 0.28052963296882133,
+   "v052_sobre_ref_ic95": [
+    0.2606574618467087,
+    0.300518998077272
+   ],
+   "mse": 83.58326452680318,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 653.6755585955312,
+   "custo_v052": 532.0067145462837,
+   "estrutura_identica": true,
+   "razao_ref": 0.28052963296882133,
+   "ic95_ref": [
+    0.26108199152024697,
+    0.30104935143373907
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.000000000000001
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.000000000000001
+   ]
+  },
+  {
+   "serie": "Conj. Sertão Solar Barreiras",
+   "origem": "XB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0015619653200885399,
+   "v052_sobre_ref": 0.23233559935396764,
+   "v052_sobre_ref_ic95": [
+    0.2125078951999038,
+    0.2528797415327399
+   ],
+   "mse": 80.31532657857085,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 656.3432512539899,
+   "custo_v052": 583.6918490652075,
+   "estrutura_identica": true,
+   "razao_ref": 0.23233559935396764,
+   "ic95_ref": [
+    0.2129006708472351,
+    0.2519012571449758
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Pedranópolis",
+   "origem": "XB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00158761447900631,
+   "v052_sobre_ref": 0.2164377491429826,
+   "v052_sobre_ref_ic95": [
+    0.19710026767428096,
+    0.23362546864164413
+   ],
+   "mse": 73.08082830959437,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 658.173506611947,
+   "custo_v052": 578.5424190606475,
+   "estrutura_identica": true,
+   "razao_ref": 0.2164377491429826,
+   "ic95_ref": [
+    0.19691509120731063,
+    0.23505325878568345
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Araxá",
+   "origem": "XB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0016216194582765414,
+   "v052_sobre_ref": 0.2526228910385554,
+   "v052_sobre_ref_ic95": [
+    0.2327620680216419,
+    0.27535851517939497
+   ],
+   "mse": 85.78596384763124,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 652.4724122207023,
+   "custo_v052": 539.1510487916097,
+   "estrutura_identica": true,
+   "razao_ref": 0.2526228910385554,
+   "ic95_ref": [
+    0.23331710146484655,
+    0.2767784579483957
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Floresta",
+   "origem": "XB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0037715805096431654,
+   "v052_sobre_ref": 0.19228793317881515,
+   "v052_sobre_ref_ic95": [
+    0.17494747900195579,
+    0.2127990501498675
+   ],
+   "mse": 44.975965487633964,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 656.4124487004104,
+   "custo_v052": 512.1983014135886,
+   "estrutura_identica": true,
+   "razao_ref": 0.19228793317881515,
+   "ic95_ref": [
+    0.1750998246628172,
+    0.21242729634944935
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
