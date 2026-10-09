@@ -54,3 +54,5 @@ contribuição da M1**: a v0.52 sozinha dá 1,225 em Y-B03 e já atenderia; o pe
 
 **Decisão pela regra do plano: a M1 rascunho 2 não é confirmada na validação 4** (critério 2 falha em Y-B01, Y-B07 e
 Y-C01). Nada ajustado. Atribuição das falhas (M1 ou M2) só por diagnóstico descritivo separado.
+
+**Errata (09/10/2026):** as famílias B01, B02 e B06 (e as curtas delas) foram montadas com `season=30` em vez de 24; ver `ERRATA_SEASON_VALIDACOES_4_5.md`.

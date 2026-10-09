@@ -43,3 +43,5 @@ emendada ao longo do desenvolvimento, sempre antes desta medição).
 
 **Custo:** a v0.53 custa, por série, mediana de 2,13 vezes a v0.52 (1,39 a 3,24; Z-C04 3,23; Z-C01 2,98). Fica para o
 pré-registro final (tensão com o pedido de <= 1,25 vez da nota de desenho; M5).
+
+**Errata (09/10/2026):** as famílias B01, B02 e B06 (e as curtas delas) foram montadas com `season=30` em vez de 24; ver `ERRATA_SEASON_VALIDACOES_4_5.md`.

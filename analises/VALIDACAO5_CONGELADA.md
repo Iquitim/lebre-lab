@@ -29,3 +29,5 @@ nenhuma medição.
 
 Nada da reserva da v0.53, do desenvolvimento ou das validações 1 a 4 como alvo. Usada uma única vez, para a v0.53 com M1
 rascunho 5 e M2 candidata Q2.
+
+**Errata (09/10/2026):** as famílias B01, B02 e B06 (e as curtas delas) foram montadas com `season=30` em vez de 24; ver `ERRATA_SEASON_VALIDACOES_4_5.md`.

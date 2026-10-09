@@ -27,3 +27,5 @@ as séries do SGS usadas na conferência numérica de Y-C05 e os metadados do ON
 
 Nada da reserva da v0.53, do desenvolvimento ou das validações 1 a 3 como dado. Usada uma única vez, para a M1 rascunho 2
 com a M2 candidata P.
+
+**Errata (09/10/2026):** as famílias B01, B02 e B06 (e as curtas delas) foram montadas com `season=30` em vez de 24; ver `ERRATA_SEASON_VALIDACOES_4_5.md`.
