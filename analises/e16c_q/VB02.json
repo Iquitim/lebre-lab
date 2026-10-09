@@ -1,0 +1,205 @@
+{
+ "config": "q",
+ "familia": "VB02",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261047,
+ "semente_classe": 20261048,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999993,
+    1.0000000000000002
+   ],
+   "n": 4
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.0396988570818566,
+   "ic95": [
+    0.03612732649470507,
+    0.043222136723273644
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999993,
+    1.0000000000000002
+   ],
+   "n": 4
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 137.31493126853755,
+  "acrescimo_custo_max": 137.3178188455396,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 4,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0007055582374131538,
+   "v052_sobre_ref": 0.023921322217723737,
+   "v052_sobre_ref_ic95": [
+    0.02300109417976516,
+    0.025049335206171912
+   ],
+   "mse": 275410.5045027149,
+   "externas": 4,
+   "externas_v052": 4,
+   "acrescimo_custo": 137.3139687428702,
+   "custo_v052": 751.7190508783937,
+   "estrutura_identica": true,
+   "razao_ref": 0.023921322217723737,
+   "ic95_ref": [
+    0.02299718456042698,
+    0.02495637920500057
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999991,
+    1.0000000000000013
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999991,
+    1.0000000000000013
+   ]
+  },
+  {
+   "serie": "SUL_Porto Alegre_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.001027947344613516,
+   "v052_sobre_ref": 0.028750357884209356,
+   "v052_sobre_ref_ic95": [
+    0.02553160144332929,
+    0.03455079032016607
+   ],
+   "mse": 73894.91891390177,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 137.3178188455396,
+   "custo_v052": 708.7338694957792,
+   "estrutura_identica": true,
+   "razao_ref": 0.02875035788420935,
+   "ic95_ref": [
+    0.025515077894871757,
+    0.03433877985867259
+   ],
+   "razao_v052": 0.9999999999999998,
+   "ic95_v052": [
+    0.9999999999999989,
+    1.0000000000000002
+   ],
+   "razao_melhor": 0.9999999999999998,
+   "ic95_melhor": [
+    0.9999999999999989,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "NORDESTE_Recife_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0007509856945961713,
+   "v052_sobre_ref": 0.045387408446470545,
+   "v052_sobre_ref_ic95": [
+    0.04236354630908668,
+    0.04865871833263585
+   ],
+   "mse": 26292.047370585617,
+   "externas": 3,
+   "externas_v052": 3,
+   "acrescimo_custo": 137.3139687428702,
+   "custo_v052": 753.0517681953002,
+   "estrutura_identica": true,
+   "razao_ref": 0.04538740844647055,
+   "ic95_ref": [
+    0.04225670304783105,
+    0.04890849517778693
+   ],
+   "razao_v052": 1.0000000000000002,
+   "ic95_v052": [
+    0.9999999999999982,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0000000000000002,
+   "ic95_melhor": [
+    0.9999999999999983,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "NORTE_Belem_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0014911063238708005,
+   "v052_sobre_ref": 0.07956978652446958,
+   "v052_sobre_ref_ic95": [
+    0.057320183695923954,
+    0.10821780462534245
+   ],
+   "mse": 8519.950616030952,
+   "externas": 5,
+   "externas_v052": 5,
+   "acrescimo_custo": 137.3139687428702,
+   "custo_v052": 717.0673967602099,
+   "estrutura_identica": true,
+   "razao_ref": 0.07956978652446958,
+   "ic95_ref": [
+    0.0568541654319704,
+    0.10642787799880415
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

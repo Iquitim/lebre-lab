@@ -1,0 +1,167 @@
+{
+ "config": "q2",
+ "familia": "C04",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261047,
+ "semente_classe": 20261048,
+ "B": 2000,
+ "resumo": {
+  "c1": {
+   "geo": 1.000140453519585,
+   "ic95": [
+    0.9999963846393795,
+    1.0003791658556092
+   ],
+   "n": 2
+  },
+  "c2": null,
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.9975695321439856,
+   "ic95": [
+    0.9897167558062135,
+    1.0049932856715638
+   ],
+   "n": 3
+  },
+  "todas_vs_v052": {
+   "geo": 0.948499837125639,
+   "ic95": [
+    0.9124497821866047,
+    0.9819439741728127
+   ],
+   "n": 3
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 131.75299472927648,
+  "acrescimo_custo_max": 131.7529947292765,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 0,
+   "referência melhor": 2,
+   "indecidível": 1,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "d_juro_3m",
+   "origem": "C04",
+   "T": 4174,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "indecidível",
+   "choque": 0.0481563015960374,
+   "v052_sobre_ref": 0.9983409716981743,
+   "v052_sobre_ref_ic95": [
+    0.9645596714736253,
+    1.0420682816565492
+   ],
+   "mse": 0.0007886872685914253,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 131.7529947292765,
+   "custo_v052": 388.54865836128414,
+   "estrutura_identica": true,
+   "razao_ref": 0.992447498530212,
+   "ic95_ref": [
+    0.9690481038445978,
+    1.0148154026454521
+   ],
+   "razao_v052": 0.9940967331452525,
+   "ic95_v052": [
+    0.9676781740676836,
+    1.019416690135584
+   ],
+   "razao_melhor": 0.9940967331452525,
+   "ic95_melhor": [
+    0.9678340278231768,
+    1.0163223855775512
+   ]
+  },
+  {
+   "serie": "d_juro_2a",
+   "origem": "C04",
+   "T": 4174,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "choque": 0.04236647193824317,
+   "v052_sobre_ref": 1.1122776364430798,
+   "v052_sobre_ref_ic95": [
+    1.0158538735686629,
+    1.240178638009565
+   ],
+   "mse": 0.0023958757483756475,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 131.75299472927645,
+   "custo_v052": 381.6063248682319,
+   "estrutura_identica": true,
+   "razao_ref": 1.0000519338815,
+   "ic95_ref": [
+    0.9999748346829173,
+    1.000152173347984
+   ],
+   "razao_v052": 0.8991027969235603,
+   "ic95_v052": [
+    0.8030721338620054,
+    0.9850076669117721
+   ],
+   "razao_melhor": 1.0000519338815,
+   "ic95_melhor": [
+    0.9999777598277556,
+    1.0001583199171569
+   ]
+  },
+  {
+   "serie": "d_juro_10a",
+   "origem": "C04",
+   "T": 4174,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "zero",
+   "bloco": 20,
+   "classe": "referência melhor",
+   "choque": 0.010263896174988041,
+   "v052_sobre_ref": 1.047672747763478,
+   "v052_sobre_ref_ic95": [
+    1.0283491311363846,
+    1.0698101554809742
+   ],
+   "mse": 0.0027399587137566794,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 131.7529947292765,
+   "custo_v052": 335.72577862961185,
+   "estrutura_identica": true,
+   "razao_ref": 1.0002289809929896,
+   "ic95_ref": [
+    0.9999999905020798,
+    1.0006777630920756
+   ],
+   "razao_v052": 0.9547150893523106,
+   "ic95_v052": [
+    0.9344517622684826,
+    0.9738781828999785
+   ],
+   "razao_melhor": 1.0002289809929896,
+   "ic95_melhor": [
+    0.9999998857469069,
+    1.0006760482988846
+   ]
+  }
+ ]
+}

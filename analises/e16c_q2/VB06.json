@@ -1,0 +1,281 @@
+{
+ "config": "q2",
+ "familia": "VB06",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261047,
+ "semente_classe": 20261048,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.12058971265175829,
+   "ic95": [
+    0.11616327426188518,
+    0.12527539622060907
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 137.23575011399907,
+  "acrescimo_custo_max": 137.23575011399907,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Oitis",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0012647922840615603,
+   "v052_sobre_ref": 0.14652045109801273,
+   "v052_sobre_ref_ic95": [
+    0.1348240062438342,
+    0.1591043071704661
+   ],
+   "mse": 2161.286516789997,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 558.4611662106703,
+   "estrutura_identica": true,
+   "razao_ref": 0.14652045109801273,
+   "ic95_ref": [
+    0.13583182761431767,
+    0.16009715073177225
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "Conj. Ourolândia II",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.001396359365347908,
+   "v052_sobre_ref": 0.12050321876504705,
+   "v052_sobre_ref_ic95": [
+    0.10918208127248809,
+    0.13293108718601754
+   ],
+   "mse": 1588.440544550583,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 632.8071534427725,
+   "estrutura_identica": true,
+   "razao_ref": 0.12050321876504705,
+   "ic95_ref": [
+    0.10914926204543182,
+    0.1328483641516345
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Rio do Vento Expansão",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0011161363656523652,
+   "v052_sobre_ref": 0.1044616023376552,
+   "v052_sobre_ref_ic95": [
+    0.09442756862231945,
+    0.11470019037088831
+   ],
+   "mse": 1161.7742969890355,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 706.899316005472,
+   "estrutura_identica": true,
+   "razao_ref": 0.1044616023376552,
+   "ic95_ref": [
+    0.094310174733955,
+    0.11515459624404281
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Laranjeiras",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0010381857411724592,
+   "v052_sobre_ref": 0.12622431887797841,
+   "v052_sobre_ref_ic95": [
+    0.11569528092512697,
+    0.13720233535865664
+   ],
+   "mse": 1868.2590443602867,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 609.6592567259462,
+   "estrutura_identica": true,
+   "razao_ref": 0.12622431887797841,
+   "ic95_ref": [
+    0.11528192048086842,
+    0.1376236923089399
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Rio do Vento",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0013997267827429917,
+   "v052_sobre_ref": 0.10981704178496632,
+   "v052_sobre_ref_ic95": [
+    0.09990221669835302,
+    0.11953043334710955
+   ],
+   "mse": 1042.4687271690066,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 656.9886000911993,
+   "estrutura_identica": true,
+   "razao_ref": 0.10981704178496632,
+   "ic95_ref": [
+    0.10020183985234424,
+    0.12022082280512618
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Serra do Seridó",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0015732124585177323,
+   "v052_sobre_ref": 0.1202804952117911,
+   "v052_sobre_ref_ic95": [
+    0.10865275235568769,
+    0.13259732939884908
+   ],
+   "mse": 962.308339112231,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 622.7686673506612,
+   "estrutura_identica": true,
+   "razao_ref": 0.1202804952117911,
+   "ic95_ref": [
+    0.10907064687427782,
+    0.13268371884098618
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
