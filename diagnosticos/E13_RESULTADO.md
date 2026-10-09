@@ -34,8 +34,8 @@ Achado de dados (não causa da falha): o ONS tem valores impossíveis em Y-B01: 
 ## C. A F6 é geral? (v0.52 ÷ comparador linear online completo, média geométrica por família)
 
 **B03 é um caso extremo:** 2,076 (até 5,5 numa série). As demais famílias com comparador melhor por mais de 5%: VB07
-1,170, XB07 1,141, VC05 1,138 (uma série 2,5), YB03 1,225, YB06 1,095, B07 1,067, A05 1,077. Em 40 das 59 famílias a v0.52 é
-melhor ou igual (<= 1,05); nas de carga, níveis e solar, muito melhor (0,24 a 0,83). A F6 existe fora de B03, mas é de
+1,170, XB07 1,141, VC05 1,138 (uma série 2,5), YB03 1,225, YB06 1,095, B07 1,067, A05 1,077 (8 famílias). Nas outras 51 das 59, o comparador não vence por mais
+de 5% (<= 1,05); nas de carga, níveis e solar, muito melhor (0,24 a 0,83). A F6 existe fora de B03, mas é de
 5-20% (marés, eólica de Y, Pequim), não de 2x.
 
 ## Causa comum (hipótese para os próximos rascunhos, não conclusão)
