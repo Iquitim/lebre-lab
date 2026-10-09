@@ -1,0 +1,268 @@
+{
+ "config": "q",
+ "familia": "XB06",
+ "prototipo": {
+  "commit": "41dd5c6",
+  "model053_sha256": "3de2a1686c9da7ca9b74413952602e62c1c00e37e80511c50318706899d4fbbd"
+ },
+ "semente": 20261042,
+ "semente_classe": 20261043,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.11442299717139348,
+   "ic95": [
+    0.11035092864303417,
+    0.11917282804166025
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "series_com_externa": 3,
+  "series_com_externa_v052": 3,
+  "acrescimo_custo": 137.23575011399907,
+  "acrescimo_custo_max": 137.23575011399907,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Babilônia Sul",
+   "origem": "XB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0010848957119923618,
+   "v052_sobre_ref": 0.12393888678017284,
+   "v052_sobre_ref_ic95": [
+    0.11429648767510554,
+    0.1343883853727949
+   ],
+   "mse": 922.0465580126729,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 498.6076664386684,
+   "estrutura_identica": true,
+   "razao_ref": 0.12393888678017284,
+   "ic95_ref": [
+    0.11450211337842243,
+    0.1351190714679629
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Morro do Chapéu Sul II",
+   "origem": "XB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0009324487412569165,
+   "v052_sobre_ref": 0.14844537420690027,
+   "v052_sobre_ref_ic95": [
+    0.13542271753949517,
+    0.16225051794306086
+   ],
+   "mse": 652.245645313088,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 618.7815891472868,
+   "estrutura_identica": true,
+   "razao_ref": 0.14844537420690027,
+   "ic95_ref": [
+    0.13617483066243435,
+    0.16185840586034683
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Folha Larga",
+   "origem": "XB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0011730676798072683,
+   "v052_sobre_ref": 0.1153295742111401,
+   "v052_sobre_ref_ic95": [
+    0.10515638351073626,
+    0.12584920266865515
+   ],
+   "mse": 705.1056233185922,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 625.9181657546739,
+   "estrutura_identica": true,
+   "razao_ref": 0.1153295742111401,
+   "ic95_ref": [
+    0.10507198384421072,
+    0.12577587452447406
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Tucano",
+   "origem": "XB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0011642589815270515,
+   "v052_sobre_ref": 0.15894432966181135,
+   "v052_sobre_ref_ic95": [
+    0.1479836756662693,
+    0.1706575484077002
+   ],
+   "mse": 826.1564927646552,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 554.6252165982671,
+   "estrutura_identica": true,
+   "razao_ref": 0.15894432966181135,
+   "ic95_ref": [
+    0.14866442009505368,
+    0.1706131331004459
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.000000000000001
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.000000000000001
+   ]
+  },
+  {
+   "serie": "Conj. Lagoa dos Barros",
+   "origem": "XB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00046003963696686156,
+   "v052_sobre_ref": 0.04490543450616572,
+   "v052_sobre_ref_ic95": [
+    0.039413921476138224,
+    0.05161144817489088
+   ],
+   "mse": 684.5550541781912,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 599.3339888280893,
+   "estrutura_identica": true,
+   "razao_ref": 0.04490543450616572,
+   "ic95_ref": [
+    0.03927018229534895,
+    0.05140795051342312
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999996,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999996,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "Conj. Cutia",
+   "origem": "XB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00126308565646005,
+   "v052_sobre_ref": 0.14819072604721495,
+   "v052_sobre_ref_ic95": [
+    0.13641297998323212,
+    0.1620930408872627
+   ],
+   "mse": 396.0645382796605,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 650.2854252165982,
+   "estrutura_identica": true,
+   "razao_ref": 0.14819072604721498,
+   "ic95_ref": [
+    0.13660005123172572,
+    0.16162793228149142
+   ],
+   "razao_v052": 1.0000000000000002,
+   "ic95_v052": [
+    0.9999999999999993,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0000000000000002,
+   "ic95_melhor": [
+    0.9999999999999993,
+    1.0000000000000004
+   ]
+  }
+ ]
+}

@@ -1,0 +1,268 @@
+{
+ "config": "q",
+ "familia": "VB06",
+ "prototipo": {
+  "commit": "fc71880",
+  "model053_sha256": "658e4b1f5051d5b5a13096c2ee2d63229d604008d86f8a919cd0a7d23be5f955"
+ },
+ "semente": 20261042,
+ "semente_classe": 20261043,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.12058971265175829,
+   "ic95": [
+    0.11593773198507108,
+    0.12502260326667824
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0000000000000002
+   ],
+   "n": 6
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 137.23575011399907,
+  "acrescimo_custo_max": 137.23575011399907,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Oitis",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0012647922840615603,
+   "v052_sobre_ref": 0.14652045109801273,
+   "v052_sobre_ref_ic95": [
+    0.13613745410998926,
+    0.15989417267941752
+   ],
+   "mse": 2161.286516789997,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 558.4611662106703,
+   "estrutura_identica": true,
+   "razao_ref": 0.14652045109801273,
+   "ic95_ref": [
+    0.135010171460972,
+    0.15967030262179324
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Ourolândia II",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.001396359365347908,
+   "v052_sobre_ref": 0.12050321876504705,
+   "v052_sobre_ref_ic95": [
+    0.10976564055776092,
+    0.13398547539056901
+   ],
+   "mse": 1588.4405445505827,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 632.8071534427725,
+   "estrutura_identica": true,
+   "razao_ref": 0.12050321876504702,
+   "ic95_ref": [
+    0.10990383125175471,
+    0.1331628189908976
+   ],
+   "razao_v052": 0.9999999999999998,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000004
+   ],
+   "razao_melhor": 0.9999999999999998,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Rio do Vento Expansão",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0011161363656523652,
+   "v052_sobre_ref": 0.1044616023376552,
+   "v052_sobre_ref_ic95": [
+    0.09475165936250252,
+    0.11446452633047519
+   ],
+   "mse": 1161.7742969890355,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 706.899316005472,
+   "estrutura_identica": true,
+   "razao_ref": 0.1044616023376552,
+   "ic95_ref": [
+    0.09495452496669132,
+    0.11532438941803541
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "Conj. Laranjeiras",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0010381857411724592,
+   "v052_sobre_ref": 0.12622431887797841,
+   "v052_sobre_ref_ic95": [
+    0.11572531738483373,
+    0.13810573890532052
+   ],
+   "mse": 1868.2590443602867,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 609.6592567259462,
+   "estrutura_identica": true,
+   "razao_ref": 0.12622431887797841,
+   "ic95_ref": [
+    0.11496486908535979,
+    0.13738697329725838
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000007
+   ]
+  },
+  {
+   "serie": "Conj. Rio do Vento",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0013997267827429917,
+   "v052_sobre_ref": 0.10981704178496632,
+   "v052_sobre_ref_ic95": [
+    0.09996850132579307,
+    0.11969024029202537
+   ],
+   "mse": 1042.4687271690066,
+   "externas": 2,
+   "externas_v052": 2,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 656.9886000911993,
+   "estrutura_identica": true,
+   "razao_ref": 0.10981704178496632,
+   "ic95_ref": [
+    0.10014550320218467,
+    0.1198947448115296
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Serra do Seridó",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0015732124585177323,
+   "v052_sobre_ref": 0.1202804952117911,
+   "v052_sobre_ref_ic95": [
+    0.1086691497182217,
+    0.13300689058425544
+   ],
+   "mse": 962.308339112231,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.23575011399907,
+   "custo_v052": 622.7686673506612,
+   "estrutura_identica": true,
+   "razao_ref": 0.1202804952117911,
+   "ic95_ref": [
+    0.10876668636199285,
+    0.13280691665142685
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0000000000000002,
+    1.000000000000001
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0000000000000002,
+    1.000000000000001
+   ]
+  }
+ ]
+}

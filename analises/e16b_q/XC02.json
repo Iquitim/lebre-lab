@@ -1,0 +1,196 @@
+{
+ "config": "q",
+ "familia": "XC02",
+ "prototipo": {
+  "commit": "41dd5c6",
+  "model053_sha256": "3de2a1686c9da7ca9b74413952602e62c1c00e37e80511c50318706899d4fbbd"
+ },
+ "semente": 20261042,
+ "semente_classe": 20261043,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 2
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.572286795101769,
+   "ic95": [
+    0.5468115754863689,
+    0.6046125616141975
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 131.72065165309056,
+  "acrescimo_custo_max": 131.72065165309056,
+  "estrutura_identica": true,
+  "classes": {
+   "v0.52 melhor": 2,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 2
+  }
+ },
+ "series": [
+  {
+   "serie": "abs_ringgit",
+   "origem": "XC02",
+   "T": 4174,
+   "d": 5,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "choque": 0.026295985384127356,
+   "v052_sobre_ref": 0.5722381470723202,
+   "v052_sobre_ref_ic95": [
+    0.5289568653337243,
+    0.6273655014851314
+   ],
+   "mse": 0.08208572342951598,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 131.72065165309056,
+   "custo_v052": 444.4630809774796,
+   "estrutura_identica": true,
+   "razao_ref": 0.5722381470723202,
+   "ic95_ref": [
+    0.5277879965931463,
+    0.6327018890068206
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "abs_dolar_taiwan",
+   "origem": "XC02",
+   "T": 4174,
+   "d": 5,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "indecidível (choque)",
+   "choque": 0.05209557540230618,
+   "v052_sobre_ref": 0.5807238277273808,
+   "v052_sobre_ref_ic95": [
+    0.5413420738176278,
+    0.6259722180185295
+   ],
+   "mse": 0.04845334381805724,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 131.72065165309056,
+   "custo_v052": 453.5966938188788,
+   "estrutura_identica": true,
+   "razao_ref": 0.5807238277273808,
+   "ic95_ref": [
+    0.5402205389209029,
+    0.6258673414482395
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "abs_rupia_sri_lanka",
+   "origem": "XC02",
+   "T": 4174,
+   "d": 5,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "indecidível (choque)",
+   "choque": 0.14873718176620337,
+   "v052_sobre_ref": 0.6065575927898782,
+   "v052_sobre_ref_ic95": [
+    0.5384178238442346,
+    0.7195267553701292
+   ],
+   "mse": 0.16722661671442668,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 131.72065165309056,
+   "custo_v052": 486.4619789171059,
+   "estrutura_identica": true,
+   "razao_ref": 0.6065575927898782,
+   "ic95_ref": [
+    0.5334552449220603,
+    0.7154876878185857
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "abs_rand",
+   "origem": "XC02",
+   "T": 4174,
+   "d": 5,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "choque": 0.014956577475714229,
+   "v052_sobre_ref": 0.5321528658285944,
+   "v052_sobre_ref_ic95": [
+    0.506235843564394,
+    0.5613068194507568
+   ],
+   "mse": 0.35277654005102355,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 131.72065165309056,
+   "custo_v052": 468.0602779108769,
+   "estrutura_identica": true,
+   "razao_ref": 0.5321528658285944,
+   "ic95_ref": [
+    0.5043037917669927,
+    0.5622786686794463
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
