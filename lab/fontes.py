@@ -137,7 +137,9 @@ FRED_DOMINIO_PUBLICO = {"DGS10", "DGS2", "DTB3", "DEXUSEU", "DEXJPUS", "DCOILWTI
                         # validação 2 da v0.53 (status conferido em 08/10/2026, dados/FONTES.md)
                         "DEXINUS", "DEXSIUS", "DEXTHUS", "DEXDNUS", "DGS1", "DGS5", "DGS30",
                         # validação 3 da v0.53 (status conferido em 08/10/2026, dados/FONTES.md)
-                        "DEXMAUS", "DEXTAUS", "DEXSLUS", "DEXSFUS", "DGS3", "DGS7", "DGS20"}
+                        "DEXMAUS", "DEXTAUS", "DEXSLUS", "DEXSFUS", "DGS3", "DGS7", "DGS20",
+                        # validação 5 da v0.53 (status conferido em 09/10/2026, dados/FONTES.md)
+                        "DEXUSNZ"}
 
 
 def fred(serie):

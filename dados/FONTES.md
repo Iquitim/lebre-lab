@@ -18,6 +18,7 @@ Cada conjunto é registrado aqui **antes** de ser baixado. Dados brutos não ent
 | FRED: DGS10, DGS2, DTB3 (Fed H.15), DEXUSEU, DEXJPUS (Fed H.10), DCOILWTICO (EIA) | C01-C04 | https://fred.stlouisfed.org (status conferido na página de cada série); termos: https://fred.stlouisfed.org/legal/ | Domínio público, citação solicitada | Sim | 2026-10-04 |
 | FRED: DEXINUS, DEXSIUS, DEXTHUS, DEXDNUS (Fed H.10), DGS1, DGS5, DGS30 (Fed H.15) | validação 2 (W-C01 a W-C04) | https://fred.stlouisfed.org (etiqueta "Public Domain: Citation Requested" conferida na página de cada série); termos: https://fred.stlouisfed.org/legal/ | Domínio público, citação solicitada | Sim | 2026-10-08 |
 | FRED: DEXMAUS, DEXTAUS, DEXSLUS, DEXSFUS (Fed H.10), DGS3, DGS7, DGS20 (Fed H.15) | validação 3 (X-C01 a X-C04) | https://fred.stlouisfed.org (etiqueta "Public Domain: Citation Requested" conferida na página de cada série); termos: https://fred.stlouisfed.org/legal/ | Domínio público, citação solicitada | Sim | 2026-10-08 |
+| FRED: DEXUSNZ (Fed H.10) | validação 5 (Z-C01 a Z-C03) | https://fred.stlouisfed.org (etiqueta "Public Domain: Citation Requested" conferida na página da série); termos: https://fred.stlouisfed.org/legal/ | Domínio público, citação solicitada | Sim | 2026-10-09 |
 | FRED: VIXCLS e S&P 500 | (C02, descartado) | https://fred.stlouisfed.org/legal/ | Copyright do fornecedor (CBOE, S&P) | Não sem permissão: **não usar** | 2026-10-04 |
 
 ## Observações de uso
