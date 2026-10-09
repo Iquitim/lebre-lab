@@ -1,0 +1,201 @@
+{
+ "config": "q2",
+ "familia": "YC02",
+ "prototipo": {
+  "commit": "fc71880",
+  "model053_sha256": "658e4b1f5051d5b5a13096c2ee2d63229d604008d86f8a919cd0a7d23be5f955"
+ },
+ "semente": 20261045,
+ "semente_classe": 20261046,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0,
+   "ic95": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "n": 2
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.5953445043262562,
+   "ic95": [
+    0.5709723542772891,
+    0.6243827617448108
+   ],
+   "n": 4
+  },
+  "todas_vs_v052": {
+   "geo": 1.0001176178534028,
+   "ic95": [
+    0.9999752411452929,
+    1.0002119973932955
+   ],
+   "n": 4
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 131.64808429118773,
+  "acrescimo_custo_max": 132.39808429118773,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 2,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 2
+  }
+ },
+ "series": [
+  {
+   "serie": "abs_iene_1990",
+   "origem": "YC02",
+   "T": 2610,
+   "d": 5,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "choque": 0.02053120969450423,
+   "v052_sobre_ref": 0.5580248313025732,
+   "v052_sobre_ref_ic95": [
+    0.5205858429700111,
+    0.6025054836693915
+   ],
+   "mse": 0.2698847537042252,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 132.39808429118773,
+   "custo_v052": 488.5958620689655,
+   "estrutura_identica": true,
+   "razao_ref": 0.5580248313025732,
+   "ic95_ref": [
+    0.5181736394542187,
+    0.6012376014850969
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "abs_coroa_dinamarquesa_1990",
+   "origem": "YC02",
+   "T": 2610,
+   "d": 5,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "v0.52 melhor",
+   "choque": 0.011063615057417275,
+   "v052_sobre_ref": 0.5343149046760007,
+   "v052_sobre_ref_ic95": [
+    0.49980287895476233,
+    0.5760760973776412
+   ],
+   "mse": 0.16795016567518775,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 132.39808429118773,
+   "custo_v052": 412.8349042145594,
+   "estrutura_identica": true,
+   "razao_ref": 0.5343149046760007,
+   "ic95_ref": [
+    0.5026815028308835,
+    0.5715395839825556
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999997,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999997,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "abs_dolar_singapura_1990",
+   "origem": "YC02",
+   "T": 2610,
+   "d": 5,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "indecidível (choque)",
+   "choque": 0.059229073418995797,
+   "v052_sobre_ref": 0.6288615022961453,
+   "v052_sobre_ref_ic95": [
+    0.5913488678342073,
+    0.6775398975388138
+   ],
+   "mse": 0.07921492869769178,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 132.34636015325674,
+   "custo_v052": 460.4258620689655,
+   "estrutura_identica": true,
+   "razao_ref": 0.6288615022961453,
+   "ic95_ref": [
+    0.5903707259835245,
+    0.6752987793545344
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "abs_baht_1990",
+   "origem": "YC02",
+   "T": 2610,
+   "d": 5,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 20,
+   "classe": "indecidível (choque)",
+   "choque": 0.21619658424057805,
+   "v052_sobre_ref": 0.6696737290058996,
+   "v052_sobre_ref_ic95": [
+    0.5833447570527225,
+    0.7822878370769584
+   ],
+   "mse": 0.516359160562234,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 129.44980842911878,
+   "custo_v052": 371.61076628352487,
+   "estrutura_identica": true,
+   "razao_ref": 0.6699888469416374,
+   "ic95_ref": [
+    0.5842764849408434,
+    0.7840694276216812
+   ],
+   "razao_v052": 1.0004705544238768,
+   "ic95_v052": [
+    0.9999009682591165,
+    1.0008482592686627
+   ],
+   "razao_melhor": 1.0004705544238768,
+   "ic95_melhor": [
+    0.9999065018874647,
+    1.0008868751507112
+   ]
+  }
+ ]
+}

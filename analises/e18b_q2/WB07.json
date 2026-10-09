@@ -1,0 +1,282 @@
+{
+ "config": "q2",
+ "familia": "WB07",
+ "prototipo": {
+  "commit": "fc71880",
+  "model053_sha256": "658e4b1f5051d5b5a13096c2ee2d63229d604008d86f8a919cd0a7d23be5f955"
+ },
+ "semente": 20261045,
+ "semente_classe": 20261046,
+ "B": 2000,
+ "resumo": {
+  "c1": {
+   "geo": 0.9975212251788887,
+   "ic95": [
+    0.9962388152300014,
+    0.998648393500832
+   ],
+   "n": 2
+  },
+  "c2": {
+   "geo": 0.998215042285834,
+   "ic95": [
+    0.9965600617332713,
+    0.9996931699783317
+   ],
+   "n": 4
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.8753712160591299,
+   "ic95": [
+    0.8664842742401984,
+    0.8845494632293222
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 0.980755026998137,
+   "ic95": [
+    0.976529933096584,
+    0.985073070006634
+   ],
+   "n": 6
+  },
+  "series_com_externa": 1,
+  "series_com_externa_v052": 1,
+  "acrescimo_custo": 137.39385124344054,
+  "acrescimo_custo_max": 137.39385124344057,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 4,
+   "referência melhor": 2,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "8454000_Providence",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0080720650568198,
+   "v052_sobre_ref": 0.804129884257694,
+   "v052_sobre_ref_ic95": [
+    0.7800323617241157,
+    0.8328629951036495
+   ],
+   "mse": 0.004027883809675037,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.3938512434405,
+   "custo_v052": 418.16583390371886,
+   "estrutura_identica": true,
+   "razao_ref": 0.804129884257694,
+   "ic95_ref": [
+    0.7798138323854573,
+    0.8302294630763707
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "8658120_Wilmington",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.004510837187864954,
+   "v052_sobre_ref": 0.6767224575511701,
+   "v052_sobre_ref_ic95": [
+    0.6494666475407508,
+    0.7019565419887486
+   ],
+   "mse": 0.0018427474090142147,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.3938512434405,
+   "custo_v052": 398.19315252110425,
+   "estrutura_identica": true,
+   "razao_ref": 0.6767224575511701,
+   "ic95_ref": [
+    0.6515773518295304,
+    0.7020350601520408
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "8452660_Newport",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.004530748209830242,
+   "v052_sobre_ref": 0.9579674446063718,
+   "v052_sobre_ref_ic95": [
+    0.9306814355700099,
+    0.9915144882404324
+   ],
+   "mse": 0.0009950573905159867,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.3938512434405,
+   "custo_v052": 391.9867527948894,
+   "estrutura_identica": true,
+   "razao_ref": 0.9545070053040234,
+   "ic95_ref": [
+    0.92677829671704,
+    0.9863542990881576
+   ],
+   "razao_v052": 0.9963877276604421,
+   "ic95_v052": [
+    0.9902247221839203,
+    1.0022299235003957
+   ],
+   "razao_melhor": 0.9963877276604421,
+   "ic95_melhor": [
+    0.9899544059057788,
+    1.0022699390446357
+   ]
+  },
+  {
+   "serie": "8545240_Philadelphia",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0022483719488122955,
+   "v052_sobre_ref": 0.8736254952320487,
+   "v052_sobre_ref_ic95": [
+    0.8546262212265666,
+    0.8914573291102381
+   ],
+   "mse": 0.006609575540254648,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.39385124344057,
+   "custo_v052": 388.64396817248456,
+   "estrutura_identica": true,
+   "razao_ref": 0.8705492988652178,
+   "ic95_ref": [
+    0.8526588914482942,
+    0.8879664336916557
+   ],
+   "razao_v052": 0.9964788157126598,
+   "ic95_v052": [
+    0.9944193531602852,
+    0.9982542756740015
+   ],
+   "razao_melhor": 0.9964788157126598,
+   "ic95_melhor": [
+    0.994414301838211,
+    0.9982243168884208
+   ]
+  },
+  {
+   "serie": "9418767_North Spit",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "referência melhor",
+   "choque": 0.00282936571376757,
+   "v052_sobre_ref": 1.0543909715636586,
+   "v052_sobre_ref_ic95": [
+    1.0318597702260548,
+    1.0796783470499127
+   ],
+   "mse": 0.0007463989623530176,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 137.39385124344057,
+   "custo_v052": 436.2182124115902,
+   "estrutura_identica": true,
+   "razao_ref": 0.9950485953601581,
+   "ic95_ref": [
+    0.9924917778428992,
+    0.9972986145629988
+   ],
+   "razao_v052": 0.9437188122774839,
+   "ic95_v052": [
+    0.9241910011783016,
+    0.9632451569456195
+   ],
+   "razao_melhor": 0.9950485953601581,
+   "ic95_melhor": [
+    0.9926266819667803,
+    0.9972159666778989
+   ]
+  },
+  {
+   "serie": "9435380_South Beach",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "nan_aval": 0,
+   "referencia": "persistencia",
+   "bloco": 168,
+   "classe": "referência melhor",
+   "choque": 0.0012387965800710588,
+   "v052_sobre_ref": 1.0528725309476519,
+   "v052_sobre_ref_ic95": [
+    1.0361691997794509,
+    1.0684045485767386
+   ],
+   "mse": 0.0006388644299084918,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 137.39385124344057,
+   "custo_v052": 501.7943275154004,
+   "estrutura_identica": true,
+   "razao_ref": 0.9999999993188605,
+   "ic95_ref": [
+    0.9999999989735678,
+    0.9999999995826104
+   ],
+   "razao_v052": 0.9497825899387814,
+   "ic95_v052": [
+    0.9361034957050136,
+    0.9653433743148625
+   ],
+   "razao_melhor": 0.9999999993188605,
+   "ic95_melhor": [
+    0.9999999989593634,
+    0.9999999995811449
+   ]
+  }
+ ]
+}

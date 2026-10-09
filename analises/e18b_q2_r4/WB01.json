@@ -1,0 +1,275 @@
+{
+ "config": "q2_r4",
+ "familia": "WB01",
+ "prototipo": {
+  "commit": "fc71880",
+  "model053_sha256": "658e4b1f5051d5b5a13096c2ee2d63229d604008d86f8a919cd0a7d23be5f955"
+ },
+ "semente": 20261045,
+ "semente_classe": 20261046,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 1.0000001583848832,
+   "ic95": [
+    0.9999999775145311,
+    1.000000470667967
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.2312056387876777,
+   "ic95": [
+    0.21614674636549044,
+    0.2486414014247788
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 1.0000001583848832,
+   "ic95": [
+    0.9999999775145311,
+    1.000000470667967
+   ],
+   "n": 6
+  },
+  "series_com_externa": 2,
+  "series_com_externa_v052": 2,
+  "acrescimo_custo": 637.3583371333029,
+  "acrescimo_custo_max": 644.639306885545,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Nova Olinda",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0017851334151967081,
+   "v052_sobre_ref": 0.20932257328292816,
+   "v052_sobre_ref_ic95": [
+    0.1900047353376599,
+    0.23033071780254122
+   ],
+   "mse": 359.84726504124535,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 644.639306885545,
+   "custo_v052": 617.6099179206567,
+   "estrutura_identica": true,
+   "razao_ref": 0.20932257328292816,
+   "ic95_ref": [
+    0.19169256462261763,
+    0.23073405564186386
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Castilho",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0015576647308197988,
+   "v052_sobre_ref": 0.2005927400222979,
+   "v052_sobre_ref_ic95": [
+    0.18360451499392683,
+    0.22129079645572475
+   ],
+   "mse": 360.6860958585403,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 644.5093479252166,
+   "custo_v052": 533.1860579115366,
+   "estrutura_identica": true,
+   "razao_ref": 0.2005927400222979,
+   "ic95_ref": [
+    0.1831730950486223,
+    0.22120937886971836
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Ituverava",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0093945284703938,
+   "v052_sobre_ref": 0.27390323694185276,
+   "v052_sobre_ref_ic95": [
+    0.20391407735044412,
+    0.3941079036755488
+   ],
+   "mse": 564.2362281599883,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 641.5190378476972,
+   "custo_v052": 530.3243274053808,
+   "estrutura_identica": true,
+   "razao_ref": 0.27390323694185276,
+   "ic95_ref": [
+    0.20438051273791402,
+    0.39778300635433866
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999999,
+    1.0000000000000004
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0000000000000004
+   ]
+  },
+  {
+   "serie": "Conj. Boa Hora",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.004220915596469782,
+   "v052_sobre_ref": 0.22006875203111395,
+   "v052_sobre_ref_ic95": [
+    0.2003102133539234,
+    0.2420381575272628
+   ],
+   "mse": 321.41994999735397,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 624.4088007295942,
+   "custo_v052": 514.8575125398996,
+   "estrutura_identica": true,
+   "razao_ref": 0.22006875203111395,
+   "ic95_ref": [
+    0.19874856763801216,
+    0.24373359821761667
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    0.9999999999999998,
+    1.0000000000000002
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    0.9999999999999998,
+    1.0000000000000002
+   ]
+  },
+  {
+   "serie": "Conj. Abaiara 230 kV",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.007905126848477459,
+   "v052_sobre_ref": 0.24561018404060087,
+   "v052_sobre_ref_ic95": [
+    0.21629175713109902,
+    0.2819485385227922
+   ],
+   "mse": 256.3397322208152,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 625.0992932056544,
+   "custo_v052": 598.1083675330598,
+   "estrutura_identica": true,
+   "razao_ref": 0.2456104174466629,
+   "ic95_ref": [
+    0.2170729225744779,
+    0.2785076260823826
+   ],
+   "razao_v052": 1.0000009503110099,
+   "ic95_v052": [
+    0.9999998650878527,
+    1.0000028240115746
+   ],
+   "razao_melhor": 1.0000009503110099,
+   "ic95_melhor": [
+    0.9999998624013045,
+    1.0000025493707079
+   ]
+  },
+  {
+   "serie": "Conj. Brígida",
+   "origem": "WB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0018475861445734795,
+   "v052_sobre_ref": 0.24572929008422317,
+   "v052_sobre_ref_ic95": [
+    0.22618571765483875,
+    0.26763175898813396
+   ],
+   "mse": 206.07348709412753,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 643.9742362061104,
+   "custo_v052": 626.3290925672595,
+   "estrutura_identica": true,
+   "razao_ref": 0.2457292900838952,
+   "ic95_ref": [
+    0.2272085653998132,
+    0.26835184457558137
+   ],
+   "razao_v052": 0.9999999999986654,
+   "ic95_v052": [
+    0.9999999999979033,
+    0.9999999999999957
+   ],
+   "razao_melhor": 0.9999999999986654,
+   "ic95_melhor": [
+    0.9999999999977656,
+    0.9999999999999954
+   ]
+  }
+ ]
+}
