@@ -6,3 +6,8 @@ as 64 famílias com o script `m2_e16b.py` (idêntico ao `m2_e16.py`, com as mesm
 "v0.52 melhor" com choque > 5% também vira "indecidível (choque)"). Os números das demais séries devem sair iguais aos do
 E16. **É desenvolvimento, decidido depois de ver os dados; não é evidência.** A evidência será a validação 5.
 Regra: se a Q atender a todos os critérios aqui, segue para a validação 5.
+
+**Adendo (09/10/2026, durante a execução):** os processos pararam em 41 das 64 famílias porque a guarda do script recusa
+rodar com o protótipo alterado e não commitado (as edições da Q2 e da M1 r4 foram restauradas no meio da execução). As 23
+famílias restantes rodam com o commit `fc71880`, que, para a Q, só acrescenta o caminho de reserva do subagregador M; a
+auditoria E18 mostrou que ele nunca é acionado nessas séries, então os números são os mesmos.
