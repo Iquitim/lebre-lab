@@ -116,7 +116,16 @@ def bcb_sgs(codigo, inicio, fim):
         b = min(a + 9, fim)
         q = dict(formato="json", dataInicial=f"01/01/{a}", dataFinal=f"31/12/{b}")
         url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados?" + urllib.parse.urlencode(q)
-        d = json.loads(_get(url, CACHE / "bcb" / f"sgs{codigo}_{a}_{b}.json"))
+        arq = CACHE / "bcb" / f"sgs{codigo}_{a}_{b}.json"
+        for k in range(3):                                    # o SGS às vezes devolve uma página de erro HTML
+            try:
+                d = json.loads(_get(url, arq))
+                break
+            except json.JSONDecodeError:
+                arq.unlink(missing_ok=True)
+                if k == 2:
+                    raise
+                time.sleep(5 * (k + 1))
         partes.append(pd.DataFrame(d))
     df = pd.concat(partes)
     return pd.Series(pd.to_numeric(df["valor"], errors="coerce").to_numpy(),
