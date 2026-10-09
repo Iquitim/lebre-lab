@@ -32,3 +32,18 @@ reserva da família, na ordem.
 
 **Código:** cópia fixa do protótipo (git worktree) no commit `bca5dac`. Sementes no plano da medição.
 **Regra:** a v0.53 (M1 r5 + M2 Q2) é confirmada se atender a 1 e 2; se não, falhas declaradas, nada ajustado.
+
+## Adendo 1 (09/10/2026, antes de qualquer dado de câmbio ser baixado)
+
+As quatro moedas escolhidas para Z-C01 a Z-C04 (DEXKOUS, DEXMXUS, DEXSZUS, DEXNOUS) estão na **reserva da avaliação
+final da v0.53** (`lab/reserva_v053.json`), que não conferi ao escrever o plano; a trava `lab/reserva.py` barrou a primeira
+antes de qualquer download, e nenhum dado delas foi obtido. Fora da reserva, as únicas moedas do H.10 nunca usadas são
+atreladas ao dólar em 2000-2009 (yuan, dólar de Hong Kong, bolívar), com retornos quase constantes, exceto o dólar
+neozelandês. **Nova regra** (a mesma "período que nenhuma medição usou para aquela entidade" das validações anteriores):
+Z-C01 a Z-C03 = **DEXSFUS (rand), DEXTAUS (dólar de Taiwan), DEXINUS (rúpia), DEXUSNZ (dólar neozelandês, nunca usado;
+licença "Public Domain: Citation Requested", conferida em 09/10)**, 2000-2009 (as três primeiras só foram alvo em
+2010-2025); Z-C04 inalterada nos juros, com entradas = os outros 2 prazos e retornos de DEXSFUS, DEXTAUS, DEXINUS.
+
+Também registrado na montagem (só metadados): Z-B01 tem 5 usinas a partir da 31ª (mínimo 3, a família fica); em Z-C05,
+1640 (correlação 0,19) e a reserva 1638 (0,17) reprovam na conferência numérica, e a família fica com 3 códigos (11427,
+4467, 10843), pelo mínimo de 3.

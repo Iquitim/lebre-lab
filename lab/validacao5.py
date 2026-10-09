@@ -39,8 +39,8 @@ def estacao_pequim():
 
 # ------------------------------------------------------------------ finanças, 2000-2009 (Z-C01 a Z-C04)
 DIAS = pd.bdate_range("2000-01-01", "2009-12-31")
-CAMBIOS = {"won_2000": "DEXKOUS", "peso_mexicano_2000": "DEXMXUS", "franco_suico_2000": "DEXSZUS",
-           "coroa_norueguesa_2000": "DEXNOUS"}
+CAMBIOS = {"rand_2000": "DEXSFUS", "dolar_taiwan_2000": "DEXTAUS", "rupia_2000": "DEXINUS",
+           "dolar_neozelandes_2000": "DEXUSNZ"}                   # adendo 1 do plano (as primeiras eram da reserva)
 JUROS = {"juro_1a_2000": "DGS1", "juro_5a_2000": "DGS5", "juro_20a_2000": "DGS20"}
 
 

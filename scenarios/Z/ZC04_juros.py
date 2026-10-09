@@ -11,7 +11,7 @@ SPEC = dict(id="Z-C04", frente="W", pergunta="Validação 5 da M2 (análoga a C0
 def gerar(i):
     r = W.retornos()
     alvo = f"d_{JUROS[i]}"
-    ent = defasar(r[[f"d_{j}" for j in JUROS if f"d_{j}" != alvo] + ["won_2000", "peso_mexicano_2000", "franco_suico_2000"]])
+    ent = defasar(r[[f"d_{j}" for j in JUROS if f"d_{j}" != alvo] + ["rand_2000", "dolar_taiwan_2000", "rupia_2000"]])
     s = serie(alvo, r[alvo], ent, freq=None)
     s.update(truth=dict(relevant=[]), zero_baseline=True)
     return s
