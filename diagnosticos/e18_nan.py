@@ -42,8 +42,8 @@ def resumo():
          "| Config | Família | Série | passos NaN / avaliação | primeiro |", "|---|---|---|---|---|"]
     tot = {}
     for p in sorted(SAIDA.glob("*.json")):
-        config, fam = p.stem.split("_", 1) if not p.stem.startswith("prod_") else ("_".join(p.stem.split("_")[:2]),
-                                                                                    "_".join(p.stem.split("_")[2:]))
+        config = next(c for c in sorted(CONFIGS, key=len, reverse=True) if p.stem.startswith(c + "_"))
+        fam = p.stem[len(config) + 1:]
         for r in json.loads(p.read_text(encoding="utf-8")):
             tot.setdefault(config, [0, 0])
             tot[config][1] += 1
