@@ -1,0 +1,243 @@
+{
+ "config": "prod_q2",
+ "familia": "ZB01",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261051,
+ "semente_classe": 20261052,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 0.9999435437497141,
+   "ic95": [
+    0.999752154671174,
+    1.0000500115363133
+   ],
+   "n": 5
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.06650047479876492,
+   "ic95": [
+    0.06352547082641531,
+    0.06961468521526938
+   ],
+   "n": 5
+  },
+  "todas_vs_v052": {
+   "geo": 0.9999435437497141,
+   "ic95": [
+    0.999752154671174,
+    1.0000500115363133
+   ],
+   "n": 5
+  },
+  "series_com_externa": 0,
+  "series_com_externa_v052": 0,
+  "acrescimo_custo": 654.1549931600547,
+  "acrescimo_custo_max": 659.6979024167806,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 5,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Sol do Piauí",
+   "origem": "ZB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0122208741927422,
+   "v052_sobre_ref": 0.06616648291453793,
+   "v052_sobre_ref_ic95": [
+    0.06095847509612453,
+    0.07180819289367618
+   ],
+   "mse": 28.96008839575821,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 648.2698358413131,
+   "custo_v052": 600.5063269493844,
+   "estrutura_identica": true,
+   "razao_ref": 0.06616648291453793,
+   "ic95_ref": [
+    0.060898463586162584,
+    0.0717294024499535
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Pitombeira",
+   "origem": "ZB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.00039001926161056873,
+   "v052_sobre_ref": 0.07805725330800155,
+   "v052_sobre_ref_ic95": [
+    0.07006865543897034,
+    0.08724745603566277
+   ],
+   "mse": 30.750314956864955,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 650.0873233014136,
+   "custo_v052": 532.0965458276335,
+   "estrutura_identica": true,
+   "razao_ref": 0.07805725330769119,
+   "ic95_ref": [
+    0.06983095157129085,
+    0.08688014674402664
+   ],
+   "razao_v052": 0.9999999999960241,
+   "ic95_v052": [
+    0.9999999999917021,
+    1.0000000000012519
+   ],
+   "razao_melhor": 0.9999999999960241,
+   "ic95_melhor": [
+    0.9999999999922503,
+    1.0000000000012212
+   ]
+  },
+  {
+   "serie": "Conj. BJL",
+   "origem": "ZB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0004691664760336611,
+   "v052_sobre_ref": 0.08350882306575176,
+   "v052_sobre_ref_ic95": [
+    0.0786308290756616,
+    0.08980207636409818
+   ],
+   "mse": 19.6992930026792,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 659.6979024167806,
+   "custo_v052": 570.3131782945736,
+   "estrutura_identica": true,
+   "razao_ref": 0.08348525275253657,
+   "ic95_ref": [
+    0.07843276027889613,
+    0.08994433919261575
+   ],
+   "razao_v052": 0.9997177506238278,
+   "ic95_v052": [
+    0.9987613874772795,
+    1.0002500826950185
+   ],
+   "razao_melhor": 0.9997177506238278,
+   "ic95_melhor": [
+    0.9986708676204638,
+    1.0002489185758368
+   ]
+  },
+  {
+   "serie": "Assú V",
+   "origem": "ZB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0004282166449730769,
+   "v052_sobre_ref": 0.07071928904116279,
+   "v052_sobre_ref_ic95": [
+    0.0650731110271165,
+    0.07617227440573365
+   ],
+   "mse": 12.555178667705036,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 656.8647970816234,
+   "custo_v052": 545.2139876880984,
+   "estrutura_identica": true,
+   "razao_ref": 0.07071928904116279,
+   "ic95_ref": [
+    0.06523515007737901,
+    0.07667962387994924
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Flor de Mandacaru",
+   "origem": "ZB01",
+   "T": 17544,
+   "d": 4,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0005441588679170925,
+   "v052_sobre_ref": 0.042650562438354564,
+   "v052_sobre_ref_ic95": [
+    0.03680335983397201,
+    0.04895389423946201
+   ],
+   "mse": 0.009106206333065268,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 655.8551071591428,
+   "custo_v052": 556.1211582307342,
+   "estrutura_identica": true,
+   "razao_ref": 0.042650562438354564,
+   "ic95_ref": [
+    0.03651679649718418,
+    0.04956205411555271
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0000000000000007
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0000000000000004
+   ]
+  }
+ ]
+}

@@ -1,0 +1,281 @@
+{
+ "config": "prod_q2",
+ "familia": "ZB06",
+ "prototipo": {
+  "commit": "bca5dac",
+  "model053_sha256": "509eae52c663bd2316d5c0a807a4c5b89399845a5c860b476d4edc773951464d"
+ },
+ "semente": 20261051,
+ "semente_classe": 20261052,
+ "B": 2000,
+ "resumo": {
+  "c1": null,
+  "c2": {
+   "geo": 0.999999999964776,
+   "ic95": [
+    0.999999999941656,
+    0.9999999999825211
+   ],
+   "n": 6
+  },
+  "c7": null,
+  "todas_vs_ref": {
+   "geo": 0.061917217725187434,
+   "ic95": [
+    0.05960310505236211,
+    0.06454884364918376
+   ],
+   "n": 6
+  },
+  "todas_vs_v052": {
+   "geo": 0.999999999964776,
+   "ic95": [
+    0.999999999941656,
+    0.9999999999825211
+   ],
+   "n": 6
+  },
+  "series_com_externa": 4,
+  "series_com_externa_v052": 4,
+  "acrescimo_custo": 861.7624069007448,
+  "acrescimo_custo_max": 868.8827519379845,
+  "estrutura_identica": true,
+  "nan_aval": 0,
+  "classes": {
+   "v0.52 melhor": 6,
+   "referência melhor": 0,
+   "indecidível": 0,
+   "indecidível (choque)": 0
+  }
+ },
+ "series": [
+  {
+   "serie": "Conj. Pedra Branca",
+   "origem": "ZB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0006214926098239746,
+   "v052_sobre_ref": 0.06136839069796704,
+   "v052_sobre_ref_ic95": [
+    0.05636691110917932,
+    0.06673112455629551
+   ],
+   "mse": 324.202389290822,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 861.8520291837666,
+   "custo_v052": 590.6838691290469,
+   "estrutura_identica": true,
+   "razao_ref": 0.06136839069796704,
+   "ic95_ref": [
+    0.05641145284507223,
+    0.06701460347943378
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Oeste Seridó",
+   "origem": "ZB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0004375394134247237,
+   "v052_sobre_ref": 0.04984529615641784,
+   "v052_sobre_ref_ic95": [
+    0.0451262520089513,
+    0.05476230189880973
+   ],
+   "mse": 421.59009911144807,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 859.0052439580484,
+   "custo_v052": 703.2587437300501,
+   "estrutura_identica": true,
+   "razao_ref": 0.04984529614588332,
+   "ic95_ref": [
+    0.04496880239329993,
+    0.055214075340720425
+   ],
+   "razao_v052": 0.9999999997886555,
+   "ic95_v052": [
+    0.9999999996499362,
+    0.9999999998951263
+   ],
+   "razao_melhor": 0.9999999997886555,
+   "ic95_melhor": [
+    0.9999999996496104,
+    0.9999999998896814
+   ]
+  },
+  {
+   "serie": "Conj. Arizona",
+   "origem": "ZB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.000636093987493777,
+   "v052_sobre_ref": 0.05661833616453583,
+   "v052_sobre_ref_ic95": [
+    0.05226340779110963,
+    0.06157057260546658
+   ],
+   "mse": 319.989479715316,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 860.0688554491566,
+   "custo_v052": 649.3127450980393,
+   "estrutura_identica": true,
+   "razao_ref": 0.05661833616453583,
+   "ic95_ref": [
+    0.05209791280203016,
+    0.061631375651283786
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. União dos Ventos",
+   "origem": "ZB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0009779726574580556,
+   "v052_sobre_ref": 0.08729205919088343,
+   "v052_sobre_ref_ic95": [
+    0.0800209171246636,
+    0.09558495725334451
+   ],
+   "mse": 309.1762297699682,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 866.7265161878704,
+   "custo_v052": 614.8797708618331,
+   "estrutura_identica": true,
+   "razao_ref": 0.08729205919088343,
+   "ic95_ref": [
+    0.07963847201415727,
+    0.09493146863874394
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. São Clemente",
+   "origem": "ZB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0004906539787613337,
+   "v052_sobre_ref": 0.06332366396241675,
+   "v052_sobre_ref_ic95": [
+    0.057224475925944505,
+    0.07056426363537674
+   ],
+   "mse": 417.10107523741954,
+   "externas": 0,
+   "externas_v052": 0,
+   "acrescimo_custo": 868.8827519379845,
+   "custo_v052": 579.510664614683,
+   "estrutura_identica": true,
+   "razao_ref": 0.06332366396241675,
+   "ic95_ref": [
+    0.05724630082703441,
+    0.07121665954521934
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "serie": "Conj. Chapada III",
+   "origem": "ZB06",
+   "T": 17544,
+   "d": 5,
+   "nan_aval": 0,
+   "limite_choque": 0.05,
+   "referencia": "sazonal",
+   "bloco": 168,
+   "classe": "v0.52 melhor",
+   "choque": 0.0005539510688527092,
+   "v052_sobre_ref": 0.05885749921787392,
+   "v052_sobre_ref_ic95": [
+    0.05258416653239558,
+    0.06597676746981482
+   ],
+   "mse": 359.0302198004113,
+   "externas": 1,
+   "externas_v052": 1,
+   "acrescimo_custo": 854.0390446876424,
+   "custo_v052": 655.1724122207022,
+   "estrutura_identica": true,
+   "razao_ref": 0.05885749921787392,
+   "ic95_ref": [
+    0.05248521764991921,
+    0.06647782716875042
+   ],
+   "razao_v052": 1.0,
+   "ic95_v052": [
+    1.0,
+    1.0
+   ],
+   "razao_melhor": 1.0,
+   "ic95_melhor": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
