@@ -77,6 +77,8 @@ def ons_carga(anos):
 
 def ons_fator(anos):
     """Geração horária verificada por usina eólica/solar, com capacidade e coordenadas."""
+    from lab.reserva import checar_ons_fator
+    checar_ons_fator(anos)
     df = ons_csvs("fator-capacidade-2", lambda n: any(f"{a}" in n for a in anos))
     df["din_instante"] = pd.to_datetime(df["din_instante"])
     return df

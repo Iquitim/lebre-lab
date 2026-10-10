@@ -137,3 +137,15 @@ def test_reserve_of_v053_is_refused():
     with pytest.raises(SerieReservada):
         checar_usina(sorted(USINAS)[0])
     checar_usina("Conj. Janaúba")                         # usina usada no Lab: liberada
+
+
+def test_reserve_of_v054_is_refused():
+    from lab import fontes as F
+    from lab.reserva import _R54, SerieReservada, checar_usina
+    with pytest.raises(SerieReservada):
+        F.ons_fator([2026])
+    for serie in ("DFII10", "DGS1MO", "DHHNGSP"):
+        with pytest.raises(SerieReservada):
+            F.fred(serie)
+    with pytest.raises(SerieReservada):
+        checar_usina(_R54["usinas_eolicas"][0])
