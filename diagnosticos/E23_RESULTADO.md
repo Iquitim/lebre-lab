@@ -17,8 +17,8 @@ Biblioteca `lebre==0.2.0` do PyPI (v0.53) e o núcleo sozinho (`core_only=True`)
 
 - O custo do **núcleo** continua crescendo com o número de entradas (F1): 760 → 3.161 de d = 10 a 50, com recall 1,00 e
   nenhuma entrada falsa.
-- A **M1** custa ~400 a ~840 FP por passo (cresce com m = mín(d, 5)) e terminou com **peso zero em todas as 64 séries
-  sintéticas e de níveis** medidas aqui, sem mudar o erro.
+- A **M1** custa ~400 a ~840 FP por passo (cresce com m = mín(d, 5)) e terminou com **peso zero em todas as 95 séries
+  medidas aqui** (A01, A02, A05, A12 e C03), sem mudar o erro.
 - **Avaliação final da v0.53** (arquivo publicado, nenhuma execução nova): a M1 terminou com peso zero em **70 de 104**
   séries (todas as de solar, eólica, carga e câmbio; 25 de 30 prédios; 1 de 30 bacias), com acréscimo mediano de 800 FP
   e custo mediano de 2,25 vezes o do núcleo nessas séries. Nelas, a razão v0.53 ÷ núcleo foi 1,000, exceto no câmbio
