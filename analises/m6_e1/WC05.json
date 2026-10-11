@@ -1,0 +1,120 @@
+{
+ "familia": "WC05",
+ "prototipo": {
+  "commit": "3a62898",
+  "cycle_sha256": "ab76c591104dabd677bae756cc84d500025ff627b7f4a38cf4f7262d4db43fdd"
+ },
+ "semente": 20261341,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 3
+  },
+  "b": {
+   "geo": 1.1164816639366284,
+   "ic95": [
+    1.0040256736274702,
+    1.2236881012182503
+   ],
+   "n": 3
+  },
+  "nan_aval": 0,
+  "n": 3,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 454.9916666666666,
+  "custo_com": 487.43722222222215
+ },
+ "series": [
+  {
+   "serie": "ipca_habitacao",
+   "origem": "WC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 462.20166666666665,
+   "custo_com": 512.6183333333333,
+   "razao_b": 0.9752201085687432,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 501.34166666666664
+  },
+  {
+   "serie": "ipca_transportes",
+   "origem": "WC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 462.20166666666665,
+   "custo_com": 485.66166666666663,
+   "razao_b": 1.0181393720757406,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 484.94166666666666
+  },
+  {
+   "serie": "ipca_despesas_pessoais",
+   "origem": "WC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 440.57166666666666,
+   "custo_com": 464.03166666666664,
+   "razao_b": 1.4016671823456848,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 453.0883333333333
+  }
+ ]
+}

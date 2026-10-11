@@ -1,0 +1,227 @@
+{
+ "familia": "YB01",
+ "prototipo": {
+  "commit": "3a62898",
+  "cycle_sha256": "ab76c591104dabd677bae756cc84d500025ff627b7f4a38cf4f7262d4db43fdd"
+ },
+ "semente": 20261341,
+ "resumo": {
+  "a": {
+   "geo": 0.961860028655316,
+   "ic95": [
+    0.9517921898945508,
+    0.9713749193585556
+   ],
+   "n": 6
+  },
+  "b": {
+   "geo": 1.0753571156919632,
+   "ic95": [
+    1.012750516608713,
+    1.140311142130938
+   ],
+   "n": 6
+  },
+  "nan_aval": 0,
+  "n": 6,
+  "com_ciclo_aceito_a": 1,
+  "custo_sem": 1148.9585043319655,
+  "custo_com": 1229.798725110199
+ },
+ "series": [
+  {
+   "serie": "Conj. Sol do Futuro",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "ciclo_declarado": [
+    30,
+    null
+   ],
+   "razao_a": 0.7935572984542661,
+   "nan_aval": 0,
+   "identica_a": false,
+   "m6_a": {
+    "ciclos": [
+     24,
+     30
+    ],
+    "aceitos": [
+     [
+      7840,
+      24
+     ]
+    ]
+   },
+   "custo_sem": 1180.9657204742362,
+   "custo_com": 1238.9340857273141,
+   "razao_b": 0.7625974406698945,
+   "m6_b": {
+    "ciclos": [
+     168
+    ],
+    "aceitos": [
+     [
+      5900,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1163.9836753305974
+  },
+  {
+   "serie": "Conj. Dracena",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "ciclo_declarado": [
+    30,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1124.254115367077,
+   "custo_com": 1198.007934336525,
+   "razao_b": 1.5230917434912006,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 1180.8710784313726
+  },
+  {
+   "serie": "Conj. Horizonte",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "ciclo_declarado": [
+    30,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1296.6847241222072,
+   "custo_com": 1392.9420770633835,
+   "razao_b": 1.292162836092073,
+   "m6_b": {
+    "ciclos": [
+     168
+    ],
+    "aceitos": [
+     [
+      5660,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1358.3814295485636
+  },
+  {
+   "serie": "Conj. Lapa",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "ciclo_declarado": [
+    30,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1127.061730506156,
+   "custo_com": 1213.4007637938896,
+   "razao_b": 1.0401713122868779,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 1161.4553693570451
+  },
+  {
+   "serie": "Conj. Bom Jesus",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "ciclo_declarado": [
+    30,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1207.1171454628363,
+   "custo_com": 1292.8522115823075,
+   "razao_b": 1.0192592245356022,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 1214.7839261285912
+  },
+  {
+   "serie": "Conj. São Pedro",
+   "origem": "YB01",
+   "T": 17544,
+   "d": 4,
+   "ciclo_declarado": [
+    30,
+    null
+   ],
+   "razao_a": 0.9979136756912245,
+   "nan_aval": 0,
+   "identica_a": false,
+   "m6_a": {
+    "ciclos": [
+     30
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 957.6675900592795,
+   "custo_com": 1042.6552781577748,
+   "razao_b": 0.9718250812455743,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 1012.099133606931
+  }
+ ]
+}

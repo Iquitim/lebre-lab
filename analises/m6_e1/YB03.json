@@ -1,0 +1,160 @@
+{
+ "familia": "YB03",
+ "prototipo": {
+  "commit": "3a62898",
+  "cycle_sha256": "ab76c591104dabd677bae756cc84d500025ff627b7f4a38cf4f7262d4db43fdd"
+ },
+ "semente": 20261341,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "b": {
+   "geo": 0.9749772070570158,
+   "ic95": [
+    0.9621689696839398,
+    0.9872985415089953
+   ],
+   "n": 4
+  },
+  "nan_aval": 0,
+  "n": 4,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 1639.2164042892996,
+  "custo_com": 1643.0611738535251
+ },
+ "series": [
+  {
+   "serie": "Aotizhongxin_PM2.5",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1725.9904745608032,
+   "custo_com": 1729.8849532283825,
+   "razao_b": 1.0076548642572285,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 1737.1481633584303
+  },
+  {
+   "serie": "Aotizhongxin_NO2",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1702.133190736938,
+   "custo_com": 1706.0164898471367,
+   "razao_b": 0.9635771708498996,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 1740.469895049053
+  },
+  {
+   "serie": "Aotizhongxin_CO",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1656.7776808122292,
+   "custo_com": 1660.5750798539814,
+   "razao_b": 0.9490769069379426,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 1483.4075233858089
+  },
+  {
+   "serie": "Aotizhongxin_O3",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1471.9642710472278,
+   "custo_com": 1475.7681724845995,
+   "razao_b": 0.9805689512632949,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      12020,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1629.7503194159253
+  }
+ ]
+}

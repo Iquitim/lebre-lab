@@ -1,0 +1,186 @@
+{
+ "familia": "YB02",
+ "prototipo": {
+  "commit": "3a62898",
+  "cycle_sha256": "ab76c591104dabd677bae756cc84d500025ff627b7f4a38cf4f7262d4db43fdd"
+ },
+ "semente": 20261341,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "b": {
+   "geo": 0.7618544826999929,
+   "ic95": [
+    0.7313674507355712,
+    0.7957812711050558
+   ],
+   "n": 4
+  },
+  "nan_aval": 0,
+  "n": 4,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 1179.0213338466806,
+  "custo_com": 1183.0208775382157
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    30,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1271.410820214465,
+   "custo_com": 1275.4103639060004,
+   "razao_b": 1.3203761439279342,
+   "m6_b": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": [
+     [
+      10260,
+      12
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1421.041270248688
+  },
+  {
+   "serie": "SUL_Porto Alegre_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    30,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1093.5533994980608,
+   "custo_com": 1097.5529431895961,
+   "razao_b": 0.8080988509257313,
+   "m6_b": {
+    "ciclos": [
+     12,
+     168
+    ],
+    "aceitos": [
+     [
+      2250,
+      12
+     ],
+     [
+      6390,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1029.2729152407028
+  },
+  {
+   "serie": "NORDESTE_Recife_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    30,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1174.9277777777777,
+   "custo_com": 1178.927321469313,
+   "razao_b": 0.4920869014738228,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      2140,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1156.6834388546658
+  },
+  {
+   "serie": "NORTE_Belem_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    30,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     30,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1176.1933378964181,
+   "custo_com": 1180.1928815879535,
+   "razao_b": 0.6416292378634669,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      6800,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1098.383578599133
+  }
+ ]
+}
