@@ -1,0 +1,143 @@
+{
+ "familia": "T-B03",
+ "prototipo": {
+  "commit": "cfe72ce"
+ },
+ "semente": 2026101290,
+ "bloco": 168,
+ "resumo": {
+  "m4_geo": 1.0,
+  "m4_ic95": [
+   1.0,
+   1.0
+  ],
+  "n": 4
+ },
+ "series": [
+  {
+   "serie": "Dongsi_PM2.5",
+   "T": 35064,
+   "d": 10,
+   "m5b": {
+    "identica": true,
+    "estrutura_igual": true,
+    "nucleo_sem": 836.2444786675793,
+    "nucleo_com": 792.7388888888889,
+    "triagem_sem": 7699210.0,
+    "equiv": {
+     "pares_fora": 9,
+     "disc_fora": 0,
+     "pares_dentro": 1,
+     "disc_dentro": 0
+    }
+   },
+   "m4": {
+    "razao": 1.0,
+    "nan_aval": 0,
+    "identica": true,
+    "sem_aceite": false,
+    "remocoes": [],
+    "estrutura_com": [
+     "own_past",
+     "residual_state"
+    ],
+    "custo_sem": 1557.0901038101756,
+    "custo_com": 1558.0543805612585
+   }
+  },
+  {
+   "serie": "Dongsi_NO2",
+   "T": 35064,
+   "d": 10,
+   "m5b": {
+    "identica": true,
+    "estrutura_igual": true,
+    "nucleo_sem": 840.5262662559891,
+    "nucleo_com": 798.1688626511522,
+    "triagem_sem": 7496424.0,
+    "equiv": {
+     "pares_fora": 20,
+     "disc_fora": 0,
+     "pares_dentro": 0,
+     "disc_dentro": 0
+    }
+   },
+   "m4": {
+    "razao": 1.0,
+    "nan_aval": 0,
+    "identica": true,
+    "sem_aceite": false,
+    "remocoes": [],
+    "estrutura_com": [
+     "x4",
+     "x9",
+     "residual_state"
+    ],
+    "custo_sem": 1437.3573180469998,
+    "custo_com": 1459.742077344287
+   }
+  },
+  {
+   "serie": "Dongsi_CO",
+   "T": 35064,
+   "d": 10,
+   "m5b": {
+    "identica": true,
+    "estrutura_igual": true,
+    "nucleo_sem": 813.4028120009126,
+    "nucleo_com": 772.6767111567419,
+    "triagem_sem": 7223044.0,
+    "equiv": {
+     "pares_fora": 0,
+     "disc_fora": 0,
+     "pares_dentro": 0,
+     "disc_dentro": 0
+    }
+   },
+   "m4": {
+    "razao": 1.0,
+    "nan_aval": 0,
+    "identica": true,
+    "sem_aceite": false,
+    "remocoes": [],
+    "estrutura_com": [
+     "residual_state"
+    ],
+    "custo_sem": 1562.6567761806982,
+    "custo_com": 1558.1165183664134
+   }
+  },
+  {
+   "serie": "Dongsi_O3",
+   "T": 35064,
+   "d": 10,
+   "m5b": {
+    "identica": true,
+    "estrutura_igual": true,
+    "nucleo_sem": 860.3409707962583,
+    "nucleo_com": 816.6283310517911,
+    "triagem_sem": 7700788.0,
+    "equiv": {
+     "pares_fora": 20,
+     "disc_fora": 0,
+     "pares_dentro": 0,
+     "disc_dentro": 0
+    }
+   },
+   "m4": {
+    "razao": 1.0,
+    "nan_aval": 0,
+    "identica": true,
+    "sem_aceite": false,
+    "remocoes": [],
+    "estrutura_com": [
+     "x3",
+     "x9",
+     "residual_state"
+    ],
+    "custo_sem": 1330.3254563084645,
+    "custo_com": 1356.910734656629
+   }
+  }
+ ]
+}
