@@ -1,0 +1,133 @@
+{
+ "familia": "YB03",
+ "prototipo": {
+  "commit": "cfe72ce",
+  "removal_sha256": "c69dcfb529074153b270a868c4dee3d8ac4f6555f2e3ae4a244e2cecd6d4d3be"
+ },
+ "semente": 20261342,
+ "resumo": {
+  "geo": 1.0002224436701008,
+  "ic95": [
+   0.994526103192647,
+   1.0058779591186082
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1639.2164042892996,
+  "custo_com": 1633.86357517682
+ },
+ "series": [
+  {
+   "serie": "Aotizhongxin_PM2.5",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1725.9904745608032,
+   "custo_com": 1728.502213096052
+  },
+  {
+   "serie": "Aotizhongxin_NO2",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 1.0008725349315721,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x4",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x1",
+    "x4",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    4
+   ],
+   "externas_aceitas_com": [
+    1,
+    4
+   ],
+   "custo_sem": 1702.133190736938,
+   "custo_com": 1656.2608031029004
+  },
+  {
+   "serie": "Aotizhongxin_CO",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0"
+   ],
+   "estrutura_com": [
+    "x0"
+   ],
+   "externas_aceitas_sem": [
+    0
+   ],
+   "externas_aceitas_com": [
+    0
+   ],
+   "custo_sem": 1656.7776808122292,
+   "custo_com": 1653.6674766141891
+  },
+  {
+   "serie": "Aotizhongxin_O3",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 1.0000175213919522,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    3
+   ],
+   "externas_aceitas_com": [
+    3
+   ],
+   "custo_sem": 1471.9642710472278,
+   "custo_com": 1497.0238078941386
+  }
+ ]
+}

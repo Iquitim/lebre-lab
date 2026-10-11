@@ -1,0 +1,149 @@
+{
+ "familia": "B03",
+ "prototipo": {
+  "commit": "cfe72ce",
+  "removal_sha256": "c69dcfb529074153b270a868c4dee3d8ac4f6555f2e3ae4a244e2cecd6d4d3be"
+ },
+ "semente": 20261342,
+ "resumo": {
+  "geo": 1.0,
+  "ic95": [
+   1.0,
+   1.0
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1524.5472427059956,
+  "custo_com": 1521.504905418403
+ },
+ "series": [
+  {
+   "serie": "CO(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x3",
+    "x4"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x3",
+    "x4"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    3,
+    4
+   ],
+   "externas_aceitas_com": [
+    0,
+    3,
+    4
+   ],
+   "custo_sem": 1538.3285454739766,
+   "custo_com": 1527.8555306187877
+  },
+  {
+   "serie": "NOx(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x4"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x4"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    4
+   ],
+   "externas_aceitas_com": [
+    0,
+    4
+   ],
+   "custo_sem": 1415.4003847386984,
+   "custo_com": 1428.768878914182
+  },
+  {
+   "serie": "NO2(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x4"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x4"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    4
+   ],
+   "externas_aceitas_com": [
+    0,
+    4
+   ],
+   "custo_sem": 1504.7581276050016,
+   "custo_com": 1493.7493641124292
+  },
+  {
+   "serie": "C6H6(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x2",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x1",
+    "x2",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    0,
+    1,
+    2
+   ],
+   "custo_sem": 1639.7019130063054,
+   "custo_com": 1635.6458480282135
+  }
+ ]
+}

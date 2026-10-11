@@ -1,0 +1,213 @@
+{
+ "familia": "XB07",
+ "prototipo": {
+  "commit": "cfe72ce",
+  "removal_sha256": "c69dcfb529074153b270a868c4dee3d8ac4f6555f2e3ae4a244e2cecd6d4d3be"
+ },
+ "semente": 20261342,
+ "resumo": {
+  "geo": 1.000103734738096,
+  "ic95": [
+   0.9998643102512114,
+   1.0003361835826374
+  ],
+  "n": 6,
+  "nan_aval": 0,
+  "remocoes": 5,
+  "identidade_ok": true,
+  "custo_sem": 948.4059638565672,
+  "custo_com": 947.1329440451726
+ },
+ "series": [
+  {
+   "serie": "8461490_New London",
+   "origem": "XB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 937.30701859457,
+   "custo_com": 936.7618383527232
+  },
+  {
+   "serie": "8447930_Woods Hole",
+   "origem": "XB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 2100,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 927.7698579739904,
+   "custo_com": 928.6417892995653
+  },
+  {
+   "serie": "8638610_Sewells Point",
+   "origem": "XB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 1780,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 964.3787274697696,
+   "custo_com": 968.8799937257559
+  },
+  {
+   "serie": "8735180_Dauphin Island",
+   "origem": "XB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.000279050328241,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 15860,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 983.1098562628335,
+   "custo_com": 976.0522644307534
+  },
+  {
+   "serie": "9410660_Los Angeles",
+   "origem": "XB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0005383049877303,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 18910,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 933.4778775952543,
+   "custo_com": 929.7583989276732
+  },
+  {
+   "serie": "9440910_Toke Point",
+   "origem": "XB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.9998052235649999,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 11850,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "x0",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    0
+   ],
+   "externas_aceitas_com": [
+    0
+   ],
+   "custo_sem": 944.3924452429842,
+   "custo_com": 942.7033795345642
+  }
+ ]
+}
