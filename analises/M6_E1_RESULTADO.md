@@ -84,6 +84,6 @@ Plano `M6_E1_PLANO.md`. Protótipo no commit `3a62898`; 64 famílias do E20.
   2. **Múltiplo no lugar do fundamental, e tarde:** na solar, o ciclo de 168 (que contém o dia) vence a triagem, e as
      aceitações saem tarde (até o passo 14.300 de 17.544).
 - **Ganhos com o ciclo declarado:** na maré (B07 e variantes), a M6 achou um ciclo a mais (12 ou 24) e reduziu o erro de
-  0,1% a 1,7%. YB02 (ciclo declarado de 30, errado de propósito nessa família): sem declarar, a M6 ficou 24% melhor que o
-  declarado.
+  0,1% a 1,7%. YB02 (ciclo declarado de 30 passos por um erro já registrado, a errata das validações 4 e 5): sem declarar, a M6
+  ficou 24% melhor que essa declaração errada.
 - **Nenhum ciclo falso** em 311 séries sintéticas sem ciclo.
