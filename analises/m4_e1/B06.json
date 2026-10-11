@@ -1,0 +1,176 @@
+{
+ "familia": "B06",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 0.9999934742012607,
+  "ic95": [
+   0.9989235312112668,
+   1.0010844340640532
+  ],
+  "n": 6,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1166.694742742058,
+  "custo_com": 1172.029092567259
+ },
+ "series": [
+  {
+   "serie": "Conj. São Roque",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1299.4123461012312,
+   "custo_com": 1296.8452063383488
+  },
+  {
+   "serie": "Conj. Lagoa dos Ventos",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "razao": 0.9999974124166878,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x2",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    2,
+    3
+   ],
+   "externas_aceitas_com": [
+    2
+   ],
+   "custo_sem": 1347.975484496124,
+   "custo_com": 1349.8989512083917
+  },
+  {
+   "serie": "Conj. Caju",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.0012963839850697,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    2
+   ],
+   "externas_aceitas_com": [
+    2
+   ],
+   "custo_sem": 1128.259296625627,
+   "custo_com": 1112.306743046055
+  },
+  {
+   "serie": "Conj. Monte Verde",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "razao": 0.9983581717768122,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    2
+   ],
+   "externas_aceitas_com": [
+    2
+   ],
+   "custo_sem": 929.4960613315093,
+   "custo_com": 975.8761855905145
+  },
+  {
+   "serie": "Conj. Serra do Mel A",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.0003111141477525,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    2
+   ],
+   "externas_aceitas_com": [],
+   "custo_sem": 1157.0961069311445,
+   "custo_com": 1153.6792578659363
+  },
+  {
+   "serie": "Conj. Santa Vitória do Palmar",
+   "origem": "B06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1137.9291609667123,
+   "custo_com": 1143.5682113543085
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "familia": "VB07",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 0.9875736826484008,
+  "ic95": [
+   0.9552553063004446,
+   1.0042115248854662
+  ],
+  "n": 6,
+  "nan_aval": 0,
+  "remocoes": 2,
+  "identidade_ok": true,
+  "custo_sem": 934.2526418358811,
+  "custo_com": 938.2706398775566
+ },
+ "series": [
+  {
+   "serie": "8574680_Baltimore",
+   "origem": "VB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0000326776411577,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x0",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    0
+   ],
+   "externas_aceitas_com": [
+    0
+   ],
+   "custo_sem": 1012.8643480492813,
+   "custo_com": 1015.4055469997736
+  },
+  {
+   "serie": "8726520_St. Petersburg",
+   "origem": "VB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.9109880751662266,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x1",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    1
+   ],
+   "externas_aceitas_com": [
+    1
+   ],
+   "custo_sem": 961.9408510152863,
+   "custo_com": 958.869732489164
+  },
+  {
+   "serie": "8761724_Grand Isle",
+   "origem": "VB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.000018760716811,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 6750,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1000.074235683322,
+   "custo_com": 1000.5238478211246
+  },
+  {
+   "serie": "9414290_San Francisco",
+   "origem": "VB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.9974471749528727,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 688.9358059548254,
+   "custo_com": 714.5781114533413
+  },
+  {
+   "serie": "9447130_Seattle",
+   "origem": "VB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.9983251552486783,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 967.8333048140544,
+   "custo_com": 972.2502538215822
+  },
+  {
+   "serie": "9410230_La Jolla",
+   "origem": "VB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0226336955888733,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 16930,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "res"
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 973.867305498517,
+   "custo_com": 967.9963466803542
+  }
+ ]
+}

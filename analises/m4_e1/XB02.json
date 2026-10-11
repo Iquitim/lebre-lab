@@ -1,0 +1,163 @@
+{
+ "familia": "XB02",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 0.9999998396744327,
+  "ic95": [
+   0.9999994134105354,
+   1.0000000747947697
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1105.3803530686744,
+  "custo_com": 1100.9263953057282
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x3",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x1",
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    3
+   ],
+   "externas_aceitas_com": [
+    0,
+    1,
+    3
+   ],
+   "custo_sem": 1023.8262805156286,
+   "custo_com": 1008.1772701346107
+  },
+  {
+   "serie": "SUL_Porto Alegre_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x2",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x2",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    0,
+    2
+   ],
+   "custo_sem": 1113.515657084189,
+   "custo_com": 1074.988677846225
+  },
+  {
+   "serie": "NORDESTE_Recife_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 0.9999993586978854,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    1,
+    2,
+    3
+   ],
+   "externas_aceitas_com": [
+    1,
+    2,
+    3
+   ],
+   "custo_sem": 1182.3499344056581,
+   "custo_com": 1216.5865588637946
+  },
+  {
+   "serie": "NORTE_Belem_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x1",
+    "x3",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "externas_aceitas_com": [
+    0,
+    1,
+    3
+   ],
+   "custo_sem": 1101.829540269222,
+   "custo_com": 1103.9530743782823
+  }
+ ]
+}

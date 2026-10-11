@@ -1,0 +1,181 @@
+{
+ "familia": "B07",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 0.9988108070626394,
+  "ic95": [
+   0.9977542808842486,
+   1.0000206584280222
+  ],
+  "n": 6,
+  "nan_aval": 0,
+  "remocoes": 2,
+  "identidade_ok": true,
+  "custo_sem": 942.4981861738537,
+  "custo_com": 936.0262049395366
+ },
+ "series": [
+  {
+   "serie": "8518750_The Battery NY",
+   "origem": "B07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 918.8144107916953,
+   "custo_com": 918.8335757472025
+  },
+  {
+   "serie": "8443970_Boston",
+   "origem": "B07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 853.6912103582022,
+   "custo_com": 860.481924480948
+  },
+  {
+   "serie": "8534720_Atlantic City",
+   "origem": "B07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.9999498885824758,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 15210,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "x0",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    0
+   ],
+   "externas_aceitas_com": [
+    0
+   ],
+   "custo_sem": 974.079363449692,
+   "custo_com": 972.457229637232
+  },
+  {
+   "serie": "8665530_Charleston",
+   "origem": "B07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.988228467701904,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 975.7819273328771,
+   "custo_com": 988.9472165183637
+  },
+  {
+   "serie": "8771450_Galveston",
+   "origem": "B07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.9994339101206514,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 973.291275952544,
+   "custo_com": 966.6872604380532
+  },
+  {
+   "serie": "8724580_Key West",
+   "origem": "B07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0053324920582478,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 3240,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 959.3309291581108,
+   "custo_com": 908.7500228154199
+  }
+ ]
+}

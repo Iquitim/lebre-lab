@@ -1,0 +1,139 @@
+{
+ "familia": "XC03",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 1.0,
+  "ic95": [
+   1.0,
+   1.0
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1252.2674413033062,
+  "custo_com": 1281.6151413512218
+ },
+ "series": [
+  {
+   "serie": "nivel_ringgit",
+   "origem": "XC03",
+   "T": 4174,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x1",
+    "x3"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1
+   ],
+   "externas_aceitas_com": [
+    0,
+    1,
+    3
+   ],
+   "custo_sem": 1206.8474604695734,
+   "custo_com": 1259.0502395783421
+  },
+  {
+   "serie": "nivel_dolar_taiwan",
+   "origem": "XC03",
+   "T": 4174,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2"
+   ],
+   "estrutura_com": [
+    "x2"
+   ],
+   "externas_aceitas_sem": [
+    2
+   ],
+   "externas_aceitas_com": [
+    2
+   ],
+   "custo_sem": 1184.6259702922857,
+   "custo_com": 1188.5012458073793
+  },
+  {
+   "serie": "nivel_rupia_sri_lanka",
+   "origem": "XC03",
+   "T": 4174,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "x2",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x1",
+    "x2",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    1,
+    2
+   ],
+   "custo_sem": 1307.6223766171538,
+   "custo_com": 1383.088667944418
+  },
+  {
+   "serie": "nivel_rand",
+   "origem": "XC03",
+   "T": 4174,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x2"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x2"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    2
+   ],
+   "externas_aceitas_com": [
+    0,
+    2
+   ],
+   "custo_sem": 1309.973957834212,
+   "custo_com": 1295.8204120747482
+  }
+ ]
+}

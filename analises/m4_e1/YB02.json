@@ -1,0 +1,163 @@
+{
+ "familia": "YB02",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 1.001547825603012,
+  "ic95": [
+   0.9999713137980567,
+   1.0034723047215584
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1179.0213338466806,
+  "custo_com": 1180.5525118355033
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 0.9999113805233463,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x2",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x1",
+    "x2",
+    "x3"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "custo_sem": 1271.410820214465,
+   "custo_com": 1283.0229865389026
+  },
+  {
+   "serie": "SUL_Porto Alegre_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.006690048641226,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    1,
+    2,
+    3
+   ],
+   "externas_aceitas_com": [
+    1,
+    2,
+    3
+   ],
+   "custo_sem": 1093.5533994980608,
+   "custo_com": 1107.371061487568
+  },
+  {
+   "serie": "NORDESTE_Recife_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 0.9996088403871365,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x2",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    0,
+    2,
+    3
+   ],
+   "custo_sem": 1174.9277777777777,
+   "custo_com": 1150.1550165411848
+  },
+  {
+   "serie": "NORTE_Belem_2006_2009",
+   "origem": "YB02",
+   "T": 35064,
+   "d": 5,
+   "razao": 0.9999986057867558,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x2",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x2",
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    2,
+    3
+   ],
+   "custo_sem": 1176.1933378964181,
+   "custo_com": 1181.6609827743578
+  }
+ ]
+}

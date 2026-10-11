@@ -1,0 +1,171 @@
+{
+ "familia": "WB07",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 1.0000395944614353,
+  "ic95": [
+   0.999835554660884,
+   1.0002469307263602
+  ],
+  "n": 6,
+  "nan_aval": 0,
+  "remocoes": 1,
+  "identidade_ok": true,
+  "custo_sem": 904.7951735873452,
+  "custo_com": 909.2902473572116
+ },
+ "series": [
+  {
+   "serie": "8454000_Providence",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 860.4568731462468,
+   "custo_com": 860.9381502395593
+  },
+  {
+   "serie": "8658120_Wilmington",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 745.9197667122975,
+   "custo_com": 742.6916039242517
+  },
+  {
+   "serie": "8452660_Newport",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 0.999551078324177,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 926.4512462924938,
+   "custo_com": 939.2333276294763
+  },
+  {
+   "serie": "8545240_Philadelphia",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 879.9221737394478,
+   "custo_com": 878.3404631530889
+  },
+  {
+   "serie": "9418767_North Spit",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.000032296902597,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 12440,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "in",
+      3
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 974.8170602327173,
+   "custo_com": 977.2297056810378
+  },
+  {
+   "serie": "9435380_South Beach",
+   "origem": "WB07",
+   "T": 35064,
+   "d": 3,
+   "razao": 1.0006545022490205,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x1",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    1
+   ],
+   "externas_aceitas_com": [
+    1
+   ],
+   "custo_sem": 1041.203921400867,
+   "custo_com": 1057.3082335158556
+  }
+ ]
+}

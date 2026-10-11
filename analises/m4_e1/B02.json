@@ -1,0 +1,160 @@
+{
+ "familia": "B02",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 1.0,
+  "ic95": [
+   1.0,
+   1.0
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1097.41910363906,
+  "custo_com": 1094.0578527834834
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo",
+   "origem": "B02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x4",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x0",
+    "x1",
+    "x3",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    4
+   ],
+   "externas_aceitas_com": [
+    0,
+    1,
+    3
+   ],
+   "custo_sem": 1165.464239676021,
+   "custo_com": 1121.4384211727152
+  },
+  {
+   "serie": "SUL_Porto Alegre",
+   "origem": "B02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    1,
+    2,
+    3
+   ],
+   "externas_aceitas_com": [
+    1,
+    2,
+    3
+   ],
+   "custo_sem": 1012.5566278804472,
+   "custo_com": 1020.131371206938
+  },
+  {
+   "serie": "NORDESTE_Recife",
+   "origem": "B02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x1",
+    "x2",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x1",
+    "x2",
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    1,
+    2,
+    3
+   ],
+   "custo_sem": 1033.7856348391513,
+   "custo_com": 1017.2808863791922
+  },
+  {
+   "serie": "NORTE_Belem",
+   "origem": "B02",
+   "T": 35064,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2",
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    2,
+    3
+   ],
+   "externas_aceitas_com": [
+    3
+   ],
+   "custo_sem": 1177.8699121606205,
+   "custo_com": 1217.380732375088
+  }
+ ]
+}

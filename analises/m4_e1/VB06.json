@@ -1,0 +1,179 @@
+{
+ "familia": "VB06",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 1.0001333939596768,
+  "ic95": [
+   0.998580298011157,
+   1.0016727917564996
+  ],
+  "n": 6,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1307.0111101611187,
+  "custo_com": 1294.4308263033897
+ },
+ "series": [
+  {
+   "serie": "Conj. Oitis",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1317.349960100319,
+   "custo_com": 1296.1572617419056
+  },
+  {
+   "serie": "Conj. Ourolândia II",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "razao": 0.9996985066495375,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x2",
+    "x4",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    2
+   ],
+   "externas_aceitas_com": [
+    2,
+    4
+   ],
+   "custo_sem": 1330.5870212038303,
+   "custo_com": 1346.0291837665302
+  },
+  {
+   "serie": "Conj. Rio do Vento Expansão",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x3",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x3",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    3
+   ],
+   "externas_aceitas_com": [
+    3
+   ],
+   "custo_sem": 1386.8117077063384,
+   "custo_com": 1390.297030323759
+  },
+  {
+   "serie": "Conj. Laranjeiras",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "own_past"
+   ],
+   "estrutura_com": [
+    "own_past"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1331.4463064295487,
+   "custo_com": 1332.6645918832642
+  },
+  {
+   "serie": "Conj. Rio do Vento",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "razao": 1.008482832529311,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x1",
+    "x2",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x2",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    1,
+    2
+   ],
+   "externas_aceitas_com": [
+    2
+   ],
+   "custo_sem": 1280.3544801641588,
+   "custo_com": 1256.682404240767
+  },
+  {
+   "serie": "Conj. Serra do Seridó",
+   "origem": "VB06",
+   "T": 17544,
+   "d": 5,
+   "razao": 0.9926817038002668,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x2",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    2
+   ],
+   "externas_aceitas_com": [
+    2
+   ],
+   "custo_sem": 1195.517185362517,
+   "custo_com": 1144.7544858641118
+  }
+ ]
+}

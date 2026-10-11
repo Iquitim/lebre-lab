@@ -1,0 +1,117 @@
+{
+ "familia": "VC03",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 1.0,
+  "ic95": [
+   1.0,
+   1.0
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 0,
+  "identidade_ok": true,
+  "custo_sem": 1395.914833269452,
+  "custo_com": 1415.4367573783056
+ },
+ "series": [
+  {
+   "serie": "nivel_dolar_real_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": true,
+   "remocoes": [],
+   "estrutura_sem": [],
+   "estrutura_com": [],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1423.7782675354542,
+   "custo_com": 1423.7782675354542
+  },
+  {
+   "serie": "nivel_euro_dolar_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0"
+   ],
+   "estrutura_com": [
+    "x0"
+   ],
+   "externas_aceitas_sem": [
+    0
+   ],
+   "externas_aceitas_com": [
+    0
+   ],
+   "custo_sem": 1473.9132234572635,
+   "custo_com": 1473.233192794174
+  },
+  {
+   "serie": "nivel_iene_dolar_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x4"
+   ],
+   "estrutura_com": [
+    "x4"
+   ],
+   "externas_aceitas_sem": [
+    4
+   ],
+   "externas_aceitas_com": [
+    4
+   ],
+   "custo_sem": 1400.6472594863933,
+   "custo_com": 1434.9152548869297
+  },
+  {
+   "serie": "nivel_petroleo_wti_2000_2009",
+   "origem": "VC03",
+   "T": 2609,
+   "d": 5,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x4",
+    "own_past"
+   ],
+   "estrutura_com": [
+    "x4",
+    "own_past"
+   ],
+   "externas_aceitas_sem": [
+    4
+   ],
+   "externas_aceitas_com": [
+    4
+   ],
+   "custo_sem": 1285.3205825986968,
+   "custo_com": 1329.8203142966654
+  }
+ ]
+}

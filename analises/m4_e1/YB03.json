@@ -1,0 +1,142 @@
+{
+ "familia": "YB03",
+ "prototipo": {
+  "commit": "438ac08",
+  "removal_sha256": "22a4af903acae0f1076242d07b9fed72955b8320f4b6c5802c7ee6712cbbae6a"
+ },
+ "semente": 20261340,
+ "resumo": {
+  "geo": 0.9961147971039107,
+  "ic95": [
+   0.9894112793100095,
+   1.0025774727263457
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "remocoes": 1,
+  "identidade_ok": true,
+  "custo_sem": 1639.2164042892996,
+  "custo_com": 1642.7161062628338
+ },
+ "series": [
+  {
+   "serie": "Aotizhongxin_PM2.5",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 1.005423892525749,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [
+    {
+     "t": 22200,
+     "tipo": "rem",
+     "entra": null,
+     "sai": [
+      "res"
+     ]
+    }
+   ],
+   "estrutura_sem": [
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [],
+   "externas_aceitas_com": [],
+   "custo_sem": 1725.9904745608032,
+   "custo_com": 1734.4967602099005
+  },
+  {
+   "serie": "Aotizhongxin_NO2",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 0.9862368610337658,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0",
+    "x4",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x3",
+    "x4",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    0,
+    4
+   ],
+   "externas_aceitas_com": [
+    3,
+    4
+   ],
+   "custo_sem": 1702.133190736938,
+   "custo_com": 1624.9796429386292
+  },
+  {
+   "serie": "Aotizhongxin_CO",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 1.0,
+   "nan_aval": 0,
+   "identica": true,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x0"
+   ],
+   "estrutura_com": [
+    "x0"
+   ],
+   "externas_aceitas_sem": [
+    0
+   ],
+   "externas_aceitas_com": [
+    0
+   ],
+   "custo_sem": 1656.7776808122292,
+   "custo_com": 1661.3653262605499
+  },
+  {
+   "serie": "Aotizhongxin_O3",
+   "origem": "YB03",
+   "T": 35064,
+   "d": 10,
+   "razao": 0.9929037116606624,
+   "nan_aval": 0,
+   "identica": false,
+   "sem_aceite": false,
+   "remocoes": [],
+   "estrutura_sem": [
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "estrutura_com": [
+    "x3",
+    "own_past",
+    "residual_state"
+   ],
+   "externas_aceitas_sem": [
+    3
+   ],
+   "externas_aceitas_com": [
+    3
+   ],
+   "custo_sem": 1471.9642710472278,
+   "custo_com": 1550.0226956422562
+  }
+ ]
+}
