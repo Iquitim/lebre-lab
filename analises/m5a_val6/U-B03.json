@@ -1,0 +1,103 @@
+{
+ "familia": "U-B03",
+ "prototipo": {
+  "commit": "f69dec4",
+  "dormancy_sha256": "c206505fa80f0cd795caad042f5f0e152e525ae53a745333a6cbd1183bb09bb7"
+ },
+ "semente": 20261063,
+ "bloco": 168,
+ "resumo": {
+  "geo": 0.9958698183587189,
+  "ic95": [
+   0.9842583792312736,
+   1.0059092511593883
+  ],
+  "n": 4,
+  "nan_aval": 0,
+  "dormiram": 4,
+  "identidade_ok": true,
+  "m1_v053": 734.4667180013689,
+  "m1_v054": 475.1299623545517,
+  "razao_custo_m1": 0.6469046870462362,
+  "total_v053": 1700.277090463153,
+  "total_v054": 1440.940334816336
+ },
+ "series": [
+  {
+   "serie": "Dingling_PM2.5",
+   "T": 35064,
+   "razao": 1.004415705788443,
+   "sono": {
+    "dormant": true,
+    "sleeps": 6,
+    "wakes": 5,
+    "trials": 3,
+    "dormant_steps": 16004,
+    "m1_fp_per_step": 453.3465947980835
+   },
+   "nan_aval": 0,
+   "identica": false,
+   "m1_v053": 742.8012206251426,
+   "m1_v054": 453.3465947980835,
+   "total_v053": 1705.2249258498746,
+   "total_v054": 1415.7703000228155
+  },
+  {
+   "serie": "Dingling_NO2",
+   "T": 35064,
+   "razao": 0.9989912021621993,
+   "sono": {
+    "dormant": false,
+    "sleeps": 4,
+    "wakes": 4,
+    "trials": 3,
+    "dormant_steps": 17483,
+    "m1_fp_per_step": 419.22772644307554
+   },
+   "nan_aval": 0,
+   "identica": false,
+   "m1_v053": 736.3414328085786,
+   "m1_v054": 419.22772644307554,
+   "total_v053": 1722.6701003878622,
+   "total_v054": 1405.5563940223592
+  },
+  {
+   "serie": "Dingling_CO",
+   "T": 35064,
+   "razao": 0.980148293797324,
+   "sono": {
+    "dormant": false,
+    "sleeps": 3,
+    "wakes": 3,
+    "trials": 2,
+    "dormant_steps": 8006,
+    "m1_fp_per_step": 579.1860027378508
+   },
+   "nan_aval": 0,
+   "identica": false,
+   "m1_v053": 722.9291010723249,
+   "m1_v054": 579.1860027378508,
+   "total_v053": 1653.9220282911247,
+   "total_v054": 1510.1789299566508
+  },
+  {
+   "serie": "Dingling_O3",
+   "T": 35064,
+   "razao": 1.000099787797537,
+   "sono": {
+    "dormant": true,
+    "sleeps": 7,
+    "wakes": 6,
+    "trials": 5,
+    "dormant_steps": 15889,
+    "m1_fp_per_step": 448.7595254391969
+   },
+   "nan_aval": 0,
+   "identica": false,
+   "m1_v053": 735.7951174994296,
+   "m1_v054": 448.7595254391969,
+   "total_v053": 1719.291307323751,
+   "total_v054": 1432.2557152635181
+  }
+ ]
+}
