@@ -1,0 +1,191 @@
+{
+ "familia": "XB02",
+ "prototipo": {
+  "commit": "18906c2",
+  "cycle_sha256": "7f8fe5658544fa7265989687b8b07843f50403679698e0728e8fbbec7f863193"
+ },
+ "semente": 20261343,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "b": {
+   "geo": 1.1199484330134057,
+   "ic95": [
+    1.0997919361000688,
+    1.1404176364824992
+   ],
+   "n": 4
+  },
+  "nan_aval": 0,
+  "n": 4,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 1105.3803530686744,
+  "custo_com": 1109.3771589094229
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1023.8262805156286,
+   "custo_com": 1027.823086356377,
+   "razao_b": 1.2996264501896246,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      8480,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1175.9656456764774
+  },
+  {
+   "serie": "SUL_Porto Alegre_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1113.515657084189,
+   "custo_com": 1117.5124629249372,
+   "razao_b": 1.000726621625476,
+   "m6_b": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": [
+     [
+      2180,
+      24
+     ],
+     [
+      4830,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1175.5585415240703
+  },
+  {
+   "serie": "NORDESTE_Recife_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1182.3499344056581,
+   "custo_com": 1186.3467402464066,
+   "razao_b": 1.0688754943183034,
+   "m6_b": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": [
+     [
+      4720,
+      24
+     ],
+     [
+      18160,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1208.2889060004563
+  },
+  {
+   "serie": "NORTE_Belem_2010_2013",
+   "origem": "XB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1101.829540269222,
+   "custo_com": 1105.8263461099705,
+   "razao_b": 1.1316991526940048,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      7390,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1114.005718115446
+  }
+ ]
+}

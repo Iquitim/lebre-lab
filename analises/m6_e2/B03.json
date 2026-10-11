@@ -1,0 +1,181 @@
+{
+ "familia": "B03",
+ "prototipo": {
+  "commit": "18906c2",
+  "cycle_sha256": "7f8fe5658544fa7265989687b8b07843f50403679698e0728e8fbbec7f863193"
+ },
+ "semente": 20261343,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "b": {
+   "geo": 1.0016436623871834,
+   "ic95": [
+    0.9986267365255728,
+    1.0042839257157692
+   ],
+   "n": 4
+  },
+  "nan_aval": 0,
+  "n": 4,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 1524.5472427059956,
+  "custo_com": 1527.9776156887892
+ },
+ "series": [
+  {
+   "serie": "CO(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1538.3285454739766,
+   "custo_com": 1541.6090841081543,
+   "razao_b": 1.0032441930407563,
+   "m6_b": {
+    "ciclos": [
+     168
+    ],
+    "aceitos": [
+     [
+      3240,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1561.7627658437532
+  },
+  {
+   "serie": "NOx(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1415.4003847386984,
+   "custo_com": 1418.6997328203483,
+   "razao_b": 1.0015151689533304,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      2840,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1442.9246980869939
+  },
+  {
+   "serie": "NO2(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1504.7581276050016,
+   "custo_com": 1508.056193224324,
+   "razao_b": 1.0052322934452005,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      1940,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1525.5670407181788
+  },
+  {
+   "serie": "C6H6(GT)",
+   "origem": "B03",
+   "T": 9357,
+   "d": 8,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1639.7019130063054,
+   "custo_com": 1643.5454526023298,
+   "razao_b": 0.9966034168911246,
+   "m6_b": {
+    "ciclos": [
+     168
+    ],
+    "aceitos": [
+     [
+      3140,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1668.8185102062625
+  }
+ ]
+}

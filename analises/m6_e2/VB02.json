@@ -1,0 +1,191 @@
+{
+ "familia": "VB02",
+ "prototipo": {
+  "commit": "18906c2",
+  "cycle_sha256": "7f8fe5658544fa7265989687b8b07843f50403679698e0728e8fbbec7f863193"
+ },
+ "semente": 20261343,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "b": {
+   "geo": 1.125908076851129,
+   "ic95": [
+    1.0969849303815962,
+    1.151876283519895
+   ],
+   "n": 4
+  },
+  "nan_aval": 0,
+  "n": 4,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 1091.183019621264,
+  "custo_com": 1095.1829340634267
+ },
+ "series": [
+  {
+   "serie": "SUDESTE_Sao Paulo_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1169.1348904859683,
+   "custo_com": 1173.1347764088523,
+   "razao_b": 1.4213601711464818,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      9620,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1260.3082991101985
+  },
+  {
+   "serie": "SUL_Porto Alegre_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 995.274737622633,
+   "custo_com": 999.274737622633,
+   "razao_b": 0.9991957152108495,
+   "m6_b": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": [
+     [
+      1710,
+      24
+     ],
+     [
+      3800,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1084.2817875884098
+  },
+  {
+   "serie": "NORDESTE_Recife_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1109.680989048597,
+   "custo_com": 1113.6808749714808,
+   "razao_b": 1.0304795066566366,
+   "m6_b": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": [
+     [
+      1720,
+      24
+     ],
+     [
+      9790,
+      168
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1065.3408681268538
+  },
+  {
+   "serie": "NORTE_Belem_2018_2021",
+   "origem": "VB02",
+   "T": 35064,
+   "d": 5,
+   "ciclo_declarado": [
+    24,
+    168
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     24,
+     168
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 1090.6414613278575,
+   "custo_com": 1094.6413472507415,
+   "razao_b": 1.0980387696852618,
+   "m6_b": {
+    "ciclos": [
+     24
+    ],
+    "aceitos": [
+     [
+      1700,
+      24
+     ]
+    ]
+   },
+   "referencia_b": "seasonal",
+   "nan_b": 0,
+   "custo_b": 1114.8373887748116
+  }
+ ]
+}

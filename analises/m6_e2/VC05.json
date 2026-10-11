@@ -1,0 +1,149 @@
+{
+ "familia": "VC05",
+ "prototipo": {
+  "commit": "18906c2",
+  "cycle_sha256": "7f8fe5658544fa7265989687b8b07843f50403679698e0728e8fbbec7f863193"
+ },
+ "semente": 20261343,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "b": {
+   "geo": 1.2062635527293546,
+   "ic95": [
+    1.1018089405240228,
+    1.303158490830178
+   ],
+   "n": 4
+  },
+  "nan_aval": 0,
+  "n": 4,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 423.80125,
+  "custo_com": 447.26125
+ },
+ "series": [
+  {
+   "serie": "ipca15",
+   "origem": "VC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 354.71,
+   "custo_com": 378.16999999999996,
+   "razao_b": 1.0911141716941453,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 360.74
+  },
+  {
+   "serie": "ipca_alimentos_bebidas",
+   "origem": "VC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 440.57166666666666,
+   "custo_com": 464.03166666666664,
+   "razao_b": 1.0436956058677833,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 446.60166666666663
+  },
+  {
+   "serie": "ipca_servicos",
+   "origem": "VC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 430.7916666666667,
+   "custo_com": 454.25166666666667,
+   "razao_b": 1.8400656326683424,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 436.82166666666666
+  },
+  {
+   "serie": "ipca_monitorados",
+   "origem": "VC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 469.13166666666666,
+   "custo_com": 492.59166666666664,
+   "razao_b": 1.0103956264224634,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 475.16166666666663
+  }
+ ]
+}

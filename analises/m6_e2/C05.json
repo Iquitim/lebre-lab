@@ -1,0 +1,91 @@
+{
+ "familia": "C05",
+ "prototipo": {
+  "commit": "18906c2",
+  "cycle_sha256": "7f8fe5658544fa7265989687b8b07843f50403679698e0728e8fbbec7f863193"
+ },
+ "semente": 20261343,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 2
+  },
+  "b": {
+   "geo": 1.0778543765559414,
+   "ic95": [
+    1.0062246918545321,
+    1.1476506735458853
+   ],
+   "n": 2
+  },
+  "nan_aval": 0,
+  "n": 2,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 383.5777777777778,
+  "custo_com": 407.0444444444444
+ },
+ "series": [
+  {
+   "serie": "ipca",
+   "origem": "C05",
+   "T": 360,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 383.5777777777778,
+   "custo_com": 407.0444444444444,
+   "razao_b": 1.0826468893408567,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 388.35277777777776
+  },
+  {
+   "serie": "inpc",
+   "origem": "C05",
+   "T": 360,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 383.5777777777778,
+   "custo_com": 407.0444444444444,
+   "razao_b": 1.0730830786094185,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 388.35277777777776
+  }
+ ]
+}

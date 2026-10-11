@@ -1,0 +1,149 @@
+{
+ "familia": "XC05",
+ "prototipo": {
+  "commit": "18906c2",
+  "cycle_sha256": "7f8fe5658544fa7265989687b8b07843f50403679698e0728e8fbbec7f863193"
+ },
+ "semente": 20261343,
+ "resumo": {
+  "a": {
+   "geo": 1.0,
+   "ic95": [
+    1.0,
+    1.0
+   ],
+   "n": 4
+  },
+  "b": {
+   "geo": 1.1341164199010378,
+   "ic95": [
+    1.0748964771581913,
+    1.1890171811383168
+   ],
+   "n": 4
+  },
+  "nan_aval": 0,
+  "n": 4,
+  "com_ciclo_aceito_a": 0,
+  "custo_sem": 390.3183333333333,
+  "custo_com": 413.7783333333333
+ },
+ "series": [
+  {
+   "serie": "ipca_comercializaveis",
+   "origem": "XC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 354.71,
+   "custo_com": 378.16999999999996,
+   "razao_b": 1.075504052616369,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 360.74
+  },
+  {
+   "serie": "ipca_nao_comercializaveis",
+   "origem": "XC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 401.50166666666667,
+   "custo_com": 424.96166666666664,
+   "razao_b": 1.3927793867750053,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 407.53166666666664
+  },
+  {
+   "serie": "ipca_nao_duraveis",
+   "origem": "XC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 450.35166666666663,
+   "custo_com": 473.81166666666667,
+   "razao_b": 0.9993460793761776,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 488.15166666666664
+  },
+  {
+   "serie": "ipca_artigos_residencia",
+   "origem": "XC05",
+   "T": 300,
+   "d": 3,
+   "ciclo_declarado": [
+    12,
+    null
+   ],
+   "razao_a": 1.0,
+   "nan_aval": 0,
+   "identica_a": true,
+   "m6_a": {
+    "ciclos": [
+     12
+    ],
+    "aceitos": []
+   },
+   "custo_sem": 354.71,
+   "custo_com": 378.16999999999996,
+   "razao_b": 1.105147532373066,
+   "m6_b": {
+    "ciclos": [],
+    "aceitos": []
+   },
+   "referencia_b": "persistence",
+   "nan_b": 0,
+   "custo_b": 360.74
+  }
+ ]
+}
