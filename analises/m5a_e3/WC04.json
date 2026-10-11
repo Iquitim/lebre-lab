@@ -1,0 +1,81 @@
+{
+ "familia": "WC04",
+ "prototipo": {
+  "commit": "f69dec4",
+  "dormancy_sha256": "c206505fa80f0cd795caad042f5f0e152e525ae53a745333a6cbd1183bb09bb7"
+ },
+ "semente": 20261062,
+ "resumo": {
+  "geo": 1.0000948581063238,
+  "ic95": [
+   0.9993077304873431,
+   1.000965397030561
+  ],
+  "n": 3,
+  "nan_aval": 0,
+  "dormiram": 3,
+  "identidade_ok": true
+ },
+ "series": [
+  {
+   "serie": "d_juro_1a",
+   "origem": "WC04",
+   "T": 4174,
+   "razao": 1.000284601314006,
+   "sono": {
+    "dormant": false,
+    "sleeps": 1,
+    "wakes": 1,
+    "trials": 0,
+    "dormant_steps": 883,
+    "m1_fp_per_step": 627.4032103497843
+   },
+   "nan_aval": 0,
+   "identica": false,
+   "m1_v053": 762.1145184475323,
+   "m1_v054": 627.4032103497843,
+   "total_v053": 1271.9810253953044,
+   "total_v054": 1137.2697172975563
+  },
+  {
+   "serie": "d_juro_5a",
+   "origem": "WC04",
+   "T": 4174,
+   "razao": 1.0,
+   "sono": {
+    "dormant": true,
+    "sleeps": 1,
+    "wakes": 0,
+    "trials": 0,
+    "dormant_steps": 1651,
+    "m1_fp_per_step": 499.56396741734545
+   },
+   "nan_aval": 0,
+   "identica": true,
+   "m1_v053": 762.1145184475323,
+   "m1_v054": 499.56396741734545,
+   "total_v053": 1296.449329180642,
+   "total_v054": 1033.8987781504552
+  },
+  {
+   "serie": "d_juro_30a",
+   "origem": "WC04",
+   "T": 4174,
+   "razao": 1.0,
+   "sono": {
+    "dormant": true,
+    "sleeps": 1,
+    "wakes": 0,
+    "trials": 0,
+    "dormant_steps": 1651,
+    "m1_fp_per_step": 499.56396741734545
+   },
+   "nan_aval": 0,
+   "identica": true,
+   "m1_v053": 762.1145184475323,
+   "m1_v054": 499.56396741734545,
+   "total_v053": 1265.223310972688,
+   "total_v054": 1002.6727599425012
+  }
+ ]
+}
