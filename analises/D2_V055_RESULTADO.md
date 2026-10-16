@@ -66,3 +66,9 @@ inovação da memória (a cascata). A combinação seria pela mesma média dinâ
 - Em série integrada, ela não precisa cancelar nada: a inovação já é Δy.
 - A média dinâmica escolheria, série a série.
 - Custo esperado: mais um conjunto de pesos de estrutura.
+
+## Errata (16/10/2026, registrada no plano da D3, antes de rodá-la)
+
+No ensaio, a base de sementes 2026101690 + c, com c = 10 a 12, coincidiu com as sementes das séries k = 0 de N1, N2 e N3
+da execução principal (2026101700 a 2026101702). Houve, portanto, reuso de semente entre o ensaio e a execução. O
+resultado não muda: o ensaio não foi usado, e as células geram séries diferentes.
