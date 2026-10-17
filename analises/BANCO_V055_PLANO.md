@@ -86,3 +86,17 @@ Uma variante **passa** se cumprir todos os critérios, de C-a a C-h.
   - bootstrap: 2026102030.
 
   Todas na faixa reservada e conferidas como não usadas em 17/10/2026.
+
+## 5. Rodada C1, confirmação (registrada antes de rodar, depois da D5)
+
+- **Candidata:** B10, congelada no commit `b0522a0` do lebre-research, o mesmo da D5, sem nenhuma mudança.
+- **Variantes:** A e B10.
+- **Sementes nunca usadas:**
+  - séries: base 2026102100 (2026102100 a 2026102122);
+  - ensaio: base 2026102070;
+  - bootstrap: 2026102130.
+- **Critérios:** os do §2, sem mudança.
+- **Decisão:**
+  - se B10 passar, a estrutura de inovação e o portão estão confirmados em sintéticos, e segue a validação em séries
+    reais nunca usadas (§3);
+  - se falhar, a C1 conta como rodada de desenvolvimento.

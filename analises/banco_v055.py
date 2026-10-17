@@ -24,6 +24,9 @@ P55 = Path(os.environ.get("LEBRE055_PROTO", "."))
 RODADAS = {
     "D5": dict(commit="b0522a0", base=2026102000, ensaio=2026101950, boot=2026102030, variantes=("A", "B9", "B10"),
                candidatas=("B9", "B10")),
+    # confirmação: B10 congelada no mesmo commit da D5, sem nenhuma mudança; sementes nunca usadas
+    "C1": dict(commit="b0522a0", base=2026102100, ensaio=2026102070, boot=2026102130, variantes=("A", "B10"),
+               candidatas=("B10",)),
 }
 
 T_CURTO, T_LONGO = 4000, 8000
